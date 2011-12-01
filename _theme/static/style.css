@@ -6,6 +6,19 @@ html {
 	line-height: 1.75em;
 }
 
+body {
+	font-family: "myriad-pro-1", "myriad-pro-2", sans-serif;
+	font-size: 17px;
+	background-color: white;
+	color: #000;
+	margin: 0;	
+	padding: 0;
+}
+
+div.body {
+	padding: 0 30px 0 30px;
+}
+
 .mono, pre, tt {
 	font-family: monospace;
 	font-size: 1.25em;
@@ -27,12 +40,31 @@ h1, h2, h3, h4, h5, h6 {
 	margin-left: 280px;
 }
 
+div.sphinxsidebarwrapper {
+	padding: 18px 10px;
+}
+
+div.sphinxsidebarwrapper h3 {
+	font-family: "myriad-pro-1","myriad-pro-2",sans-serif;
+	color: #444;
+	font-size: 24px;
+	font-weight: normal;
+	margin: 0 0 5px 0;
+	padding: 0;
+
+}
+div.sphinxsidebarwrapper p {
+	color: #000;
+	margin: 10px 0;
+	font-family: inherit;
+}
+
 .sphinxsidebar {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 280px;
-	font-size: 0.8em;
+	font-size: 14px;
 }
 
 .sphinxsidebar ul {
@@ -54,7 +86,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .field-list {
-	text-align: left;
+	text-aldiv.body {
+    background-color: #ffffff;
+    color: #3E4349;
+    padding: 0 30px 0 30px;
+}ign: left;
 }
 
 .field-body ul {
@@ -79,4 +115,16 @@ h1, h2, h3, h4, h5, h6 {
 
 dd {
 	margin-left: 1.5em;
+}
+
+div.footer {
+	width: 678px;
+	margin: 20px auto 30px auto;
+	font-size: 14px;
+	color: #888;
+	text-align: right;
+}
+
+div.footer a {
+	color: #888;
 }

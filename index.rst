@@ -3,8 +3,13 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to FluidSurveys's documentation!
-========================================
+.. image:: _static/fslogo2.png
+	:alt: FluidSurveys: Empowering feedback
+	:align: right	
+
+FluidSurveys's 4.0 Documentation!
+=================================
+
 
 Contents:
 
@@ -19,4 +24,3 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-
