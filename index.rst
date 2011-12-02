@@ -22,4 +22,3 @@ through a web-based API.
 	:maxdepth: 2
 
 	api/invites
-
