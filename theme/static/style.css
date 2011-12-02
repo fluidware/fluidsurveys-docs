@@ -1,0 +1,136 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,400italic");
+
+html {
+	font-family: "open sans", sans-serif;
+	font-size: 14px;
+	line-height: 1.75em;
+}
+
+body {
+	margin: 0;
+}
+
+.mono, pre, tt {
+	font-family: monospace;
+	font-size: 1.25em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "adelle-1", "adelle-2", serif;
+	font-weight: 600;
+}
+
+h2, h3 {
+	color: #4183c4;
+}
+
+.top-bar {
+	background: #222;
+	color: #eee;
+	padding: 0.3em 0;
+	font-size: 0.9em;
+}
+
+.top-bar a {
+	color: #e0e2e8;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.top-bar a:hover {
+	color: #f0f2f8;
+}
+
+.center {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.document {
+	padding: 1px 0;
+	width: 1000px;
+	margin: 2em auto;
+	position: relative;
+}
+
+.documentwrapper {
+	float: left;
+	width: 700px;
+}
+
+.sphinxsidebar {
+	float: right;
+	width: 280px;
+	font-size: 0.9em;
+	line-height: 1.75em;
+	background: #fafbfe;
+}
+
+.sphinxsidebarwrapper {
+	margin: 2em;
+}
+
+.sphinxsidebar ul {
+	padding-left: 16px;
+}
+
+.sphinxsidebar a {
+	color: #444;
+	text-decoration: none;
+	border-bottom: 1px dotted #999;
+}
+
+.sphinxsidebar a:hover {
+	border-bottom: 1px solid #999;
+}
+
+.related {
+	display: none;
+}
+
+.footer {
+	clear: both;
+	width: 960px;
+	margin: 0 auto;
+	padding: 2em 0;
+	text-align: right;
+	font-size: 0.9em;
+	color: #bbb;
+}
+
+.field-list {
+	text-align: left;
+}
+
+.field-body ul {
+	padding-left: 1.5em;
+}
+
+.field-body strong {
+	font-family: monospace;
+	font-weight: normal;
+	font-size: 1.25em;
+}
+
+.headerlink {
+	text-decoration: none;
+	color: #f8f8f8;
+	padding: 0 6px;
+}
+
+.headerlink:hover {
+	color: #bbb;
+}
+
+dd {
+	margin-left: 1.5em;
+}
+
+.highlight {
+	margin-left: -1.5em;
+}
+
+pre {
+	padding: 1em 2em;
+	line-height: 1.5em;
+}
