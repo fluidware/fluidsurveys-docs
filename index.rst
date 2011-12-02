@@ -10,7 +10,7 @@ view our `FluidSurveys help page`_ containing over 150 video tutorials.
 
 .. _FluidSurveys help page: http://www.fluidsurveys.com/help-tutorials
 
-.. include:: chapters/fschaptercontents.rst.inc
+.. include:: /chapters/fschaptercontents.rst.inc
 
 API Documentation
 -----------------
@@ -19,4 +19,7 @@ Many of the features provided by FluidSurveys are also accessible
 through a web-based API.
 
 .. toctree::
-	:maxdepth: 2
+	:maxdepth: 1
+
+	api/invites
+

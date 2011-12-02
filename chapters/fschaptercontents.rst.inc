@@ -2,8 +2,8 @@ Chapters
 --------
 
 .. toctree::
-	:maxdepth: 2
-
+   :maxdepth: 2
+	
 	chapters/Dashboard/index
 	chapters/Editor/index
 	chapters/Style/index
@@ -11,3 +11,4 @@ Chapters
 	chapters/Publish/index
 	chapters/Invite/index
 	chapters/Analyze/index
+
