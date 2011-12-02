@@ -19,7 +19,7 @@ Many of the features provided by FluidSurveys are also accessible
 through a web-based API.
 
 .. toctree::
-	:maxdepth: 1
+	:maxdepth: 2
 
 	api/invites
 
