@@ -21,4 +21,6 @@ through a web-based API.
 .. toctree::
 	:maxdepth: 2
 
+	api/authentication
+	api/surveys
 	api/invites
