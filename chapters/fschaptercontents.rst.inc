@@ -15,5 +15,5 @@ Chapters
 Additional Notes
 ----------------
 
-.. toctree:;
+.. toctree::
 	:maxdepth: 2
