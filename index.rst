@@ -1,7 +1,8 @@
 ..	image:: /resources/fslogo2.png
 	:alt: FluidSurveys: Empowering Feedback
+	:align: right
 
-FluidSurveys 4.0 Documentation
+FluidSurveys 4.0
 ================================
 
 Welcome to the online version of FluidSurveys documentation. To get

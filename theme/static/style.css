@@ -58,6 +58,11 @@ h2, h3 {
 	width: 700px;
 }
 
+.align-right {
+	padding: 0 0 10px 10px;
+	float: right;
+}
+
 .sphinxsidebar {
 	float: right;
 	width: 280px;
