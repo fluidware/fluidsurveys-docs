@@ -3,12 +3,12 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-.. image:: _static/fslogo2.png
+.. image:: _theme/static/fslogo2.png
 	:alt: FluidSurveys: Empowering feedback
-	:align: right	
+	:align: right
 
-FluidSurveys's 4.0 Documentation!
-=================================
+FluidSurveys's 4.0 Documentation
+================================
 
 
 Contents:
@@ -17,8 +17,6 @@ Contents:
    :maxdepth: 2
 
 
-
-Indices and tables
 ==================
 
 * :ref:`genindex`
