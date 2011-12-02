@@ -1,8 +1,3 @@
-.. FluidSurveys documentation master file, created by
-   sphinx-quickstart on Tue Nov 29 16:46:16 2011.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
 .. image:: _theme/static/fslogo2.png
 	:alt: FluidSurveys: Empowering feedback
 	:align: right
@@ -10,15 +5,7 @@
 FluidSurveys's 4.0 Documentation
 ================================
 
+Welcome to the online version of FluidsSurveys documentation. To get
+started
 
-Contents:
-
-.. toctree::
-   :maxdepth: 2
-
-
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+.. include:: _chapters/fschaptercontents.rst.inc
