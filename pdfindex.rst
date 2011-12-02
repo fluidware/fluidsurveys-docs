@@ -3,4 +3,4 @@
 FluidSurveys's 4.0 Documentation
 ================================
 
-.. include:: fschaptercontents.rst.inc
+.. include:: chapters/fschaptercontents.rst.inc
