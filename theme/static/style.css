@@ -21,14 +21,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2, h3 {
-	color: #4183c4;
+	color: #226FC2;
 }
 
 .top-bar {
-	background: #222;
+	background: #0C4A6E;
+	background: -moz-linear-gradient(top center, #0C4A6E, #093C5E);
+	background: -webkit-linear-gradient(top, #0C4A6E 0%, #093C5E 100%);
 	color: #eee;
-	padding: 0.3em 0;
-	font-size: 0.9em;
+	padding: 0.7em 0 0.8em 0;
+}
+
+.top-bar .logo a {
+	font-family: "open sans", sans-serif;
+	font-size: 1.1em;
+	color: #f8f9fb;
 }
 
 .top-bar a {
