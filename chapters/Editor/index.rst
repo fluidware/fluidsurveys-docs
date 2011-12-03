@@ -1,17 +1,26 @@
 Editor
 ======
 
-Sub-section 1
--------------
+.. Editor Features Section
+.. include:: ./editorfeatures.rst
+	
+.. Basic Questions Section
+.. include:: ./basicquestions.rst
 
-Sub-section 2
--------------
+.. Question Options Section
+.. include:: ./questionoptions.rst
 
-Sub-section 3
--------------
+.. Advanced Questions Section
+.. include:: ./advancedquestions.rst
 
-Sub-section 4
--------------
+.. Advanced Survey Features Section
+.. include:: ./advancedfeatures.rst
 
 
 
+
+
+	
+
+
+	

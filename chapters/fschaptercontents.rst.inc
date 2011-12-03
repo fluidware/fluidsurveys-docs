@@ -1,8 +1,5 @@
-Chapters
---------
-
 .. toctree::
-	:maxdepth: 2
+	:maxdepth: 3
 	
 	chapters/Dashboard/index
 	chapters/Editor/index
