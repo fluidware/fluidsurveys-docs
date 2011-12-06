@@ -70,6 +70,15 @@ h2, h3 {
 	float: right;
 }
 
+.align-center {
+	text-align: center;
+	padding: 0px;
+}
+
+.align-left {
+	float: left;
+}
+
 .sphinxsidebar {
 	float: right;
 	width: 280px;
@@ -146,3 +155,47 @@ pre {
 	padding: 1em 2em;
 	line-height: 1.5em;
 }
+
+
+div.admonition {
+	background: #fafafa;
+	margin: 15px 20px;
+	padding: 15px 20px;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+div.admonition tt.xref, div.admonition a tt {
+	border-bottom: 1px solid #fafafa;
+}
+
+dd div.admonition {
+	margin-left: -10px;
+	padding-left: 60px;
+}
+
+div.admonition p.admonition-title {
+	font-weight: normal;
+	font-size: 1.2em;
+	margin: 0 0 10px 0;
+	padding: 0;
+	line-height: 1;
+}
+
+div.admonition p.last {
+	margin-bottom: 0;
+}
+
+div.highlight {
+	background-color: white;
+}
+
+dt:target, .highlight {
+	background: #FAF3E8;
+}
+
+div.note {
+	background-color: #EBF7F8;
+	border: 1px dashed #ccc;
+}
+

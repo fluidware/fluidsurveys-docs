@@ -15,12 +15,3 @@ Editor
 
 .. Advanced Survey Features Section
 .. include:: ./advancedfeatures.rst
-
-
-
-
-
-	
-
-
-	

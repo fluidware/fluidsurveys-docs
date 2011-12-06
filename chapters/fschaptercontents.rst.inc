@@ -1,6 +1,6 @@
 .. toctree::
-	:maxdepth: 3
 	
+	chapters/Beginning/index	
 	chapters/Dashboard/index
 	chapters/Editor/index
 	chapters/Style/index
