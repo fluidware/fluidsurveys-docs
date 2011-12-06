@@ -29,8 +29,7 @@ Editor
 Style 
 ^^^^^
 Reports
-^^^^^^^
-	
+^^^^^^^	
 
 API Documentation
 -----------------
