@@ -10,26 +10,10 @@ no software to download, an easy to use drag & drop interface and an
 extremely rich feature base, FluidSurveys is the ideal tool for online 
 research. 
 
-To get started, please click on the desired chapter below. Additionally, 
-please view our `FluidSurveys help page`_ containing well over 150 video 
-tutorials. 
+Our documentation will be available shortly. Additionally, please view
+our `FluidSurveys help page`_ containing well over 150 video tutorials. 
 
 .. _FluidSurveys help page: http://www.fluidsurveys.com/help-tutorials
-
-Chapters
---------
-
-.. include:: /chapters/fschaptercontents.rst.inc
-
-Tutorials
----------
-
-Editor
-^^^^^^
-Style 
-^^^^^
-Reports
-^^^^^^^	
 
 API Documentation
 -----------------
