@@ -1,7 +1,13 @@
 Dashboard
 =========
 
-Once you’ve signed up for an account, you’ll be taken directly to the
+Eager to get started? This page gives a good introduction in how to get
+started with FluidSurveys. This assumes you already have an account 
+with FluidSurveys. If you do not, head over to the `Sign Up`_ page
+
+.. _Sign Up page: http://www.fluidsurveys.com/account
+
+Once you’ve signed into your account, you’ll be taken directly to the
 dashboard. By default, the first screen you'll see when logging into 
 your account on FluidSurveys will be the Surveys Dashboard. 
 
@@ -20,6 +26,8 @@ When you log into FluidSurveys, you will see the following:
 
 .. image:: ../../resources/dashboard/surveys_dashboard_blank.png
 	:scale: 65%
+	:align: center
+	:class: screenshot
 
 	
 You can return to the Surveys Dashboard at any time, by clicking 
