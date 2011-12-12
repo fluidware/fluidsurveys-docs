@@ -1,7 +1,7 @@
 Getting Started
 ===============
 
-Welcome to FluidSurveys!
+**Welcome to FluidSurveys!**
 
 If you ever have any questions, or would like to return back to the main table of contents page, please click on the FluidSurveys tour guide found on the right hand side. 
 
