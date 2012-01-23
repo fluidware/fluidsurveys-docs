@@ -86,6 +86,20 @@ Creating a new response
 
     Creates a new response to the survey specified by ``id``.
 
+Submitting a new response
+`````````````````````````
+
+.. http:post:: /api/v2/surveys/:id/responses/
+
+    Submits a new response.  Attach response data to the request body: ::
+    
+    :<questionid> = response
+
+	You will get a JSON response with the following values: ::
+
+    :success: true/false.
+    :errors: An array of questions id's and associated error/validation messages.
+
 Deleting responses
 ``````````````````
 
