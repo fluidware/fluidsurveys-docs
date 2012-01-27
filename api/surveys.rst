@@ -91,14 +91,28 @@ Submitting a new response
 
 .. http:post:: /api/v2/surveys/:id/responses/
 
-    Submits a new response.  Attach response data to the request body: ::
-    
-    :<questionid> = response
+    *Note:* Submitting responses currently only works on **single page surveys**.
 
-	You will get a JSON response with the following values: ::
+    Submits a new response.  Attach response data to the request body in the form ``<question_id>=<response>``, e.g.: ::
 
-    :success: true/false.
-    :errors: An array of questions id's and associated error/validation messages.
+    &5yEXFv1Bob=hello%20world&zIthHJ9tvZ=0&DiBzfaXB6b_0=1&DiBzfaXB6b_0=5
+
+    You will get a ``succes:true`` response if your request was successful.
+
+    If there is an error , the sever will return a **status code 500** with a JSON body:
+
+    :query code: *invalid_request* | *survey_error*.
+    :query description: A list of ``[question_id, error_message]``.
+
+    Sample response: ::
+
+	{
+	  "code": "survey_error",
+	  "description": [
+	                  ["DiBzfaXB6b", "'3' is not a valid choice for this field"],
+	                  ["5yEXFv1Bob", "An answer to this question is required."]
+	                 ]
+	}
 
 Deleting responses
 ``````````````````
