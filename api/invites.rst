@@ -326,7 +326,7 @@ Create an Email
 Add Contact to Email
 ````````````````````
 
-	We do not need to send a single contact as json, we can simple post::
+	We do not need to send a single contact as json, we can simply ``POST``::
 
 		r = requests.post(recipients_uri, data='contacts=%d' % (contact_id,),
 		 	auth=(api_key,password))
