@@ -199,12 +199,15 @@ Creating a new email
 .. http:post:: /api/v2/emails/
 
     Creates a new email. Data must be sent as an :mimetype:`application/json`-encoded
-    dictionary.
+    dictionary.  Which must included the fields ``subject``, ``sender``, and ``message``.
+
+    ``Sender`` must be in the form ``"Name <email@example.com>"`` and ``message`` must include the string "``[Invite Link]``" in it.  This token is replaced with the URL at which the recipient may take the survey.
 
     Sample request::
 
       {
 	"subject": "Email subject",
+	"sender": "John Doe <john@google.com>",
 	"message": "Dear [Full Name],\n\nMessage body: [Invite Link]"
       }
 
@@ -260,7 +263,7 @@ Removing recipients
     Deletes recipients from an email.
 
 Example
-------
+-------
 
     Let's write a quick python script to create a contact and add them to an email:
 
@@ -359,20 +362,3 @@ Source
 	Download the source file:
 	
 	`Python <https://raw.github.com/chideit/fluidsurveys-docs/master/samples/email_contact/email_contact.py>`_  `PHP <http://raw.github.com/chideit/fluidsurveys-docs/master/samples/email_contact/email_contact.php>`_
-		
-	
-	
-
-	
-	
-	
-
-	
-
-
-	
-
-
-
-
-
