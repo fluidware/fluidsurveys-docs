@@ -93,16 +93,23 @@ Submitting a new response
 
     *Note:* Submitting responses currently only works on **single page surveys**.
 
-    Submits a new response.  Attach response data to the request body in the form ``<question_id>=<response>``, e.g.: ::
+    Submits a new response.  Send a post request as *application/json* with a dictionary of question ids and response values.
 
-    &5yEXFv1Bob=hello%20world&zIthHJ9tvZ=0&DiBzfaXB6b_0=1&DiBzfaXB6b_0=5
+    You will get a ``{success:true, id:response_id}`` response if your request was successful.
 
-    You will get a ``succes:true`` response if your request was successful.
+    If there is an error, the sever will return a **status code 500** with JSON:
 
-    If there is an error , the sever will return a **status code 500** with a JSON body:
+    Example: ::
 
-    :query code: *invalid_request* | *survey_error*.
-    :query description: A list of ``[question_id, error_message]``.
+	import requests, json
+	uri = 'https://app.fluidsurveys.com/api/v2/survey/55023/responses/'
+	API_KEY = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+	PASSWORD = 'password'
+	headers = {'Content-Type': 'application/json'}
+	payload = {'DiBzfaXB6b': 3}
+	r = requests.post(uri,data=json.dumps(payload), 
+		headers=headers, auth=(API_KEY,PASSWORD))
+	response = r.content	
 
     Sample response: ::
 
@@ -113,6 +120,11 @@ Submitting a new response
 	                  ["5yEXFv1Bob", "An answer to this question is required."]
 	                 ]
 	}
+
+    You can also send a standard *application/x-www-form-urlencoded* POST request.  e.g. ::
+
+	5yEXFv1Bob=hello%20world&zIthHJ9tvZ=0&DiBzfaXB6b=1
+
 
 Deleting responses
 ``````````````````
