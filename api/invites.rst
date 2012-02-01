@@ -361,4 +361,4 @@ Source
 ``````
 	Download the source file:
 	
-	`Python <https://raw.github.com/chideit/fluidsurveys-docs/master/samples/email_contact/email_contact.py>`_  `PHP <http://raw.github.com/chideit/fluidsurveys-docs/master/samples/email_contact/email_contact.php>`_
+	`Python <https://raw.github.com/chideit/fluidsurveys-docs/master/samples/email_contact/email_contact.py>`_  `PHP <https://raw.github.com/chideit/fluidsurveys-docs/master/samples/email_contact/email_contact.php>`_
