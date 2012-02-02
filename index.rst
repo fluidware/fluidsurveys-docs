@@ -27,4 +27,4 @@ through a web-based API.
 	api/authentication
 	api/surveys
 	api/invites
-	api/tutorial
+..	api/tutorial
