@@ -210,7 +210,7 @@ Similar to showing a survey, *showResponses* takes the data we stored from our p
 Summary
 ```````
 
-We have shown you how to set up a simple proxy that you can use to forward GET requests to the FluidSurveys API and back to your website.  Check back soon for Part II were we get interactive and start ``POST``ing some data to the API
+We have shown you how to set up a simple proxy that you can use to forward GET requests to the FluidSurveys API and back to your website.  Check back soon for Part II were we get interactive and start ``POST``-ing some data to the API
 
 In the meantime be sure to checkout the `documentation <http://docs.fluidsurveys.com>`_ for more details and examples.
 
