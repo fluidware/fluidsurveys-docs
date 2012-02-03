@@ -215,4 +215,5 @@ We have shown you how to set up a simple proxy that you can use to forward GET r
 
 In the meantime be sure to checkout the `documentation <http://docs.fluidsurveys.com>`_ for more details and examples.
 
- 
+View the source on `Github <https://github.com/chideit/fluidsurveys-docs/tree/master/samples/tutorial/part1>`_
+
