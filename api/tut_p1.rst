@@ -44,11 +44,11 @@ Now we just need some code to call the function:
 		echo GET($_GET['uri']);
 	}
 
-If the proxy receives a `GET` request it sends that request to the API.
+If the proxy receives a `GET` request it sends calls the *GET* function to forward the request to the API.
 
 Creating our Web App
 ````````````````````
-For the first parts of this tutorial we are going to use plain the most plain HTML possible. Eventually, in a later part of the tutorial we will enhance this with a mobile framework.  We also have to javascript files, *functions.js* to hold all our functions and *script.js* as well as the latest version of jQuery.
+For the first parts of this tutorial we are going to use plain HTML and barely any CSS.  Eventually, in a later part of the tutorial we will enhance this with a mobile framework.  We also have two javascript files, *functions.js* to hold all our functions and *script.js*, as well as the latest version of jQuery.
 
 .. code-block:: html
 
@@ -65,7 +65,7 @@ For the first parts of this tutorial we are going to use plain the most plain HT
 	</head>
 	<body>
 		<h1>My Surveys</h1>
-		<div id="content">		
+		<div id="content">
 			<ul></ul>
 		</div>
 	</body>	
@@ -79,7 +79,7 @@ Now that we have a proxy to forward our requests to the API, we need something t
 .. code-block:: javascript
 
 	function callAPI(type,uri,callback){
-		var proxy = 'http://www.yourdomain.com/proxy/proxy.php?uri=';
+		var proxy = 'http://www.yourdomain.com/proxy.php?uri=';
 		var j = $.ajax({
 		url: proxy+uri,
 			type: type,
@@ -90,7 +90,6 @@ Now that we have a proxy to forward our requests to the API, we need something t
 	}
 
 Our function, aptly named callAPI accepts three parameters.  The type of request it's going to make ('GET'), the uri that it is requesting, and a callback function to execute when it receives a response.  Since we are expecting all our responses to be JSON we parse the response into an object before passing it to the callback function.
-
 
 In *script.js* we will make out first API call when the document is ready and get a list of our surveys.
 
@@ -121,7 +120,7 @@ In *script.js* we will make out first API call when the document is ready and ge
 		});
 	}); //end of document ready.
 
-We loop through the surveys we get back (stored in *data.surveys*) and save them in a object *SURVEYS* for later use.  We then populate the HTML with the name of each survey.  We also delegate the survey links to the showSurvey function.
+We loop through the surveys we get back (found in *data.surveys*) and save them in a object *SURVEYS* for later use.  We then populate the HTML with the name of each survey.  We also delegate the survey links to the showSurvey function.
 
 Show Survey
 ```````````
