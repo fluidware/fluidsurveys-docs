@@ -91,7 +91,7 @@ Submitting a new response
 
 .. http:post:: /api/v2/surveys/:id/responses/
 
-    *Note:* Submitting responses currently only works on **single page surveys**.
+    *Note:* Submitting responses currently only works on single page surveys.
 
     Submits a new response.  Send a post request as *application/json* with a dictionary of question ids and response values.
 
@@ -106,7 +106,7 @@ Submitting a new response
 	API_KEY = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 	PASSWORD = 'password'
 	headers = {'Content-Type': 'application/json'}
-	payload = {'DiBzfaXB6b': 3}
+	payload = {'DiBzfaXB6b': '3'}	#must post strings
 	r = requests.post(uri,data=json.dumps(payload), 
 		headers=headers, auth=(API_KEY,PASSWORD))
 	response = r.content	
