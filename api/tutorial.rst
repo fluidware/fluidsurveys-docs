@@ -1,6 +1,6 @@
 Tutorial
 ========
-This tutorial will be broken into a series of smaller, digestible, mini-pieces will guide you step by step through integrating the FluidSurveys API into your application or website.
+This tutorial will be broken into a series of smaller, digestible, mini-pieces which will help guide you step by step through integrating the FluidSurveys API into your application or website.
 
 Introduction
 ````````````
@@ -18,14 +18,14 @@ The app will be hosted on our own domain.  Because of security concerns and limi
 Before You Start
 ````````````````
 
-You should be comfortable with the following before you being:
+You should be comfortable with the following before you begin:
 
 * having your own hosting solution (that can run PHP or your language of choice)
 * knowledge of HTML5/CSS
 * strong knowledge of Javascript and jQuery
 * A FluidSurveys account and API key
 
-It would be nice if we could use our web app while we are mobile so in Part III we will also be using jQueryMobile to enhance our web app so make sure you keep the `jQuery Mobile Docs <http://jquerymobile.com/demos/1.0.1/>`_ handy for reference too.
+It would be nice if we could use our web app while we are mobile, so in Part III we will also be using jQueryMobile to enhance our web app.  Make sure you keep the `jQuery Mobile Docs <http://jquerymobile.com/demos/1.0.1/>`_ handy for reference too.
 
 Part I: GET the Basics
 ``````````````````````

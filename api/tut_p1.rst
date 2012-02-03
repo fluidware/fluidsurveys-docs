@@ -8,7 +8,7 @@ In this part of the tutorial we will show you how to set up a proxy between the 
 Building a Proxy
 ````````````````
 
-For Part I our proxy needs only needs to be able to `GET`. In Part II we will need to add the ability to `POST`.
+For Part I our proxy only needs to be able to `GET`. In Part II we will need to add the ability to `POST`.
 
 This function takes a *url* and uses cURL to GET the result.  Most of it is just setting up the cURL options.  See the `php docs <http://php.net/manual/en/book.curl.php>`_ for more info.  It simply returns the unmodified response back to our app.  We will put this in a file called *proxy.php*.
 
