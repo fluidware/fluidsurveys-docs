@@ -64,7 +64,7 @@ Getting survey responses
     format.
 
     :query offset: response pagination offset (defaults to 0).
-    :query limit: maximum number of results to return (defaults to 10).
+    :query limit: maximum number of results to return (defaults to 20 max is 100).
 
     Sample response: ::
 
