@@ -193,7 +193,7 @@ In order to create an email we POST our message data to `/emails/?survey=:survey
 		// email, once this is done we attach our contact list, and once that is done
 		// we send the email
 		callAPI('POST',base+'/emails/?survey='+SURVEY,'{"message":"Hello Friends! 
-			[Invite Link]", "sender":"Steve <steve@speg.com>", "subject": 
+			[Invite Link]", "sender":"John <johndoe@example.com>", "subject": 
 			"Hello World"}', function(email){
 			//once the email has been created, we add the contactlist to the email
 			callAPI('POST', email.recipients_uri, {'contact_list': contactlist}, 
@@ -210,6 +210,6 @@ In order to create an email we POST our message data to `/emails/?survey=:survey
 		});
 	}
 
-If all goes well you should see an email in your Reminders/History that is schedules to go out shortly to your contacts on the chosen contact list!
+We build the email by passing in a set of values for the subject, sender, and email.  You might want to collect these from inputs that the user has filled in.  Be sure to include the string `[Invite Link]` in the message field or else it won't work!  This is replaced with the URL to the survey when the email gets sent. If all goes well you should see an email in your Reminders/History that is schedules to go out shortly to your contacts on the chosen contact list!
 
 View the source on `Github <https://github.com/chideit/fluidsurveys-docs/tree/master/samples/tutorial/part2>`_
