@@ -26,6 +26,27 @@ Getting a list of surveys
 	  }]
 	}
 
+
+Survey Status
+`````````````
+
+.. http:get:: /api/v2/surveys/:id/status/
+
+	Returns a JSON object with status either "live" or "closed".
+	
+    Sample response: ::
+
+	{
+		"status" : "live"
+	}
+
+.. http:post:: /api/v2/surveys/:id/status/
+
+	Toggles the survey status from *closed* to *live* and vice versa.
+	Optionally, you can pass a switch parameter with the value `closed` or `live` to set it to a specific status.
+	
+.. http:post:: /api/v2/surveys/:id/status/?switch=closed
+
 Getting survey details
 ``````````````````````
 

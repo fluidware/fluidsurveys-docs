@@ -27,9 +27,17 @@ You should be comfortable with the following before you begin:
 
 It would be nice if we could use our web app while we are mobile, so in Part III we will also be using jQueryMobile to enhance our web app.  Make sure you keep the `jQuery Mobile Docs <http://jquerymobile.com/demos/1.0.1/>`_ handy for reference too.
 
+**DISCLAIMER:**
+	This tutorial is only meant to be a simple example to show you how to send and retrieve data from the FluidSurveys API.  We sacrifice everything but the bare essentials to show how to interact with the API in the simplest form.  If you are using the API in a production app please be sure to secure, validate, and follow best practices.
+
 Part I: GET the Basics
 ``````````````````````
 
 In :ref:`tutorial-one` - we set up a proxy to GET surveys and responses from the FluidSurveys API.
+
+Part II: POST-IT
+````````````````
+
+In :ref:`tutorial-two` - we get our contact lists, create an email and send it to a contact list!
 
 

@@ -32,7 +32,7 @@ Simarily for GET:
 		curl_setopt($curl, CURLOPT_URL, $url); 
 		$data = curl_exec($curl);
 		curl_close($curl); 
-		return $data;//json_decode($data,true);
+		return $data;
 	}
 
 Now we just need some code to call the function:
@@ -216,3 +216,4 @@ In the meantime be sure to checkout the `documentation <http://docs.fluidsurveys
 
 View the source on `Github <https://github.com/chideit/fluidsurveys-docs/tree/master/samples/tutorial/part1>`_
 
+In :ref:`tutorial-two` - we get our contact lists, create an email and send it to a contact list!
