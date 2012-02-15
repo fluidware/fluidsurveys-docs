@@ -91,7 +91,7 @@ Getting survey responses
 
 .. http:get:: /api/v2/surveys/:id/responses/?filter=myfilter
 
-    Filters are created from the web interface and are on a **per-survey basis**.  You may also use one of the pre-defined filters: *completed*, *invite_emails*, or *invites_codes*.
+    Filters are created from the web interface and are on a **per-survey basis**.  You may also use one of the pre-defined filters: *completed*, *invite_emails*, or *invite_codes*.
 
 
     Sample response: ::
