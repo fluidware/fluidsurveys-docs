@@ -52,7 +52,7 @@ Getting survey details
 
 .. http:get:: /api/v2/surveys/:id/
 
-    Returns details about the specified survey. This method returns data in
+    Returns summary details about the specified survey. This method returns data in
     :mimetype:`application/json` format.
 
     Sample response: ::
@@ -73,6 +73,12 @@ Getting survey details
 	    }
 	  }
 	}
+	
+	You may also send a GET parameter called `structure` to receive the entire survey object.
+	
+.. http:get:: /api/v2/surveys/:id/?structure
+
+    This may be useful if you require advanced information such as if a question is required or not. 
 
 Getting survey responses
 ````````````````````````
