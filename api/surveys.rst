@@ -74,7 +74,7 @@ Getting survey details
 	  }
 	}
 	
-	You may also send a GET parameter called `structure` to receive the entire survey object.
+You may also send a GET parameter called `structure` to receive the entire survey object.
 	
 .. http:get:: /api/v2/surveys/:id/?structure
 
