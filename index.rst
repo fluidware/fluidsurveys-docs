@@ -36,3 +36,4 @@ Many of the features provided by FluidSurveys are also accessible through a web-
 	api/authentication
 	api/surveys
 	api/invites
+	api/tutorial
