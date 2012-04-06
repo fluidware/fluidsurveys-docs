@@ -1,3 +1,5 @@
+.. _Advanced Features:
+
 Advanced Survey Features
 ------------------------
 

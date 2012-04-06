@@ -1,3 +1,5 @@
+.. _Publish:
+
 Publish
 =======
 

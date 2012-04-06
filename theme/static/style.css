@@ -32,6 +32,10 @@ h2, h3 {
 	padding: 0.7em 0 0.8em 0;
 }
 
+a:link { color: #226FC2; text-decoration: none; border-bottom: 1px dotted #999; }
+a:hover { border-bottom: 1px solid #999; }
+a:visited { color: #444; }
+
 .top-bar .logo a {
 	font-family: "open sans", sans-serif;
 	font-size: 1.1em;
@@ -67,6 +71,7 @@ h2, h3 {
 
 .align-right {
 	padding: 0 0 10px 10px;
+	display: block;
 	float: right;
 }
 
@@ -149,11 +154,16 @@ dd {
 	margin-left: 1.5em;
 }
 
-.highlight {
-	margin-left: -1.5em;
+div.highlight {
+    background-color: white;
+}
+
+dt:target, .highlight {
+    background: #FAF3E8;
 }
 
 pre {
+	background: #D9E8F7;
 	padding: 1em 2em;
 	line-height: 1.5em;
 }
@@ -167,7 +177,17 @@ div.admonition {
 	border-bottom: 1px solid #ccc;
 }
 
-div.admonition tt.xref, div.admonition a tt {
+div.admonition.warning {
+	border: 1px solid;
+	background-color: #FEEFD0;
+}
+
+div.admonition.tip {
+	border: 1px solid;
+	background-color: #BDE5F8;
+}
+
+div.admonition tt.xref, div.admonition a tst {
 	border-bottom: 1px solid #fafafa;
 }
 
@@ -214,6 +234,10 @@ p.admonition-title:after {
     content: ":";
 }
 
+p.caption {
+	text-align: center;
+}
+
 pre, tt {
     font-family: 'Consolas', 'Menlo', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
     font-size: 0.9em;
@@ -232,17 +256,49 @@ tt.descname {
 }
 
 img.screenshot {
-    -moz-box-shadow: 2px 2px 4px #eee;
-    -webkit-box-shadow: 2px 2px 4px #eee;
-    box-shadow: 2px 2px 4px #eee;
+    -moz-box-shadow: 	-4px 11px 21px #ccc;
+    -webkit-box-shadow: -4px 11px 21px #ccc;
+	box-shadow:			-4px 11px 21px #ccc;
 }
 
-table.docutils {
-    border: 1px solid #888;
-    -moz-box-shadow: 2px 2px 4px #eee;
-    -webkit-box-shadow: 2px 2px 4px #eee;
-    box-shadow: 2px 2px 4px #eee;
+img.screenshot.align-right {
+	margin: 15px 20px;
 }
+
+img.align-center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table {
+	border: none; margin: 20px 0;
+}
+
+table tr, td {
+	border: none; 
+	border-bottom: 1px solid #eee;
+}
+
+table td {
+	padding: 5px;
+}
+
+table th {
+	border: none;
+	background-color: #E6E6FA;
+}
+
+table.docutils caption {
+	line-height: 35px;
+
+}
+/*
+table.docutils {
+	border: none; margin: 20px 0;
+	border-bottom: 1px solid #eee;
+}
+
 
 table.docutils td, table.docutils th {
     border: 1px solid #888;
@@ -284,4 +340,38 @@ table.footnote td.label {
 
 table.footnote td {
     padding: 0.3em 0.5em;
+}
+*/
+
+dl {
+    margin: 0;
+    padding: 0;
+}
+
+dl dd {
+    margin-left: 30px;
+}
+
+ul, ol {
+	margin: 0 0 10px 20px;
+	padding: 0;
+}
+
+div.toctree-wrapper.compound ul {
+	margin: 0 0 10px 40px;
+}
+
+ul.simple {
+	margin: 10px 0 10px 40px;
+	padding: 0;
+}
+
+pre {
+	overflow: auto;
+	overflow-y: hidden;
+}
+
+dl pre, blockquote pre, li pre {
+    margin-left: -60px;
+    padding-left: 60px;
 }
