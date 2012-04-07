@@ -19,8 +19,7 @@ The survey language option essentially changes the default messages provided by 
 	
 	1. Navitation Buttons
 	2. Yes/No Question Type
-	2. Validation error messages
-	3. 
+	3. Validation error messages
 
 
 
