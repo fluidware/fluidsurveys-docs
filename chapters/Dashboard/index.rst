@@ -19,10 +19,10 @@ Surveys Dashboard
 The first screen you'll see when logging into FluidSurveys will be the Surveys Dashboard. In the beginning, there will be no surveys in your account.
 
 .. figure:: ../../resources/dashboard/surveys_dashboard_blank.png
-:align: center
-:class: screenshot
-:alt: Blank Dashboard
-:scale: 70%
+	:align: center
+	:class: screenshot
+	:alt: Blank Dashboard
+	:scale: 70%
 
 	*Figure 3.1* Survey dashboard screen with no Surveys
 
