@@ -1,3 +1,5 @@
+.. _API:
+
 Custom Authentication
 =====================
 
