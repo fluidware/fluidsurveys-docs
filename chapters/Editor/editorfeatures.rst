@@ -403,6 +403,43 @@ Question morphing allows you to quickly transform one question type into another
 Bulk
 ^^^^
 
+In the case that you have a long list of choices or variables, or a list that you’ll be re-using often throughout your many surveys, it may be useful to use the bulk feature. The bulk editor automatically converts lists into choices/variables/rows, while giving you the option of saving them for use on any future question.
+
+.. figure:: ../../resources/editor/bulk_editor.png
+	:align: center
+	:class: screenshot
+	:alt: Bulk Editor
+	:scale: 70%
+
+	*Figure 5.11* Bulk Editor in action
+
+.. list-table::
+	:widths: 30 80
+	:header-rows: 1
+
+	* - Section
+	  - Description
+	* - 1. Load Preset
+	  - Select from 1 of 23 available presets
+	* - 2. Save a Preset
+	  - If a preset is not available, you can create one for later use
+	* - 3. Editor
+	  - 
+
+Additionally, you can also save custom bulk lists. To create a custom bulk list, click on the “Bulk” button when adding choices, variables, rows or columns to a question. 
+Once the dialog appears, write or paste your list into the text field. Make sure that each item in the list is on a separate line. Then, enter a name for your list and click apply.
+
+... figure:: ../../resources/editor/save_preset_in_bulk_editor.png
+	:align: center
+	:class: screenshot
+	:alt: Bulk Editor
+	:scale: 70%	
+
+.. warning::
+
+	
+
+
 Templates (Save, Apply)
 ^^^^^^^^^^^^^^^^^^^^^^^
 
