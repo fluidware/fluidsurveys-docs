@@ -256,9 +256,9 @@ tt.descname {
 }
 
 img.screenshot {
-    -moz-box-shadow: 	-4px 11px 21px #ccc;
+    -moz-box-shadow: -4px 11px 21px #ccc;
     -webkit-box-shadow: -4px 11px 21px #ccc;
-	box-shadow:			-4px 11px 21px #ccc;
+    box-shadow:	-4px 11px 21px #ccc;
 }
 
 img.screenshot.align-right {
@@ -293,55 +293,6 @@ table.docutils caption {
 	line-height: 35px;
 
 }
-/*
-table.docutils {
-	border: none; margin: 20px 0;
-	border-bottom: 1px solid #eee;
-}
-
-
-table.docutils td, table.docutils th {
-    border: 1px solid #888;
-    padding: 0.25em 0.7em;
-}
-
-table.field-list, table.footnote {
-    border: none;
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-
-table.footnote {
-    margin: 15px 0;
-    width: 100%;
-    border: 1px solid #eee;
-    background: #fdfdfd;
-    font-size: 0.9em;
-}
-
-table.footnote + table.footnote {
-    margin-top: -15px;
-    border-top: none;
-}
-
-table.field-list th {
-    padding: 0 0.8em 0 0;
-}
-
-table.field-list td {
-    padding: 0;
-}
-
-table.footnote td.label {
-    width: 0px;
-    padding: 0.3em 0 0.3em 0.5em;
-}
-
-table.footnote td {
-    padding: 0.3em 0.5em;
-}
-*/
 
 dl {
     margin: 0;
