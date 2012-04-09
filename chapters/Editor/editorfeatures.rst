@@ -357,7 +357,7 @@ The concept is really simple. The Editor is divided into two sides. The left sid
 
 .. figure:: ../../resources/editor/drag_and_drop.png
 	:align: center
-	:class: screenshot:
+	:class: screenshot
 	:alt: Drag and drop from left to right
 	:scale: 70%	
 
@@ -366,11 +366,79 @@ The concept is really simple. The Editor is divided into two sides. The left sid
 Add questions (Double click)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+If dragging-and-dropping a question into the Editor isn't your style, it is possible to double-click on a question type. Double-clicking may be more advantageous when the page has reached the point where scrolling up and down requires a few strides on the mouse wheel. To add a question type in this fashion, simply hover over the question you'd like, eg., Yes/No, and double click the Left Mouse button.
+
+.. figure:: ../../resources/editor/double_click_add.png
+	:align: center
+	:class: screenshot
+	:alt: Double click a question type
+	:scale: 70%	
+
+	*Figure 5.10* Double Click to add a question	
+
 Question Morphing
 ^^^^^^^^^^^^^^^^^
 
+Question morphing allows you to quickly transform one question type into another without having to re-enter all of the question information, or re-create the question.
+
+.. figure:: ../../resources/editor/morph_question.png
+	:align: center
+	:class: screenshot
+	:alt: Question morphing
+	:scale: 70%
+
+	*Figure 5.11* Select a new question type
+
+.. tip:: 
+
+	To change from a Section Heading to a Yes/No question type, follow these easy steps.
+
+		1. Right-click the question you would like to morph
+		2. Select "Change Question Type"
+		3. In the dropdown, select "Yes/No"
+		4. Click [Morph Field]
+
+	This method of question morphing can be applied to any question type. Or, another method of morphing a question is to click the question, and on the right-hand side select "Yes/No" under the dropdown "Type"
+
 Bulk
 ^^^^
+
+In the case that you have a long list of choices or variables, or a list that you’ll be re-using often throughout your many surveys, it may be useful to use the bulk feature. The bulk editor automatically converts lists into choices/variables/rows, while giving you the option of saving them for use on any future question.
+
+.. figure:: ../../resources/editor/bulk_editor.png
+	:align: center
+	:class: screenshot
+	:alt: Bulk Editor
+	:scale: 70%
+
+	*Figure 5.11* Bulk Editor in action
+
+.. list-table::
+	:widths: 30 80
+	:header-rows: 1
+
+	* - Section
+	  - Description
+	* - 1. Load Preset
+	  - Select from 1 of 23 available presets
+	* - 2. Save a Preset
+	  - If a preset is not available, you can create one for later use
+	* - 3. Editor
+	  - 
+
+Additionally, you can also save custom bulk lists. To create a custom bulk list, click on the “Bulk” button when adding choices, variables, rows or columns to a question. 
+Once the dialog appears, write or paste your list into the text field. Make sure that each item in the list is on a separate line. Then, enter a name for your list and click apply.
+
+... figure:: ../../resources/editor/save_preset_in_bulk_editor.png
+	:align: center
+	:class: screenshot
+	:alt: Bulk Editor
+	:scale: 70%	
+
+.. warning::
+
+	
+
 
 Templates (Save, Apply)
 ^^^^^^^^^^^^^^^^^^^^^^^
