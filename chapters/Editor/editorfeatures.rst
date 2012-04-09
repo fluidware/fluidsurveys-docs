@@ -424,27 +424,95 @@ In the case that you have a long list of choices or variables, or a list that yo
 	* - 2. Save a Preset
 	  - If a preset is not available, you can create one for later use
 	* - 3. Editor
-	  - 
+	  - Even though a preset was selected, you can still edit it after the fact. However, any changes made will not be saved unless it is saved as a custom preset
 
-Additionally, you can also save custom bulk lists. To create a custom bulk list, click on the “Bulk” button when adding choices, variables, rows or columns to a question. 
-Once the dialog appears, write or paste your list into the text field. Make sure that each item in the list is on a separate line. Then, enter a name for your list and click apply.
+Additionally, you can also save custom bulk lists. To create a custom bulk list, click on the “Bulk” button when adding choices, variables, rows or columns to a question. Once the dialog appears, write or paste your list into the text field. Make sure that each item in the list is on a separate line. Then, enter a name for your list and click apply.
 
-... figure:: ../../resources/editor/save_preset_in_bulk_editor.png
+.. figure:: ../../resources/editor/save_preset_in_bulk_editor.png
 	:align: center
 	:class: screenshot
 	:alt: Bulk Editor
-	:scale: 70%	
+	:scale: 70%
+
+	*Figure 5.12* Save a custom preset
+
+.. list-table::
+	:widths: 30 70
+	:header-rows: 1
+
+	* - Section
+	  - Description
+	* - 1. Custom Preset
+	  - Enter the name of the present you'd like to use
+	* - 2. Preset Choices
+	  - Information typed into here will be saved in the custom preset. Note that, despite the fact a preset was selected, you can still alte it after the fact.
+
+When you return to the Bulk Editor, the preset, "Blue Jazz" will be available as a selectable option.
 
 .. warning::
 
-	
+	When dealing with the Bulk Editor in a multi-language survey, both sides of the Editor must match. In many cases, you may have an [Enter] on one side which is why you are unable to save the preset
+
+	.. image:: ../../resources/editor/multi_language_bulk.png
+		:align: center
+		:class: screenshot
+		:alt: Save a Preset
+		:scale: 70%	
 
 
-Templates (Save, Apply)
-^^^^^^^^^^^^^^^^^^^^^^^
+Template (Save)
+^^^^^^^^^^^^^^^
+
+It’s possible to create templates from existing surveys, allowing them to be re-used in the future.
+
+To do so, open the survey from which you’d like to create the template, and click on the “Survey” tab in your editor. Then, select “Save Template”. All of the questions and branching conditions will be saved in the template.
+
+.. figure:: ../../resources/editor/save_a_template.png
+	:align: center
+	:class: screenshot
+	:alt: Save Template
+	:scale: 70%	
+
+	*Figure 5.13* Save a template process	
+
+The next time you create a survey, you’ll have the option of using the template.
+
+.. note::
+
+	If you’re using a multi-user account, you can create templates and share them with others.
+
+Template (Apply)
+^^^^^^^^^^^^^^^^
+
+It’s possible to apply previosuly saved templates into existing surveys.
+
+To do so, open the survey from which you’d like to apply the template, and click on the “Survey” tab in your editor. Then, select "Apply Template”. In the pop-up, input a reconizable Title, a brief description, and click [Save]. All of the questions and branching logic will be applied to the template.
+
+.. figure:: ../../resources/editor/apply_a_template.png
+	:align: center
+	:class: screenshot
+	:alt: Apply Template
+	:scale: 70%
+
+	*Figure 5.14* Apply a template process
+
+.. warning::
+
+	If you apply a template to a survey, it will replace its contents with the templates. Be careful when applying a template to an already populated survey.
 
 Show Branching/Skip Info
 ^^^^^^^^^^^^^^^^^^^^^^^^
+
+By default, respondents don’t know if there is branching or skipping information on a page. Enabling this option does the opposite, and informs the respondent that there is branching logic present. 
+
+
+.. figure:: ../../resources/editor/show_skipping_branching_info.png
+	:align: center
+	:class: screenshot
+	:alt: Show Branching/Skipping Info
+	:scale: 70%
+
+	*Figure 5.15* Enabling this will place any branching and skipping at the top of the survey page.
 
 Visual Editor
 ^^^^^^^^^^^^^
@@ -459,7 +527,7 @@ To access the Visual Editor, click on a text area in the floating box on the lef
 	:alt: Visual Editor
 	:scale: 70%	
 
-	*Figure 5.9* The visual editor 
+	*Figure 5.9* The visual editor with "Section Heading" in the question title
 
 .. list-table::
 	:widths: 30 80
@@ -467,8 +535,12 @@ To access the Visual Editor, click on a text area in the floating box on the lef
 
 	* - Section
 	  - Description
-	* - 1. 
-	  - 
+	* - 1. Text Alterations
+	  - Make any changes to font specific sections, such as bold, italicize, center a block of text, etc.
+	* - 2. Content Alterations
+	  - Input text directly from Microsoft Word and retain its style, insert a web link, or a video straight from YouTube
+	* - 3. Style Alterations
+	  - Adjust the font size, font type, styles, or edit the source directly
 
 .. note::
 
