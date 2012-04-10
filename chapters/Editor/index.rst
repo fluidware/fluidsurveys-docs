@@ -17,6 +17,10 @@ Therefore, this chapter will teach you how to:
 
 	How many question types does FluidSurveys offer that gives you the flexibility you need to collect information? *Many Dozens*
 
+.. error:: 
+
+	If a survey has already begun its response collecting phase, then any changes made to variables, choices, or deleting questions will result in a loss of collected data.
+
 .. toctree::
 	:maxdepth: 2
 

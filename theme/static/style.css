@@ -188,6 +188,11 @@ div.admonition.tip {
 	background-color: #BDE5F8;
 }
 
+div.admonition.error {
+	border: 1px solid;
+	background-color: #FFBABA;
+}
+
 div.admonition tt.xref, div.admonition a tst {
 	border-bottom: 1px solid #fafafa;
 }
