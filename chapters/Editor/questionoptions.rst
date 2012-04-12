@@ -3,6 +3,14 @@
 Question Options
 ----------------
 
+This chapter will teach you how to:
+
+* Randomize questions on a page
+* Set the border of a question
+* Change the default Scores for Choices and Variables
+* Enable text Validation input
+* Learn the specifics of the Editors question types options
+
 Randomize
 ^^^^^^^^^
 
@@ -103,7 +111,7 @@ Side-by-side allows you to place 2 questions beside each other in separate colum
 Append to Previous
 ^^^^^^^^^^^^^^^^^^
 
-The song *"One is The Loneliest Number"* by **Three Dog Night** is no longer relevant with the Append to Previous option. In some cases, you would like to ask a respondent a sub-question that relates to the previous question. But, you would like to use a separate question type. Append to Previous allows for you to fulfill those desires, and still maintain a cognitive styling pattern across your survey, by making it look as though 2 questions are really 1.
+The song *"One is The Loneliest Number"* by **Three Dog Night** is no longer relevant with the Append to Previous option. In some cases, you would like to ask a respondent a sub-question that relates to the previous question. But, you would like to use a separate question type. Append to Previous allows for you to fulfill those desires, and still maintain a cognitive styling pattern across your survey, by making it look as though 3 questions are really 1.
 
 .. figure:: ../../resources/editor/append_to_previous.png
 	:align: center
@@ -173,14 +181,35 @@ There are 2 areas where the width plays a role in determining the overall aesthe
 Choices/Variables
 ^^^^^^^^^^^^^^^^^
 
-.. figure:: ../../resources/editor/.png
+Choices and Variables are the answers themselves to a close-ended question. Certain question types have specific options within the choices/variables that allow for a deeper integration of your desired goal and effect. For instance, 
+
+.. figure:: ../../resources/editor/choices_and_variables.png
 	:align: center
 	:scale: 70%
-	:alt: Column width
+	:alt: Chocies and Variables
 	:class: screenshot
 
-	*Figure 9.1* 
 
+.. list-table:: 
+	:widths: 30 70
+	:header-rows: 1
+
+	* - Option
+	  - Description
+	* - 1. Choices
+	  - 
+	* - 2. Variables
+	  - 
+	* - 3. Add
+	  -
+	* - 4. Score
+
+
+	*Figure 9.1* Choices and Variables for a Mulitple Choice Grid
+
+.. warning::
+
+	Removing a Choice/Variable on a Live survey WILL delete the information associated with that option. Do not delete any information on a Live survey without first consulting with on one of our experienced Technical Support Representatives. 
 
 Add Other Choice
 ^^^^^^^^^^^^^^^^
