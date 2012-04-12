@@ -14,6 +14,21 @@ In brief, the Score Display question type is essentially what it says, a score d
 
 	*Figure 5.1* Score Display Question Type
 
+.. list-table:: Display Options
+   :widths: 35 65
+   :header-rows: 1
+
+   * - Display Option
+     - Description
+   * - 1. 1st Column Size
+     - Adjusts the first columns width. By default, this option is 30%
+   * - 2. Display side-by-side
+     - Display side-by-side: This option allows for you to display the question type beside another question. By default, this option is disabled
+   * - 3. Append to previous question
+     - This question type will be appended to the question directly before it. By default, this option is disabled.
+   * - 4. Width
+     - You can adjust the width based on a percentage. By default, the value is 100%.
+
 Checkbox Grid
 ^^^^^^^^^^^^^
 
@@ -26,6 +41,34 @@ A Checkbox Grid allows for. Similar to other grids, you have the same types of o
 	:class: screenshot
 
 	*Figure 5.1* Checkbox Grid Question Type
+
+.. list-table:: Display Options
+   :widths: 35 65
+   :header-rows: 1
+
+   * - Display Option
+     - Description
+   * - 1. 1st Column Size
+     - Adjusts the first columns width. By default, this option is 30%
+   * - 2. Display side-by-side
+     - Display side-by-side: This option allows for you to display the question type beside another question. By default, this option is disabled
+   * - 3. Append to previous question
+     - This question type will be appended to the question directly before it. By default, this option is disabled.
+   * - 4. Width
+     - You can adjust the width based on a percentage. By default, the value is 100%.
+
+.. list-table:: Options
+   :widths: 35 65
+   :header-rows: 1
+
+   * - Display Option
+     - Description
+   * - 1. Randomize Variables
+     - Selecting this option will randomize the choices within the Checkbox question type on each survey refresh. By default, this option is disabled
+   * - 2. Alphabetize Variables
+     - Choices within your Checkbox will follow alphabetization (A-Z). By default, this option is disabled
+   * - 3. Force Unique
+     - Force a choice in a column to remain unique. No two options in a column can be identical. By default, this option is disabled.
 
 N-atrix
 ^^^^^^^
@@ -40,6 +83,21 @@ The N-Atrix Question type allows for any question type to exist on any given row
 
 	*Figure 5.1* N-Atrix Question Type
 
+.. list-table:: Display Options
+   :widths: 35 65
+   :header-rows: 1
+
+   * - Display Option
+     - Description
+   * - 1. 1st Column Size
+     - Adjusts the first columns width. By default, this option is 30%
+   * - 2. Display side-by-side
+     - Display side-by-side: This option allows for you to display the question type beside another question. By default, this option is disabled
+   * - 3. Append to previous question
+     - This question type will be appended to the question directly before it. By default, this option is disabled.
+   * - 4. Width
+     - You can adjust the width based on a percentage. By default, the value is 100%.
+
 Drill Down
 ^^^^^^^^^^
 
@@ -53,6 +111,34 @@ Drill Down questions allow respondents to select an answer by narrowing down the
 
 	*Figure 5.1* Drill Down Question Type
 
+.. list-table:: Display Options
+   :widths: 35 65
+   :header-rows: 1
+
+   * - Display Option
+     - Description
+   * - 1. Appearance
+     - By default, Default (Vertical) is selected
+   * - 2. Randomize choices
+     - Selecting this option will randomize the choices within the Checkbox question type on each survey refresh. By default, this option is disabled
+   * - 3. Alphabetize choices
+     - Choices within your Checkbox will follow alphabetization (A-Z). By default, this option is disabled
+   * - 4. Display side-by-side
+     - Display side-by-side: This option allows for you to display the question type beside another question. By default, this option is disabled
+   * - 5. Append to previous question
+     - This question type will be appended to the question directly before it. By default, this option is disabled.
+   * - 6. Width
+     - You can adjust the width based on a percentage. By default, the value is 100%.
+
+.. list-table:: Options
+   :widths: 35 65
+   :header-rows: 1
+
+   * - Display Option
+     - Description
+   * - 1. Optional
+     - Unchecking this option forces the question to be answered when the user is filling out your survey. By default, this option is enabled
+
 3D Matrix
 ^^^^^^^^^
 
@@ -65,6 +151,44 @@ Similar to the N-Atrix question type, a 3D Matrix question can have different qu
 	:class: screenshot
 
 	*Figure 5.1* 3D Matrix Question Type
+
+.. list-table:: Display Options
+   :widths: 35 65
+   :header-rows: 1
+
+   * - Display Option
+     - Description
+   * - 1. Make First Column Static
+     - Forces the first column to always be present. By default, this option is disabled.
+   * - 2. 1st Column Size.
+     - Adjusts the first columns width. By default, this option is 30%
+   * - 3. Top left Label
+     - Attaches a label to the top left of the 3D Matrix. By default, this option is blank.
+   * - 4. Sum Label
+     - The label, Total, will reside beside numeric validation, if any, to indicate the Total. By default, this option is “Total”
+   * - 5. Display side-by-side.
+     - This option allows for you to display the question type beside another question as seen in the image to the left. By default, this option is disabled.
+   * - 6. Append to previous question
+     - The question is attached to the question which precedes it in the survey. By default, this option is disabled
+   * - 7. Width
+     - You can adjust the width based on a percentage. By default, the value is 100%.
+   * - 8. Show Borders
+     - Show borders around the question type. By default, this option is disabled.
+   * - 9. Alternate Background Color
+     - Each row will be an alternate color. By default, this option is disabled.
+
+.. list-table:: Options
+   :widths: 35 65
+   :header-rows: 1
+
+   * - Display Option
+     - Description
+   * - 1. Randomize Variables
+     - Selecting this option will randomize the choices within the Checkbox question type on each survey refresh. By default, this option is disabled
+   * - 2. Alphabetize Variables
+     - Choices within your Checkbox will follow alphabetization (A-Z). By default, this option is disabled
+   * - 3. Force Unique
+     - Force a choice in a column to remain unique. No two options in a column can be identical. By default, this option is disabled.
 
 Semantic Differential
 ^^^^^^^^^^^^^^^^^^^^^
@@ -81,6 +205,38 @@ This is a great question type to use if you want respondents to rank a specific,
 
 	*Figure 5.1* Semantic Differential Question Type
 
+.. list-table:: Display Options
+   :widths: 35 65
+   :header-rows: 1
+
+   * - Display Option
+     - Description
+   * - 1. 1st Column Size.
+     - Adjusts the first columns width. By default, this option is 30%
+   * - 2. Display side-by-side.
+     - This option allows for you to display the question type beside another question as seen in the image to the left. By default, this option is disabled.
+   * - 3. Append to previous question
+     - The question is attached to the question which precedes it in the survey. By default, this option is disabled
+   * - 4. Width
+     - You can adjust the width based on a percentage. By default, the value is 100%.
+   * - 5. Show Borders
+     - Show borders around the question type. By default, this option is disabled.
+   * - 6. Alternate Background Color
+     - Each row will be an alternate color. By default, this option is disabled.
+
+.. list-table:: Options
+   :widths: 35 65
+   :header-rows: 1
+
+   * - Display Option
+     - Description
+   * - 1. Randomize Variables
+     - Selecting this option will randomize the choices within the Checkbox question type on each survey refresh. By default, this option is disabled
+   * - 2. Alphabetize Variables
+     - Choices within your Checkbox will follow alphabetization (A-Z). By default, this option is disabled
+   * - 3. Force Unique
+     - Force a choice in a column to remain unique. No two options in a column can be identical. By default, this option is disabled.
+
 File Upload
 ^^^^^^^^^^^
 
@@ -95,6 +251,30 @@ In analytics, the survey administrator will have the option of viewing, or downl
 	:class: screenshot
 
 	*Figure 5.1* File Upload Question Type
+
+.. list-table:: Display Options
+   :widths: 35 65
+   :header-rows: 1
+
+   * - Display Option
+     - Description
+   * - 1. Display side-by-side.
+     - This option allows for you to display the question type beside another question as seen in the image to the left. By default, this option is disabled.
+   * - 2. Append to previous question
+     - The question is attached to the question which precedes it in the survey. By default, this option is disabled
+   * - 3. Width
+     - You can adjust the width based on a percentage. By default, the value is 100%.
+
+.. list-table:: Options
+   :widths: 35 65
+   :header-rows: 1
+
+   * - Display Option
+     - Description
+   * - 1. Randomize Variables
+     - Selecting this option will randomize the choices within the Checkbox question type on each survey refresh. By default, this option is disabled
+   * - 2. Upload to another server
+     - Selecting this option will allow for you to upload any files the user provides to an entirely different server, separate from FluidSurveys
 
 Net Promoter
 ^^^^^^^^^^^^
@@ -112,6 +292,30 @@ In Analytics, your Net Promoter Score is automatically calculated by taking the 
 	:class: screenshot
 
 	*Figure 5.1* Net Promoter Question Type
+
+.. list-table:: Display Options
+   :widths: 35 65
+   :header-rows: 1
+
+   * - Display Option
+     - Description
+   * - 1. Flip choice order
+     - Change the wording for the **Left Label** and **Right Label**
+   * - 2. Display side-by-side.
+     - This option allows for you to display the question type beside another question as seen in the image to the left. By default, this option is disabled.
+   * - 3. Append to previous question
+     - The question is attached to the question which precedes it in the survey. By default, this option is disabled
+   * - 4. Width
+     - You can adjust the width based on a percentage. By default, the value is 100%.
+
+.. list-table:: Options
+   :widths: 35 65
+   :header-rows: 1
+
+   * - Display Option
+     - Description
+   * - 1. Optional
+     - Unchecking this option forces the question to be answered when the user is filling out your survey. By default, this option is enabled
 
 Hidden Field
 ^^^^^^^^^^^^

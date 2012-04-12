@@ -21,6 +21,19 @@ Section Separators allow survey creators to include text within their survey wit
 
 	*Figure 6.1* Section Heading Question Type
 
+.. list-table:: Display Options
+   :widths: 35 65
+   :header-rows: 1
+
+   * - Display Option
+     - Description
+   * - 1. Display side-by-side
+     - This option allows for you to display the question type beside another question as seen in the image to the left. By default, this option is disabled.
+   * - 2. Append to previous question
+     - This question type will be appended to the question directly before it. By default, this option is disabled.
+   * - 3. Width
+     - You can adjust the width based on a percentage. By default, the value is 100%.
+
 .. note::
 
 	Despite being able to provide a Section Separator with a unique identifier, you cannot attach advanced logic branching rules to the question type.
@@ -47,6 +60,32 @@ Including multiple languages on your survey will automatically include the appro
 	:alt: Yes No French
 
 	*Figure 6.1* Yes/No Question Type in French
+
+.. list-table:: Display Options
+   :widths: 35 65
+   :header-rows: 1
+
+   * - Display Option
+     - Description
+   * - 1. Display side-by-side
+     - This option allows for you to display the question type beside another question as seen in the image to the left. By default, this option is disabled.
+   * - 2. Append to previous question
+     - This question type will be appended to the question directly before it. By default, this option is disabled.
+   * - 3. Width
+     - You can adjust the width based on a percentage. By default, the value is 100%.
+
+.. list-table:: Options
+   :widths: 35 65
+   :header-rows: 1
+
+   * - Display Option
+     - Description
+   * - 1. Optional
+     - This option allows for you to display the question type beside another question as seen in the image to the left. By default, this option is disabled.
+   * - 2. “Yes” skips to page
+     - This question type will be appended to the question directly before it. By default, this option is disabled.
+   * - 3. “No” skips to page
+     - Conversely, if the user selects “No” as an answer, then you can jump to a defined page. By default, this option is disabled
 
 .. note::
 
@@ -75,6 +114,34 @@ Enabling the Multiline option and indicating the number of columns can create th
 
 	*Figure 6.1* Text Response with 100 columns and 10 rows
 
+.. list-table:: Display Options
+   :widths: 35 65
+   :header-rows: 1
+
+   * - Display Option
+     - Description
+   * - 1. Multiline
+     - Allows for the text area to have multiple lines and columns, as seen in section 120.2. By default this option is disabled.
+   * - 2. Display side-by-side
+     - This option allows for you to display the question type beside another question as seen in the image to the left. By default, this option is disabled.
+   * - 3. Append to previous question
+     - This question type will be appended to the question directly before it. By default, this option is disabled.
+   * - 4. Width
+     - You can adjust the width based on a percentage. By default, the value is 100%.
+
+.. list-table:: Options
+   :widths: 35 65
+   :header-rows: 1
+
+   * - Display Option
+     - Description
+   * - 1. Optional
+     - This option allows for you to display the question type beside another question as seen in the image to the left. By default, this option is disabled.
+   * - 2. Validation
+     - Specific to the question. If you wish for the user to input an e-mail address, then selecting the appropriate form of validation will get those desired results. By default, this option is None 
+   * - 3. Initial Value
+     - Presents a default choice to the user. By default, this area is blank.
+
 Checkbox
 ^^^^^^^^
 
@@ -87,6 +154,39 @@ The checkbox question type is a multi-answer question, as in you can select more
 	:alt: Checkbox Question Type
 
 	*Figure 6.1* Checkbox Question Type
+
+.. list-table:: Display Options
+   :widths: 35 65
+   :header-rows: 1
+
+   * - Display Option
+     - Description
+   * - 1. Appearance
+     - By default, Default (Vertical) is selected.
+   * - 2. Columns
+     - Adjusting the amount of columns allows for By default, One column is selected.
+   * - 3. Display side-by-side
+     - Display side-by-side: This option allows for you to display the question type beside another question. By default, this option is disabled
+   * - 4. Append to previous question
+     - This question type will be appended to the question directly before it. By default, this option is disabled.
+   * - 5. Width
+     - You can adjust the width based on a percentage. By default, the value is 100%.
+
+.. list-table:: Options
+   :widths: 35 65
+   :header-rows: 1
+
+   * - Display Option
+     - Description
+   * - 1. Optional
+     - Unchecking this option forces the question to be answered when the user is filling out your survey. By default, this option is enabled
+   * - 2. Randomize choices
+     - Selecting this option will randomize the choices within the Checkbox question type on each survey refresh. By default, this option is disabled. 
+   * - 3. Alphabetize choices
+     - Choices within your Checkbox will follow alphabetization (A-Z). By default, this option is disabled
+   * - 4. Restrict number of selected choices
+     - Restrict the number of choices a user can select before the question is disabled. By default, this option is disabled
+
 
 Multiple Choice
 ^^^^^^^^^^^^^^^
@@ -101,6 +201,36 @@ The Multiple choice question type, commonly referred to as the single choice que
 
 	*Figure 6.1* Multiple Choice Question Type
 
+.. list-table:: Display Options
+   :widths: 35 65
+   :header-rows: 1
+
+   * - Display Option
+     - Description
+   * - 1. Appearance
+     - By default, Default (Vertical) is selected.
+   * - 2. Columns
+     - Adjusting the amount of columns allows for By default, One column is selected.
+   * - 3. Display side-by-side
+     - Display side-by-side: This option allows for you to display the question type beside another question. By default, this option is disabled
+   * - 4. Append to previous question
+     - This question type will be appended to the question directly before it. By default, this option is disabled.
+   * - 5. Width
+     - You can adjust the width based on a percentage. By default, the value is 100%.
+
+.. list-table:: Options
+   :widths: 35 65
+   :header-rows: 1
+
+   * - Display Option
+     - Description
+   * - 1. Optional
+     - Unchecking this option forces the question to be answered when the user is filling out your survey. By default, this option is enabled
+   * - 2. Randomize choices
+     - Selecting this option will randomize the choices within the Checkbox question type on each survey refresh. By default, this option is disabled. 
+   * - 3. Alphabetize choices
+     - Choices within your Checkbox will follow alphabetization (A-Z). By default, this option is disabled
+
 Dropdown
 ^^^^^^^^
 
@@ -113,6 +243,34 @@ The dropdown question type is exactly what the name entails; an answer found and
 	:alt: Dropdown Question Type
 
 	*Figure 6.1* Dropdown Question Type
+
+.. list-table:: Display Options
+   :widths: 35 65
+   :header-rows: 1
+
+   * - Display Option
+     - Description
+   * - 1. Display side-by-side
+     - Display side-by-side: This option allows for you to display the question type beside another question. By default, this option is disabled
+   * - 2. Append to previous question
+     - This question type will be appended to the question directly before it. By default, this option is disabled.
+   * - 3. Width
+     - You can adjust the width based on a percentage. By default, the value is 100%.
+
+.. list-table:: Options
+   :widths: 35 65
+   :header-rows: 1
+
+   * - Display Option
+     - Description
+   * - 1. Optional
+     - Unchecking this option forces the question to be answered when the user is filling out your survey. By default, this option is enabled
+   * - 2. Randomize choices
+     - Selecting this option will randomize the choices within the Checkbox question type on each survey refresh. By default, this option is disabled. 
+   * - 3. Alphabetize choices
+     - Choices within your Checkbox will follow alphabetization (A-Z). By default, this option is disabled
+   * - 4. Initial Value
+     - Specifies if the question will load with a choice. By default, this option is disabled
 
 Date/Time
 ^^^^^^^^^
@@ -137,6 +295,32 @@ The Date/Time can be customized to accepted either only:
 	* Day/Month 
 	* Month/Year
 
+.. list-table:: Display Options
+   :widths: 35 65
+   :header-rows: 1
+
+   * - Display Option
+     - Description
+   * - 1. Display side-by-side
+     - Display side-by-side: This option allows for you to display the question type beside another question. By default, this option is disabled
+   * - 2. Append to previous question
+     - This question type will be appended to the question directly before it. By default, this option is disabled.
+   * - 3. Width
+     - You can adjust the width based on a percentage. By default, the value is 100%.
+
+.. list-table:: Options
+   :widths: 35 65
+   :header-rows: 1
+
+   * - Display Option
+     - Description
+   * - 1. Optional
+     - Unchecking this option forces the question to be answered when the user is filling out your survey. By default, this option is enabled
+   * - 2. Display Format
+     - The question type can be altered to ask Date/Time, Date Only, Time Only, Date/Month or Month/Year. Date/Time is the default question
+   * - 3. Timezone
+     - Enabling this feature will create a dropdown for the user to select their appropriate timezone. By default, this option is disabled.
+
 .. note:: 
 
 	Despite not accepting military standard time, if the user enters 21:00, the question type will convert it to 9:00 pm
@@ -155,6 +339,38 @@ In short, a Text Response Grid allows for the surveyor to ask a series of questi
 
 	*Figure 6.1* Text Response Grid Question Type
 
+.. list-table:: Display Options
+   :widths: 35 65
+   :header-rows: 1
+
+   * - Display Option
+     - Description
+   * - 1. 1st Column Size
+     - Adjusts the first columns width. By default, this option is 30%
+   * - 2. Display side-by-side
+     - Display side-by-side: This option allows for you to display the question type beside another question. By default, this option is disabled
+   * - 3. Append to previous question
+     - This question type will be appended to the question directly before it. By default, this option is disabled.
+   * - 4. Width
+     - You can adjust the width based on a percentage. By default, the value is 100%.
+
+.. list-table:: Options
+   :widths: 35 65
+   :header-rows: 1
+
+   * - Display Option
+     - Description
+   * - 1. Randomize Variables
+     - Selecting this option will randomize the choices within the Checkbox question type on each survey refresh. By default, this option is disabled
+   * - 2. Alphabetize Variables
+     - Choices within your Checkbox will follow alphabetization (A-Z). By default, this option is disabled
+   * - 3. Force Unique
+     - Force a choice in a column to remain unique. No two options in a column can be identical. By default, this option is disabled.
+   * - 4. Sum
+     - If a value is provided, 20 for instance, then all numerical values within the Text Response Grid must add up to that ceiling. This option is blank by default.
+   * - 5. Sum Label
+     - By default, this option is “The values should add up to {x}. Currently: {y}”
+
 Multiple Choice Grid
 ^^^^^^^^^^^^^^^^^^^^
 
@@ -168,6 +384,40 @@ The Multiple Choice Grid question type is in essence a Likert question. This que
 
 	*Figure 6.1* Multiple Choice Grid Question Type
 
+.. list-table:: Display Options
+   :widths: 35 65
+   :header-rows: 1
+
+   * - Display Option
+     - Description
+   * - 1. Make First Column Static
+     - Forces the first column to always be present. By default, this option is disabled.
+   * - 2. 1st Column Size.
+     - Adjusts the first columns width. By default, this option is 30%
+   * - 3. Display side-by-side.
+     - This option allows for you to display the question type beside another question as seen in the image to the left. By default, this option is disabled.
+   * - 4. Append to previous question
+     - The question is attached to the question which precedes it in the survey. By default, this option is disabled
+   * - 5. Width
+     - You can adjust the width based on a percentage. By default, the value is 100%.
+   * - 6. Show Borders
+     - Show borders around the question type. By default, this option is disabled.
+   * - 7. Alternate Background Color
+     - Each row will be an alternate color. By default, this option is disabled.
+
+.. list-table:: Options
+   :widths: 35 65
+   :header-rows: 1
+
+   * - Display Option
+     - Description
+   * - 1. Randomize Variables
+     - Selecting this option will randomize the choices within the Checkbox question type on each survey refresh. By default, this option is disabled
+   * - 2. Alphabetize Variables
+     - Choices within your Checkbox will follow alphabetization (A-Z). By default, this option is disabled
+   * - 3. Force Unique
+     - Force a choice in a column to remain unique. No two options in a column can be identical. By default, this option is disabled.
+
 Dropdown Grid
 ^^^^^^^^^^^^^
 
@@ -180,3 +430,31 @@ Dropdown Grid is similar to its sibling, the dropdown question, in that it is st
 	:alt: Dropdown Grid Question Type
 
 	*Figure 6.1* Dropdown Grid Question Type
+
+.. list-table:: Display Options
+   :widths: 35 65
+   :header-rows: 1
+
+   * - Display Option
+     - Description
+   * - 1. 1st Column Size.
+     - Adjusts the first columns width. By default, this option is 30%
+   * - 2. Display side-by-side.
+     - This option allows for you to display the question type beside another question as seen in the image to the left. By default, this option is disabled.
+   * - 3. Append to previous question
+     - The question is attached to the question which precedes it in the survey. By default, this option is disabled
+   * - 4. Width
+     - You can adjust the width based on a percentage. By default, the value is 100%.
+
+.. list-table:: Options
+   :widths: 35 65
+   :header-rows: 1
+
+   * - Display Option
+     - Description
+   * - 1. Randomize Variables
+     - Selecting this option will randomize the choices within the Checkbox question type on each survey refresh. By default, this option is disabled
+   * - 2. Alphabetize Variables
+     - Choices within your Checkbox will follow alphabetization (A-Z). By default, this option is disabled
+   * - 3. Force Unique
+     - Force a choice in a column to remain unique. No two options in a column can be identical. By default, this option is disabled.
