@@ -171,26 +171,27 @@ pre {
 
 
 div.admonition {
-	background: #fafafa;
 	margin: 15px 20px;
 	padding: 15px 20px;
-	border-top: 1px solid #ccc;
-	border-bottom: 1px solid #ccc;
+	background-color: #fafafa;
+	box-shadow: 2px 2px 20px #aaa;
 }
 
 div.admonition.warning {
-	border: 1px solid;
+	border: 1px solid #fe6;
 	background-color: #FEEFD0;
+	box-shadow: 2px 2px 20px #aaa;
 }
 
 div.admonition.tip {
-	border: 1px solid;
 	background-color: #BDE5F8;
+	box-shadow: 2px 2px 20px #aaa;
 }
 
 div.admonition.error {
-	border: 1px solid;
+	border: 1px solid #fe6;
 	background-color: #FFBABA;
+	box-shadow: 2px 2px 20px #aaa;
 }
 
 div.admonition tt.xref, div.admonition a tst {
@@ -203,8 +204,9 @@ dd div.admonition {
 }
 
 div.admonition p.admonition-title {
-	font-weight: normal;
+	font-weight: bold;
 	font-size: 1.2em;
+	letter-spacing: -1px;
 	margin: 0 0 10px 0;
 	padding: 0;
 	line-height: 1;
@@ -220,7 +222,6 @@ dt:target, .highlight {
 
 div.note {
 	background-color: #d9e8f7;
-	border: 1px dashed #ccc;
 }
 
 div.seealso {

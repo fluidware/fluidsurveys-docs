@@ -181,7 +181,7 @@ There are 2 areas where the width plays a role in determining the overall aesthe
 Choices/Variables
 ^^^^^^^^^^^^^^^^^
 
-Choices and Variables are the answers themselves to a close-ended question. Certain question types have specific options within the choices/variables that allow for a deeper integration of your desired goal and effect. For instance, 
+Choices and Variables are the answers themselves to close and open-ended question. 
 
 .. figure:: ../../resources/editor/choices_and_variables.png
 	:align: center
@@ -189,23 +189,101 @@ Choices and Variables are the answers themselves to a close-ended question. Cert
 	:alt: Chocies and Variables
 	:class: screenshot
 
+	*Figure 9.1* Choices and Variables for a Mulitple Choice Grid
 
 .. list-table:: 
-	:widths: 30 70
+	:widths: 20 80
 	:header-rows: 1
 
 	* - Option
 	  - Description
 	* - 1. Choices
-	  - 
+	  - Adding additional choices will increase the X-axis. Choice 1 and Choice 2, shown here, will appear on the X-axis (along the top of the question). Choices are commonly used as a means of better determining a respondents affinity toward a product, ie., "Like", "Hate", "N/A", etc.
 	* - 2. Variables
-	  - 
-	* - 3. Add
-	  -
-	* - 4. Score
+	  - Adding additional variables will increase the X-axis. Varaible 1 and Variable 2, shown here, will appear on the Y-axis (along the side of hte question). Variables are commonly used as a means conveying a certain product, ie., Apple, McDonalds, Telus, etc.
+
+Certain question types have specific options within the choices/variables that allow for a deeper integration of your desired goal and effect. For instance,
 
 
-	*Figure 9.1* Choices and Variables for a Mulitple Choice Grid
+.. figure:: ../../resources/editor/cv_checkbox.png
+	:align: center
+	:scale: 70%
+	:alt: Chocies for a Checkbox
+	:class: screenshot
+
+	*Figure 9.1* Choices for a Checkbox
+
+.. figure:: ../../resources/editor/cv_multiplechoice.png
+	:align: center
+	:scale: 70%
+	:alt: Chocies for Multiple Choice
+	:class: screenshot
+
+	*Figure 9.1* Choices for a Mulitple Choice 
+
+.. figure:: ../../resources/editor/cv_dropdown.png
+	:align: center
+	:scale: 70%
+	:alt: Choices for a Dropdown
+	:class: screenshot
+
+	*Figure 9.1* Choices for a Dropdown
+
+.. figure:: ../../resources/editor/cv_textresponsegrid.png
+	:align: center
+	:scale: 70%
+	:alt: Chocies and Variables
+	:class: screenshot
+
+	*Figure 9.1* Variables for a Text Response Grid
+
+.. figure:: ../../resources/editor/cv_dropdowngrid.png
+	:align: center
+	:scale: 70%
+	:alt: Chocies and Variables
+	:class: screenshot
+
+	*Figure 9.1* Choices and Variables for a Dropdown Grid
+
+.. figure:: ../../resources/editor/cv_checkboxgrid.png
+	:align: center
+	:scale: 70%
+	:alt: Chocies and Variables
+	:class: screenshot
+
+	*Figure 9.1* Choices and Variables for a Checkbox Grid
+
+.. figure:: ../../resources/editor/cv_natrix.png
+	:align: center
+	:scale: 70%
+	:alt: Chocies and Variables
+	:class: screenshot
+
+	*Figure 9.1* Choices and Variables for a N-atrix
+
+.. figure:: ../../resources/editor/cv_3dmatrix.png
+	:align: center
+	:scale: 70%
+	:alt: Choices and Variables for a 3D Matrix
+	:class: screenshot
+
+	*Figure 9.1* Choices and Variables for a 3D Matrix
+
+.. figure:: ../../resources/editor/cv_drilldown.png
+	:align: center
+	:scale: 70%
+	:alt: Chocies and Variables
+	:class: screenshot
+
+	*Figure 9.1* Choices and Variables for a Drilldown Grid
+
+.. figure:: ../../resources/editor/cv_semantic.png
+	:align: center
+	:scale: 70%
+	:alt: Chocies and Variables
+	:class: screenshot
+
+	*Figure 9.1* Choices and Variables for a Semantic
 
 .. warning::
 
@@ -213,6 +291,8 @@ Choices and Variables are the answers themselves to a close-ended question. Cert
 
 Add Other Choice
 ^^^^^^^^^^^^^^^^
+
+
 
 Scores
 ^^^^^^
