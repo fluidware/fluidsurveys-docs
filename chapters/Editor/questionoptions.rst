@@ -202,8 +202,9 @@ Choices and Variables are the answers themselves to close and open-ended questio
 	* - 2. Variables
 	  - Adding additional variables will increase the X-axis. Varaible 1 and Variable 2, shown here, will appear on the Y-axis (along the side of hte question). Variables are commonly used as a means conveying a certain product, ie., Apple, McDonalds, Telus, etc.
 
-Certain question types have specific options within the choices/variables that allow for a deeper integration of your desired goal and effect. For instance,
+Certain question types have specific options within the choices/variables that allow for a deeper integration of your desired goal and effect.
 
+**Checkbox Question Type Choices**
 
 .. figure:: ../../resources/editor/cv_checkbox.png
 	:align: center
@@ -213,6 +214,25 @@ Certain question types have specific options within the choices/variables that a
 
 	*Figure 9.1* Choices for a Checkbox
 
+.. list-table:: 
+	:widths: 30 70
+	:header-rows: 1
+
+	* - Option
+	  - Description
+	* - 1. Exclusive Choice
+	  - Enabling this option will force the choice to become the only selected option. When the respondent selects the choice, any previously selected choices will be automatically deselected in favour of this choice. By default, this option is disabled.
+	* - 2. Select All
+	  - Enabling this option will automatically select all choices in the question. By default, this option is disabled.
+	* - 3. Add Text Response
+	  - Enabling this option will put a text response beside the choice. The text response can have Validation applied. However, the width cannot be adjusted.
+	* - 4. Score
+	  - A score is what determines the weight for a Choice/Variable that can later be used during the Analytics phase. By default, this value is the value of the choices position, eg., Choice 1 is in the first slot, therefore the Score will be "1". To learn more about "Scores", refer to the "Scores" section of the manual.
+	* - 5. Add Other Choice
+	  - Clicking this button will create a choice that is, "Other, please specify" (which can be customized) along with a text response box. This is comparable to adding a text response to a choice.
+
+**Multiple Choice Question Type Choices**
+
 .. figure:: ../../resources/editor/cv_multiplechoice.png
 	:align: center
 	:scale: 70%
@@ -220,6 +240,23 @@ Certain question types have specific options within the choices/variables that a
 	:class: screenshot
 
 	*Figure 9.1* Choices for a Mulitple Choice 
+
+.. list-table:: 
+	:widths: 30 70
+	:header-rows: 1
+
+	* - Option
+	  - Description
+	* - 1. Add Text Response
+	  - Enabling this option will put a text response beside the choice. The text response can have Validation applied. However, the width cannot be adjusted.
+	* - 2. Score
+	  - A score is what determines the weight for a Choice/Variable that can later be used during the Analytics phase. By default, this value is the value of the choices position, eg., Choice 1 is in the first slot, therefore the Score will be "1". To learn more about "Scores", refer to the "Scores" section of the manual.
+	* - 3. Branch To
+	  - If the user selects the Choice, then you can notify the software to branch the respondent down a different path. By default, all choices will lead to the next page.
+	* - 4. Add Other Choice
+	  - Clicking this button will create a choice that is, "Other, please specify" (which can be customized) along with a text response box. This is comparable to adding a text response to a choice.
+
+**Dropdown Question Type Choices**
 
 .. figure:: ../../resources/editor/cv_dropdown.png
 	:align: center
@@ -229,6 +266,19 @@ Certain question types have specific options within the choices/variables that a
 
 	*Figure 9.1* Choices for a Dropdown
 
+.. list-table:: 
+	:widths: 30 70
+	:header-rows: 1
+
+	* - Option
+	  - Description
+	* - 1. Score
+	  - A score is what determines the weight for a Choice/Variable that can later be used during the Analytics phase. By default, this value is the value of the choices position, eg., Choice 1 is in the first slot, therefore the Score will be "1". To learn more about "Scores", refer to the "Scores" section of the manual.
+	* - 2. Branch to
+	  - If the user selects the Choice, then you can notify the software to branch the respondent down a different path. By default, all choices will lead to the next page.
+
+**Text Response Grid Question Type Choices**
+
 .. figure:: ../../resources/editor/cv_textresponsegrid.png
 	:align: center
 	:scale: 70%
@@ -236,6 +286,23 @@ Certain question types have specific options within the choices/variables that a
 	:class: screenshot
 
 	*Figure 9.1* Variables for a Text Response Grid
+
+.. list-table:: 
+	:widths: 30 70
+	:header-rows: 1
+
+	* - Option
+	  - Description
+	* - 1. Optional
+	  - Detemrins whether the question is required in order to proceed through the survey, or not. By default, this option is enabled.
+	* - 2. Multiline
+	  - Commonly referred to as the "width" of a text area. If a large amount of text is required, then altering this value may be adventageous.. By default, the value is set to 20 columns.
+	* - 3. Validation
+	  - Determins the type of text that can be entered, eg., Currency will only allow "$19.99". To learn more about "Validation", refer to the "Validation" section of the manual.
+	* - 4. Initial Value
+	  - By default, the initial value is blank.
+
+**Dropdown Grid Question Type Choices and Variables**
 
 .. figure:: ../../resources/editor/cv_dropdowngrid.png
 	:align: center
@@ -245,6 +312,19 @@ Certain question types have specific options within the choices/variables that a
 
 	*Figure 9.1* Choices and Variables for a Dropdown Grid
 
+.. list-table:: 
+	:widths: 20 80
+	:header-rows: 1
+
+	* - Option
+	  - Description
+	* - 1. Score
+	  - A score is what determines the weight for a Choice/Variable that can later be used during the Analytics phase. By default, this value is the value of the choices position, eg., Choice 1 is in the first slot, therefore the Score will be "1". To learn more about "Scores", refer to the "Scores" section of the manual.
+	* - 2. Optional
+	  - Detemrins whether the question is required in order to proceed through the survey, or not. By default, this option is enabled.
+
+**Checkbox Grid Question Type Choices and Variables**
+
 .. figure:: ../../resources/editor/cv_checkboxgrid.png
 	:align: center
 	:scale: 70%
@@ -252,6 +332,19 @@ Certain question types have specific options within the choices/variables that a
 	:class: screenshot
 
 	*Figure 9.1* Choices and Variables for a Checkbox Grid
+
+.. list-table:: 
+	:widths: 20 80
+	:header-rows: 1
+
+	* - Option
+	  - Description
+	* - 1. Score
+	  - A score is what determines the weight for a Choice/Variable that can later be used during the Analytics phase. By default, this value is the value of the choices position, eg., Choice 1 is in the first slot, therefore the Score will be "1". To learn more about "Scores", refer to the "Scores" section of the manual.
+	* - 2. Optional
+	  - Detemrins whether the question is required in order to proceed through the survey, or not. By default, this option is enabled.
+
+**N-atrix Question Type Variables**
 
 .. figure:: ../../resources/editor/cv_natrix.png
 	:align: center
@@ -261,6 +354,21 @@ Certain question types have specific options within the choices/variables that a
 
 	*Figure 9.1* Choices and Variables for a N-atrix
 
+.. list-table:: 
+	:widths: 20 80
+	:header-rows: 1
+
+	* - Option
+	  - Description
+	* - Switch to type
+	  - Since a N-atrix question type allows for it to contain more than 1 question type, you can alter which question type is available as a Variable. Available question types are
+		    1. Dropdown
+		    2. Text Response
+		    3. Checkbox
+		    4. Radio Buttons
+
+**3D Matrix Question Type Choices**
+
 .. figure:: ../../resources/editor/cv_3dmatrix.png
 	:align: center
 	:scale: 70%
@@ -268,6 +376,25 @@ Certain question types have specific options within the choices/variables that a
 	:class: screenshot
 
 	*Figure 9.1* Choices and Variables for a 3D Matrix
+
+.. list-table:: 
+	:widths: 20 80
+	:header-rows: 1
+
+	* - Option
+	  - Description
+	* - Switch to type
+	  - Since a N-atrix question type allows for it to contain more than 1 question type, you can alter which question type is available as a Variable. Available question types are
+		    1. Dropdown
+		    2. Text Response
+		    3. Checkbox
+		    4. Radio Buttons
+	* - Dynamic Options
+	  - When these are enabled for a specific choice, if the respondent clicks it, then the row can be disabled. By default, these choices are disabled.
+	* - Optional
+	  - Detemrins whether the question is required in order to proceed through the survey, or not. By default, this option is enabled.
+
+**Drilldown Grid Question Type Choices**
 
 .. figure:: ../../resources/editor/cv_drilldown.png
 	:align: center
@@ -277,6 +404,19 @@ Certain question types have specific options within the choices/variables that a
 
 	*Figure 9.1* Choices and Variables for a Drilldown Grid
 
+.. list-table:: 
+	:widths: 20 80
+	:header-rows: 1
+
+	* - Option
+	  - Description
+	* - Score
+	  - A score is what determines the weight for a Choice/Variable that can later be used during the Analytics phase. By default, this value is the value of the choices position, eg., Choice 1 is in the first slot, therefore the Score will be "1". To learn more about "Scores", refer to the "Scores" section of the manual.
+	* - Branch to
+	  - If the user selects the Choice, then you can notify the software to branch the respondent down a different path. By default, all choices will lead to the next page.
+
+**Semantic Differential Question Type Choices and Variables**
+
 .. figure:: ../../resources/editor/cv_semantic.png
 	:align: center
 	:scale: 70%
@@ -285,6 +425,15 @@ Certain question types have specific options within the choices/variables that a
 
 	*Figure 9.1* Choices and Variables for a Semantic
 
+.. list-table:: 
+	:widths: 20 80
+	:header-rows: 1
+
+	* - Option
+	  - Description
+	* - Optional
+	  - Detemrins whether the question is required in order to proceed through the survey, or not. By default, this option is enabled.
+
 .. warning::
 
 	Removing a Choice/Variable on a Live survey WILL delete the information associated with that option. Do not delete any information on a Live survey without first consulting with on one of our experienced Technical Support Representatives. 
@@ -292,7 +441,10 @@ Certain question types have specific options within the choices/variables that a
 Add Other Choice
 ^^^^^^^^^^^^^^^^
 
+Clicking this button will create a choice that is, "Other, please specify" (which can be customized) along with a text response box. This is comparable to adding a text response to a choice. Add Other Choice is only available to certain question types, such as:
 
+	1. Checkbox
+	2. Multiple Choice 
 
 Scores
 ^^^^^^
