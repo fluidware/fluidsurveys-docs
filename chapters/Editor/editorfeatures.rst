@@ -514,6 +514,24 @@ By default, respondents don’t know if there is branching or skipping informati
 
 	*Figure 5.15* Enabling this will place any branching and skipping at the top of the survey page.
 
+.. warning::
+
+	When you re-arrange pages, the branching logic will do its best to re-arrange itself accordingly. You can re-arrange pages simply by clicking and dragging a page to a new destination location (the pages are at the bottom of your survey editor page). However, it is recommended to order your pages before adding any branching logic.
+
+On any page that contains skip logic, you’ll notice a little branching icon on the top left of your survey-page in the editor. If you click on this, it’ll show you the branching/skip logic that exists on that page. 
+
+.. figure:: ../../resources/editor/show_example_of_branching_info.png
+	:align: center
+	:class: screenshot
+	:alt: Show Branching/Skipping Info
+	:scale: 70%
+
+	*Figure 5.15* Enabling this will place any branching and skipping at the top of the survey page.
+
+.. tip:: 
+
+	If your survey is going to be long, you’ll benefit greatly from specifying page-labels for each of your pages. Just go to the “Page” tab and specify a label for that page. For more info, see "Page Labels" in the manul.
+
 Visual Editor
 ^^^^^^^^^^^^^
 

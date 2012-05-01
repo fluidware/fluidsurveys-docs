@@ -95,3 +95,6 @@ Publishing a Survey
 Invite Respondents
 ------------------
 
+
+Basic Skipping
+--------------

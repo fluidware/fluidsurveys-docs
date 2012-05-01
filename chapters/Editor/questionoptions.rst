@@ -441,62 +441,295 @@ Certain question types have specific options within the choices/variables that a
 Add Other Choice
 ^^^^^^^^^^^^^^^^
 
-Clicking this button will create a choice that is, "Other, please specify" (which can be customized) along with a text response box. This is comparable to adding a text response to a choice. Add Other Choice is only available to certain question types, such as:
+Clicking this button will create a choice, "Other, please specify" (which can be customized) along with a text response box. This is comparable to adding a text response to a choice. 
 
-	1. Checkbox
-	2. Multiple Choice 
+.. figure:: ../../resources/editor/add_other_choice_before.png
+	:align: center
+	:scale: 70%
+	:alt: Add Choice Before
+	:class: screenshot
+
+	*Figure 9.1* Before clicking [Add Other Choice]
+
+.. figure:: ../../resources/editor/add_other_choice_before.png
+	:align: center
+	:scale: 70%
+	:alt: Add Choice Before
+	:class: screenshot
+
+	*Figure 9.1* After clicking [Add Other Choice]
+
+Other question types, such as multiple choice grids, N-atrix, 3D Matrix, etc don’t have the option of including an “Other, please specify” choice. However, it is still possible to include a text box asking for more information.
+
+First, create a question containing your variables and choices and add a text response, or text response grid, question directly beneath it.
+
+.. figure:: ../../resources/editor/add_other_choice_after.png
+	:align: center
+	:scale: 70%
+	:alt: Add Choice After
+	:class: screenshot
+
+	*Figure 9.1* After clicking [Add Other Choice]
+
+When you preview your survey, these would appear as two different questions. However, if you check off the “append to previous question” check box under display settings (for the text response question), they’ll be combined into one. Refer to the manuals section on "Append to Previous" to learn more about this nifty feature.
+
+.. note::
+
+	Add Other Choice is only available to certain question types, such as:
+
+		1. Checkbox
+		2. Multiple Choice
 
 Scores
 ^^^^^^
 
+If you are setting up your survey as a quiz, you can show the respondent their score either after each question in the survey or at the end of the survey (Figure 6-9). The respondent can also be shown whether or not they got the answer correct. When you download the data, additional columns are provided to show the Sum, Weighted Average, and the Weighted Standard Deviation scores for each respondent
+
+.. figure:: ../../resources/editor/right_score_value.png
+	:align: center
+	:scale: 70%
+	:alt: Score for a correct answer
+	:class: screenshot
+
+	*Figure 9.1* The correct answer has a numeric score of "1"
+
+Adding score values to an indvidual choice or variable allows for them to be tallied up to give the respondent a numerical score. This feature can be used to make a survey into a quiz, and allow for you to promote complex logical functions. You can attach a numerical score to all open-ended and closed question types, except for the "Yes/No" question type which by default is a static numerical score of either 1 (Yes) or 2 (No)
+
+Choices and Variables that contain a custom "Score" are predominately used in a quiz build specifically within FluidSurveys. Doing so would allow for you to quickly adminster scored tests to respondents. Assign individual point values to different answer choices, and then display those very same scores back to the respondent while they are still in the process of taking the survey.
+
+.. figure:: ../../resources/editor/current_score.png
+	:align: center
+	:scale: 70%
+	:alt: Current Score
+	:class: screenshot
+
+	*Figure 9.1* The [Current Score] questino type with a respondent score of 10
+
+.. note::
+
+	By default, choices within a question will have scores assigned to them. The first choice in a question would have a score of 1, the second a score of 2, and so on. These scores are customizable, however.
+
+
 Simple Branching
 ^^^^^^^^^^^^^^^^
+
+Simple branching directs respondents through different paths in a survey based on a previous responses to a question. In essence, skipping allows you to branch respondents from one page to another based on their answers to a single question. For example, if a respondent answered “Yes” to a question, they could be sent to Page 3, if they answered No, they could be skipped straight to Page 4. Basic skipping works based on the respondent’s answers to single-answer questions such as the dropdown, multiple-choice and yes/no question types. 
+
+.. figure:: ../../resources/editor/branch_to.png
+	:align: center
+	:scale: 70%
+	:alt: Branch to a page
+	:class: screenshot
+
+	*Figure 9.1* Branch to [Page 4]
+
+.. tip::
+
+	If you’ll be using advanced branching, you shouldn’t use simple skipping and vice-versa. While the two can be used together, generally speaking, they shouldn’t be because this could lead to clashing conditions that could produce unexpected results.
+
+When the respondents selects, "Go to page 4 for the Princess to escape" as a choice, they will be transported to [Page 4]
+
+.. warning::
+
+	All branching logic happens when the respondent causes a page change, eg., click [Next], [Back], [Submit]
+
+Advanced skipping allows you to branch a respondent from one page to another based on their answers to one, or multiple, questions. The questions that trigger the branching can be on one, or several, pages. For example, one branching condition could be created based on questions on Page 1, 4, and 5. Furthermore, you can use advanced skipping to branch based on most question types (including checkbox questions and grid-type questions).
+
+.. note:: 
+
+	Simple Branching is available to:
+
+		1. Yes/No 
+		2. Multiple Choice
+		3. Dropdown
+		4. Drill Down
+
+To learn how to set up a page with simple branching, refer to the Tutorial section
 
 Question Title
 ^^^^^^^^^^^^^^
 
-Question Description
+The question title is the over-arching explanation of the question itself. It is what the respondent will see at the top of a question. 
+
+.. figure:: ../../resources/editor/editor_question_title.png
+	:align: center
+	:scale: 70%
+	:alt: Question Title in the Editor
+	:class: screenshot
+
+	*Figure 9.1* Question title in the Editor
+
+The question title in the Editor is not a final depiction of how it will appear to the respondent. 
+
+.. figure:: ../../resources/editor/survey_question_title.png
+	:align: center
+	:scale: 70%
+	:alt: Question Title in the Survey
+	:class: screenshot
+
+	*Figure 9.1* The default look and feel of the question title in the Survey.
+
+.. tip::
+
+	While the question title by default is generic, you can customize it to include any number of HTML, CSS and even JavaScript functions to further expand those horizons of customization
+
+Question Description	
 ^^^^^^^^^^^^^^^^^^^^
+
+If you wish to provide more information about a spelcific section, then you can do so within the Extra Description text area.
+
+.. figure:: ../../resources/editor/editor_extra_description.png
+	:align: center
+	:scale: 70%
+	:alt: Question Description in the Editor
+	:class: screenshot
+
+	*Figure 9.1* Question Desciprtion in the Editor
+
+The question description in the Editor is not a final depiction of how it will appear to the respondent. 
+
+.. figure:: ../../resources/editor/survey_extra_description.png
+	:align: center
+	:scale: 70%
+	:alt: Question Description in the Survey
+	:class: screenshot
+
+	*Figure 9.1* The default look and feel of the question description in the Survey.
+
+.. tip::
+
+	While the question description by default is generic, you can customize it to include any number of HTML, CSS and even JavaScript functions to further expand those horizons of customization
 
 Appearance
 ^^^^^^^^^^
 
+Certain question types allow for the choices/variables to be morphed and appear as though they are an entirely different question type. 
+
+Alterting the appearance can be achieved by clicking on the Multiple Choice question type, and selecting the desired layout under "Appearance" found beneath "Display"
+
+.. figure:: ../../resources/editor/appearance.png
+	:align: center
+	:scale: 70%
+	:alt: Appearance Choices
+	:class: screenshot
+
+	*Figure 9.1* Available appearnace choices
+
+The available morph styles are
+
+.. figure:: ../../resources/editor/default_appearance.png
+	:align: center
+	:scale: 70%
+	:alt: Default Apperance
+	:class: screenshot
+
+	*Figure 9.1* Default Appearance of a Multiple Choice 
+
+.. figure:: ../../resources/editor/horizontal_appearance.png
+	:align: center
+	:scale: 70%
+	:alt: Question Description in the Survey
+	:class: screenshot
+
+	*Figure 9.1* Horizontal Appearance of a Multiple Choice 
+
+.. figure:: ../../resources/editor/star_rating.png
+	:align: center
+	:scale: 70%
+	:alt: Question Description in the Survey
+	:class: screenshot
+
+	*Figure 9.1* Star Rating Appearance of a Multiple Choice 
+
+.. figure:: ../../resources/editor/combo_box.png
+	:align: center
+	:scale: 70%
+	:alt: Question Description in the Survey
+	:class: screenshot
+
+	*Figure 9.1* Combo Box Appearance of a Multiple Choice 
+
+Question Types that blend other questions into themselves, ie., 3D Matrix, N-atrix, can also have their choices altered to match the aforementioned appearances.
+
 Columns
 ^^^^^^^
+
+
 
 Optional
 ^^^^^^^^
 
+
+
 Add Other Choice
 ^^^^^^^^^^^^^^^^
+
+
 
 Validation
 ^^^^^^^^^^
 
+
+
 Identifiers
 ^^^^^^^^^^^
+
+
 
 Force Unique
 ^^^^^^^^^^^^
 
+
+
 Background Color
 ^^^^^^^^^^^^^^^^
+
+
 
 Borders
 ^^^^^^^
 
+
+
 1st Column Size
 ^^^^^^^^^^^^^^^
+
+
 
 1st Column Static
 ^^^^^^^^^^^^^^^^^
 
+
+
 Initial Value
 ^^^^^^^^^^^^^
+
+
 
 Multiline
 ^^^^^^^^^
 
+
+
 Sum
 ^^^
-	
+
+A constant sum question will require the answers given for a set of variables to add up to a specified value. For example, if you create a text response question with 5 variables, you can assure that the values entered for those 5 variables add up to 100. 
+
+.. figure:: ../../resources/editor/constant_sum_editor.png
+	:align: center
+	:scale: 70%
+	:alt: Constant Sum Editor Options
+	:class: screenshot
+
+	*Figure 9.1* Setting the constant sum value to be 100
+
+This will ensure that the entered values add up to 100. To alter the value, click on "Options" in the left hand-side editor, and beside where it states, "Sum", enter the desired value. A respondent’s answers for this question will now have to add up to the entered value. If the total is more or less, they’ll be presented with an error message.
+
+.. figure:: ../../resources/editor/constant_sum_error.png
+	:align: center
+	:scale: 70%
+	:alt: Constant Sum Invalid Entered Sum
+	:class: screenshot
+
+	*Figure 9.1* The error message the respondent sees for an invalid sum value
