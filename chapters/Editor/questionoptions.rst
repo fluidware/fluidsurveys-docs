@@ -661,55 +661,310 @@ Optional
 
 
 
-Add Other Choice
-^^^^^^^^^^^^^^^^
-
-
-
 Validation
 ^^^^^^^^^^
 
+FluidSurveys allows validation to be added for text response questions. With validation, a response must adhere to the format specifications set up, otherwise it won’t be accepted.
+Validation can be set up for phone numbers, emails, postal codes, integers, letters, etc.
 
+.. figure:: ../../resources/editor/validation_options.png
+	:align: center
+	:scale: 70%
+	:alt: Character Limit
+	:class: screenshot
+
+	*Figure 9.1* Character limit validation
+
+
+With validation, you can specify a character limit/range for the question. So, for example, you could require the response to have between 10 and 100 characters, or 5 to 25 integers, etc.
+To do so, select validation for letters, integers, letters & numbers or all characters. You will then be able to enter a limit length.
+
+.. figure:: ../../resources/editor/character_limit_validation.png
+	:align: center
+	:scale: 70%
+	:alt: Character Limit
+	:class: screenshot
+
+	*Figure 9.1* Character limit validation
+
+When validation is set for integers (positive or negative), you can set up a range within which the value must reside. So, for example, if the limit value is set to between 5 and 9, a response of 3 would not be accepted while a response of 6 would be.
+
+.. figure:: ../../resources/editor/limit_values_validation.png
+	:align: center
+	:scale: 70%
+	:alt: Limit Values Validation
+	:class: screenshot
+
+	*Figure 9.1* Limit values validation
+
+When a respondent attempts to enter an answer that does not adhere to the validation settings, they are shown a default message. It’s possible to change this message for each question, or text field. 
+
+.. figure:: ../../resources/editor/error_messages_validation.png
+	:align: center
+	:scale: 70%
+	:alt: Validation Error Messages
+	:class: screenshot
+
+	*Figure 9.1* Error message when validation is not met
+
+Depending on the error message entered, the user will see a message that alerts them about any malformed text input.
+
+.. figure:: ../../resources/editor/error_validation_for_text_response.png
+	:align: center
+	:scale: 70%
+	:alt: Validation for Text Response
+	:class: screenshot
+
+	*Figure 9.1* Error validation for a text response
+
+.. note::
+
+	By default, validation is disabled
 
 Identifiers
 ^^^^^^^^^^^
 
+Any time you want to do anything advanced with a question, make sure to give it an identifier. These identifiers are used to easily refer to them when programming advanced logic conditions. 
 
+.. figure:: ../../resources/editor/identifier_option.png
+	:align: center
+	:scale: 70%
+	:alt: Question Description in the Survey
+	:class: screenshot
+
+	*Figure 9.1* Force Unique Option for a Dropdown Grid question type in the Editor
+
+By default, the Identifier is "None", ie., blank
+
+.. note::
+
+	The respondent will never see a questions Identifier. 
+
+When a question has been given an Identifer, it will appear in the Advanced Branching Logic window.
+
+.. figure:: ../../resources/editor/advanced_branching_logic_identifiers.png
+	:align: center
+	:scale: 70%
+	:alt: Question Description in the Survey
+	:class: screenshot
+
+	*Figure 9.1* Force Unique Option for a Dropdown Grid question type in the Editor
+
+To learn more about Advanced Branching Logic, refer to the Branching Logic section of the manual.
+
+
+.. tip::
+
+	The identifiers are also used for the purpose of exporting your data into Excel/CSV and SPSS. It may be wise to use an Identifier, even if advancing branching logic is not going to be applied.
 
 Force Unique
 ^^^^^^^^^^^^
 
+When using a rating scale question type, enabling "Force Unique" requires that a choice in a column remain unique. No two options in a column can be identical. This is perfect when you want to receive a wider range of answers from a respondents.
 
+.. figure:: ../../resources/editor/force_unique_option.png
+	:align: center
+	:scale: 70%
+	:alt: Question Description in the Survey
+	:class: screenshot
+
+	*Figure 9.1* Force Unique Option for a Dropdown Grid question type in the Editor
+
+By default, this option is disabled.
+
+.. figure:: ../../resources/editor/force_unique_error.png
+	:align: center
+	:scale: 70%
+	:alt: Force Unique Error Message
+	:class: screenshot
+
+	*Figure 9.1* If a row contains the same answer as previous column, then the respondent is presented with an error message
+
+.. note::
+
+	Force Unique is available for the following question types:
+
+		* Dropdown Grid
+		* Checkbox Grid
+		* Multiple Choice Grid
+		* Text Response Grid
+		* Semantic Differential
+
+	Any question that has the ability to be used as a rating scale will have the "Force Unique" option
 
 Background Color
 ^^^^^^^^^^^^^^^^
 
+If a close-ended question grows in size, then it may become cumbersome and confusing to some respondents when viewing mulitple columns of information. Enabling [Alternate Background Color] option will paint each odd column a different colour. 
 
+.. figure:: ../../resources/editor/alternating_background_color_option.png
+	:align: center
+	:scale: 70%
+	:alt: Alternate Background Color option in the Editor
+	:class: screenshot
+
+	*Figure 9.1* Alternate Background Color option for a 3D Matrix in the Editor
+
+By default, this option is enabled. However, when selected, every alternating column will have a different color
+
+.. figure:: ../../resources/editor/alternating_background_color.png
+	:align: center
+	:scale: 70%
+	:alt: Question Description in the Survey
+	:class: screenshot
+
+	*Figure 9.1* Combo Box Appearance of a Multiple Choice 
+
+.. note::
+	
+	An alternating background color is only available to:
+		
+		* Multiple Choice Grid
+		* Checkbox Grid
+		* Semantic Differential
 
 Borders
 ^^^^^^^
 
+This option show borders separating the rows and columns of a question. It makes complex 3D Matrices much easier to understand.
+
+.. figure:: ../../resources/editor/borders_option.png
+	:align: center
+	:scale: 70%
+	:alt: Question Description in the Survey
+	:class: screenshot
+
+	*Figure 9.1* Show Borders option for a 3D Matrix in the Editor
+
+By default, this option is disabled. A 3D Matrix without a border will appear as
+
+.. figure:: ../../resources/editor/no_borders_survey.png
+	:align: center
+	:scale: 70%
+	:alt: Question Description in the Survey
+	:class: screenshot
+
+	*Figure 9.1* Show Borders for a 3D Matrix 
+
+Whereas, if the option is enabled
+
+.. figure:: ../../resources/editor/borders_survey.png
+	:align: center
+	:scale: 70%
+	:alt: Question Description in the Survey
+	:class: screenshot
+
+	*Figure 9.1* Show Borders for a 3D Matrix 
+
+.. note::
+
+	Show Borders is only available on the 3D Matrix question type
 
 
 1st Column Size
 ^^^^^^^^^^^^^^^
 
+Allows you to change the size of the first column which contains the variable labels. Setting a higher percentage value will increase the size, while setting a lower percentage value will decrease the size.
+
+.. figure:: ../../resources/editor/1st_column_size_option.png
+	:align: center
+	:scale: 70%
+	:alt: 1st Column Size Options
+	:class: screenshot
+
+	*Figure 9.1* 1st Column Size Options for a 3D Matrix in the Editor
+
+By default, this option is disabled. Altering the value will affect the 1st column size
+
+.. figure:: ../../resources/editor/1st_column_size_survey.png
+	:align: center
+	:scale: 70%
+	:alt: 1st Column Size in the survey
+	:class: screenshot
+
+	*Figure 9.1* 1st Column Size set to 50% in the survey
+
+.. note::
+
+	Setting the Column Size will not accurately reflect itself in the Editoir. To see the best results, always save your survey and Preview it.
 
 
 1st Column Static
 ^^^^^^^^^^^^^^^^^
 
+When enabled, the first column containing the variable will not scroll; it will always be visible to respondents. This setting is useful if your question contains numerous columns and requires a scroll bar. 
 
+.. figure:: ../../resources/editor/1st_column_static_option.png
+	:align: center
+	:scale: 70%
+	:alt: Question Description in the Survey
+	:class: screenshot
+
+	*Figure 9.1* 1st Column Static for a 3D Matrix in the Editor
+ 
+By default, this option is disabled. But, when enabled, the first column will always remain a constant. Notice the scrollbar on the bottom
+
+.. figure:: ../../resources/editor/1st_column_static_survey.png
+	:align: center
+	:scale: 70%
+	:alt: 1st Column Static Survey
+	:class: screenshot
+
+	*Figure 9.1* 1st Column Static on a 3D Matrix question.
 
 Initial Value
 ^^^^^^^^^^^^^
 
+Under validation, the option to pre-populate responses is available. Whatever is entered into the “Initial Value dropdown, it will be displayed to respondents when they view the survey. They will be able to change this response, or leave it in tact. 
 
+.. figure:: ../../resources/editor/initial_value_option.png
+	:align: center
+	:scale: 70%
+	:alt: Initial Value 
+	:class: screenshot
+
+	*Figure 9.1* Initial Value option found under "Options" in the Editor
+
+By default, the "Inital Value" is blank.
+
+.. figure:: ../../resources/editor/initial_value_survey.png
+	:align: center
+	:scale: 70%
+	:alt: Question Description in the Survey
+	:class: screenshot
+
+	*Figure 9.1* A Text Response question with an Initial Value of "Greatly"
+
+.. warning::
+
+	While an Initial Value is a perfect representation of how the respondent should answer the question, and while the question may be required, the "Initial Value" is seen as a response, and therefore that answer will reign supreme.
 
 Multiline
 ^^^^^^^^^
 
+Enabling this option allows for the text area to have multiple lines and columns. This option is perfect for when you require a large amount of text to be entered by the respondent.
 
+.. figure:: ../../resources/editor/multiline_option.png
+	:align: center
+	:scale: 70%
+	:alt: Initial Value 
+	:class: screenshot
+
+	*Figure 9.1* Multiline option found under "Options"
+
+By default, this option is disabled.
+
+.. figure:: ../../resources/editor/multiline_survey.png
+	:align: center
+	:scale: 70%
+	:alt: Question Description in the Survey
+	:class: screenshot
+
+	*Figure 9.1* A Text Response question with 75 rows, and 100 columns.
+
+.. warning::
+
+	The survey width by default is 864px (Customizable through the :ref:`Themer`) and putting a number greater than 100 for "Columns" will cause the text box to bleed off the survey page. Always keep design decisions in mind when creating a survey
 
 Sum
 ^^^
@@ -723,6 +978,8 @@ A constant sum question will require the answers given for a set of variables to
 	:class: screenshot
 
 	*Figure 9.1* Setting the constant sum value to be 100
+
+By default, this option is 0, ie., blank
 
 This will ensure that the entered values add up to 100. To alter the value, click on "Options" in the left hand-side editor, and beside where it states, "Sum", enter the desired value. A respondent’s answers for this question will now have to add up to the entered value. If the total is more or less, they’ll be presented with an error message.
 
