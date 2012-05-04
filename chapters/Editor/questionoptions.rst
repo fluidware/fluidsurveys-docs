@@ -62,6 +62,14 @@ Alphabetize
 
 By default, choices/variables appear in the order they were entered. Therefore, if B is put before A, the system will not auto-correct it. "Alphabetize" will automagically sort the choices/variables for you, without losing your data.
 
+.. figure:: ../../resources/editor/alphabetize_text_response.png
+	:align: center
+	:scale: 70%
+	:alt: Alphabetize option for a Text Response
+	:class: screenshot
+
+	*Figure 9.1* Alphabetize option in the Editor for a Text Response 
+
 **Alphabetize is available to the following question types:**
 
 	1. Checkbox
@@ -95,6 +103,16 @@ Side-By-Side
 ^^^^^^^^^^^^
 
 Side-by-side allows you to place 2 questions beside each other in separate columns. Only 2 questions can be added side-by-side, even if the survey width was altered through CSS to be 100%.
+
+.. figure:: ../../resources/editor/side-by-side_option.png
+	:align: center
+	:scale: 70%
+	:alt: Side-by-side 
+	:class: screenshot
+
+	*Figure 9.1* Side-by-side option in the Editor
+
+By default, this option is disabled
 
 .. figure:: ../../resources/editor/side_by_side.png
 	:align: center
@@ -659,6 +677,19 @@ Columns
 Optional
 ^^^^^^^^
 
+Unchecking this option forces the question to be answered when the user is filling out your survey. 
+
+.. figure:: ../../resources/editor/optional_option.png
+	:align: center
+	:scale: 70%
+	:alt: Optional Option in Editor
+	:class: screenshot
+
+	*Figure 9.1* Optional option for a Multiple Choice question
+
+By default, this option is enabled
+
+While 
 
 
 Validation
