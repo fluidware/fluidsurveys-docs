@@ -24,6 +24,10 @@ By default, questions on a survey page are held in the same place on each and ev
 
 	*Figure 9.1* Randomize choices on the page
 
+.. note::
+
+	By default, "Randomize questions on this page" is disabled
+
 .. list-table:: 
 	:widths: 30 70
 	:header-rows: 1
@@ -70,6 +74,10 @@ By default, choices/variables appear in the order they were entered. Therefore, 
 
 	*Figure 9.1* Alphabetize option in the Editor for a Text Response 
 
+.. note::
+
+	By default, "Alphabetize" is disabled
+
 **Alphabetize is available to the following question types:**
 
 	1. Checkbox
@@ -112,7 +120,9 @@ Side-by-side allows you to place 2 questions beside each other in separate colum
 
 	*Figure 9.1* Side-by-side option in the Editor
 
-By default, this option is disabled
+.. note::
+
+	By default, "Display side-by-side" is disabled
 
 .. figure:: ../../resources/editor/side_by_side.png
 	:align: center
@@ -130,6 +140,20 @@ Append to Previous
 ^^^^^^^^^^^^^^^^^^
 
 The song *"One is The Loneliest Number"* by **Three Dog Night** is no longer relevant with the Append to Previous option. In some cases, you would like to ask a respondent a sub-question that relates to the previous question. But, you would like to use a separate question type. Append to Previous allows for you to fulfill those desires, and still maintain a cognitive styling pattern across your survey, by making it look as though 3 questions are really 1.
+
+When the option, "Append to Previous" has been selected, the question will 
+
+.. figure:: ../../resources/editor/text_response_append_to_previous.png
+	:align: center
+	:scale: 70%
+	:alt: Append to Previous for Text Response
+	:class: screenshot
+
+	*Figure 9.1* Example of 3 questions being appended to previous
+
+.. note::
+
+	By default, "Append to Previous" is disabled
 
 .. figure:: ../../resources/editor/append_to_previous.png
 	:align: center
@@ -469,7 +493,7 @@ Clicking this button will create a choice, "Other, please specify" (which can be
 
 	*Figure 9.1* Before clicking [Add Other Choice]
 
-.. figure:: ../../resources/editor/add_other_choice_before.png
+.. figure:: ../../resources/editor/add_other_choice_after.png
 	:align: center
 	:scale: 70%
 	:alt: Add Choice Before
@@ -479,17 +503,11 @@ Clicking this button will create a choice, "Other, please specify" (which can be
 
 Other question types, such as multiple choice grids, N-atrix, 3D Matrix, etc don’t have the option of including an “Other, please specify” choice. However, it is still possible to include a text box asking for more information.
 
-First, create a question containing your variables and choices and add a text response, or text response grid, question directly beneath it.
+.. tip ::
 
-.. figure:: ../../resources/editor/add_other_choice_after.png
-	:align: center
-	:scale: 70%
-	:alt: Add Choice After
-	:class: screenshot
+	To give the illusion that a question has an "Other Choice", first create a question containing your variables and choices and add a text response, or text response grid, question directly beneath it.
 
-	*Figure 9.1* After clicking [Add Other Choice]
-
-When you preview your survey, these would appear as two different questions. However, if you check off the “append to previous question” check box under display settings (for the text response question), they’ll be combined into one. Refer to the manuals section on "Append to Previous" to learn more about this nifty feature.
+	When you preview your survey, these would appear as two different questions. However, if you check off the “append to previous question” check box under display settings (for the text response question), they’ll be combined into one. Refer to the manuals section on "Append to Previous" to learn more about this nifty feature.
 
 .. note::
 
@@ -672,7 +690,27 @@ Question Types that blend other questions into themselves, ie., 3D Matrix, N-atr
 Columns
 ^^^^^^^
 
+Columns can refer to a lot of things within FluidSurveys, but generally it is ascribed to the amount of columns a text response area has. 
 
+.. figure:: ../../resources/editor/columns_for_tr.png
+	:align: center
+	:scale: 70%
+	:alt: Columns for Text Response Grid
+	:class: screenshot
+
+	*Figure 9.1* Columns for a Text Response Grid in the Editor
+
+By default, a text area has 20 columns. The value can be altered at any time. Changing the column value will increase the text areas width. Whenever making alterations to the text area, even putting a value of 75 may bleed off the Editor page, always be saving and [Preview] the survey in order to assure maximum 
+
+However, columns can also be associated with the Choices of a Grid, eg., Multiple Choice Grid, Checkbox Grid, 3D Matrix question type. 
+
+.. figure:: ../../resources/editor/columns_and_rows.png
+	:align: center
+	:scale: 70%
+	:alt: Columns and Rows in a Survey
+	:class: screenshot
+
+	*Figure 9.1* Columns in a survey
 
 Optional
 ^^^^^^^^
@@ -687,10 +725,97 @@ Unchecking this option forces the question to be answered when the user is filli
 
 	*Figure 9.1* Optional option for a Multiple Choice question
 
-By default, this option is enabled
+.. note::
 
-While 
+	By default, Choices/Variables are "Optional" 
 
+While you can force a question to be either optional or required under the "Options" menu of the Editor, there are a few question types where the entirety of the question may not be optional or required, but each individual choice is the deciding factor. The following question types require that you click on the Choices/Variables portion in order to alter it state
+
+**Text Response Grid**
+	
+.. figure:: ../../resources/editor/tr_optional.png
+	:align: center
+	:scale: 70%
+	:alt: Text Response Grid Optional
+	:class: screenshot
+
+	*Figure 9.1* Optional option for a Text Response Grid
+
+**Multiple Choice Grid**
+
+.. figure:: ../../resources/editor/mcg_optional.png
+	:align: center
+	:scale: 70%
+	:alt: Multiple Choice Grid Optional
+	:class: screenshot
+
+	*Figure 9.1* Optional option for a Multiple Choice Grid
+
+**Dropdown Grid**
+
+.. figure:: ../../resources/editor/ddg_optional.png
+	:align: center
+	:scale: 70%
+	:alt: Dropdown Grid Optional
+	:class: screenshot
+
+	*Figure 9.1* Optional option for a Multiple Choice question
+
+**Checkbox Grid**
+
+.. figure:: ../../resources/editor/cg_optional.png
+	:align: center
+	:scale: 70%
+	:alt: Optional Option in Editor
+	:class: screenshot
+
+	*Figure 9.1* Optional option for a Multiple Choice question
+
+**3D Matrix**
+
+.. figure:: ../../resources/editor/3d_optional.png
+	:align: center
+	:scale: 70%
+	:alt: Optional Option in Editor
+	:class: screenshot
+
+	*Figure 9.1* Optional option for a Multiple Choice question
+
+**N-atrix** 
+
+.. figure:: ../../resources/editor/n_optional.png
+	:align: center
+	:scale: 70%
+	:alt: Optional Option in Editor
+	:class: screenshot
+
+	*Figure 9.1* Optional option for a Multiple Choice question
+
+**Semantic Differential**
+
+.. figure:: ../../resources/editor/sd_optional.png
+	:align: center
+	:scale: 70%
+	:alt: Optional Option in Editor
+	:class: screenshot
+
+	*Figure 9.1* Optional option for a Multiple Choice question
+
+Additionally, if you do not wish to deselect "Optional" for all choices and variables, you can select all questions you'd like to make "Optional" or "Required", right-click and select "Mark all as optional" or "Mark all as required"
+
+.. figure:: ../../resources/editor/right_click_menu_optional.png
+	:align: center
+	:scale: 70%
+	:alt: Optional Option in Editor
+	:class: screenshot
+
+	*Figure 9.1* Optional option for a Multiple Choice question
+
+.. note::
+
+	Despite the menu stating, "Mark all as required or optional", if you have n choices selected (Where n = a positive number) then only those questions will receive the altered state
+
+To learn more about the right-click menu, refer to the Right-click Menu section of the manual
 
 Validation
 ^^^^^^^^^^
@@ -706,6 +831,9 @@ Validation can be set up for phone numbers, emails, postal codes, integers, lett
 
 	*Figure 9.1* Character limit validation
 
+.. note::
+
+	By default, "Validation" is disabled
 
 With validation, you can specify a character limit/range for the question. So, for example, you could require the response to have between 10 and 100 characters, or 5 to 25 integers, etc.
 To do so, select validation for letters, integers, letters & numbers or all characters. You will then be able to enter a limit length.
@@ -748,10 +876,6 @@ Depending on the error message entered, the user will see a message that alerts 
 
 	*Figure 9.1* Error validation for a text response
 
-.. note::
-
-	By default, validation is disabled
-
 Identifiers
 ^^^^^^^^^^^
 
@@ -765,11 +889,9 @@ Any time you want to do anything advanced with a question, make sure to give it 
 
 	*Figure 9.1* Force Unique Option for a Dropdown Grid question type in the Editor
 
-By default, the Identifier is "None", ie., blank
-
 .. note::
 
-	The respondent will never see a questions Identifier. 
+	By default, the Identifier is "None", ie., blank
 
 When a question has been given an Identifer, it will appear in the Advanced Branching Logic window.
 
@@ -782,7 +904,6 @@ When a question has been given an Identifer, it will appear in the Advanced Bran
 	*Figure 9.1* Force Unique Option for a Dropdown Grid question type in the Editor
 
 To learn more about Advanced Branching Logic, refer to the Branching Logic section of the manual.
-
 
 .. tip::
 
@@ -801,7 +922,9 @@ When using a rating scale question type, enabling "Force Unique" requires that a
 
 	*Figure 9.1* Force Unique Option for a Dropdown Grid question type in the Editor
 
-By default, this option is disabled.
+.. note:: 
+
+	By default, this option is disabled.
 
 .. figure:: ../../resources/editor/force_unique_error.png
 	:align: center
@@ -836,7 +959,9 @@ If a close-ended question grows in size, then it may become cumbersome and confu
 
 	*Figure 9.1* Alternate Background Color option for a 3D Matrix in the Editor
 
-By default, this option is enabled. However, when selected, every alternating column will have a different color
+.. note:: 
+
+	By default, this option is enabled. 
 
 .. figure:: ../../resources/editor/alternating_background_color.png
 	:align: center
@@ -867,7 +992,11 @@ This option show borders separating the rows and columns of a question. It makes
 
 	*Figure 9.1* Show Borders option for a 3D Matrix in the Editor
 
-By default, this option is disabled. A 3D Matrix without a border will appear as
+.. note ::
+
+	By default, this option is disabled. 
+
+A 3D Matrix without a border will appear as
 
 .. figure:: ../../resources/editor/no_borders_survey.png
 	:align: center
@@ -905,7 +1034,9 @@ Allows you to change the size of the first column which contains the variable la
 
 	*Figure 9.1* 1st Column Size Options for a 3D Matrix in the Editor
 
-By default, this option is disabled. Altering the value will affect the 1st column size
+.. note::
+
+	By default, this option is disabled. Altering the value will affect the 1st column size
 
 .. figure:: ../../resources/editor/1st_column_size_survey.png
 	:align: center
@@ -933,7 +1064,11 @@ When enabled, the first column containing the variable will not scroll; it will 
 
 	*Figure 9.1* 1st Column Static for a 3D Matrix in the Editor
  
-By default, this option is disabled. But, when enabled, the first column will always remain a constant. Notice the scrollbar on the bottom
+.. note::
+
+	By default, this option is disabled. 
+
+When enabled, the first column will always remain a constant. Notice the scrollbar on the bottom
 
 .. figure:: ../../resources/editor/1st_column_static_survey.png
 	:align: center
@@ -956,7 +1091,9 @@ Under validation, the option to pre-populate responses is available. Whatever is
 
 	*Figure 9.1* Initial Value option found under "Options" in the Editor
 
-By default, the "Inital Value" is blank.
+.. note::
+
+	By default, the "Inital Value" is blank.
 
 .. figure:: ../../resources/editor/initial_value_survey.png
 	:align: center
@@ -983,7 +1120,9 @@ Enabling this option allows for the text area to have multiple lines and columns
 
 	*Figure 9.1* Multiline option found under "Options"
 
-By default, this option is disabled.
+.. note::
+
+	By default, "Multiline" is disabled.
 
 .. figure:: ../../resources/editor/multiline_survey.png
 	:align: center
@@ -1010,7 +1149,9 @@ A constant sum question will require the answers given for a set of variables to
 
 	*Figure 9.1* Setting the constant sum value to be 100
 
-By default, this option is 0, ie., blank
+.. note::
+
+	By default, the "Sum" is 0, ie., blank
 
 This will ensure that the entered values add up to 100. To alter the value, click on "Options" in the left hand-side editor, and beside where it states, "Sum", enter the desired value. A respondent’s answers for this question will now have to add up to the entered value. If the total is more or less, they’ll be presented with an error message.
 

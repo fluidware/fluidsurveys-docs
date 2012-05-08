@@ -4,8 +4,21 @@ Editor Features
 Survey Title/Survey Description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The Survey Title is what respondents see when they’re treading through your survey. When a survey is first created, the survey title is inherited from the survey name. It can be modified by clicking on the “survey tab” at the top of the editor. The survey title will appear at the top of every page.
+The Survey Title is what respondents see when they’re treading through your survey. During survey creation time, the title is defined, but at any point during the alteration of the survey, you can edit the title and description.
 
+.. figure:: ../../resources/editor/survey_title_survey_description_option.png
+	:align: center
+	:scale: 70%
+	:alt: Survey Title and Description in Editor
+	:class: screenshot
+
+	*Figure 5.1* Survey Title and Description in the Editor
+
+.. note::
+
+	The Survey Title and Survey Description can be altered at any point.
+
+When a survey is first created, the survey title is inherited from the survey name. It can be modified by clicking on the “survey tab” at the top of the editor. The survey title will appear at the top of every page.
 
 .. figure:: ../../resources/editor/survey_title.png
 	:align: center
@@ -405,6 +418,16 @@ Bulk
 
 In the case that you have a long list of choices or variables, or a list that you’ll be re-using often throughout your many surveys, it may be useful to use the bulk feature. The bulk editor automatically converts lists into choices/variables/rows, while giving you the option of saving them for use on any future question.
 
+The Bulk option is available under all "Choices" and "Variables" on the left-hand floating editor box.
+
+.. figure:: ../../resources/editor/bulk_for_drill_down.png
+	:align: center
+	:class: screenshot
+	:alt: Bulk Editor in Editor
+	:scale: 80%
+
+	*Figure 5.11* Bulk Editor for a Drill Down question in the Editor 
+
 .. figure:: ../../resources/editor/bulk_editor.png
 	:align: center
 	:class: screenshot
@@ -537,11 +560,21 @@ Visual Editor
 
 The Rich Text Editor allows for you to easily insert images, add styling to text, YouTube videos, links, paste from Microsoft Word, etc. The Visual Editor can be used when editing the survey/question title or survey/question description. 
 
-To access the Visual Editor, click on a text area in the floating box on the left hand side, and click [Open Visual Editor]. The visual editor appears as a typical text editor, with actions and commands located at the top. Any changes made in the visual editor will appear in your survey.
+To access the Visual Editor, click on a text area in the floating box on the left hand side, and click [Open Visual Editor]. 
+
+.. figure:: ../../resources/editor/visual_editor_on_survey_title.png
+	:align: center
+	:class: screenshot
+	:alt: Visual Editor for Survey Title
+	:scale: 70%	
+
+	*Figure 5.9* Editing the Survey Title in the Visual Editor
+
+The visual editor appears as a typical text editor, with actions and commands located at the top. Any changes made in the visual editor will appear in your survey.
 
 .. figure:: ../../resources/editor/visual_editor.png
 	:align: center
-	:class: screenshot:
+	:class: screenshot
 	:alt: Visual Editor
 	:scale: 70%	
 
