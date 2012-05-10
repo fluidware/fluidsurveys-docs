@@ -307,6 +307,8 @@ The Date/Time can be customized to accepted either only:
      - This question type will be appended to the question directly before it. By default, this option is disabled.
    * - 3. Width
      - You can adjust the width based on a percentage. By default, the value is 100%.
+   * - 4. Show Record Now Button
+     - This option is useful for recording timestamps in surveys. Selecting this option adds a button which, when pressed, records the current time. Note that this disables manually changing the date/time value.
 
 .. list-table:: Options
    :widths: 35 65
