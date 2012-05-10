@@ -179,11 +179,11 @@ Mass Translations can be found under [Publish].
 
 	* - Option
 	  - Description
-	* - 1. 
+	* - 1. Translate For
 	  - 
-	* - 2. 
+	* - 2. Download French Template
 	  - 
-	* - 3. 
+	* - 3. Download All Languages
 	  - 
-	* - 4. 
+	* - 4. Upload Data
 	  - 
