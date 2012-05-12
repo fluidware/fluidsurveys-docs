@@ -173,17 +173,17 @@ Mass Translations can be found under [Publish].
 
 	*Figure 9.1* Mass Translate French for a survey
 
-	.. list-table:: 
+.. list-table:: 
 	:widths: 30 70
 	:header-rows: 1
 
 	* - Option
 	  - Description
 	* - 1. Translate For
-	  - 
+	  - Select from the dropdown the language you'd like to translate
 	* - 2. Download French Template
-	  - 
+	  - If the French languag was selected from the dropdown, then the French language template is available for download. Whichever language was selected, that will become the deciding factor for this section
 	* - 3. Download All Languages
-	  - 
+	  - If there are multiple languages within a survey, it may be more advantageous to download all languages in bulk, as opposed to translating each separately.
 	* - 4. Upload Data
-	  - 
+	  - Once the translations have been completed, re-upload the templates so 
