@@ -35,13 +35,98 @@ Piping
 Branching
 ^^^^^^^^^
 
-Branching is similar to simple skipping in that it allows you to send respondents to different sections of your survey based on their responses. There are however, several differences. With advanced branching, you can skip based on multiple conditions (multiple questions), as well as based on questions on previous pages. You can also implement dynamic on-page skipping (hide, show, disable questions), and trigger a variety of actions (email messages, terminate the survey, etc). Plus, you can implement branching on additional question types, such as text response fields, grid questions and checkbox (multi-answer) questions. All in all, advanced branching can do everything that simple skipping can + more.
+Branching is similar to simple skipping in that it allows you to send respondents to different sections of your survey based on their responses. There are however, several differences. With advanced branching, you can skip based on multiple conditions (multiple questions), as well as based on questions on previous pages. You can also implement dynamic on-page skipzping (hide, show, disable questions), and trigger a variety of actions (email messages, terminate the survey, etc). Plus, you can implement branching on additional question types, such as text response fields, grid questions and checkbox (multi-answer) questions. All in all, advanced branching can do everything that simple skipping can + more.
+
+.. figure:: ../../resources/editor/survey_logic_wizard.png
+	:align: center
+	:scale: 70%
+	:alt: Survey Logic Wizard start
+	:class: screenshot
+
+	*Figure 9.1* The first window seen when "Advanced Logic" is clicked
+
+.. list-table:: 
+	:widths: 30 70
+	:header-rows: 1
+
+	* - Option
+	  - Description
+	* - 1. Add Branching Logic
+	  - Click "Add Branching Logic" to add a rule. Please note that in order to associate branching with a question in your survey, the question must first have a question identifier. To learn how to add an identifier, refer to the Identifier section in the manual.
+
+Every branching logic condition has a quality that will execute when a block has been satisifed. There are 11 choices available to help better farther assist you in customizing your survey to your specific needs.
+
+.. figure:: ../../resources/editor/choices_logic.png
+	:align: center
+	:scale: 70%
+	:alt: Available Choices
+	:class: screenshot
+
+	*Figure 9.1* Available Logic Branches
+
+.. list-table:: 
+	:widths: 40 60
+	:header-rows: 1
+
+	* - Option
+	  - Description
+	* - 1. Page #
+	  - Jump to a specific page. You cannotg select a previous page
+	* - 2. Finish the survey
+	  - Jump to the "Thank you" page. This will mark any response as "Complete". This branching logic is perfect.
+	* - 3. Terminate the survey
+	  - Jump to the "". This will mark any response as "Incomplete". This branching logic is perfect when you want to keep track of a demographic you may not specifically be tailoring to, ie., a survey only for females, those that watch more than 10 movies a year, etc.
+	* - 4. Redirect to a URL
+	  - Redirect the respondent to a web site.
+	* - 5. Skip to a random page
+	  - Randomly jump to a random page. You cannot select a previous page.
+	* - 6. Randomly traverse specified range
+	  - Jump between specified pages, ie., 4, 10, 11
+	* - 7. Hide a question
+	  - Based on a response, hide a question from the respondents view outright
+	* - 8. Show a question
+	  - Based on a response, show a question to the respondents view
+	* - 9. Disable a question
+	  - Disabling a question will make it so that its choices and variables cannot be selected, ie., greyed out
+	* - 10. E-mail...
+	  - Email an individual(s) with the satisified branching logic with a customizable Subject, Message, and adjustable Advanced Options
+	* - 11. Mark this response as complete
+	  - Responses are either Incomplete, or Complete. Based on a condition, some Administrators would want a survey to be marked "Complete" right away based on a response, as opposed to waiting until the [Submit] button is clicked at the end of the survey.
+
+.. warning::
+
+	Randomly traverse specified range has the ability to branch backwards into a survey, but the issue of an infinite recursive looping issue has the possibility of arises. For instance, based on a response, you could go back to Page 2, but if the respondent follows the same path and choices to have the logic loop them back to Page 2, the respondent may grow frustrated, leave your survey, and mark their response group as "Incomplete". It is advised against branching back into a survey.
+
+Branching Logic can include more than 1 condition. It is best to look at logic as a series of logical statements. While it may be confusing to understanding at first glance, breaking down the conditions is as simple as deciding, "if the user selects A&E Root Beer, and if the user selects Barq's Root Beer, then I do not want them to answer the rest of the survey. I want them to leave". A block contains 1 logic condition, as seen in FIGURE <<CHANGE LATER>>
+
+.. figure:: ../../resources/editor/survey_logic_conditions.png
+	:align: center
+	:scale: 70%
+	:alt: Survey Logic Wizard start
+	:class: screenshot
+
+	*Figure 9.1* Logic applied to a page in a survey
+
+.. list-table::
+	:widths: 30 70
+	:header-rows: 1
+
+	* - Option
+	  - Description
+	* - 1. Condition 1
+	  - If "drinks" contains "A&E" Root Beer AND "drinks" contains Barq's Root Beer, then "Finish the survey"
+	* - 2. Condition 2
+	  - If "Language" equals English, NOT, then go to page 4
+	* - 3. Add Branching Logic
+	  - Click "Add Branching Logic" to add a rule. Please note that in order to associate branching with a question in your survey, the question must first have a question identifier. To learn how to add an identifier, refer to the Identifier section in the manual
+	* - 4. Otherwise
+	  - If any of the above conditions in the survey logic wizard pop-up, 
+	* - 5. Control
+	  - Save, Cancel, or Reset your advanced branching logic in your survey. 
 
 .. warning::
 
 	It’s not recommended to use advanced branching and simple skipping together. If one is used, the other shouldn’t. Using both could lead to clashing conditions and unexpected results.
-
-
 
 Extraction
 ^^^^^^^^^^
@@ -174,7 +259,7 @@ Mass Translations can be found under [Publish].
 	*Figure 9.1* Mass Translate French for a survey
 
 .. list-table:: 
-	:widths: 30 70
+	:widths: 35 65
 	:header-rows: 1
 
 	* - Option
@@ -184,6 +269,40 @@ Mass Translations can be found under [Publish].
 	* - 2. Download French Template
 	  - If the French languag was selected from the dropdown, then the French language template is available for download. Whichever language was selected, that will become the deciding factor for this section
 	* - 3. Download All Languages
-	  - If there are multiple languages within a survey, it may be more advantageous to download all languages in bulk, as opposed to translating each separately.
+	  - If there are multiple languages within a survey, it may be more advantageous to download all languages in bulk, as opposed to translating each separately, ie., all languages will download into a .zip file
 	* - 4. Upload Data
-	  - Once the translations have been completed, re-upload the templates so 
+	  - Once the translations have been completed, re-upload the templates so they can be reflected online
+
+.. figure:: ../../resources/editor/mass_translation_infile.png
+	:align: center
+	:scale: 70%
+	:alt: Mass Translation French File in Editor
+	:class: screenshot
+
+	*Figure 9.1* Mass Translation French file in Editor
+
+.. list-table::
+	:widths: 35 65
+	:header-rows: 1
+
+	* - Option
+	  - Description
+	* - 1. Survey Language
+	  - Each language will have a specific code that allows for you to quickly identifiy which file you are presently translating. Example of such languages
+		    * fr = French
+		    * en = English
+		    * de = German
+		    * es = Spanish
+		    * ar = Arabic
+	* - 2. Question Titles/Variables
+	  - A row represents a chunk of your question. The first 2 rows, "msgid" and "msgstr", which both contain "Question 1", are the question titles.
+
+.. warning::
+
+	It is not advised to change the first row, "msgid" within the translation file. The "msgid" row refers to the default language text. If the default survey language is English, yet you are altering the French language file, then "Question 1" is what ties any changes made back to the:
+
+		1. That question, ie., Question 1
+		2. The foundation language text
+
+	If the first row is changed, then you will receive a new translation file the next time you download the text file, or the [Upload] process may not work. Therefore, changing the first instance of "msgid" is advised against.
+
