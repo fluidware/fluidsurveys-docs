@@ -11,26 +11,174 @@ This chapter will teach you how to:
 * Looping
 * Fully complete your knowledge banks of FluidSurveys Editor features
 
-Logic
-^^^^^
-
-Randomize Questions
-^^^^^^^^^^^^^^^^^^^
-
 Jumping
 ^^^^^^^
 
-Skipping
-^^^^^^^^
+Jumping allows you to create named points in your survey in which the respondent can easily navigate to.
+
+.. figure:: ../../resources/editor/enable_jumping.png
+	:align: center
+	:scale: 70%
+	:alt: Enable Jumping
+	:class: screenshot
+
+	*Figure 9.1* Enable Jumping
+
+.. note::
+
+	When you alter a page label, jumping will become evident. By default, this option is disabled
+
+.. figure:: ../../resources/editor/jumping_in_survey.png
+	:align: center
+	:scale: 70%
+	:alt: Breadcrump on survey
+	:class: screenshot
+
+	*Figure 9.1* Breadcrump on survey
+
+When a respondent takes your survey, as opposed to unknowingly progressing through the pages of your survey, they will be able to see each-and-every upcoming page. Enabling this option allows for the respondent to jump between pages. This option is perfect for when FluidSurveys is being used for something other than a survey, ie., account information, gathering financial information, etc. By default, the option for jumping is disabled. 
+
+However, you can hide which pages you do not want to appear in the jumping menu. 
+
+.. figure:: ../../resources/editor/hide_jumping_options.png
+	:align: center
+	:scale: 70%
+	:alt: Hide Jumping Options
+	:class: screenshot
+
+	*Figure 9.1* Disable Jumping between pages
 
 Looping
 ^^^^^^^
 
+Looping allows for the ability to create a block of questions that contain questions about the quality of previously asked questions, ie., why the selected hotel was chosen over the others. Looping will save time, as it replaces the necessity to create 1 block for each potential question, by adhereing to a loop that appears to be dynamically created specifically for each and every respondent.
+
+Looping is available through the Right-Click menu.
+
+.. image:: ../../resources/editor/looping_right_click.png
+	:align: center
+	:scale: 70%
+	:alt: Looping through Right-Click
+	:class: screenshot
+
+Once "Looping" has been selected, a new window will reveal itself, presenting you with the option of selecting which pages you'd like to loop. Conversely, you can select which page will be the last within the looping cycle.
+
+.. figure:: ../../resources/editor/looping_popup.png
+	:align: center
+	:scale: 70%
+	:alt: Looping Pop-up
+	:class: screenshot
+
+	*Figure 9.1* Pop-up window for Looping
+
+.. list-table:: 
+	:widths: 25 75
+	:header-rows: 1
+
+	* - Option
+	  - Description
+	* - 1. Choice
+	  - Only the following choices, 6, 7, 8, 9, 10, will set off the Looping condition. When either value is chosen for any of the # choices, it will loop once for each choice that hit the required condition.
+	* - 2. First Page
+	  - Looping will begin on "Reason For Choice" page, ie., Page 2
+	* - 3. Last Page
+	  - Loopingw ill end on "Wahat is holding you back?", ie., Page 3
+
+.. note::
+
+	The Looping Pop-up window will present slightly different options depending on the question type that is being used as the looping pivot point. The figure above uses a Dropdown Grid as the test 
+
+Looping is only available to the following question types:
+
+	* Text Response
+	* Checkbox
+	* Text Response Grid
+	* Multiple Choice Grid
+	* Checkbox Grid
+	* Semantic Differential
+
+.. tip::
+
+	When Piping is used, Looping is put into overdrive. Each and every page can contain previously inputted responses by the respondent, which gives off the illusion of a survey created uniquely for an individual. Refer to Piping in the manual to learn more.
+
 Quotas
 ^^^^^^
 
+Dynamic quotas allow for the surveyor to limit the amount of responses for a given question. If the response limit is reached for a particular question, then the survey can be exited, terminated or finished, the question can be hidden, or no action can be carried out. 
+
+The Advanced Quota window is available under [Page] > [Edit Advanced Quotas] within the Editor
+
+.. figure:: ../../resources/editor/advanced_quotas_logic.png
+	:align: center
+	:scale: 70%
+	:alt: Advaned Logic
+	:class: screenshot
+
+	*Figure 9.1* Only 50 responses for "Amour"/"Reality" AND those that stayed at "Hotel Nelligan" allowed
+
+.. list-table:: 
+	:widths: 25 75
+	:header-rows: 1
+
+	* - Option
+	  - Description
+	* - 1. Response Total
+	  - The value entered will determine that amount of desired responses for a block of logic. In the example above, only 50 complete responses for the logic (seen in #2) is allowed. By default, this number is 10. 
+	* - 2. Logic Rule
+	  - The deciding factor when determing the end point of the respondents journey. In the example above, if 50 respondents completed the survey with the response of "Amour" AND stayed at the Hotel Nelligan, then the 51st respondent will be redirected to the "Quota Filled" screen.
+	* - 3. Survey Path
+	  - Depending on what you determine in the "then" clause, the respondent will the defined path. In this case, the user will be brought to the "Quota filled" page at the end of the survey. The available branching paths are:
+			* Exit the survey with a quota filled message
+			* Finish the survey
+			* Terminate the survey
+			* Hide a question
+	* - 4. Add Quota
+	  - Add a new quota rule, with its own survey path, logic rule, and response total.
+	* - 5. Command
+	  - Save or Cancel any changes made
+
+Additionally, a survey itself can have a quota, that when reached, eg., 100 completed responses, will automatically close the survey. The survey quota is found under [Publish] > [Settings]
+
+.. figure:: ../../resources/editor/settings_survey_quotas.png
+	:align: center
+	:scale: 70%
+	:alt: Survey Quota
+	:class: screenshot
+
+	*Figure 9.1* Final quota on a survey, where # equals the total amount desired
+
 Piping
 ^^^^^^
+
+Piping is defined as taking the respondent’s answer to a previous question and inserting it (a.k.a piping it) into a later question. This sort of behavior will help keep your respondent more engaged and will make them feel as if the survey is customized to their particular situation. Piping is definitely recommended for anyone who’d like to increase their avg. survey completion rate.
+
+The Piping Wizard, found by right-clicking on a question and selecting "Piping Wizard" from the right-click menu, will present a new pop-up
+
+.. figure:: ../../resources/editor/piping_wizard_popup_drag.png
+	:align: center
+	:scale: 70%
+	:alt: Piping Wizard popup
+	:class: screenshot
+
+	*Figure 9.1* Piping Wizard popup
+
+Dragging over {{ film }} (a question identifer on Page 1) into the Question Title for the Text Response on Page 2 will pipe in what the respondent selected on Page 1. In this example, the respondent selected, "Love/Amour", which appears into the title on the following page.
+
+.. note::
+
+	Only questions with an identifier will appear in the piping wizard. To learn more about Identifiers, please refer to the section in the manual.
+
+.. figure:: ../../resources/editor/result_of_piping.png
+	:align: center
+	:scale: 70%
+	:alt: Result of Piping
+	:class: screenshot
+
+	*Figure 9.1* Piping from 1 question to another
+
+.. tip::
+
+	One of the unsung hero features is that you can pipe in custom fields that you have already uploaded into your address book. Let’s say that you have uploaded the contact info for 100 people into your address book and that one of these fields is “City”. You could then pipe this value into a question like: “How long have you lived in ,, invite.city The correct value would then be inserted for each contact who responds. We won’t go into too much detail about this here, but you can check the Email section of the manual, which talks about Custom Variables, to learn more.
 
 Branching
 ^^^^^^^^^
