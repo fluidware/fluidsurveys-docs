@@ -12,6 +12,3 @@ Sub-section 3
 
 Sub-section 4
 -------------
-
-
-

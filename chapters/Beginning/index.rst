@@ -134,8 +134,6 @@ Create a `Free account`_ to dive into the online survey system. Everything is ac
 
 		The *Nickname* and *Password* fields are case sensitive
 
-
-
 To upgrade your account to one of our paid plans, within the `"Settings Dashboard"`_ click on [Upgrade]
 
 .. _"Settings Dashboard": http://app.fluidsurveys.com/account/settings/

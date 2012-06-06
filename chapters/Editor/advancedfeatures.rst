@@ -53,7 +53,7 @@ Looping
 
 Looping allows for the ability to create a block of questions that contain questions about the quality of previously asked questions, ie., why the selected hotel was chosen over the others. Looping will save time, as it replaces the necessity to create 1 block for each potential question, by adhereing to a loop that appears to be dynamically created specifically for each and every respondent.
 
-Looping is available through the Right-Click menu.
+Looping is available through the Right-Click menu
 
 .. image:: ../../resources/editor/looping_right_click.png
 	:align: center
@@ -82,7 +82,7 @@ Once "Looping" has been selected, a new window will reveal itself, presenting yo
 	* - 2. First Page
 	  - Looping will begin on "Reason For Choice" page, ie., Page 2
 	* - 3. Last Page
-	  - Loopingw ill end on "Wahat is holding you back?", ie., Page 3
+	  - Looping will end on "What is holding you back?", ie., Page 3
 
 .. note::
 

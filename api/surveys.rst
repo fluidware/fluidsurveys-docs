@@ -93,6 +93,7 @@ Getting survey responses
     :query offset: response pagination offset (defaults to 0).
     :query limit: maximum number of results to return (defaults to 50 max is 200).
     :query filter: name of the filter you wish to filter responses by
+
     Example:
 
 .. http:get:: /api/v2/surveys/:id/responses/?filter=myfilter
