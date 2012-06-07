@@ -3,7 +3,7 @@
 Style
 =====
 
-If the Editor is the meat and potatoes, then the Themer is the desert capable of delievering a polished product. 
+If the Editor is the meat and potatoes, then the Themer is the desert capable of delievering a polished product. By default, every new survey adheres to a basic template, which holds the signature colours of FluidSurveys (Grey, Light Grey, Black, Blue). This style may not fit the needs of every individual, and therefore we provided the option to fully allow for everything to be changed.
 
 In this chapter, you will be introduced to the ability of changing not only basic elements, but complex aspects of your survey. Regardless of your CSS prowess, you can add your companies logo, alter the survey background colour, question fonts, all the way to how buttons look-and-feel. However, when venturing into the CSS Editor, it would not hurt to brush up on some basic CSS knowledge, or use it as a database of knowledge, then `w3schools`_ is the perfect starting point.
 
@@ -38,7 +38,6 @@ When the Themer is loaded up for the first time, the first page will be on displ
 	:class: screenshot
 
 	*Figure 9.1* Administrator Themeing Toolbar
-
 
 .. list-table:: 
 	:widths: 30 70
@@ -122,7 +121,81 @@ The Theme is the first option available on the Toolbar. Essentially, the Theme a
 Customize
 ---------
 
-Customize is the start 
+Customize is the start of recasting your survey to fit the needs and styles of what you desire. Within the Customize option, you can alter the:
+
+* Color
+* Elements
+* Questions
+
+Altering each option within Color can either slightly or drastically change the outlook of your survey. Refer to the bolded points below to see a brief example of what each Color option will modifyBody
+
+Color
+^^^^^
+
+**Background Color**
+
+.. figure:: ../../resources/style/body_background_color.png
+	:align: center
+	:scale: 70%
+	:alt: Modified Background Color
+	:class: screenshot
+
+	*Figure 9.1* Body Background Color (#663322)
+
+**Header text color**
+
+.. figure:: ../../resources/style/header_text_color.png
+	:align: center
+	:scale: 70%
+	:alt: Modified Header Text color
+	:class: screenshot
+
+	*Figure 9.1* Header text color (#9881ff)
+
+**Survey background color**
+
+.. figure:: ../../resources/style/survey_background_color.png
+	:align: center
+	:scale: 70%
+	:alt: Modified Survey Background Color
+	:class: screenshot
+
+	*Figure 9.1* Altered Survey Background Color (#ea64c0)
+
+**Survey text color**
+
+.. figure:: ../../resources/style/survey_text_color.png
+	:align: center
+	:scale: 70%
+	:alt: Modified Survey text color
+	:class: screenshot
+
+	*Figure 9.1* Altered Survey Text Color (#e1d14e)
+
+**Question Background color**
+
+.. figure:: ../../resources/style/question_background_color.png
+	:align: center
+	:scale: 70%
+	:alt: Modified Question Background Color
+	:class: screenshot
+
+	*Figure 9.1* Altered Question Background Color (#8b22d4)
+
+**Question title color**
+
+.. figure:: ../../resources/style/question_title_color.png
+	:align: center
+	:scale: 70%
+	:alt: Modified Question Title Color
+	:class: screenshot
+
+	*Figure 9.1* Altered Question Title Color (#fd2d98)
+
+Elements
+^^^^^^^^
+
+
 
 Advanced
 --------
@@ -130,8 +203,46 @@ Advanced
 Custom CSS
 ----------
 
+If none of the available Colors, Survey Elements, or Question styles push for a deeper experience 
+
+.. figure:: ../../resources/style/custom_css.png
+	:align: center
+	:scale: 70%
+	:alt: Custom CSS Editor
+	:class: screenshot
+
+	*Figure 9.1* Custom CSS Editor
+
+
 Template Grabber
 ----------------
 
+Grabbing a template from a pre-existing web site requires a little bit of digging, but it will allow for you to take everything, ie., colours, format, outline, pictures, css files, etc. and allow for them to reside within your survey. In order to successfully execute a Template Grab, you will need the following information seen below.
+
+.. figure:: ../../resources/style/grab_template.png
+	:align: center
+	:scale: 70%
+	:alt: Grab Template
+	:class: screenshot
+
+	*Figure 9.1* Grab Template Window
+
+To learn more on how to successfully grab a template from any web site, refer to the, "Grab a Template" found under the Tutorial section of this manual.
+
+The end result, after finding the correct div id (critic_user_reviews_wrap) on Metacritic (http://www.metacritic.com/movie/prometheus) yields the following result. Notice anything familiar under the films description?
+
+.. figure:: ../../resources/style/template_grabbed_prometheus.png
+	:align: center
+	:scale: 70%
+	:alt: Metacritic Template Grab
+	:class: screenshot
+
+	*Figure 9.1* Template Grabbed from Prometheus Review on Metacritic
+
+.. note::
+
+	You can reset your theme at any time by clicking "Reset" under the "Template Grabber"
+
 Pages
 -----
+
