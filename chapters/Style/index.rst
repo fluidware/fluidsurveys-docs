@@ -227,6 +227,23 @@ Grabbing a template from a pre-existing web site requires a little bit of diggin
 
 	*Figure 9.1* Grab Template Window
 
+.. list-table:: 
+	:widths: 30 70
+	:header-rows: 1
+
+	* - Section
+	  - Description
+	* - 1. Page URL {{ name }}
+	  - The link to the web site that you'd like to grab from
+	* - 2. Target id
+	  - This is where the survey will go in the grabbed theme. Using the example below, Metacritic.com has a section of its web site that has an id, "critic_user_reviews_wrap". The survey will go where the summary of a critics review goes.
+	* - 3. Language link id
+	  - If the survey you are grabbing from has a multi-language front facing section of their web site, then the URL can be entered here. This only applies when you have a survey with multiple languages, ie., French, 
+
+.. warning::
+
+	If the wrong Target id was provided, then your survey may simply flash once, and retain its old base template. If this happens, then return back to the web site in question, and ensure that the appropriate id was copied.
+
 To learn more on how to successfully grab a template from any web site, refer to the, "Grab a Template" found under the Tutorial section of this manual.
 
 The end result, after finding the correct div id (critic_user_reviews_wrap) on Metacritic (http://www.metacritic.com/movie/prometheus) yields the following result. Notice anything familiar under the films description?
