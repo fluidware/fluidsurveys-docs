@@ -29,7 +29,7 @@ Or the paint brush on the Survey Dashboard.
 
 	*Figure 9.1* Quick Link Style button in the Survey Dashboard
 
-When the Themer is loaded up for the first time, the first page will be on display, with an Administrator Toolbar sticking at the top of the page with all styling options available.
+When the Themer is loaded up for the first time, the first page will be on display, with an Administrator Toolbar sticking at the top of the page with all styling options available. The Administrator bar will hold all changes available to an Administrator and the survey. 
 
 .. figure:: ../../resources/style/themer_admin_bar.png
 	:align: center
@@ -39,10 +39,26 @@ When the Themer is loaded up for the first time, the first page will be on displ
 
 	*Figure 9.1* Administrator Themeing Toolbar
 
+
+.. list-table:: 
+	:widths: 30 70
+	:header-rows: 1
+
+	* - Section
+	  - Description
+	* - 1. Theme
+	  - Apply a pre-built theme to your survey
+	* - 2. Customize 
+	  - Alter Colours, Elements, or a specific Question without knowing any CSS
+	* - 3. Advanced
+	  - Customize CSS or grab a template from an already built web site. 
+	* - 4. Pages
+	  - If your survey consists of multiple pages, directly jump from page to page. Based on the complexity of a theme, it might be advantageous to ensure that all pages, and question types adhere to any CSS styling.
+
 Theme
 -----
 
-The Theme is the first option available on the Toolbar. Essentially, the Theme allows for a survey to adhere to an already pre-styled theming. 
+The Theme is the first option available on the Toolbar. Essentially, the Theme allows for a survey to adhere to an already pre-styled colouring, outline and CSS format. To apply a Theme, click on [Theme], select the desired theme (see Live examples below) and then [Save Changes]. 
 
 .. figure:: ../../resources/style/theme_stylings.png
 	:align: center
@@ -53,103 +69,60 @@ The Theme is the first option available on the Toolbar. Essentially, the Theme a
 	*Figure 9.1* Available Themes
 
 .. list-table:: 
-	:widths: 25 75
+	:widths: 30 70
 	:header-rows: 1
 
 	* - Section
-	  - Description
+	  - URL
 	* - 1. Basic
-	  - .. image:: ../../resources/style/basic_theme.png
-	       :align: center
-	       :scale: 65%
-	       :alt: Basic Theme
-	       :class: screenshot
-	* - 2. Chirp
-	  - .. image:: ../../resources/style/chirp_theme.png
-	       :align: center
-	       :scale: 70%
-	       :alt: Basic Theme
-	       :class: screenshot
+	  - `Basic Theme Example`_ 
+	* - 2. Chirp 
+	  - `Chirp Theme Example`_ 
 	* - 3. Green Tartan
-	  - .. image:: ../../resources/style/green_tartan_theme.png
-	       :align: center
-	       :scale: 70%
-	       :alt: Basic Theme
-	       :class: screenshot
+	  - `Green Tartan Theme Example`_
 	* - 4. Blue Tartan
-	  - .. image:: ../../resources/style/blue_tartan_theme.png
-	       :align: center
-	       :scale: 70%
-	       :alt: Basic Theme
-	       :class: screenshot
+	  - `Blue Tartan Theme Example`_
 	* - 5. Green Wallpaper
-	  - .. image:: ../../resources/style/green_theme.png
-	       :align: center
-	       :scale: 70%
-	       :alt: Basic Theme
-	       :class: screenshot
+	  - `Green Theme Example`_
 	* - 6. Console
-	  - .. image:: ../../resources/style/console_theme.png
-	       :align: center
-	       :scale: 70%
-	       :alt: Basic Theme
-	       :class: screenshot
+	  - `Console Theme Example`_
 	* - 7. Matrices
-	  - .. image:: ../../resources/style/matrices_theme.png
-	       :align: center
-	       :scale: 70%
-	       :alt: Basic Theme
-	       :class: screenshot
+	  - `Matrices Theme Example`_
 	* - 8. Pretty
-	  - .. image:: ../../resources/style/pretty_theme.png
-	       :align: center
-	       :scale: 70%
-	       :alt: Basic Theme
-	       :class: screenshot
+	  - `Pretty Theme Example`_
 	* - 9. Sunburst
-	  - .. image:: ../../resources/style/sunburst_theme.png
-	       :align: center
-	       :scale: 70%
-	       :alt: Basic Theme
-	       :class: screenshot
+	  - `Sunburst Theme Example`_
 	* - 10. Aztec
-	  - .. image:: ../../resources/style/aztec_theme.png
-	       :align: center
-	       :scale: 70%
-	       :alt: Basic Theme
-	       :class: screenshot
+	  - `Aztec Theme Example`_
 	* - 11. Classic Blue
-	  - .. image:: ../../resources/style/classic_blue_theme.png
-	       :align: center
-	       :scale: 70%
-	       :alt: Basic Theme
-	       :class: screenshot
+	  - `Classic Blue Theme Example`_
 	* - 12. Social
-	  - .. image:: ../../resources/style/social_theme.png
-	       :align: center
-	       :scale: 70%
-	       :alt: Basic Theme
-	       :class: screenshot
-	* - 13. Mobile
-	  - .. image:: ../../resources/style/mobile_theme.png
-	       :align: center
-	       :scale: 70%
-	       :alt: Basic Theme
-	       :class: screenshot
+	  - `Social Theme Example`_
+	* - 13. Mobile 
+	  - `Mobile Theme Example`_
 
-Theme is the first available option on the Administrator Toolbar
+.. _Basic Theme Example: http://fluidsurveys.com/surveys/FluidSurveysDocs/basic-theme-example
+.. _Chirp Theme Example: http://fluidsurveys.com/surveys/FluidSurveysDocs/chirp-theme-example
+.. _Green Tartan Theme Example: http://fluidsurveys.com/surveys/FluidSurveysDocs/green-tartan-theme-example/
+.. _Blue Tartan Theme Example: http://fluidsurveys.com/surveys/FluidSurveysDocs/blue-tartan-theme-example
+.. _Green Theme Example: http://fluidsurveys.com/surveys/FluidSurveysDocs/green-theme-example
+.. _Console Theme Example: http://fluidsurveys.com/surveys/FluidSurveysDocs/console-theme-example
+.. _Matrices Theme Example: http://fluidsurveys.com/surveys/FluidSurveysDocs/matrices-theme-example/
+.. _Pretty Theme Example: http://fluidsurveys.com/surveys/FluidSurveysDocs/pretty-theme-example
+.. _Sunburst Theme Example: http://fluidsurveys.com/surveys/FluidSurveysDocs/sunburst-theme-example
+.. _Aztec Theme Example: http://fluidsurveys.com/surveys/FluidSurveysDocs/aztec-theme-example/
+.. _Classic Blue Theme Example: http://fluidsurveys.com/surveys/FluidSurveysDocs/classic-blue-theme-example
+.. _Social Theme Example: http://fluidsurveys.com/surveys/FluidSurveysDocs/social-theme-example
+.. _Mobile Theme Example: http://fluidsurveys.com/surveys/FluidSurveysDocs/mobile-theme-example/
+
+.. note::
+
+	A Theme is not 'stuck' to a survey. You can alter anything at anytime, even go so far as to remove all styling formats on a survey at any time.
 
 Customize
 ---------
 
-Colors
-------
-
-Elements
---------
-
-Questions
----------
+Customize is the start 
 
 Advanced
 --------
