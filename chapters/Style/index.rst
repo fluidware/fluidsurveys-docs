@@ -3,7 +3,7 @@
 Style
 =====
 
-If the Editor is the meat and potatoes, then the Themer is the desert capable of delievering a polished product. By default, every new survey adheres to a basic template, which holds the signature colours of FluidSurveys (Grey, Light Grey, Black, Blue). This style may not fit the needs of every individual, and therefore we provided the option to fully allow for everything to be changed.
+If the Editor is the meat and potatoes, then the Themer is the desert capable of delievering a polished product. By default, every new survey adheres to a basic template, which holds the signature colours of FluidSurveys (Grey, Light Grey, Black, Blue). This style may not fit the needs of every individual, and therefore we provided the option to fully allow for everything to be changed. 
 
 In this chapter, you will be introduced to the ability of changing not only basic elements, but complex aspects of your survey. Regardless of your CSS prowess, you can add your companies logo, alter the survey background colour, question fonts, all the way to how buttons look-and-feel. However, when venturing into the CSS Editor, it would not hurt to brush up on some basic CSS knowledge, or use it as a database of knowledge, then `w3schools`_ is the perfect starting point.
 
@@ -67,38 +67,25 @@ The Theme is the first option available on the Toolbar. Essentially, the Theme a
 
 	*Figure 9.1* Available Themes
 
-.. list-table:: 
-	:widths: 30 70
-	:header-rows: 1
+.. note::
 
-	* - Section
-	  - URL
-	* - 1. Basic
-	  - `Basic Theme Example`_ 
-	* - 2. Chirp 
-	  - `Chirp Theme Example`_ 
-	* - 3. Green Tartan
-	  - `Green Tartan Theme Example`_
-	* - 4. Blue Tartan
-	  - `Blue Tartan Theme Example`_
-	* - 5. Green Wallpaper
-	  - `Green Theme Example`_
-	* - 6. Console
-	  - `Console Theme Example`_
-	* - 7. Matrices
-	  - `Matrices Theme Example`_
-	* - 8. Pretty
-	  - `Pretty Theme Example`_
-	* - 9. Sunburst
-	  - `Sunburst Theme Example`_
-	* - 10. Aztec
-	  - `Aztec Theme Example`_
-	* - 11. Classic Blue
-	  - `Classic Blue Theme Example`_
-	* - 12. Social
-	  - `Social Theme Example`_
-	* - 13. Mobile 
-	  - `Mobile Theme Example`_
+	A Theme is not 'stuck' to a survey. You can alter anything at anytime, even go so far as to remove all styling formats on a survey at any time.
+
+Click on one of the links below to see an example of a Theme in action
+
+	  1. Basic : `Basic Theme Example`_ 
+	  2. Chirp : `Chirp Theme Example`_
+	  3. Green Tartan : `Green Tartan Theme Example`_
+	  4. Blue Tartan : `Blue Tartan Theme Example`_
+	  5. Green Wallpaper : `Green Theme Example`_
+	  6. Console : `Console Theme Example`_
+	  7. Matrices : `Matrices Theme Example`_
+	  8. Pretty : `Pretty Theme Example`_
+	  9. Sunburst : `Sunburst Theme Example`_ 
+	  10. Aztec : `Aztec Theme Example`_
+	  11. Classic Blue : `Classic Blue Theme Example`_
+	  12. Social : `Social Theme Example`_
+	  13. Mobile : `Mobile Theme Example`_
 
 .. _Basic Theme Example: http://fluidsurveys.com/surveys/FluidSurveysDocs/basic-theme-example
 .. _Chirp Theme Example: http://fluidsurveys.com/surveys/FluidSurveysDocs/chirp-theme-example
@@ -113,10 +100,6 @@ The Theme is the first option available on the Toolbar. Essentially, the Theme a
 .. _Classic Blue Theme Example: http://fluidsurveys.com/surveys/FluidSurveysDocs/classic-blue-theme-example
 .. _Social Theme Example: http://fluidsurveys.com/surveys/FluidSurveysDocs/social-theme-example
 .. _Mobile Theme Example: http://fluidsurveys.com/surveys/FluidSurveysDocs/mobile-theme-example/
-
-.. note::
-
-	A Theme is not 'stuck' to a survey. You can alter anything at anytime, even go so far as to remove all styling formats on a survey at any time.
 
 Customize
 ---------
@@ -195,15 +178,102 @@ Color
 Elements
 ^^^^^^^^
 
+Allows for all things found in a survey to be altered. For instance, every survey allows for a logo to be uploaded, which can be altered under the "Elements" second. Specific elements of the Question, Question Title, Termination Message, etc., can be altered, eg., Width, Height, Margin, Font family, etc. Every "Element" will have a different set of options.
 
+The Elements available for alteration are seen and described below. Please refer to Figure VALUE to see which elements relates to which section of your survey
+
+.. figure:: ../../resources/style/survey_elements_number.png
+	:align: center
+	:scale: 70%
+	:alt: Places of Element Modification
+	:class: screenshot
+
+	*Figure 9.1* Survey Elements Numbered
+
+While there are too many customziable options available for each Element to list them off in a logical display order, refer to the "Style" section of your survey to gather a closer look. However, the table below contains a high-level overview of each and every available element that you can change.
+
+.. list-table:: 
+	:widths: 30 70
+	:header-rows: 1
+
+	* - Section
+	  - Description
+	* - 1. Survey Logo
+	  - A logo can be uploaded for a survey that will reside above the Survey Title (#5). Not shown in Figure above. By default, there is no survey logo.
+	* - 2. Background
+	  - Altering this element will change the background that contains the survey.
+	* - 3. Survey
+	  - Change the survey background independent to the overall background (#2).
+	* - 4. Survey (Header)
+	  - Alter the background color for the element that holds both the Survey Title and Survey Description. 
+	* - 5. Survey Title
+	  - Change only the title to your survey, ie., color, font, size, etc.
+	* - 6. Survey Description
+	  - Change the survey description to your survye, which will have settings independent to the survey title
+	* - 7. Question Title
+	  - Change only the title to your questions, ie., color, font, size, etc.
+	* - 8. Question Description
+	  - Change the survey description to your survye, which will have settings independent to the question title
+	* - 9. Question
+	  - Alter the settings behind the Choices and Variables.
+	* - 10. Question Body
+	  - Alter the container of #7, #8 and #9, ie., the background color, position, width, etc.
+	* - 11. Progress Bar (Outer)
+	  - Alter the outside of the progress bar
+	* - 12. Progress Bar (Text)
+	  - Alter only the text of the progress bar
+	* - 13. Progress Bar (Inner)
+	  - Alter the inside of the progress bar
+	* - 14. Error Message (Outer)
+	  - If a question is required, or has validation on it, and the user enters invalid information, they are prompted with an error message. This allows for the style to be altered. In this case, only the outside of the Error Message. **Not showin in Figure above**
+	* - 15. Error Message (Inner)
+	  - This will only affect the inside of the Error Message. **Not showin in Figure above**
+	* - 16. Button Region
+	  - Change the region, such as distance between buttons, height, margin, etc.
+	* - 17. Buttons
+	  - Change the buttons text, font, color, etc.
+	* - 18. Footer 
+	  - Alter the footer text. The text cannot be changed within the Footer.
+	* - 19. Footer (Link)
+	  - Only alter the link within the Footer
+	* - 20. Finish Message
+	  - Alter the look-and-feel of the final page, which a respondent sees when they successfully completed a survey path. **Not showin in Figure above**
+	* - 21. Termination Message
+	  - Alter the look-and-feel of the final page, which a respondent seens when they were terminated due to a previous repsonse. **Not showin in Figure above**
+	* - 22. Save and Continue Container
+	  - Change the container that holds the text within the "Save and Continue Later" page. This is only found within the "Save and Continue Later" page when the button is pressed. **Not showin in Figure above**
+	* - 23. Save and Continue (Header)
+	  - Change the header that has, "Save and Continue Later". This is only found within the "Save and Continue Later" page when the button is pressed. **Not showin in Figure above**
+	* - 24. Save and Continue (Link)
+	  - Change the look-and-feel of the link. This is only found within the "Save and Continue Later" page when the button is pressed.  **Not showin in Figure above**
+
+Questions
+^^^^^^^^^
+
+By default, every question type can be tailored to your various needs. Where Elements allows for key elements in a survey to be altered, Question(s) allows for only your questions to be altered. Question(s) has the same customizable options across all question types. Overall, Title, Description, Question Body, as well as individual Variables and Choices are the available elements of a specific question type that are customizable.
+
+.. figure:: ../../resources/style/questions_elements.png
+	:align: center
+	:scale: 70%
+	:alt: Customziable Question Elements
+	:class: screenshot
+
+	*Figure 9.1* Elements available for customization
+
+.. note::
+
+	You can reset your theme at any time by clicking "Reset" under the "Template Grabber"
 
 Advanced
 --------
 
-Custom CSS
-----------
+Advanced allows for any element in a survey to be altered with either CSS, or scrapped from a pre-defined web site using Template Grabber
 
-If none of the available Colors, Survey Elements, or Question styles push for a deeper experience 
+Custom CSS
+^^^^^^^^^^
+
+If none of the available Colors, Survey Elements, or Question styles push for a deeper experience, then you can use the built in CSS Editor. The Survey Themer allows users to edit 
+the survey’s CSS. To do so, simply select "Advanced" > “CSS” and a dialog will appear displaying the CSS for the survey. Changes can be made to the existing code, and/or custom code can be entered.
 
 .. figure:: ../../resources/style/custom_css.png
 	:align: center
@@ -213,11 +283,15 @@ If none of the available Colors, Survey Elements, or Question styles push for a 
 
 	*Figure 9.1* Custom CSS Editor
 
+.. tip::
+
+	Any changes made in the CSS editor will show on your survey in real time. To reset any changes, simply press the “Reset” button.
 
 Template Grabber
-----------------
+^^^^^^^^^^^^^^^^
 
-Grabbing a template from a pre-existing web site requires a little bit of digging, but it will allow for you to take everything, ie., colours, format, outline, pictures, css files, etc. and allow for them to reside within your survey. In order to successfully execute a Template Grab, you will need the following information seen below.
+Grabbing a template from a pre-existing web site requires a little bit of digging, but it will allow for you to take everything, ie., colours, format, outline, pictures, css files, etc. and allow for them to reside within your survey. In order to successfully execute a Template Grab, you will need the following information seen below. This is an advanced portion of FluidSurveys, and if you are unfamiliar with HTML or CSS, then this section may be slighter harder to follow. Nonetheless, the interface is very intuitive and 
+straight forward.
 
 .. figure:: ../../resources/style/grab_template.png
 	:align: center
@@ -244,8 +318,6 @@ Grabbing a template from a pre-existing web site requires a little bit of diggin
 
 	If the wrong Target id was provided, then your survey may simply flash once, and retain its old base template. If this happens, then return back to the web site in question, and ensure that the appropriate id was copied.
 
-To learn more on how to successfully grab a template from any web site, refer to the, "Grab a Template" found under the Tutorial section of this manual.
-
 The end result, after finding the correct div id (critic_user_reviews_wrap) on Metacritic (http://www.metacritic.com/movie/prometheus) yields the following result. Notice anything familiar under the films description?
 
 .. figure:: ../../resources/style/template_grabbed_prometheus.png
@@ -256,10 +328,21 @@ The end result, after finding the correct div id (critic_user_reviews_wrap) on M
 
 	*Figure 9.1* Template Grabbed from Prometheus Review on Metacritic
 
-.. note::
+To learn more on how to successfully grab a template from any web site, refer to the, "Grab a Template" found under the Tutorial section of this manual.
+
+.. tip::
 
 	You can reset your theme at any time by clicking "Reset" under the "Template Grabber"
 
 Pages
 -----
 
+When working with a multi-paged survey, it is advantageous to alternate between the pages to ensure that any CSS or stylings added, adhere beautifully across the entirety of your survey. Pages, found on the top-right of the toolbar, allows for you to quickly jump between pages.
+
+.. figure:: ../../resources/style/pages_top_right.png
+	:align: center
+	:scale: 70%
+	:alt: Pages Selection
+	:class: screenshot
+
+	*Figure 9.1* All # pages available
