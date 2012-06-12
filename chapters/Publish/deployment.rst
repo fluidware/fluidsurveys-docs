@@ -71,6 +71,24 @@ As you'll notice, French has been selected, and the "Online Deployment URL" imme
 Embed Code
 ^^^^^^^^^^
 
+An alternative way to expanding your surveys horizons via the usual routine, eg., e-mails, QR codes, Social Networking, it is possible to embed the survey directly into your web site, so anyone who visits the site will be able to take the survey via an IFRAME.
+
+.. figure:: ../../resources/publish/embed_code.png
+	:scale: 70%
+	:align: center
+	:class: screenshot
+	:alt: Embed Survey Code
+
+	*Figure 9.1* Embed Code
+
+You can manually add extra HTML code (to change the height and width, for example) directly into the code. When editing your web site to include your survey, you can refresh your website at any time to preview the changes in your survey. 
+
+The survey will take on the default style that we provide and the themer will allow you to dynamically modify what your survey looks like.
+
+If you have `WordPress`_, you can take the provided code and copy and paste it into a “Post” or “Page”.
+
+.. _WordPress: http://www.wordpress.com
+
 Email Invitations
 ^^^^^^^^^^^^^^^^^
 
@@ -80,11 +98,72 @@ Custom Survey Panel
 ^^^^^^^^^^^^^^^^^^^
 
 
+3 part process
+
+Collecting responses from your target audience 
+
+
 Website Popups
 ^^^^^^^^^^^^^^
 
+Popups can be the fastest, and eastiest and most effective way for site visitors to come back. Track visitor opinions, gauge trend popularity, and find out what your web site visitors are thinking with a FluidSurveys survey and a Popup. One way to distribute a survey is via a pop-up window on your website. 
 
+.. figure:: ../../resources/publish/pop_up.png
+	:scale: 70%
+	:align: center
+	:class: screenshot
+	:alt: Popup example
 
+	*Figure 9.1* How a popup looks like
+
+Click "Add new popup" to get started. A new screen will slowly fade into view, which contains all necessary control options as defined below.
+
+.. figure:: ../../resources/publish/pop_up_settings.png
+	:scale: 70%
+	:align: center
+	:class: screenshot
+	:alt: Settings popup
+
+	*Figure 9.1* Available settings for a popup
+
+.. list-table:: 
+	:widths: 30 70
+	:header-rows: 1
+
+	* - Section
+	  - Description
+	* - 1. Name
+	  - The name is simply a label for indentification purposes when viewing your list of popups. The user who views the popup will not see this label.
+	* - 2. Identifier
+	  - This value will be used to set the cookie preventing the popup from being shown twice. You may leave this blank to use a unique identifier, or set it to a custom value. If you use a custom value, all popups sharing this value will check for this value before being displayed. This allows you to have mulitple popups on multiple pages but only present the user with one.
+	* - 3. Enabled
+	  - Allows you to quickly enable or disable this popup. This way you can leave the code for the popup on your website, but if you disable the popup here, it will not appear to any visitors.
+	* - 4. Pop Over
+	  - Force this popup to stay in the foreground. By default (disabled) the script will attempt to put the displayed survey in the background if the browser allows it. Checking this will attempt to show the window the survey appears in above the current window
+	* - 5. Use Standby Page
+	  - If this option is enabled, when the user accepts the survey offer, the window popping up in the background will show the standby page first. The standby page will display the message set on the messages tab and contain a link to the survey, but encoureages the user to finish browsing. When the user leaves the domain, the standby page automatically redirects to the survey. However, to use this successfully, the standby page must be hosted on your server.
+	* - 6. Display Effect
+	  - Select an effect to use when displaying t he popup.
+	* - 7. Language
+	  - Determins which language the survey will be displayed in if your survey uses mulitple languages. Since we are unable to detect which langauge your user would prefer, you will nee dto create multiple popups, or duplicate an existing one and place the code for the correct langauge on the corresponding page of your site. The user may still change the survey language once they vist the survey, reglardess of which langauge it was started in.
+	* - 8. Percentage
+	  - Percentage value between 0 and 100%. Your popups will only be shown to this percentage of people. If you set this value to 10%, abolut 1 in 10 people will see your popups. You may use floating point values such as 0.5% for 1 in 200. For frequency, every X visitor will be shown your popup, while with percentage, each visitor has an X% chance of being shown your popup.
+	* - 9. Frequency
+	  - Dispaly your popup to every x vistior. If this value is set to 5, every 5th visitor will see your popup. 5, 10, 20, etc. This is checked before the percetnage value, so if you have frequency set to 5, and percentage set to 25%, every 5th visitor has a 25% chance of seeing your popup. For percentage, every visitor has X% chance of being shown your popup, where with frequency every X visitor is guaranteed to see the popup.
+	* - 10. Delay
+	  - Delay (in seconds) before the popup will appear to a visitor on your page
+	* - 11. Postpone Length
+	  - The length of time (in hours) before a user will be eligible to see the popup again after they were not shown it based on either frequency or percentage limitations. Set this to -1 and the user will not see the popup a second time, unless they clear htier cookies.
+	* - 12. Save Changes
+	  - Save all changes done
+	* - 13. Preview
+	  - Preview how your popup will look like
+	* - 14. Undo Changes
+	  - Undo all changes
+	* - 15. Duplicate
+	  - Duplicate this popup
+	* - 16. Delete
+	  - Delete this popup
 
 Create a 2D Bar Code
 ^^^^^^^^^^^^^^^^^^^^
