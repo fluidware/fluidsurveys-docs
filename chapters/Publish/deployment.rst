@@ -118,7 +118,7 @@ Popups can be the fastest, and eastiest and most effective way for site visitors
 
 Click "Add new popup" to get started. A new screen will slowly fade into view, which contains all necessary control options as defined below.
 
-.. figure:: ../../resources/publish/pop_up_settings.png
+.. figure:: ../../resources/publish/popup_settings.png
 	:scale: 70%
 	:align: center
 	:class: screenshot
