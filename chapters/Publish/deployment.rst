@@ -308,9 +308,9 @@ The final step before publishing your popup survey on your web site, is to link 
 	:scale: 70%
 	:align: center
 	:class: screenshot
-	:alt: Messages popup
+	:alt: Popup code
 
-	*Figure 9.1* Available message settings for a popup
+	*Figure 9.1* Popup Code
 
 .. list-table:: 
 	:widths: 30 70
