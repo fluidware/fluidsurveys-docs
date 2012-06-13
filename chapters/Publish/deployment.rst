@@ -97,16 +97,126 @@ FluidSurveys’ comes equipped with an invitation module through which survey li
 Custom Survey Panel
 ^^^^^^^^^^^^^^^^^^^
 
+In the past, when you wanted to collect responses from a target audience, eg., Females ages 24-34 who live in Alaska, United States), you'd have to create your own survey in FluidSurveys, and then work with an external panel management company, or list provider to start collecting responses. But, collecting responses from your target audeicne is possible within the Custom Survey Panel via CINT.
 
-3 part process
+Custom Survey Panel is available on all plans, including Free, and the cost associated with each "Completed" response is based on the type of respondent segment that you are going after (Some segments will be more expensive than other segments -- this is mainly determined by supply/demand in the response marketplace)
 
-Collecting responses from your target audience 
+.. figure:: ../../resources/publish/cint_create_an_order.png
+	:scale: 70%
+	:align: center
+	:class: screenshot
+	:alt: Place an order for CINT
 
+	*Figure 9.1* Create a CINT order
+
+**Step 1: Basics**
+
+The new dialog that apperas after "Create an order" was clicked is Step 1 of 3. Basics is where you begin outlining your high-level target audience, ie., Country, Region, the number of questions you will be asking, along with the age group. Using the aforementioned example, Females ages 24-34, who live in Alaska, United Stated, an order would look as follows.
+
+.. figure:: ../../resources/publish/cint_step1_basics.png
+	:scale: 70%
+	:align: center
+	:class: screenshot
+	:alt: Step 1 Basics
+
+	*Figure 9.1* Basic Target Demographic
+
+.. list-table:: 
+	:widths: 30 70
+	:header-rows: 1
+
+	* - Section
+	  - Description
+	* - 1. Country
+	  - Choose where you wish to run your survey. If you would like to conduct your survye in more than one region, we suggest you create a different target group for each selection. The cost of running two separate selections is the same as running one larger selection
+	* - 2. Region
+	  - Select the region of your target group. If you would like to conduct your survye in more than one region, we suggest you create a different target group for each selection. The cost of running two separate selections is the same as running one larger selection
+	* - 3. Gender
+	  - Select the gender of your target group. If you would like to specify the exact distribution between genders, we suggest you create a different target group for each selection. For example, if you wish to get 200 answers from females and 300 answers from males, place two oders with 200 females and 300 males respectively. The cost of running two separate selections is the same as running one larger selection
+	* - 4. Age Range
+	  - CHoose the age range for the target group. If you would like to specifiy the exact distribution between age groups, create a different target group for each selection. For example, if you wish to get 200 answers from poepple in age range 18-22 and 300 answers from peoeple in the age range 23-27, place two orders with 200 and 300 answers repsctively. The cost of running two sepaate selections is the same as runing one larger selection
+	* - 5. Completed Surveys Needed
+	  - 
+	* - 6. Price
+	  - The price is instnatly and automatically calculated when you define your target group. Since the process is automated from start-to-finish there are no project costs, set-up costs, minimum or hidden fees. More respondents, longer surveys and narrower target group yields a higher pricer. Why is that? Cint pays incentives to panelists and panel owners when participating in your survey. We pay more for a larger group, for a longer survye and for people harder to find.
+	* - 7. Delivery Time
+	  - Delivery time is calculated based upon your search criteria and our current available respondents
+	* - 8. Available Respondents
+	  - This is the current number of available **respondents completing your survey (completes)** for your selected target group wiehtin the delivery time shown above. To clarify, if you order 500 completed surveys, Cint will continue to send respondents to your survey until 500 respondents have fully completed your survey.
+
+.. warning::
+
+	If your target audience is unavailable, a warning will appear at the bottom stating the base minimum available for your desired group.
+
+	.. image:: ../../resources/publish/cint_basics_error.png
+		:scale: 70%
+		:align: center
+		:class: screenshot
+		:alt: Step 1 Basics
+
+Once the Basics have been outlined, clicking [Continue] will allow for a deeper customization of finding that desired target group. 
+
+** Step 2: Profiling**
+
+.. figure:: ../../resources/publish/cint_step2_profiling.png
+	:scale: 70%
+	:align: center
+	:class: screenshot
+	:alt: Step 2 Profiling
+
+	*Figure 9.1* Profiling Target Audience
+
+.. list-table:: 
+	:widths: 30 70
+	:header-rows: 1
+
+	* - Section
+	  - Description
+	* - 1. Standard Demographics and Occupation Status
+	  - Education level or 
+	* - 2. Household
+	  - Maritial Status, Houshold size, Number of children, Ages of children, Personal income, Household income.
+	* - 3. Profession
+	  - Company size, Field of expertise, Professional position in company
+	* - 4. Transportation
+	  - Car access, Access to motorcycle, Purpose of travelling by plane
+	* - 5. Other
+	  - Glasses/Contact lenses, Smoking habits, Use of mobile phone features
+
+**Overview**
+
+Once your target demographic has been fully finalized, clicking [Continue] brings you to the Overview screen which allows for you to double-check that your survey is indeed tailored for the desired target group.
+
+.. figure:: ../../resources/publish/cint_step3_overview.png
+	:scale: 70%
+	:align: center
+	:class: screenshot
+	:alt: Step 3 Overview
+
+	*Figure 9.1* Overview before purchasing
+
+**Buy**
+
+The last step is providing payment options. Available payment plans are:
+
+	* Mastercard
+	* Visa
+	* PayPal
+
+Clicking [Process my order] will return you to the first screen, only this time you will see your order. Depending on the defined time, ie., 8 days, you will start to see responses trickle into your survey. 
+
+.. figure:: ../../resources/publish/cint_overview_payment.png
+	:scale: 70%
+	:align: center
+	:class: screenshot
+	:alt: Step 4 Payment Overview
+
+	*Figure 9.1* Overview of purchased order
 
 Website Popups
 ^^^^^^^^^^^^^^
 
-Popups can be the fastest, and eastiest and most effective way for site visitors to come back. Track visitor opinions, gauge trend popularity, and find out what your web site visitors are thinking with a FluidSurveys survey and a Popup. One way to distribute a survey is via a pop-up window on your website. 
+Popups can be the fastest, and easiest and most effective way for site visitors to come back. Track visitor opinions, gauge trend popularity, and find out what your web site visitors are thinking with a FluidSurveys survey and a Popup. One way to distribute a survey is via a pop-up window on your website. A common use of popups is to ask the user why they are viewing a certain item in the "Store" page, or what the visitor would like to see on your web site to guarantee that they will/would return.
 
 .. figure:: ../../resources/publish/pop_up.png
 	:scale: 70%
@@ -117,6 +227,8 @@ Popups can be the fastest, and eastiest and most effective way for site visitors
 	*Figure 9.1* How a popup looks like
 
 Click "Add new popup" to get started. A new screen will slowly fade into view, which contains all necessary control options as defined below.
+
+**Settings**
 
 .. figure:: ../../resources/publish/popup_settings.png
 	:scale: 70%
@@ -154,16 +266,72 @@ Click "Add new popup" to get started. A new screen will slowly fade into view, w
 	  - Delay (in seconds) before the popup will appear to a visitor on your page
 	* - 11. Postpone Length
 	  - The length of time (in hours) before a user will be eligible to see the popup again after they were not shown it based on either frequency or percentage limitations. Set this to -1 and the user will not see the popup a second time, unless they clear htier cookies.
-	* - 12. Save Changes
-	  - Save all changes done
-	* - 13. Preview
-	  - Preview how your popup will look like
-	* - 14. Undo Changes
-	  - Undo all changes
-	* - 15. Duplicate
-	  - Duplicate this popup
-	* - 16. Delete
-	  - Delete this popup
+
+**Messages**
+
+Once the functionality, settings, and your desired outcome has been tailored and tweaked, the message can be modified by clicking on the Messages tab at the top. Messages allows for the overall message to be tweaked, which allows for the target audience to instnatly become connected with wording provided on the initial popup. 
+
+.. figure:: ../../resources/publish/popup_messages.png
+	:scale: 70%
+	:align: center
+	:class: screenshot
+	:alt: Messages popup
+
+	*Figure 9.1* Available message settings for a popup
+
+.. list-table:: 
+	:widths: 30 70
+	:header-rows: 1
+
+	* - Section
+	  - Description
+	* - 1. Header
+	  - The text in the header of the popup, usually one line which will draw the user's attention and cause them to read the rest of htem message below
+	* - 2. Message
+	  - THe text in the main content of the popup. This is the greeting you will give your user and ask them to take their survey, possibly providing some information about the survey, and why it is being taken.
+	* - 3. Yes Button
+	  - The text displayed on the button that the user will click to take the survey
+	* - 4. No Button
+	  - The text displayed on the button that the user will click to opt out of taking the survey
+	* - 5. Standby Mesage
+	  - This text will be displayed in the window that sits in the background while the user finishes browsing the site. It should contain a word or phrase surrounded by [[ ]]. This text will be linked to the survey URL, allowing the user to being the survey immediately instead of waiting until they leave the site. **Example:** "Click [[ here ]] to begin your survey"
+
+**Style**
+
+Styling your popup can ensure that the maximum amount of visitors take your survey. While the width and height can be altered on the "Settings" tab, the ability to affect the Overall colour, height, border is possible. 
+
+**Code**
+
+The final step before publishing your popup survey on your web site, is to link your web site up, with your popup, using the provided "Code"
+
+.. figure:: ../../resources/publish/popup_code.png
+	:scale: 70%
+	:align: center
+	:class: screenshot
+	:alt: Messages popup
+
+	*Figure 9.1* Available message settings for a popup
+
+.. list-table:: 
+	:widths: 30 70
+	:header-rows: 1
+
+	* - Section
+	  - Description
+	* - 1. HTML Code
+	  - This is the code you will need to paste in your website to trigger the popup
+	* - 2. Prevent Popup Code
+	  - Place this code at the top of a page which you would like to disable the popup for that user. For example, if you have a user who lands on your pricing page, and you do not want this person to see the popup now, put this code on your pricing page.
+
+At any point during the process of creating, adjusting and tweaking your popup, it is always encouraged to save any work completed thus far. At the bottom of the "New Popup" screen, is a "Options" dial, that contains *Save Changes*, *Preview*, *Undo Changes*, *Duplicate*, *Delete*
+
+.. figure:: ../../resources/publish/popup_save.png
+	:scale: 70%
+	:align: center
+	:class: screenshot
+	:alt: Save your popup settings
+
+	*Figure 9.1* Save your popup
 
 Create a 2D Bar Code
 ^^^^^^^^^^^^^^^^^^^^
@@ -235,3 +403,18 @@ To perform a social network release, click on “Publish” and then select whic
 
 Kiosk Mode
 ^^^^^^^^^^
+
+Deploying your survey in kiosk mode allows you to assign a short survey as an "entrance" survey. The entrance survey runs only "one time" when you first run your survey and then the torch is passed to your main survey. Your main survey will then run in a loop. The responses to the entrance survey will be pre-pended to all responses gathered in that session. 
+
+.. figure:: ../../resources/publish/kiosk_mode.png
+	:scale: 70%
+	:align: center
+	:class: screenshot
+	:alt: Kiosk Mode
+
+	*Figure 9.1* Kiosk Mode with "Survey #1" prepended
+
+The path a respondent will take is that "Survey #1" will be taken once, while the actual survey will constantly loop with a 5 minute timeout timer attached. The first survey is generally a "Location Survey", ie., "Where is this Kiosk located?". Therefore, all responses will have the location prepended. Kiosk mode is perfect for running your survey at a central terminal/computer, whether it’s at a tradeshow, conference, store, etc.
+
+When kiosk mode is enabled, your survey runs in a loop. Every time a survey response is completed, it automatically refreshes so the next respondent can begin. This allows multiple people to take the survey from one location with ease!
+

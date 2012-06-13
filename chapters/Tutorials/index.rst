@@ -3,31 +3,6 @@
 Tutorials
 =========
 
-
-Creating Surveys
-----------------
-
-
-Multi-language Surveys
-----------------------
-
-How it works
-
-The survey language option essentially changes the default messages provided by FluidSurveys. When that specific langauge is applied, we provided translated default messages for the following areas:
-
-.. admonition:: Translated Sections
-	
-	1. Navitation Buttons
-	2. Yes/No Question Type
-	3. Validation error messages
-
-
-
-
-
-**Note:** adding a language does not automatically transate the survey design, ie., questions and answers into another language.
-
-
 Import from Survey Monkey
 -------------------------
 
@@ -75,26 +50,3 @@ Log into your FluidSurveys account, and select “Create New Survey”. Then, se
 		:class: screenshot
 
 Upload the zip file you had downloaded from Survey Monkey, and that’s it! All of your survey questions and responses will be imported into FluidSurveys.
-
-Survey Role Management
-----------------------
-
-
-Styling a Survey
-----------------
-
-
-Analyzing Results
------------------
-
-
-Publishing a Survey
--------------------
-
-
-Invite Respondents
-------------------
-
-
-Basic Skipping
---------------
