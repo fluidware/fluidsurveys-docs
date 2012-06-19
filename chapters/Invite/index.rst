@@ -227,27 +227,125 @@ A survey can appear to be customly created for an individual using {{ invite.<cu
 .. note:: 
 
 	In order for your contacts to upload properly with custom fields, the file has to contain the two columns: “Name” and “Email”, in addition to the Custom Fields, which do not need to follow any specific order. During the initial upload, ensure that the checkboxes for your custom fields have been checked off.
-
+	
 	.. image:: ../../resources/invites/custom_fields_checked.png
 		:scale: 70%
-		:align: right
+		:align: center
 		:class: screenshot
 		:alt: Custom Fields Checked
 
 Tools
 -----
 
-It is sometimes appropriate to restrict access to your survey so only select individuals have access to it. A perfect way to do this is with invite codes.
+Every email sent using the Invite Tool, has an Invite Code appended, which allows for a deep tracking system. However, there are times when using the Invite Tool is not possible, but the need to track responses is still a priority. Within "Tools", there is a "Generate Invite Codes" section, that allows for you to generate n number of invite codes, and export the list which will adhere to the same style as using the Invite Tool, ie., <url>/?code=<invite_code>
 
-Invite codes can be distributed in two ways. If the FluidSurveys’ invitation module is used, the invite code will automatically be appended to the invite link in the email and no work on the part of the respondent is required.
+.. figure:: ../../resources/invites/invite_tools.png
+	:scale: 70%
+	:align: center
+	:class: screenshot
+	:alt: 20 Generated Invite Codes
 
-If the invitation module is not used, the survey creator can manually generate the invite codes for their survey (as many as necessary). They would then have to provide a unique code for each potential respondent as access to the survey would not be granted without a code.
+	*Figure 9.1* Invite Tools with 20 Generated Invite Codes
+
+Export to CSV allows to copy-and-paste each URL into an email. 
+
+.. figure:: ../../resources/invites/codes_exported.png
+	:scale: 70%
+	:align: center
+	:class: screenshot
+	:alt: Codes Exported
+
+	*Figure 9.1* Exported Codes
+
+Furthermore, it is sometimes appropriate to restrict access to your survey so only select individuals have access to it. A perfect way to do this is with invite codes.
+
+Invite codes can be distributed in two ways. If the FluidSurveys’ invitation module is used, the invite code will automatically be appended to the invite link in the email and no work on the part of the respondent is required. If the invitation module is not used, the survey creator can manually generate the invite codes for their survey (as many as necessary). They would then have to provide a unique code for each potential respondent as access to the survey would not be granted without a code.
 
 Statistics
 ----------
 
+Statistics allow for the questions, "How many email users did I send this survey to?", "how many people that I invited, completed the survey?", "how many e-mails do I have left this month?" to be answered with gusto and an earnest conviction. When invites are sent, the Statistics table will update itself with need-to-know information.
+
+.. figure:: ../../resources/invites/invite_statistics.png
+	:scale: 70%
+	:align: center
+	:class: screenshot
+	:alt: Invite Statistics
+
+	*Figure 9.1* Statistics for an email invite sent
+
+.. list-table:: 
+	:widths: 30 70
+	:header-rows: 1
+
+	* - Section
+	  - Description
+	* - Overall Completion Rate
+	  - How many respondents completed your survey, including both invites sent, as well as those that may have recieved the survey through other means, eg., word of mouth, social networking mediums, etc.
+	* - Invite Completion Rate
+	  - The amount of respondents that completed the survey who were invited via the Invite Tool
+	* - E-mails Remaining*
+	  - The amount of e-mails available. Every plan has a different amount of emails available to be sent, ie., Pro 1000, Ultra 5000, Enterprise 50000. The figure above represents 4215 emails are remaining on a limit of 5000 per month. This value is reset on the payment date.
+	* - E-mails Sent*
+	  - Represents the total amount of e-mail sent. This value is specific to the entirety of the account. The figure above represents 785 e-mails sent in total.
+	* - Invitations Sent
+	  - Indicative of the amount of invitese sent for this specific survey
+	* - Reminders Sent
+	  - The amount of reminders sent for this survey
+	* - Responses Through Invitations
+	  - Any response that has ""Incompleted", ie., the individual never completed the survey, will be counted here.
+	* - Completions Through Invitations
+	  - Any response that has "Complete" flag will be counted here, ie., they fully completed the survey
+
+.. note::
+
+	The above image represents an above average response rate through the Invite Tool for respondents completing a survey
+
 Lists
 -----
 
-Another option when sending out invites is to create and use lists. Lists are very useful as they can store and organize contacts in your account, and can be used to invite respondents to multiple surveys.
+
+Lists, while separate from the Address Book, allow for an easier means of sending emails. Lists contain only individuials you wish to send to, as opposed to including the entirety of the address book. 
+
+Clicking "Create New List" on the left-hand side allows for . On the left-hand side is the usual functionality found within the Invite section, 
+
+.. figure:: ../../resources/invites/add_new_and_list.png
+	:scale: 70%
+	:align: center
+	:class: screenshot
+	:alt: Invite Statistics
+
+	*Figure 9.1* Create New List and Current List
+
+.. list-table:: 
+	:widths: 30 70
+	:header-rows: 1
+
+	* - Section
+	  - Description
+	* - Add Contacts
+	  - Add new contacts manually, import contacts from Microsoft Excel, or add contacts from the Address Book. Any new addresses added via manual, or imported data entry, will be reflected in the Address Book. Therefore, there will be no need for multiple uploads of the same contacts. 
+	* - Four List Options
+	  - 
+.. image:: ../../resources/invites/4_options.png
+  	:align: center
+  	:class: screenshot
+  	:alt: 4 Options
+
+.. list-table:: 
+	:widths: 30 70
+	:header-rows: 0
+
+	* -
+	  -
+		1. **[Change Color]** of the currently selected list. By default, a random color is selected when creating a list.
+		2. **[Rename]** a list from its original name. Altering a list name will not affect any emails sent.
+		3. **[Delete List]** that is currently active. This will not remove any contacts or affect any emails sent.
+		4. **[Delete List & Contacts]** that is currently active. This **will** remove contacts, but will not affect any emails sent. 
+	* - Status
+	  - If a list was used to send invites, the status of each individual wil be reflected here, ie., Sent, Viewed, Completed, Incompleted. The default status is Blank
+
+.. note::
+
+	Adding contacts either by manual input, or importing from Excel, will add all email addresses to the Address Book.
 
