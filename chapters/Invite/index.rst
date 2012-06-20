@@ -348,4 +348,3 @@ Clicking "Create New List" on the left-hand side allows for . On the left-hand s
 .. note::
 
 	Adding contacts either by manual input, or importing from Excel, will add all email addresses to the Address Book.
-
