@@ -126,7 +126,7 @@ A report will have various options available which are a click away. The Actions
 
 Multi-Lingual Reports
 ^^^^^^^^^^^^^^^^^^^^^
-
+xWKNIiqLDlZ xWKNIiqLDlZ
 If a survey contains 1 of 72 languages, a Report can be created to strictly represent said language. You can add French, German, Bulgarian, or even Bengali, to your survey. There’s no limit on the number of languages a survey can have, and when you create a multi-lingual survey, the subsequent report will also have multi-lingual functionality. 
 
 .. image:: ../../resources/analyze/french_report_choice.png
@@ -159,6 +159,8 @@ When creating a Report, by default, every question type wil have its appropriate
 Text
 ^^^^
 
+Text chart is used primarily as a Report Separator to indicate what either the Report is supposed to represent, or what the following items signify.
+
 .. figure:: ../../resources/analyze/text_chart_type.png
 	:scale: 70%
 	:align: center
@@ -167,15 +169,13 @@ Text
 
 	*Figure 9.1* Text Chart Item
 
-A Text chart item is available to:
-
-	* 
-	* 
-	* 
+A Text chart item is not specific to a question type
 
 Table
 ^^^^^
 
+Table is the most common chart item. It 
+
 .. figure:: ../../resources/analyze/table_chart_type.png
 	:scale: 70%
 	:align: center
@@ -186,77 +186,119 @@ Table
 
 A Text chart item is available to:
 
-	* 
-	* 
-	* 
+	* Yes/No
+	* Checkbox
+	* Multiple Choice
+	* Dropdown
+	* Multiple Choice Grid
+	* Dropdown Grid
+	* Checkbox Grid
+	* Natrix
+	* 3D Matrix
+	* Semantic Differential
+	* Net Promoter
 
 Pie Chart
 ^^^^^^^^^
 
-.. figure:: ../../resources/analyze/table_chart_type.png
+.. figure:: ../../resources/analyze/pie_chart_type
 	:scale: 70%
 	:align: center
 	:class: screenshot
-	:alt: Text Chart Type
+	:alt: Pie Chart Type
 
-	*Figure 9.1* Text Chart Item
+	*Figure 9.1* Pie Chart Item
 
-A Text chart item is available to:
+A Pie chart item is available to:
 
-	* 
-	* 
-	* 
+	* Yes/No
+	* Multiple Choice
+	* Dropdown
+	* Multiple Choice Grid
+	* Dropdown Grid
+	* Natrix
+	* Drill Down
+	* 3D Matrix
+	* Semantic Differential
+	* Net Promoter
 
 Column Chart
 ^^^^^^^^^^^^
 
-.. figure:: ../../resources/analyze/table_chart_type.png
+.. figure:: ../../resources/analyze/column_chart_type.png
 	:scale: 70%
 	:align: center
 	:class: screenshot
-	:alt: Text Chart Type
+	:alt: Column Chart Type
 
-	*Figure 9.1* Text Chart Item
+	*Figure 9.1* Column Chart Item
 
-A Text chart item is available to:
+A Column chart item is available to:
 
-	* 
-	* 
-	* 
+	* Yes/No
+	* Checkbox
+	* Multiple Choice
+	* Dropdown
+	* Multiple Choice Grid
+	* Dropdown Grid
+	* Checkbox Grid
+	* Natrix
+	* Drill Down
+	* 3D Matrix
+	* Semantic Differential
+	* Net Promoter
 
 Bar Chart
 ^^^^^^^^^
 
-.. figure:: ../../resources/analyze/table_chart_type.png
+.. figure:: ../../resources/analyze/bar_chart_item.png
 	:scale: 70%
 	:align: center
 	:class: screenshot
-	:alt: Text Chart Type
+	:alt: Bar Chart Type
 
-	*Figure 9.1* Text Chart Item
+	*Figure 9.1* Bar Chart Item
 
-A Text chart item is available to:
+A Bar chart item is available to:
 
-	* 
-	* 
-	* 
+	* Yes/No
+	* Checkbox
+	* Multiple Choice
+	* Dropdown
+	* Multiple Choice Grid
+	* Dropdown Grid
+	* Checkbox Grid
+	* Natrix
+	* Drill Down
+	* 3D Matrix
+	* Semantic Differential
+	* Net Promoter
 
 Line Chart
 ^^^^^^^^^^
 
-.. figure:: ../../resources/analyze/table_chart_type.png
+.. figure:: ../../resources/analyze/line_chart_type.png
 	:scale: 70%
 	:align: center
 	:class: screenshot
-	:alt: Text Chart Type
+	:alt: Line Chart Type
 
-	*Figure 9.1* Text Chart Item
+	*Figure 9.1* Line Chart Type
 
-A Text chart item is available to:
+A Line Chart item is available to:
 
-	* 
-	* 
-	* 
+	* Yes/No
+	* Checkbox
+	* Multiple Choice
+	* Dropdown
+	* Multiple Choice Grid
+	* Dropdown Grid
+	* Checkbox Grid
+	* Natrix
+	* Drill Down
+	* 3D Matrix
+	* Semantic Differential
+	* Net Promoter
 
 Appendix
 ^^^^^^^^
@@ -271,9 +313,13 @@ Appendix
 
 A Text chart item is available to:
 
-	* 
-	* 
-	* 
+	* Text Response
+	* Date/Time
+	* Text Response Grid
+	* Natrix
+	* 3D Matrix
+	* Hidden Value
+	* Timer
 
 Cross-tabulation
 ^^^^^^^^^^^^^^^^
@@ -288,9 +334,18 @@ Cross-tabulation
 
 A Text chart item is available to:
 
-	* 
-	* 
-	* 
+	* Yes/No
+	* Checkbox
+	* Multiple Choice
+	* Dropdown
+	* Multiple Choice Grid
+	* Dropdown Grid
+	* Checkbox Grid
+	* Natrix
+	* Drill Down
+	* 3D Matrix
+	* Semantic Differential
+	* Net Promoter
 
 Aggregate Statistics
 ^^^^^^^^^^^^^^^^^^^^
@@ -305,9 +360,18 @@ Aggregate Statistics
 
 A Text chart item is available to:
 
-	* 
-	* 
-	* 
+	* Yes/No
+	* Checkbox
+	* Multiple Choice
+	* Dropdown
+	* Multiple Choice Grid
+	* Dropdown Grid
+	* Checkbox Grid
+	* Natrix
+	* Drill Down
+	* 3D Matrix
+	* Semantic Differential
+	* Net Promoter
 
 Time-series Chart
 ^^^^^^^^^^^^^^^^^
@@ -322,12 +386,19 @@ Time-series Chart
 
 A Text chart item is available to:
 
-	* 
-	* 
-	* 
+	* Yes/No
+	* Checkbox
+	* Multiple Choice
+	* Dropdown
+	* Multiple Choice Grid
+	* Dropdown Grid
+	* Checkbox Grid
+	* Natrix
+	* Drill Down
+	* 3D Matrix
+	* Semantic Differential
+	* Net Promoter
 	
-
-
 Edit
 ----
 
