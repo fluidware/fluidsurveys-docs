@@ -279,11 +279,11 @@ In analytics, the survey administrator will have the option of viewing, or downl
 Net Promoter
 ^^^^^^^^^^^^
 
-The Net Promoter question type is a fast and easy way for an organization to obtain their Net Promoter Score.
+The Net Promoter question type is a fast and easy way for an organization to obtain their Net Promoter Score :sup:`®`
 
 It appears as a likert scale and can be inserted anywhere within a survey. The question asks respondents to rate how likely they’d be to recommend your offering to a friend, on a scale of “Not Likely at All to Very Likely”.
 
-In Analytics, your Net Promoter Score is automatically calculated by taking the % of people who gave you a score of 9 or 10 (promoters) and subtracting the % of people who gave you a score of 0-6 (detractors).
+In Analytics, your Net Promoter Score :sup:`®` is automatically calculated by taking the % of people who gave you a score of 9 or 10 (promoters) and subtracting the % of people who gave you a score of 0-6 (detractors).
 
 .. figure:: ../../resources/editor/net_promoter.png
 	:align: center

@@ -1,7 +1,7 @@
 Responses
 ---------
 
-The most important part of any FluidSurveys survey are the responses. Thankfully, we provide an intuitive Response Viewer, which is free for all accounts.
+The most important part of any survey are the responses. Thankfully, we provide an intuitive Response Viewer, which is free for all accounts.
  
 The Response Table is available via the [Analyze] > "Response" within the Editor, or [Analyze] > "Responses" via a survey in the Surveys Dashboard
 
@@ -18,22 +18,79 @@ The response viewer displays all of your survey responses in a tabular format. E
 Actions
 ^^^^^^^
 
-Also, another option within the response table is the “Actions…” dropdown (located on the top and bottom) which allows for the deletion of all responses (as seen in Section 101).
-Another option found in the “Actions” dropdown is the “Import responses” feature. The intent behind this option is to allow for a surveyor to easily upload responses they’ve garnered through an offline survey (pen and paper survey, survey created with FluidSurveys but printed and distributed locally, etc…).
-When “Import Responses” is selected, you’ll be prompted to download a CSV template of your survey. You can then populate this template with the responses that were collected, and import it back into the system.
-It’s also possible to add responses online. If you select “Add response” or “Add multiple responses”, blank entries will be added to your response database. You can then edit these and answer the questions on behalf of respondents.
+Much like a great Arnold Schwarzenegger 1980's flick, the Response Table comes packed with an “Actions…” dropdown (located on the top and bottom) which allows for further data manipulation.
+
+.. figure:: ../../resources/analyze/actions_dropdown.png
+	:scale: 70%
+	:align: center
+	:class: screenshot
+	:alt: Available Actions
+
+	*Figure 9.1* Available Actions
+
+.. list-table:: 
+   :widths: 28 78
+   :header-rows: 1
+
+   * - Section
+     - Description
+   * - 1. Delete selected responses
+     - Any selected responses in the table will be deleted when this option is selected. If a response is not selected, an error message will appear stating to, "Please select responses in the table to delete them"
+   * - 2. Delete test responses
+     - A response is categorized as "Test" when the (Test Data) string is appended at the end of a status, eg., "Complete (Test Data)" which happens whenever the [Preview] icon is clicked in either the Editor or the Surveys Dashboard, and a response is completed, or started, ie., Incomplete. It is very common for an Administrator to clear all responses before sending a survey out
+   * - 3. Delete imported responses
+     - A response is categorized as "Imported" when the (Imported) string is appended at the end of a status, eg., "Completed (Imported)" which happens whenever a response is uploaded using either the "Import Responses" or Offline Mode feature.
+   * - 4. Delete all responses
+     - First and foremost, it is not possible to retrieve deleted responses. When "Delete all responses" is selected, a pop-up will appear asking, "Are you sure?" which requires the keywords, "I agree" to be entered by the Administrator. Once "Ok" is clicked, the repsonses will be deleted.
+   * - 5. Add response
+     - Add response, is very much like clicking the [Preview] icon, with the major different being that a new window will appear, and when [Submit] is clicked, the response will be marked as "Complete", without the (Test Data) string
+   * - 6. Add multiple response
+     - A blank entry will be added to your response database. A window will appear that will ask for the "Amount of Responses" to be created. Once "Ok" is clicked, depending on the value, n amount of responses (rows) will be created. From there, Right-Clicking and selecting, "Edit Response" allows for the response to be completed. 
+   * - 7. Import responses
+     - Allows for responses to be imported via a CSV file. To learn more about importing responses, refer to "Import Responses" in the Tutorial section
+   * - 8. Download selected responses
+     - Download the selected responses into either PDF, Word, or CSV
+   
+.. warning::
+
+	It is NOT possible to undo the "Delete all responses" action. Once "I agree" and "Ok" has been clicked, the responses are permanently deleted.
 
 Right-Click Menu
 ^^^^^^^^^^^^^^^^
 
-A response table contains a tremendous amount of options. For instance, right clicking on a single response will produce a dropdown window with options to explicitly alter the state of that response.
-Editing Response: Allow you to alter a user’s response
-Delete Response: Delete the selected response
-Change Response Status: You can change the status of a response to Incomplete, Complete, Terminated, or Quota Reached
-Download Response:Download the response into a Adobe PDF format
+A response table contains a options specific to 1 row of data. For instance, right clicking on a single response will produce a dropdown window with options to explicitly alter the state of that response. Therefore, any change made using the right-click menu, will only adhere to only 1 row (response)
 
+.. image:: ../../resources/analyze/right_click_menu.png
+  :scale: 70%
+  :align: center
+  :class: screenshot
+  :alt: Right-Click Menu
+
+.. list-table:: 
+   :widths: 28 78
+   :header-rows: 1
+
+   * - Section
+     - Description
+   * - 1. Edit Response
+     - Alter the user’s response
+   * - 2. Delete Response
+     - Delete the selected response
+   * - 3. Change Response
+     - You can change the status of a response to Incomplete, Complete, Terminated, or Quota Reached
+   * - 4. Download Response
+     - Download the response into a Adobe PDF, Microsoft Word, or a Microsoft Excel format 
+   
 Search
 ^^^^^^
+
+A popular survey can easily generate upwards of 1000 responses, which can become a cumbersome act of sifting through the data in order to find a specific persons response. The Search bar (located beside "Actions")
+
+.. image:: ../../resources/analyze/search_option.png
+  :scale: 70%
+  :align: center
+  :class: screenshot
+  :alt: Search in Response Table
 
 Filter
 ^^^^^^
