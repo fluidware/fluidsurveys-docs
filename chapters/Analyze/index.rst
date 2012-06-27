@@ -16,6 +16,6 @@ As a result, this chapter will teach you all of the things you can accomplish, a
 .. toctree::
 	:maxdepth: 2
 
-	reports
-	responsetable
-	exportdata
+	reports.rst
+	responsetable.rst
+	exportdata.rst
