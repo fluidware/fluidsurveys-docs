@@ -137,12 +137,9 @@ When a Filter is applied, a broom will appear in place of the Green Plus. When t
 Selection Columns
 ^^^^^^^^^^^^^^^^^
 
-By default, only a fraction of information is displayed at any given time for all collected data. 
+By default, only a fraction of information is displayed at any given time for all collected data. There are a series of Columns which must be added in order to see the collected information. 
 
-Make sure you specify the columns that you’d like to have included in the table before creating the filter. If they aren’t selected, they won’t appear in the table once the filter is applied.
-
-
-To ensure that your responses are properly displayed, with or without a filter applied, select which column(s) you wish to appear. You can also “Select All” which will show every single column (response) within your survey.
+Below are a series of Columns available for every surveys response data
 
 .. list-table:: 
    :widths: 28 78
@@ -151,45 +148,52 @@ To ensure that your responses are properly displayed, with or without a filter a
    * - Section
      - Description
    * - 1. Status
-     - 
+     - Contains the status, ie., "Complete", "Incomplete", "Viewed"
    * - 2. Last updated
      - 
    * - 3. Date started
      - 
    * - 4. id
-     - 
+     - Every response group contains a unique ID that allows for the Admistrator to use it as an archiving tool. The formula is as secret as Colonel Sanders deep fried chicken.
    * - 5. Language
-     - 
+     - The language the survey was created in, in this case, en represents "English"
    * - 6. IP Address
-     -
+     - The network address, 77.64.233.59 of where the individual completed the response. The IP Address is important in determining where specifically in the world an indivdual completed their survey, thus allowing for our geo-location tables to accurately pin-point them on the map found at [Analyze] > "Statistics"
    * - 7. Location
-     -    
+     - Based on the IP Address, the location will indicate specifically where the individual came from, eg., Canada, United States, Germany, etc.  
    * - 8. Username
-     - 
+     - If the user has an account with FluidSurveys, and is still logged in via cached cookies in their browser, their username will appear here.
    * - 9. GET Variables
-     -   
+     - This column will only show information when a survey used GET Variables, eg., ?name=FluidSurveysDocs when sending out the links originally to respondents
    * - 10. Referrer
-     - 
+     - If the survey is completed outside of FluidSurveys.com, ie., a pop-up on your Sales page on your web site, the referrer link will contain the URL to your Sales page on your web site, indicating that the survey was completed via a pop-up. 
    * - 11. Number of Saves
-     - 
+     - The number of times "Save and Continue Later" was clicked before the survey was finally submitted
    * - 12. Weighted Score
-     - 
+     - This column is commonly used heavily when a survey was used a Quiz, ie., the indivivduals final score on the Quiz
    * - 13. Completion Time
-     - 
+     - The amount of time it took for a respondent to traverse across a survey. Note, this column will only contain information if a survey contains more than 1 page.
    * - 14. Invite Code
-     - 
+     - If the Invite tool was used, then this column will contain the Invite Code said respondent used to complete their response, ie., ?code=XiA3k
    * - 15. Invite Email
-     - 
+     - If the invite tool was used, then this column will contain the Invite Email of said respondent
    * - 16. Invite Name
-     -
+     - If the Invite tool was used, then this column will contain the Invite Name of said respondent
    * - 17. Collector
-     -    
+     - If a survey contained multiple Collectors, this column will contain the specific Collector, ie., container, for the indivdiuals response, eg., "Apple", "Microsoft" (Assuming those were Collector names for a survey). Note, this column will only contain information when a collector group was used for a survey
 
-In addition to simply providing responses, the responses table can show IP Addresses, GET Variables, Created Date, and so forth. To understand the response table in full detail, play around with it the next time you’re alone.
-
-Pages
-^^^^^
+Pages and Response Amount
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Note that some response tables can get very large. Luckily, there is a way to specify the amount of information shown on one page. To adjust the amount of responses you wish to display at once, or to move between response pages, adjust the values as seen below.
+
+.. figure:: ../../resources/analyze/filtered_responses.png
+  :scale: 70%
+  :align: center
+  :class: screenshot
+  :alt: Filtered Responses
+
+  *Figure 9.1* Page 2, with 10 responses per page selected
+  
 Selecting 10, 20, or 50 will display the respective amount of responses on that page.
 
