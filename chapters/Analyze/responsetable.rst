@@ -92,16 +92,99 @@ A popular survey can easily generate upwards of 1000 responses, which can become
   :class: screenshot
   :alt: Search in Response Table
 
+When searching for a strong, eg., PDF, only text responses with "PDF" will appear.
+
+.. figure:: ../../resources/analyze/search_string_entered.png
+  :scale: 70%
+  :align: center
+  :class: screenshot
+  :alt: Search Result in Response Table
+
+.. note::
+
+  The Search box will only search for strings entered via the text response question type. Since choices are static, and dependant entirely on forced options, it is more advantageous to create a Filter for such questions.
+
+
 Filter
 ^^^^^^
 
-In the response viewer, you also have the ability to create filters and drill down into the data. Filters allow you to alter which responses are displayed. To create a filter, click on the plus sign at the top right of your screen, and you’ll be taken to the Filter Builder 
+In the response viewer, you also have the ability to create filters and drill down farther into the data. Filters allow you to alter which responses are displayed. 
+
+.. image:: ../../resources/analyze/find_filter.png
+  :scale: 70%
+  :align: center
+  :class: screenshot
+  :alt: Green Plus in Response Table
+
+To create a filter, click on the plus sign at the top right of the Response Table and you’ll be taken to the all too familiar Filter Builder.
+
+.. figure:: ../../resources/analyze/filter_in_response_table.png
+  :scale: 70%
+  :align: center
+  :class: screenshot
+  :alt: Filtered Responses
+
+When "Ok" is clicked, only responses that adhere to the aforementioned Filter will reign dominate in the Response Table. 
+
+.. image:: ../../resources/analyze/filtered_responses.png
+  :scale: 70%
+  :align: center
+  :class: screenshot
+  :alt: Filtered Responses
+
+When a Filter is applied, a broom will appear in place of the Green Plus. When the broom is clicked, the Filter will "brush off" and all previous responses before the Filter will re-reveal themselves.
 
 Selection Columns
 ^^^^^^^^^^^^^^^^^
 
+By default, only a fraction of information is displayed at any given time for all collected data. 
+
 Make sure you specify the columns that you’d like to have included in the table before creating the filter. If they aren’t selected, they won’t appear in the table once the filter is applied.
+
+
 To ensure that your responses are properly displayed, with or without a filter applied, select which column(s) you wish to appear. You can also “Select All” which will show every single column (response) within your survey.
+
+.. list-table:: 
+   :widths: 28 78
+   :header-rows: 1
+
+   * - Section
+     - Description
+   * - 1. Status
+     - 
+   * - 2. Last updated
+     - 
+   * - 3. Date started
+     - 
+   * - 4. id
+     - 
+   * - 5. Language
+     - 
+   * - 6. IP Address
+     -
+   * - 7. Location
+     -    
+   * - 8. Username
+     - 
+   * - 9. GET Variables
+     -   
+   * - 10. Referrer
+     - 
+   * - 11. Number of Saves
+     - 
+   * - 12. Weighted Score
+     - 
+   * - 13. Completion Time
+     - 
+   * - 14. Invite Code
+     - 
+   * - 15. Invite Email
+     - 
+   * - 16. Invite Name
+     -
+   * - 17. Collector
+     -    
+
 In addition to simply providing responses, the responses table can show IP Addresses, GET Variables, Created Date, and so forth. To understand the response table in full detail, play around with it the next time you’re alone.
 
 Pages
