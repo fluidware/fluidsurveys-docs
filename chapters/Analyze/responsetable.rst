@@ -185,15 +185,20 @@ Below are a series of Columns available for every surveys response data
 Pages and Response Amount
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Note that some response tables can get very large. Luckily, there is a way to specify the amount of information shown on one page. To adjust the amount of responses you wish to display at once, or to move between response pages, adjust the values as seen below.
+Have you ever wanted to turn your amplifer up to 11, but couldn't since you were restricted to 10? While some surveys can grow exponentially in responses, it can become quite cumbersome to manage and sift through all the data. Luckily, there is a way to specify the amount of information shown on one page, essentially kicking the amplifier up to 11. 
 
-.. figure:: ../../resources/analyze/filtered_responses.png
+To adjust the amount of responses you wish to display at once, or to move between response pages, adjust the values as seen below.
+
+.. figure:: ../../resources/analyze/pages_with_response_amount.png
   :scale: 70%
   :align: center
   :class: screenshot
   :alt: Filtered Responses
 
-  *Figure 9.1* Page 2, with 10 responses per page selected
+  *Figure 9.1* Page 1, with 20 responses per page selected
   
-Selecting 10, 20, or 50 will display the respective amount of responses on that page.
+Selecting 10, 20, or 50 will display the respective amount of responses on the page.
 
+.. note::
+
+  By default, only 10 responses are shown per page. Altering the value (10, 20, 50) will show that many per page, as shown in Figure how the response group was raised to 11.
