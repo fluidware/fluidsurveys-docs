@@ -18,7 +18,7 @@ The response viewer displays all of your survey responses in a tabular format. E
 Actions
 ^^^^^^^
 
-Much like a great Arnold Schwarzenegger 1980's flick, the Response Table comes packed with an “Actions…” dropdown (located on the top and bottom) which allows for further data manipulation.
+Much like a great Arnold Schwarzenegger 1980's flick, the Response Table comes packed with an “Actions…” dropdown (located at the top and bottom) which allows for further data manipulation.
 
 .. figure:: ../../resources/analyze/actions_dropdown.png
 	:scale: 70%
