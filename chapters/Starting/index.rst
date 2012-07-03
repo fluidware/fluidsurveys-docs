@@ -1,4 +1,4 @@
-Preperation
+Preparation
 ===========
 
 Once your account has been created, and verified, logging into FluidSurveys grants you the ability to access all administrative features, from creating and editing surveys, reports, viewing your data, changing your account informaiton, creating a Poll, to a plethora of other features.
