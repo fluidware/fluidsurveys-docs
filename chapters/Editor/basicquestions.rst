@@ -10,7 +10,7 @@ The complete set of question types are available to Enterprise customers.
 Section Heading
 ^^^^^^^^^^^^^^^
 
-Section Separators allow survey creators to include text within their survey without actually asking a question. It can be used to include an introduction or some explanatory text in your survey, pictures, endnotes, etc. If ever you simply need to convey a message without explicitly asking a question, then a Section Separator can satisfy such a role.
+Section Heading allow survey creators to include text within their survey without actually asking a question. It can be used to include an introduction or some explanatory text in your survey, pictures, endnotes, etc. If ever you simply need to convey a message without explicitly asking a question, then a Section Heading can satisfy such a role.
 
 
 .. figure:: ../../resources/editor/section_heading.png
@@ -36,7 +36,7 @@ Section Separators allow survey creators to include text within their survey wit
 
 .. note::
 
-	Despite being able to provide a Section Separator with a unique identifier, you cannot attach advanced logic branching rules to the question type.
+	Despite being able to provide a Section Heading with a unique identifier, you cannot attach advanced logic branching rules to the question type.
 
 Yes/No
 ^^^^^^
@@ -78,12 +78,12 @@ Including multiple languages on your survey will automatically include the appro
    :widths: 35 65
    :header-rows: 1
 
-   * - Display Option
+   * - Options 
      - Description
    * - 1. Optional
-     - This option allows for you to display the question type beside another question as seen in the image to the left. By default, this option is disabled.
+     - Unchecking this option forces the question to be answered when the user is filling out your survey. By default, this option is enabled
    * - 2. “Yes” skips to page
-     - This question type will be appended to the question directly before it. By default, this option is disabled.
+     - If the user selects, "Yes" as an answer, then they can jump to a defined page. By default, this option is disabled.
    * - 3. “No” skips to page
      - Conversely, if the user selects “No” as an answer, then you can jump to a defined page. By default, this option is disabled
 
@@ -104,7 +104,7 @@ A Text Response question type allows for surveyors to ask a user to type either 
 
 	*Figure 6.1* Text Response Question Type
 
-Enabling the Multiline option and indicating the number of columns can create the perfect storm for allowing users to fill in text, which can also be restricted to a certain amount of words. The example below has a Text Response question type with multiline enabled, 50 columns, and All Characters validation of 2000 (roughly 200 words) which will cease to accept words after that point.
+Enabling the Multiline option and indicating the number of columns can create the perfect opportunity for allowing users to fill in text, which can also be restricted to a certain amount of words. The example below has a Text Response question type with multiline enabled, 50 columns, and All Characters validation of 2000 (roughly 200 words) which will cease to accept words after that point.
 
 .. figure:: ../../resources/editor/text_response_customized.png
 	:scale: 70%
@@ -121,11 +121,11 @@ Enabling the Multiline option and indicating the number of columns can create th
    * - Display Option
      - Description
    * - 1. Multiline
-     - Allows for the text area to have multiple lines and columns, as seen in section 120.2. By default this option is disabled.
+     - Allows for the text area to have multiple lines and columns. By default this option is disabled
    * - 2. Display side-by-side
-     - This option allows for you to display the question type beside another question as seen in the image to the left. By default, this option is disabled.
+     - This option allows for you to display the question type beside another question as seen in the image to the left. By default, this option is disabled
    * - 3. Append to previous question
-     - This question type will be appended to the question directly before it. By default, this option is disabled.
+     - This question type will be appended to the question directly before it. By default, this option is disabled
    * - 4. Width
      - You can adjust the width based on a percentage. By default, the value is 100%.
 
@@ -133,14 +133,14 @@ Enabling the Multiline option and indicating the number of columns can create th
    :widths: 35 65
    :header-rows: 1
 
-   * - Display Option
+   * - Options
      - Description
    * - 1. Optional
-     - This option allows for you to display the question type beside another question as seen in the image to the left. By default, this option is disabled.
+     - Unchecking this option forces the question to be answered when the user is filling out your survey. By default, this option is enabled
    * - 2. Validation
      - Specific to the question. If you wish for the user to input an e-mail address, then selecting the appropriate form of validation will get those desired results. By default, this option is None 
    * - 3. Initial Value
-     - Presents a default choice to the user. By default, this area is blank.
+     - Presents a default choice to the user. By default, this area is blank
 
 Checkbox
 ^^^^^^^^
@@ -187,6 +187,12 @@ The checkbox question type is a multi-answer question, as in you can select more
    * - 4. Restrict number of selected choices
      - Restrict the number of choices a user can select before the question is disabled. By default, this option is disabled
 
+A checkbox has the following Question Choices avaialble
+
+  * Exclusive Choice
+  * Select All
+  * Add text response
+  * Static Choice
 
 Multiple Choice
 ^^^^^^^^^^^^^^^
@@ -222,7 +228,7 @@ The Multiple choice question type, commonly referred to as the single choice que
    :widths: 35 65
    :header-rows: 1
 
-   * - Display Option
+   * - Options
      - Description
    * - 1. Optional
      - Unchecking this option forces the question to be answered when the user is filling out your survey. By default, this option is enabled
@@ -230,6 +236,15 @@ The Multiple choice question type, commonly referred to as the single choice que
      - Selecting this option will randomize the choices within the Checkbox question type on each survey refresh. By default, this option is disabled. 
    * - 3. Alphabetize choices
      - Choices within your Checkbox will follow alphabetization (A-Z). By default, this option is disabled
+   * - 4. Initial Value
+     - Allows you to specificy pre-populated answers to questions in your survey. By default, this option is blank "---"
+
+A multiple choice question type as the following Question Choices Available
+
+  * Add text response
+  * Static Choice
+  * Score
+  * Branch to
 
 Dropdown
 ^^^^^^^^
@@ -261,7 +276,7 @@ The dropdown question type is exactly what the name entails; an answer found and
    :widths: 35 65
    :header-rows: 1
 
-   * - Display Option
+   * - Option
      - Description
    * - 1. Optional
      - Unchecking this option forces the question to be answered when the user is filling out your survey. By default, this option is enabled
@@ -271,6 +286,14 @@ The dropdown question type is exactly what the name entails; an answer found and
      - Choices within your Checkbox will follow alphabetization (A-Z). By default, this option is disabled
    * - 4. Initial Value
      - Specifies if the question will load with a choice. By default, this option is disabled
+   * - 5. Blank Choice
+     - The initial value is displayed, indicating that a selection has not been made. Note, this will not count towards a response if selected
+
+A dropdown question type has the following Question Choices Available
+
+ * Static Choice
+ * Score
+ * Branc to
 
 Date/Time
 ^^^^^^^^^
@@ -314,7 +337,7 @@ The Date/Time can be customized to accepted either only:
    :widths: 35 65
    :header-rows: 1
 
-   * - Display Option
+   * - Options
      - Description
    * - 1. Optional
      - Unchecking this option forces the question to be answered when the user is filling out your survey. By default, this option is enabled
@@ -322,11 +345,18 @@ The Date/Time can be customized to accepted either only:
      - The question type can be altered to ask Date/Time, Date Only, Time Only, Date/Month or Month/Year. Date/Time is the default question
    * - 3. Timezone
      - Enabling this feature will create a dropdown for the user to select their appropriate timezone. By default, this option is disabled.
+   * - 4. Set to now by default
+     - When the survey is loaded, the time will be populated into the date field
+   * - 5. Show "Record Now" button
+     - As opposed to forcing the individual to type in the time, eg., 14:58, it is possible to allow for them to click "Record Now" which will input the correct current time
+   * - 6. Initial Date
+     - Chose an initial value for the date. The format is YYYY/MM/DD
+   * - 7. Initial Time
+     - Chose an initial value for the time
 
 .. note:: 
 
 	Despite not accepting military standard time, if the user enters 21:00, the question type will convert it to 9:00 pm
-
 
 Text Response Grid
 ^^^^^^^^^^^^^^^^^^
@@ -360,7 +390,7 @@ In short, a Text Response Grid allows for the surveyor to ask a series of questi
    :widths: 35 65
    :header-rows: 1
 
-   * - Display Option
+   * - Options
      - Description
    * - 1. Randomize Variables
      - Selecting this option will randomize the choices within the Checkbox question type on each survey refresh. By default, this option is disabled
@@ -371,7 +401,13 @@ In short, a Text Response Grid allows for the surveyor to ask a series of questi
    * - 4. Sum
      - If a value is provided, 20 for instance, then all numerical values within the Text Response Grid must add up to that ceiling. This option is blank by default.
    * - 5. Sum Label
-     - By default, this option is “The values should add up to {x}. Currently: {y}”
+     - By default, this option is “The values should add up to {x}. Currently: {y}”, where x represents the required value, eg., 100, while y indicates the values presently entered, eg., 98
+
+A text response grid question type has the following Question Choice available
+
+ * Optional
+ * Multiline
+ * Columns
 
 Multiple Choice Grid
 ^^^^^^^^^^^^^^^^^^^^
@@ -411,7 +447,7 @@ The Multiple Choice Grid question type is in essence a Likert question. This que
    :widths: 35 65
    :header-rows: 1
 
-   * - Display Option
+   * - Options
      - Description
    * - 1. Randomize Variables
      - Selecting this option will randomize the choices within the Checkbox question type on each survey refresh. By default, this option is disabled
@@ -460,3 +496,5 @@ Dropdown Grid is similar to its sibling, the dropdown question, in that it is st
      - Choices within your Checkbox will follow alphabetization (A-Z). By default, this option is disabled
    * - 3. Force Unique
      - Force a choice in a column to remain unique. No two options in a column can be identical. By default, this option is disabled.
+   * - 4. Blank choice
+     - The initial value displayed, indicating that a selection has not been made. Note, this will not count towards a response if selected

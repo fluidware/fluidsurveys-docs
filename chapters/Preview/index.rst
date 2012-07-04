@@ -23,6 +23,8 @@ Previewing a survey allows for:
 
 	The administrator toolbar will only appear to you when you’re logged in, not to your respondents.
 
+When previewing a page that has looping, or extraction based on a previous question, the question may appear blank or look odd due to not pulling the correct data. Therefore, in order to test Looping and Extraction, always refer to the initial pivot point.
+
 Test Data
 ---------
 

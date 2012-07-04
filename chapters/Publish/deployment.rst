@@ -56,7 +56,7 @@ Click "Customize this URL" beside the Online Deployment URL, enter a desired nam
 
 	*Figure 9.1* Customized URL
 
-Additionally, a feature of FluidSurveys is the ability to present a survey in a number of langauges (72 to be exact!) which allows for a survey to be deployed in those langauges. If, for instance, your survey has English, French and Spanish asthe survey languages, then you can send respondents either an English, French, Spanish Link, or the default Online Deployment URL that will use the default survey language. If your survey does not have multiple languages, then the language dropdown will not be visible.
+Additionally, a feature of FluidSurveys is the ability to present a survey in a number of languages (72 to be exact!) which allows for a survey to be deployed in those languages. If, for instance, your survey has English, French and Spanish as the survey languages, then you can send respondents either an English, French, Spanish Link, or the default Online Deployment URL that will use the default survey language. If your survey does not have multiple languages, then the language dropdown will not be visible.
 
 .. figure:: ../../resources/publish/multiple_language_dropdown.png
 	:scale: 70%
@@ -97,7 +97,7 @@ FluidSurveys’ comes equipped with an invitation module through which survey li
 Custom Survey Panel
 ^^^^^^^^^^^^^^^^^^^
 
-In the past, when you wanted to collect responses from a target audience, eg., Females ages 24-34 who live in Alaska, United States), you'd have to create your own survey in FluidSurveys, and then work with an external panel management company, or list provider to start collecting responses. But, collecting responses from your target audeicne is possible within the Custom Survey Panel via CINT.
+In the past, when you wanted to collect responses from a target audience, eg., Females ages 24-34 who live in Alaska, United States), you'd have to create your own survey in FluidSurveys, and then work with an external panel management company, or list provider to start collecting responses. But, collecting responses from your target audience is possible within the Custom Survey Panel via CINT.
 
 Custom Survey Panel is available on all plans, including Free, and the cost associated with each "Completed" response is based on the type of respondent segment that you are going after (Some segments will be more expensive than other segments -- this is mainly determined by supply/demand in the response marketplace)
 
@@ -111,7 +111,7 @@ Custom Survey Panel is available on all plans, including Free, and the cost asso
 
 **Step 1: Basics**
 
-The new dialog that apperas after "Create an order" was clicked is Step 1 of 3. Basics is where you begin outlining your high-level target audience, ie., Country, Region, the number of questions you will be asking, along with the age group. Using the aforementioned example, Females ages 24-34, who live in Alaska, United Stated, an order would look as follows.
+The new dialog that appears after "Create an order" was clicked is Step 1 of 3. Basics is where you begin outlining your high-level target audience, ie., Country, Region, the number of questions you will be asking, along with the age group. Using the aforementioned example, Females ages 24-34, who live in Alaska, United Stated, an order would look as follows.
 
 .. figure:: ../../resources/publish/cint_step1_basics.png
 	:scale: 70%
@@ -128,21 +128,21 @@ The new dialog that apperas after "Create an order" was clicked is Step 1 of 3. 
 	* - Section
 	  - Description
 	* - 1. Country
-	  - Choose where you wish to run your survey. If you would like to conduct your survye in more than one region, we suggest you create a different target group for each selection. The cost of running two separate selections is the same as running one larger selection
+	  - Choose where you wish to run your survey. If you would like to conduct your survey in more than one region, we suggest you create a different target group for each selection. The cost of running two separate selections is the same as running one larger selection
 	* - 2. Region
-	  - Select the region of your target group. If you would like to conduct your survye in more than one region, we suggest you create a different target group for each selection. The cost of running two separate selections is the same as running one larger selection
+	  - Select the region of your target group. If you would like to conduct your survey in more than one region, we suggest you create a different target group for each selection. The cost of running two separate selections is the same as running one larger selection
 	* - 3. Gender
-	  - Select the gender of your target group. If you would like to specify the exact distribution between genders, we suggest you create a different target group for each selection. For example, if you wish to get 200 answers from females and 300 answers from males, place two oders with 200 females and 300 males respectively. The cost of running two separate selections is the same as running one larger selection
+	  - Select the gender of your target group. If you would like to specify the exact distribution between genders, we suggest you create a different target group for each selection. For example, if you wish to get 200 answers from females and 300 answers from males, place two orders with 200 females and 300 males respectively. The cost of running two separate selections is the same as running one larger selection
 	* - 4. Age Range
-	  - CHoose the age range for the target group. If you would like to specifiy the exact distribution between age groups, create a different target group for each selection. For example, if you wish to get 200 answers from poepple in age range 18-22 and 300 answers from peoeple in the age range 23-27, place two orders with 200 and 300 answers repsctively. The cost of running two sepaate selections is the same as runing one larger selection
+	  - Choose the age range for the target group. If you would like to specify the exact distribution between age groups, create a different target group for each selection. For example, if you wish to get 200 answers from people in age range 18-22 and 300 answers from people in the age range 23-27, place two orders with 200 and 300 answers respectively. The cost of running two separate selections is the same as running one larger selection
 	* - 5. Completed Surveys Needed
-	  - 
+	  - The amount of completed surveys required before a successful amount of data has been received
 	* - 6. Price
-	  - The price is instnatly and automatically calculated when you define your target group. Since the process is automated from start-to-finish there are no project costs, set-up costs, minimum or hidden fees. More respondents, longer surveys and narrower target group yields a higher pricer. Why is that? Cint pays incentives to panelists and panel owners when participating in your survey. We pay more for a larger group, for a longer survye and for people harder to find.
+	  - The price is instantly and automatically calculated when you define your target group. Since the process is automated from start-to-finish there are no project costs, set-up costs, minimum or hidden fees. More respondents, longer surveys and narrower target group yields a higher pricer. Why is that? Cint pays incentives to panelists and panel owners when participating in your survey. We pay more for a larger group, for a longer survey and for people harder to find.
 	* - 7. Delivery Time
 	  - Delivery time is calculated based upon your search criteria and our current available respondents
 	* - 8. Available Respondents
-	  - This is the current number of available **respondents completing your survey (completes)** for your selected target group wiehtin the delivery time shown above. To clarify, if you order 500 completed surveys, Cint will continue to send respondents to your survey until 500 respondents have fully completed your survey.
+	  - This is the current number of available **respondents completing your survey (completes)** for your selected target group within the delivery time shown above. To clarify, if you order 500 completed surveys, Cint will continue to send respondents to your survey until 500 respondents have fully completed your survey.
 
 .. warning::
 
@@ -175,7 +175,7 @@ Once the Basics have been outlined, clicking [Continue] will allow for a deeper 
 	* - 1. Standard Demographics and Occupation Status
 	  - Education level or 
 	* - 2. Household
-	  - Maritial Status, Houshold size, Number of children, Ages of children, Personal income, Household income.
+	  - Martial Status, Houshold size, Number of children, Ages of children, Personal income, Household income.
 	* - 3. Profession
 	  - Company size, Field of expertise, Professional position in company
 	* - 4. Transportation
@@ -199,7 +199,7 @@ Once your target demographic has been fully finalized, clicking [Continue] bring
 
 The last step is providing payment options. Available payment plans are:
 
-	* Mastercard
+	* Master card
 	* Visa
 	* PayPal
 
@@ -245,23 +245,23 @@ Click "Add new popup" to get started. A new screen will slowly fade into view, w
 	* - Section
 	  - Description
 	* - 1. Name
-	  - The name is simply a label for indentification purposes when viewing your list of popups. The user who views the popup will not see this label.
+	  - The name is simply a label for identification purposes when viewing your list of popups. The user who views the popup will not see this label.
 	* - 2. Identifier
-	  - This value will be used to set the cookie preventing the popup from being shown twice. You may leave this blank to use a unique identifier, or set it to a custom value. If you use a custom value, all popups sharing this value will check for this value before being displayed. This allows you to have mulitple popups on multiple pages but only present the user with one.
+	  - This value will be used to set the cookie preventing the popup from being shown twice. You may leave this blank to use a unique identifier, or set it to a custom value. If you use a custom value, all popups sharing this value will check for this value before being displayed. This allows you to have multiple popups on multiple pages but only present the user with one.
 	* - 3. Enabled
 	  - Allows you to quickly enable or disable this popup. This way you can leave the code for the popup on your website, but if you disable the popup here, it will not appear to any visitors.
 	* - 4. Pop Over
 	  - Force this popup to stay in the foreground. By default (disabled) the script will attempt to put the displayed survey in the background if the browser allows it. Checking this will attempt to show the window the survey appears in above the current window
 	* - 5. Use Standby Page
-	  - If this option is enabled, when the user accepts the survey offer, the window popping up in the background will show the standby page first. The standby page will display the message set on the messages tab and contain a link to the survey, but encoureages the user to finish browsing. When the user leaves the domain, the standby page automatically redirects to the survey. However, to use this successfully, the standby page must be hosted on your server.
+	  - If this option is enabled, when the user accepts the survey offer, the window popping up in the background will show the standby page first. The standby page will display the message set on the messages tab and contain a link to the survey, but encourages the user to finish browsing. When the user leaves the domain, the standby page automatically redirects to the survey. 
 	* - 6. Display Effect
 	  - Select an effect to use when displaying t he popup.
 	* - 7. Language
-	  - Determins which language the survey will be displayed in if your survey uses mulitple languages. Since we are unable to detect which langauge your user would prefer, you will nee dto create multiple popups, or duplicate an existing one and place the code for the correct langauge on the corresponding page of your site. The user may still change the survey language once they vist the survey, reglardess of which langauge it was started in.
+	  - Determines which language the survey will be displayed in if your survey uses multiple languages. Since we are unable to detect which language your user would prefer, you will need to create multiple popups, or duplicate an existing one and place the code for the correct language on the corresponding page of your site. The user may still change the survey language once they visit the survey, regardless of which language it was started in.
 	* - 8. Percentage
 	  - Percentage value between 0 and 100%. Your popups will only be shown to this percentage of people. If you set this value to 10%, abolut 1 in 10 people will see your popups. You may use floating point values such as 0.5% for 1 in 200. For frequency, every X visitor will be shown your popup, while with percentage, each visitor has an X% chance of being shown your popup.
 	* - 9. Frequency
-	  - Dispaly your popup to every x vistior. If this value is set to 5, every 5th visitor will see your popup. 5, 10, 20, etc. This is checked before the percetnage value, so if you have frequency set to 5, and percentage set to 25%, every 5th visitor has a 25% chance of seeing your popup. For percentage, every visitor has X% chance of being shown your popup, where with frequency every X visitor is guaranteed to see the popup.
+	  - Display your popup to every x vistior. If this value is set to 5, every 5th visitor will see your popup. 5, 10, 20, etc. This is checked before the percentage value, so if you have frequency set to 5, and percentage set to 25%, every 5th visitor has a 25% chance of seeing your popup. For percentage, every visitor has X% chance of being shown your popup, where with frequency every X visitor is guaranteed to see the popup.
 	* - 10. Delay
 	  - Delay (in seconds) before the popup will appear to a visitor on your page
 	* - 11. Postpone Length
@@ -336,7 +336,7 @@ At any point during the process of creating, adjusting and tweaking your popup, 
 Create a 2D Bar Code
 ^^^^^^^^^^^^^^^^^^^^
 
-Smartphones are becoming more and more common, and a popular way of getting a survey onto a phone is via QR Codes. Like a barcode, the QR code contains all necessary information for your survey to be loaded when scanned via the phones barcode reader. The phone can scan the QR code and be instantly transported to your survey. Each and every survey you create will produce an entirely unique QR code. 
+Smart phones are becoming more and more common, and a popular way of getting a survey onto a phone is via QR Codes. Like a barcode, the QR code contains all necessary information for your survey to be loaded when scanned via the phones barcode reader. The phone can scan the QR code and be instantly transported to your survey. Each and every survey you create will produce an entirely unique QR code. 
 
 You can include this image on your website or on printed material to enable mobile device users to quickly and easily access your survey. To download a QR code for a survey, right click the image and click 'Save Image As', or click the 'Save Image' button at the bottom of this dialog. 
 
@@ -351,9 +351,9 @@ You can include this image on your website or on printed material to enable mobi
 Offline Mode
 ^^^^^^^^^^^^
 
-No matter where we go, it seems as if we can always access the internet, be it on our laptops, phones or tablets. Whether we’re in a coffee shop or on a bus, our favourite websites are just a click away.
+No matter where we go, it seems as if we can always access the Internet, be it on our laptops, phones or tablets. Whether we’re in a coffee shop or on a bus, our favourite websites are just a click away.
 
-It’s something that’s often taken for granted. There are numerous situations, after all, in which obtaining internet access isn’t so easy. Perhaps we’re working in the field in a remote area, or we’re at a trade show where the connection is unreliable. Collecting data in such situations is often necessary, but difficult.
+It’s something thats often taken for granted. There are numerous situations, after all, in which obtaining Internet access isn't so easy. Perhaps we’re working in the field in a remote area, or we’re at a trade show where the connection is unreliable. Collecting data in such situations is often necessary, but difficult.
 
 Through the use of Offline Mode, it is easy and economical to gather survey response data offline on any PC or tablet, and have it uploaded to a centralized database (FluidSurveys.com) once a connection has been re-established.
 
@@ -405,7 +405,7 @@ Any survey you create can keep itself close to the pulse of Internet society wit
 .. _Reddit: http://www.reddit.com
 .. _Delicious: http://www.delicious.com
 
-To perform a social network release, click on “Publish” and then select which web site you wish to post on. A popup window will appear asking for your login credentials, and once the information has been entered, you’re done. It’s easy as 1 – 2 – 3
+To perform a social network release, click on “Publish” and then select which web site you wish to post on. A popup window will appear asking for your login credentials, and once the information has been entered, you’re done. It’s as easy as 1 – 2 – 3
 
 Kiosk Mode
 ^^^^^^^^^^
@@ -418,9 +418,9 @@ Deploying your survey in kiosk mode allows you to assign a short survey as an "e
 	:class: screenshot
 	:alt: Kiosk Mode
 
-	*Figure 9.1* Kiosk Mode with "Survey #1" prepended
+	*Figure 9.1* Kiosk Mode with "Survey #1" perpended
 
-The path a respondent will take is that "Survey #1" will be taken once, while the actual survey will constantly loop with a 5 minute timeout timer attached. The first survey is generally a "Location Survey", ie., "Where is this Kiosk located?". Therefore, all responses will have the location prepended. Kiosk mode is perfect for running your survey at a central terminal/computer, whether it’s at a tradeshow, conference, store, etc.
+The path a respondent will take is that "Survey #1" will be taken once, while the actual survey will constantly loop with a 5 minute timeout timer attached. The first survey is generally a "Location Survey", ie., "Where is this Kiosk located?". Therefore, all responses will have the location perpended. Kiosk mode is perfect for running your survey at a central terminal/computer, whether it’s at a trade show, conference, store, etc.
 
 When kiosk mode is enabled, your survey runs in a loop. Every time a survey response is completed, it automatically refreshes so the next respondent can begin. This allows multiple people to take the survey from one location with ease!
 

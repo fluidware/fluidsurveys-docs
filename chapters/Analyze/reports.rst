@@ -104,7 +104,7 @@ In the pop-up, you can:
      	* [Include percentages only] will only show the "Percentage" 
      	* [Include counts only] will only show the "Count"
    * - 6. Include Section Separators
-     - If a survey contains various Section Separaters as question resources that is crucial to understanding either the response, or the gathered data, then a Report can include those separators. By default, this option is unchecked.
+     - If a survey contains various Section Heading as question resources that is crucial to understanding either the response, or the gathered data, then a Report can include those separators. By default, this option is unchecked.
 
 .. image:: ../../resources/analyze/reports_over_time.png
 	:scale: 70%
@@ -151,7 +151,7 @@ The same process can be followed for any other languages that have been added to
 Chart Types
 ^^^^^^^^^^^
 
-When creating a Report, by default, every question type wil have its appropriate chart item which allows for an immediate level of satisfaction when viewing large sets of data. But, selecting the appropriate chart item is required when dealing with specific question types. Below are:
+When creating a Report, by default, every question type will have its appropriate chart item which allows for an immediate level of satisfaction when viewing large sets of data. But, selecting the appropriate chart item is required when dealing with specific question types. Below are:
 
 1) An example of how the Chart Item looks like
 2) The only question types available to certain items
@@ -201,7 +201,7 @@ A Text chart item is available to:
 Pie Chart
 =========
 
-A familiar sight to any user of Reports, is that infamous circular chart divided into sectors, each whose length (consequently its central angle and area) is proportional to the quanity it represents, otherwise known as the Pie Chart. The Chart item is perfect for forcing 1 question, short in length, but powerful in information, to be displayed in a colourful pie format.
+A familiar sight to any user of Reports, is that infamous circular chart divided into sectors, each whose length (consequently its central angle and area) is proportional to the quantity it represents, otherwise known as the Pie Chart. The Chart item is perfect for forcing 1 question, short in length, but powerful in information, to be displayed in a colourful pie format.
 
 .. figure:: ../../resources/analyze/pie_chart_type.png
 	:scale: 70%
@@ -283,7 +283,7 @@ A Bar chart item is available to:
 Line Chart
 ==========
 
-A line chart or line graph is a type of chart, which displays information as a series of data points connected by straight lines, thus becoming a perfect candidate for showing finaicial reports, sales over time, etc.
+A line chart or line graph is a type of chart, which displays information as a series of data points connected by straight lines, thus becoming a perfect candidate for showing financial reports, sales over time, etc.
 
 .. figure:: ../../resources/analyze/line_chart_type.png
 	:scale: 70%
@@ -362,7 +362,7 @@ A Cross Tabulation chart item is available to:
 Aggregate Statistics
 ====================
 
-A statistics charting item, allows for aggregate data combined from several measurements, ie., multiple questiona sources. As shown below, it allows for a quick assembly of questions to see what the sum, mean and variable. Additonally, multiple questions can be included into 1 aggregate statistics chart item that allows for 1 column to be added up in its entirety to reveal an overall conclusion
+A statistics charting item, allows for aggregate data combined from several measurements, ie., multiple question sources. As shown below, it allows for a quick assembly of questions to see what the sum, mean and variable. Additionally, multiple questions can be included into 1 aggregate statistics chart item that allows for 1 column to be added up in its entirety to reveal an overall conclusion
 
 .. figure:: ../../resources/analyze/aggregate_chart_type.png
 	:scale: 70%
@@ -451,7 +451,7 @@ The [Edit Report] allows for each and every chart item to be condensed in size, 
 Filter
 ^^^^^^
 
-A filter allows for the ability to drill down into a surveys responses and extract specific information. For instance, if you'd only like to see the results of individuals who anwered "Yes" to a particular question, you can do so. Within each filter, you can implement multiple paramters, so you can create a filter based on several choices. 
+A filter allows for the ability to drill down into a surveys responses and extract specific information. For instance, if you'd only like to see the results of individuals who anwered "Yes" to a particular question, you can do so. Within each filter, you can implement multiple parameters, so you can create a filter based on several choices. 
 
 .. figure:: ../../resources/analyze/filter.png
 	:scale: 70%
@@ -461,12 +461,12 @@ A filter allows for the ability to drill down into a surveys responses and extra
 
 	*Figure 9.1* Only English responses from a specific "Invite Email"
 
-Be on the lookout for the Green Plus sign in various places. It will help you savea lot of time!
+Be on the lookout for the Green Plus sign in various places. It will help you saves a lot of time!
 
 Export Report
 ^^^^^^^^^^^^^
 
-Creating a Report is one thing, which is the perfect starting point for a plethora of possible future options and analytics, but a report can be exported to popular 3rd party applications, such as Microsoft Word, Adobe PDF, Microsoft Excel, and Microsoft Powerpoint. 
+Creating a Report is one thing, which is the perfect starting point for a plethora of possible future options and analytics, but a report can be exported to popular 3rd party applications, such as Microsoft Word, Adobe PDF, Microsoft Excel, and Microsoft Power Point. 
 
 .. image:: ../../resources/analyze/export_reports.png
 	:scale: 70%
@@ -518,7 +518,7 @@ Clicking [Add Share] will reveal a new section, whereby a link can be shared amo
    * - Section
      - Description
    * - 1. Share Name
-     - The Share Name is strictly for . By default, this option is diabled.
+     - The Share Name is strictly for . By default, this option is disabled.
    * - 2. Share Options
      - Force the shared individuals to only 2 options
      	* **[Allow Filtering]** will either allow or disallow the creations of filters. By default, this option is disabled
@@ -577,4 +577,4 @@ Once the password has been successfully entered, the user will move to the next 
 
 .. note::
 
-	All Reports will be available via "Share Reports", despite having a Password. While "Share Individiaul Report" does not have a password associated with a Report, and does provide specific options to be disabled, if you would rather share 1 Report at a time as opposed to all Reports, please refer to "Share Individual Reports"
+	All Reports will be available via "Share Reports", despite having a Password. While "Share Individual Report" does not have a password associated with a Report, and does provide specific options to be disabled, if you would rather share 1 Report at a time as opposed to all Reports, please refer to "Share Individual Reports"

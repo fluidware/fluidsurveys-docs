@@ -41,7 +41,7 @@ Much like a great Arnold Schwarzenegger 1980's flick, the Response Table comes p
    * - 3. Delete imported responses
      - A response is categorized as "Imported" when the (Imported) string is appended at the end of a status, eg., "Completed (Imported)" which happens whenever a response is uploaded using either the "Import Responses" or Offline Mode feature.
    * - 4. Delete all responses
-     - First and foremost, it is not possible to retrieve deleted responses. When "Delete all responses" is selected, a pop-up will appear asking, "Are you sure?" which requires the keywords, "I agree" to be entered by the Administrator. Once "Ok" is clicked, the repsonses will be deleted.
+     - First and foremost, it is not possible to retrieve deleted responses. When "Delete all responses" is selected, a pop-up will appear asking, "Are you sure?" which requires the keywords, "I agree" to be entered by the Administrator. Once "Ok" is clicked, the responses will be deleted.
    * - 5. Add response
      - Add response, is very much like clicking the [Preview] icon, with the major different being that a new window will appear, and when [Submit] is clicked, the response will be marked as "Complete", without the (Test Data) string
    * - 6. Add multiple response
@@ -102,7 +102,7 @@ When searching for a strong, eg., PDF, only text responses with "PDF" will appea
 
 .. note::
 
-  The Search box will only search for strings entered via the text response question type. Since choices are static, and dependant entirely on forced options, it is more advantageous to create a Filter for such questions.
+  The Search box will only search for strings entered via the text response question type. Since choices are static, and dependent entirely on forced options, it is more advantageous to create a Filter for such questions.
 
 
 Filter
@@ -158,7 +158,7 @@ Below are a series of Columns available for every surveys response data
    * - 5. Language
      - The language the survey was created in, in this case, en represents "English"
    * - 6. IP Address
-     - The network address, 77.64.233.59 of where the individual completed the response. The IP Address is important in determining where specifically in the world an indivdual completed their survey, thus allowing for our geo-location tables to accurately pin-point them on the map found at [Analyze] > "Statistics"
+     - The network address, 77.64.233.59 of where the individual completed the response. The IP Address is important in determining where specifically in the world an individual completed their survey, thus allowing for our geo-location tables to accurately pin-point them on the map found at [Analyze] > "Statistics"
    * - 7. Location
      - Based on the IP Address, the location will indicate specifically where the individual came from, eg., Canada, United States, Germany, etc.  
    * - 8. Username
@@ -170,7 +170,7 @@ Below are a series of Columns available for every surveys response data
    * - 11. Number of Saves
      - The number of times "Save and Continue Later" was clicked before the survey was finally submitted
    * - 12. Weighted Score
-     - This column is commonly used heavily when a survey was used a Quiz, ie., the indivivduals final score on the Quiz
+     - This column is commonly used heavily when a survey was used a Quiz, ie., the individuals final score on the Quiz
    * - 13. Completion Time
      - The amount of time it took for a respondent to traverse across a survey. Note, this column will only contain information if a survey contains more than 1 page.
    * - 14. Invite Code
@@ -180,12 +180,12 @@ Below are a series of Columns available for every surveys response data
    * - 16. Invite Name
      - If the Invite tool was used, then this column will contain the Invite Name of said respondent
    * - 17. Collector
-     - If a survey contained multiple Collectors, this column will contain the specific Collector, ie., container, for the indivdiuals response, eg., "Apple", "Microsoft" (Assuming those were Collector names for a survey). Note, this column will only contain information when a collector group was used for a survey
+     - If a survey contained multiple Collectors, this column will contain the specific Collector, ie., container, for the individuals response, eg., "Apple", "Microsoft" (Assuming those were Collector names for a survey). Note, this column will only contain information when a collector group was used for a survey
 
 Pages and Response Amount
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Have you ever wanted to turn your amplifer up to 11, but couldn't since you were restricted to 10? While some surveys can grow exponentially in responses, it can become quite cumbersome to manage and sift through all the data. Luckily, there is a way to specify the amount of information shown on one page, essentially kicking the amplifier up to 11. 
+Have you ever wanted to turn your amplifier up to 11, but couldn't since you were restricted to 10? While some surveys can grow exponentially in responses, it can become quite cumbersome to manage and sift through all the data. Luckily, there is a way to specify the amount of information shown on one page, essentially kicking the amplifier up to 11. 
 
 To adjust the amount of responses you wish to display at once, or to move between response pages, adjust the values as seen below.
 

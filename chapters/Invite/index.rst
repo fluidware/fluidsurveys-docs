@@ -43,13 +43,13 @@ Composing a message is essentially the same "Compose" screen you would see when 
 	* - Custom Field
 	  - If your Address Book, and subsequently your survey, contains Custom Invite Variables, you can include the column here. Inserting a Custom Field is very common when blast emailing a large group of people, and including the password to the survey, or their unique employee ID, etc. The format for inserting a Custom Field (if it exists) is [Custom:Custom Field]
 	* - Send Test Message
-	  - It is possible to send a test message before sending an email to the intended audience. The test message will go to the email address on the account, and will contain the exact look-and-feel that the recipents will see.
+	  - It is possible to send a test message before sending an email to the intended audience. The test message will go to the email address on the account, and will contain the exact look-and-feel that the recipients will see.
 	* - Message Container
 	  - Otherwise known as the body of the message, which contains the email contents
 	* - Customize Footer
-	  - The bottom section of an e-mail message that contains information that does not change from one e-mail marketting campaign to another. The footer will appear at the bottom of the email, in a smaller text, as well as hold the [Unsubscribe Link]
+	  - The bottom section of an e-mail message that contains information that does not change from one e-mail marketing campaign to another. The footer will appear at the bottom of the email, in a smaller text, as well as hold the [Unsubscribe Link]
 	* - Schedule Email
-	  - When "Preview & Send" is clicked, the message will be sent to its recipents after a 2 minute delay. However, it is possible to send an email for a later time. Additionally, the "Schedule Email" option will contain your current timezone. If the timezone is incorrect, the zone can be adjusted by going to "Settings" > "Timezone" 
+	  - When "Preview & Send" is clicked, the message will be sent to its recipients after a 2 minute delay. However, it is possible to send an email for a later time. Additionally, the "Schedule Email" option will contain your current timezone. If the timezone is incorrect, the zone can be adjusted by going to "Settings" > "Timezone" 
 	* - Save Draft
 	  - Allows for the email to be operated on at a later date. Save Draft will save everything, including any added recipients.
 	* - Start New
@@ -61,7 +61,7 @@ Composing a message is essentially the same "Compose" screen you would see when 
 	* - Contact Lists
 	  - Add a new, or old list to the email
 	* - Search
-	  - If a large amount of recipeents was added, and it was found out later that one was added in error, it is possible to use the "Search" feature to find said individual, and remove them from the intended audience
+	  - If a large amount of recipients was added, and it was found out later that one was added in error, it is possible to use the "Search" feature to find said individual, and remove them from the intended audience
 	* - Actions
 	  - Using the current "Recipients" List, it is possible to "Export Selected Contacts" (For external use), or "Delete selected contacts" (People added in error)
 
@@ -86,7 +86,7 @@ The email will appear as follows in an recipients Inbox.
 Reminders/History
 -----------------
 
-All emails, regardless of size, will be contained within the "Reminders/History" section, which holds all emails sent in the past or to be sent in the future. When an email is sent, it is scheduled to be sent within 2 minutes. 
+All emails, regardless of size, will be contained within the "Reminders/History" section, which holds all emails sent in the past or to be sent in the future. When an email is sent, it is scheduled to be sent within 2 minutes. Additionally, multiple Reminders can be sent for a survey
 
 .. figure:: ../../resources/invites/scheduled_invite.png
 	:scale: 70%
@@ -123,19 +123,19 @@ Clicking on the subject of your email, will present a new popup titled, "E-mail 
 	* - Section
 	  - Description
 	* - E-mail Sending Progress
-	  - If the e-mail is scheduled to be sent at a later date, ie., in 2 minutes (Default behaviour) or at a much later date (defined by "Schedule Email") the progress bar will remian at 0/n (where n is total recipients) or 0%. However, when the e-mail is sent, this value will shift to show 100% sent, and n of n emails sent. This bar is in real-time. The "E-mail Info" window can be opened, and the progress bar will progress from 0% to 100%, allowing for the Administrator to factually see if the emails are leaving the mail servers
+	  - If the e-mail is scheduled to be sent at a later date, ie., in 2 minutes (Default behavior) or at a much later date (defined by "Schedule Email") the progress bar will remain at 0/n (where n is total recipients) or 0%. However, when the e-mail is sent, this value will shift to show 100% sent, and n of n emails sent. This bar is in real-time. The "E-mail Info" window can be opened, and the progress bar will progress from 0% to 100%, allowing for the Administrator to factually see if the emails are leaving the mail servers
 	* - Status
 	  - There are 4 possible Status' that can appear
 		    1. **Sent**: The invite was sent, and the recipient has not clicked on the link yet
 		    2. **Viewed**: The invite was sent, and the recipient opened the survey, but did nothing to it, and closed the browser
 		    3. **Completed**: The invite was sent, and the recipient completed the survey
-		    4. **Incomplete**: If your survey contains more than 1 page, and the recipient completed the first page, but left shortly thereafter, their status will be markred as "Incomplete"
+		    4. **Incomplete**: If your survey contains more than 1 page, and the recipient completed the first page, but left shortly thereafter, their status will be marked as "Incomplete"
 	* - Bounced
 	  - If the email came back with a Mail Code of 550, ie., Bounced, a flag of "Yes" will appear that either means, the email is inactive, or not accepting emails
 
 Additionally, It can often be useful to send out reminders after your survey invitations have been sent. Perhaps individuals may have forgotten about the first email, or it got lost in an overcrowded inbox, etc. Reminders can give potential respondents the little nudge they need to provide you with some valuable feedback.
 
-The process of sending reminders using FluidSurveys is fast and simple. First, from the left hand side toolbar, select the “Reminders/History” button. On this screen, you’ll see a history of all of the survey invitations and reminders that you’ve sent out.
+The process of sending reminders using FluidSurveys is fast and simple. First, from the left hand side toolbar, select the “Reminders/History” button. On this screen, you’ll see a history of all of the survey invitations and reminders that you've sent out.
 
 Clicking "Send Reminder" will reveal a slightly different "Compose" screen. From here, you are able to enter your reminder message and specify to who the reminder should be sent.
 
@@ -174,7 +174,7 @@ An Address Book needs no immediate introduction, as the name speaks for itself a
 
 .. note::
 	
-	Despite invites being unique to each survey, the Address Book is global across the entireity of the account, and thus any email addresses added for 1 survey, will remain static on the account until "Deleted"
+	Despite invites being unique to each survey, the Address Book is global across the entirety of the account, and thus any email addresses added for 1 survey, will remain static on the account until "Deleted"
 
 .. image:: ../../resources/invites/add_contacts.png
 	:scale: 70%
@@ -211,8 +211,7 @@ If you have a large collection of contacts that you’d like to invite to take y
 
 Once you’ve created your .CSV or .XLS file, select the “Import Contacts” button under the “Individuals to Invite” label. A pop-up will appear prompting you to select your file from your computer and upload it to FluidSurveys.com.
 
-If obtaining a .CSV or .XLS file is not possible, then importing contacts through Plaxo is a possibility. This provides an ease of conveience when dealing with an online mail client (Yahoo, Gmail, Hotmail) or Microsoft Outlook.
-
+If obtaining a .CSV or .XLS file is not possible, then importing contacts through Plaxo is a possibility. This provides an ease of convenience when dealing with an online mail client (Yahoo, Gmail, Hotmail) or Microsoft Outlook.
 
 Once you’ve uploaded your contacts, they’ll appear in the summary box. If the contact already exists in your Address Book, you will receive a message stating that the address already exists, and therefore has not been added.
 
@@ -222,7 +221,7 @@ Once you’ve uploaded your contacts, they’ll appear in the summary box. If th
 
 Additionally, a contact column when imported can contain a custom variable, eg., "Department" which allows for additional information to be uploaded with contacts, and these can then be viewed alongside their responses.
 
-A survey can appear to be customly created for an individual using {{ invite.<custom_column> }} eg., {{ invite.Department }} will show "Retired" for Jason Bourne, but "Expired" for Kenneth Kitsum, assuming the column for both Jason and Kenneth were "Retired" and "Expired" respectively.
+A survey can appear to be custom created for an individual using {{ invite.<custom_column> }} eg., {{ invite.Department }} will show "Retired" for Jason Bourne, but "Expired" for Kenneth Kitsum, assuming the column for both Jason and Kenneth were "Retired" and "Expired" respectively.
 
 .. note:: 
 
@@ -281,7 +280,7 @@ Statistics allow for the questions, "How many email users did I send this survey
 	* - Section
 	  - Description
 	* - Overall Completion Rate
-	  - How many respondents completed your survey, including both invites sent, as well as those that may have recieved the survey through other means, eg., word of mouth, social networking mediums, etc.
+	  - How many respondents completed your survey, including both invites sent, as well as those that may have received the survey through other means, eg., word of mouth, social networking mediums, etc.
 	* - Invite Completion Rate
 	  - The amount of respondents that completed the survey who were invited via the Invite Tool
 	* - E-mails Remaining*
@@ -289,7 +288,7 @@ Statistics allow for the questions, "How many email users did I send this survey
 	* - E-mails Sent*
 	  - Represents the total amount of e-mail sent. This value is specific to the entirety of the account. The figure above represents 785 e-mails sent in total.
 	* - Invitations Sent
-	  - Indicative of the amount of invitese sent for this specific survey
+	  - Indicative of the amount of invitees sent for this specific survey
 	* - Reminders Sent
 	  - The amount of reminders sent for this survey
 	* - Responses Through Invitations
@@ -305,7 +304,7 @@ Lists
 -----
 
 
-Lists, while separate from the Address Book, allow for an easier means of sending emails. Lists contain only individuials you wish to send to, as opposed to including the entirety of the address book. 
+Lists, while separate from the Address Book, allow for an easier means of sending emails. Lists contain only individuals you wish to send to, as opposed to including the entirety of the address book. 
 
 Clicking "Create New List" on the left-hand side allows for . On the left-hand side is the usual functionality found within the Invite section, 
 
@@ -343,7 +342,7 @@ Clicking "Create New List" on the left-hand side allows for . On the left-hand s
 		3. **[Delete List]** that is currently active. This will not remove any contacts or affect any emails sent.
 		4. **[Delete List & Contacts]** that is currently active. This **will** remove contacts, but will not affect any emails sent. 
 	* - Status
-	  - If a list was used to send invites, the status of each individual wil be reflected here, ie., Sent, Viewed, Completed, Incompleted. The default status is Blank
+	  - If a list was used to send invites, the status of each individual will be reflected here, ie., Sent, Viewed, Completed, Incompleted. The default status is Blank
 
 .. note::
 

@@ -4,7 +4,7 @@ Advanced Questions
 Score Display
 ^^^^^^^^^^^^^
 
-In brief, the Score Display question type is essentially what it says, a score display. The question type can be used primarily for either tallying a score in an online quiz, or for calculating of financials. A Score Display comes into good use when the Score for each variable or choice in, say, a Multiple Choice question has a value.
+In brief, the Score Display question type is essentially what it says, a score display. The question type can be used primarily for either tallying a score in an online quiz, or for calculating of financial. A Score Display comes into good use when the Score for each variable or choice in, say, a Multiple Choice question has a value.
 
 .. figure:: ../../resources/editor/score_display.png
 	:align: center
@@ -18,21 +18,19 @@ In brief, the Score Display question type is essentially what it says, a score d
    :widths: 35 65
    :header-rows: 1
 
-   * - Display Option
+   * - Display Options
      - Description
-   * - 1. 1st Column Size
-     - Adjusts the first columns width. By default, this option is 30%
-   * - 2. Display side-by-side
+   * - 1. Display side-by-side
      - Display side-by-side: This option allows for you to display the question type beside another question. By default, this option is disabled
-   * - 3. Append to previous question
+   * - 2. Append to previous question
      - This question type will be appended to the question directly before it. By default, this option is disabled.
-   * - 4. Width
+   * - 3. Width
      - You can adjust the width based on a percentage. By default, the value is 100%.
 
 Checkbox Grid
 ^^^^^^^^^^^^^
 
-A Checkbox Grid allows for. Similar to other grids, you have the same types of options available, such as specifying scores for answers, and forcing variables to be unique. The display options are similar to other grids in FluidSurveys.
+Similar to other grids, you have the same types of options available, such as specifying scores for answers, and forcing variables to be unique. The display options are similar to other grids in FluidSurveys.. Similar to other grids, you have the same types of options available, such as specifying scores for answers, and forcing variables to be unique. The display options are similar to other grids in FluidSurveys.
 
 .. figure:: ../../resources/editor/checkbox_grid.png
 	:align: center
@@ -48,20 +46,26 @@ A Checkbox Grid allows for. Similar to other grids, you have the same types of o
 
    * - Display Option
      - Description
-   * - 1. 1st Column Size
+   * - 1. Make First Column Static
+     - Forces the first column to always be present. By default, this option is disabled.
+   * - 2. 1st Column Size.
      - Adjusts the first columns width. By default, this option is 30%
-   * - 2. Display side-by-side
-     - Display side-by-side: This option allows for you to display the question type beside another question. By default, this option is disabled
-   * - 3. Append to previous question
-     - This question type will be appended to the question directly before it. By default, this option is disabled.
-   * - 4. Width
+   * - 3. Display side-by-side.
+     - This option allows for you to display the question type beside another question as seen in the image to the left. By default, this option is disabled.
+   * - 4. Append to previous question
+     - The question is attached to the question which precedes it in the survey. By default, this option is disabled
+   * - 5. Width
      - You can adjust the width based on a percentage. By default, the value is 100%.
+   * - 6. Show Borders
+     - Show borders around the question type. By default, this option is disabled.
+   * - 7. Alternate Background Color
+     - Each row will be an alternate color. By default, this option is disabled.
 
 .. list-table:: Options
    :widths: 35 65
    :header-rows: 1
 
-   * - Display Option
+   * - Options
      - Description
    * - 1. Randomize Variables
      - Selecting this option will randomize the choices within the Checkbox question type on each survey refresh. By default, this option is disabled
@@ -73,7 +77,7 @@ A Checkbox Grid allows for. Similar to other grids, you have the same types of o
 N-atrix
 ^^^^^^^
 
-The N-Atrix Question type allows for any question type to exist on any given row, such as text response, dropdown, checkboxes or radio buttons. A typical use for such a question type, is asking for detailed personal information where the types of questions can range between the available types (Dropdown for title, Text area for Name, or a Checkbox/Radio Button for types of phone numbers, or contact times)
+The N-Atrix Question type allows for any question type to exist on any given row, such as text response, dropdown, checkboxes or radio buttons. A typical use for such a question type, is asking for detailed personal information where the types of questions can range between the available types (Dropdown for title, Text area for Name, or a Checkbox/Radio Button for types of phone numbers, or contact times). To change the question type of a row, click on the "Variables" on the left-hand side, and select "Switch to type"
 
 .. figure:: ../../resources/editor/natrix.png
 	:align: center
@@ -98,6 +102,12 @@ The N-Atrix Question type allows for any question type to exist on any given row
    * - 4. Width
      - You can adjust the width based on a percentage. By default, the value is 100%.
 
+A n-atrix has the following Question Choices available
+
+ * Switch to type
+ * Optional
+ * Multiline
+
 Drill Down
 ^^^^^^^^^^
 
@@ -118,7 +128,7 @@ Drill Down questions allow respondents to select an answer by narrowing down the
    * - Display Option
      - Description
    * - 1. Appearance
-     - By default, Default (Vertical) is selected
+     - By default, Default (Vertical) is selected. The available appearance choices are dropdown, and likert. They appear exactly as their respective parts.
    * - 2. Randomize choices
      - Selecting this option will randomize the choices within the Checkbox question type on each survey refresh. By default, this option is disabled
    * - 3. Alphabetize choices
@@ -134,7 +144,7 @@ Drill Down questions allow respondents to select an answer by narrowing down the
    :widths: 35 65
    :header-rows: 1
 
-   * - Display Option
+   * - Options
      - Description
    * - 1. Optional
      - Unchecking this option forces the question to be answered when the user is filling out your survey. By default, this option is enabled
@@ -181,7 +191,7 @@ Similar to the N-Atrix question type, a 3D Matrix question can have different qu
    :widths: 35 65
    :header-rows: 1
 
-   * - Display Option
+   * - Options
      - Description
    * - 1. Randomize Variables
      - Selecting this option will randomize the choices within the Checkbox question type on each survey refresh. By default, this option is disabled
@@ -228,7 +238,7 @@ This is a great question type to use if you want respondents to rank a specific,
    :widths: 35 65
    :header-rows: 1
 
-   * - Display Option
+   * - Options
      - Description
    * - 1. Randomize Variables
      - Selecting this option will randomize the choices within the Checkbox question type on each survey refresh. By default, this option is disabled
@@ -269,10 +279,10 @@ In analytics, the survey administrator will have the option of viewing, or downl
    :widths: 35 65
    :header-rows: 1
 
-   * - Display Option
+   * - Options
      - Description
-   * - 1. Randomize Variables
-     - Selecting this option will randomize the choices within the Checkbox question type on each survey refresh. By default, this option is disabled
+   * - 1. Optional
+     - Unchecking this option forces the question to be answered when the user is filling out your survey. By default, this option is enabled
    * - 2. Upload to another server
      - Selecting this option will allow for you to upload any files the user provides to an entirely different server, separate from FluidSurveys
 

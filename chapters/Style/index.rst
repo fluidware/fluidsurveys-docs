@@ -3,7 +3,7 @@
 Style
 =====
 
-If the Editor is the meat and potatoes, then the Themer is the desert capable of delievering a polished product. By default, every new survey adheres to a basic template, which holds the signature colours of FluidSurveys (Grey, Light Grey, Black, Blue). This style may not fit the needs of every individual, and therefore we provided the option to fully allow for everything to be changed. 
+If the Editor is the meat and potatoes, then the Themer is the desert capable of delivering a polished product. By default, every new survey adheres to a basic template, which holds the signature colours of FluidSurveys (Grey, Light Grey, Black, Blue). This style may not fit the needs of every individual, and therefore we provided the option to fully allow for everything to be changed. 
 
 In this chapter, you will be introduced to the ability of changing not only basic elements, but complex aspects of your survey. Regardless of your CSS prowess, you can add your companies logo, alter the survey background colour, question fonts, all the way to how buttons look-and-feel. However, when venturing into the CSS Editor, it would not hurt to brush up on some basic CSS knowledge, or use it as a database of knowledge, then `w3schools`_ is the perfect starting point.
 
@@ -37,7 +37,7 @@ When the Themer is loaded up for the first time, the first page will be on displ
 	:alt: Themer Admin Bar
 	:class: screenshot
 
-	*Figure 9.1* Administrator Themeing Toolbar
+	*Figure 9.1* Administrator Theming Toolbar
 
 .. list-table:: 
 	:widths: 30 70
@@ -180,7 +180,7 @@ Elements
 
 Allows for all things found in a survey to be altered. For instance, every survey allows for a logo to be uploaded, which can be altered under the "Elements" second. Specific elements of the Question, Question Title, Termination Message, etc., can be altered, eg., Width, Height, Margin, Font family, etc. Every "Element" will have a different set of options.
 
-The Elements available for alteration are seen and described below. Please refer to Figure VALUE to see which elements relates to which section of your survey
+The Elements available for alteration are seen and described below. 
 
 .. figure:: ../../resources/style/survey_elements_number.png
 	:align: center
@@ -190,7 +190,7 @@ The Elements available for alteration are seen and described below. Please refer
 
 	*Figure 9.1* Survey Elements Numbered
 
-While there are too many customziable options available for each Element to list them off in a logical display order, refer to the "Style" section of your survey to gather a closer look. However, the table below contains a high-level overview of each and every available element that you can change.
+While there are too many customizable options available for each Element to list them off in a logical display order, refer to the "Style" section of your survey to gather a closer look. However, the table below contains a high-level overview of each and every available element that you can change.
 
 .. list-table:: 
 	:widths: 30 70
@@ -209,11 +209,11 @@ While there are too many customziable options available for each Element to list
 	* - 5. Survey Title
 	  - Change only the title to your survey, ie., color, font, size, etc.
 	* - 6. Survey Description
-	  - Change the survey description to your survye, which will have settings independent to the survey title
+	  - Change the survey description to your survey, which will have settings independent to the survey title
 	* - 7. Question Title
 	  - Change only the title to your questions, ie., color, font, size, etc.
 	* - 8. Question Description
-	  - Change the survey description to your survye, which will have settings independent to the question title
+	  - Change the survey description to your survey, which will have settings independent to the question title
 	* - 9. Question
 	  - Alter the settings behind the Choices and Variables.
 	* - 10. Question Body
@@ -225,9 +225,9 @@ While there are too many customziable options available for each Element to list
 	* - 13. Progress Bar (Inner)
 	  - Alter the inside of the progress bar
 	* - 14. Error Message (Outer)
-	  - If a question is required, or has validation on it, and the user enters invalid information, they are prompted with an error message. This allows for the style to be altered. In this case, only the outside of the Error Message. **Not showin in Figure above**
+	  - If a question is required, or has validation on it, and the user enters invalid information, they are prompted with an error message. This allows for the style to be altered. In this case, only the outside of the Error Message. **Not showing in Figure above**
 	* - 15. Error Message (Inner)
-	  - This will only affect the inside of the Error Message. **Not showin in Figure above**
+	  - This will only affect the inside of the Error Message. **Not showing in Figure above**
 	* - 16. Button Region
 	  - Change the region, such as distance between buttons, height, margin, etc.
 	* - 17. Buttons
@@ -237,15 +237,15 @@ While there are too many customziable options available for each Element to list
 	* - 19. Footer (Link)
 	  - Only alter the link within the Footer
 	* - 20. Finish Message
-	  - Alter the look-and-feel of the final page, which a respondent sees when they successfully completed a survey path. **Not showin in Figure above**
+	  - Alter the look-and-feel of the final page, which a respondent sees when they successfully completed a survey path. **Not showing in Figure above**
 	* - 21. Termination Message
-	  - Alter the look-and-feel of the final page, which a respondent seens when they were terminated due to a previous repsonse. **Not showin in Figure above**
+	  - Alter the look-and-feel of the final page, which a respondent seens when they were terminated due to a previous response. **Not showing in Figure above**
 	* - 22. Save and Continue Container
-	  - Change the container that holds the text within the "Save and Continue Later" page. This is only found within the "Save and Continue Later" page when the button is pressed. **Not showin in Figure above**
+	  - Change the container that holds the text within the "Save and Continue Later" page. This is only found within the "Save and Continue Later" page when the button is pressed. **Not showing in Figure above**
 	* - 23. Save and Continue (Header)
-	  - Change the header that has, "Save and Continue Later". This is only found within the "Save and Continue Later" page when the button is pressed. **Not showin in Figure above**
+	  - Change the header that has, "Save and Continue Later". This is only found within the "Save and Continue Later" page when the button is pressed. **Not showing in Figure above**
 	* - 24. Save and Continue (Link)
-	  - Change the look-and-feel of the link. This is only found within the "Save and Continue Later" page when the button is pressed.  **Not showin in Figure above**
+	  - Change the look-and-feel of the link. This is only found within the "Save and Continue Later" page when the button is pressed.  **Not showing in Figure above**
 
 Questions
 ^^^^^^^^^
@@ -255,7 +255,7 @@ By default, every question type can be tailored to your various needs. Where Ele
 .. figure:: ../../resources/style/questions_elements.png
 	:align: center
 	:scale: 70%
-	:alt: Customziable Question Elements
+	:alt: Customizable Question Elements
 	:class: screenshot
 
 	*Figure 9.1* Elements available for customization
@@ -267,7 +267,7 @@ By default, every question type can be tailored to your various needs. Where Ele
 Advanced
 --------
 
-Advanced allows for any element in a survey to be altered with either CSS, or scrapped from a pre-defined web site using Template Grabber
+Advanced allows for any element in a survey to be altered with either CSS, or scrapped from a pre-defined web site using Template Grabber.
 
 Custom CSS
 ^^^^^^^^^^
@@ -290,7 +290,7 @@ the survey’s CSS. To do so, simply select "Advanced" > “CSS” and a dialog 
 Template Grabber
 ^^^^^^^^^^^^^^^^
 
-Grabbing a template from a pre-existing web site requires a little bit of digging, but it will allow for you to take everything, ie., colours, format, outline, pictures, css files, etc. and allow for them to reside within your survey. In order to successfully execute a Template Grab, you will need the following information seen below. This is an advanced portion of FluidSurveys, and if you are unfamiliar with HTML or CSS, then this section may be slighter harder to follow. Nonetheless, the interface is very intuitive and 
+Grabbing a template from a pre-existing web site requires a little bit of digging, but it will allow for you to take everything, ie., colours, format, outline, pictures, CSS files, etc. and allow for them to reside within your survey. In order to successfully execute a Template Grab, you will need the following information seen below. This is an advanced portion of FluidSurveys, and if you are unfamiliar with HTML or CSS, then this section may be slighter harder to follow. Nonetheless, the interface is very intuitive and 
 straight forward.
 
 .. figure:: ../../resources/style/grab_template.png
@@ -337,7 +337,7 @@ To learn more on how to successfully grab a template from any web site, refer to
 Pages
 -----
 
-When working with a multi-paged survey, it is advantageous to alternate between the pages to ensure that any CSS or stylings added, adhere beautifully across the entirety of your survey. Pages, found on the top-right of the toolbar, allows for you to quickly jump between pages.
+When working with a multi-paged survey, it is advantageous to alternate between the pages to ensure that any CSS or styling added, adhere beautifully across the entirety of your survey. Pages, found on the top-right of the toolbar, allows for you to quickly jump between pages.
 
 .. figure:: ../../resources/style/pages_top_right.png
 	:align: center

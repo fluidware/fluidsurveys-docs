@@ -4,7 +4,7 @@ Editor Features
 Survey Title/Survey Description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The Survey Title is what respondents see when they’re treading through your survey. During survey creation time, the title is defined, but at any point during the alteration of the survey, you can edit the title and description.
+The Survey Title is what respondents see when they're treading through your survey. During survey creation time, the title is defined, but at any point during the alteration of the survey, you can edit the title and description.
 
 .. figure:: ../../resources/editor/survey_title_survey_description_option.png
 	:align: center
@@ -44,7 +44,6 @@ When a survey is first created, the survey title is inherited from the survey na
 		1. In the Editor, click the title
 		2. Select the option, "First page title/description only"
 
-
 Keyboard Shortcuts
 ^^^^^^^^^^^^^^^^^^
 
@@ -59,10 +58,10 @@ Since time is money, and FluidSurveys already accommodates a low cost survey alt
 	  - Description
 	* - 1. Save
 	  - CTRL-S
-	  - Save the survey in its current form.
+	  - Save the survey in its current form
 	* - 2. Select All Questions
 	  - CTRL-A
-	  - Select all questions on the current page.
+	  - Select all questions on the current page
 	* - 3. Copy Questions
 	  - CTRL-C
 	  - Copy the selected question(s)
@@ -134,7 +133,7 @@ The Preview Survey button can be found within the Editor, but it is also possibl
 	* - Section
 	  - Description
 	* - 1. Download Responses
-	  - If your survey contains multiple pages, you can download responsens right from the top bar without having to enable the option under the :ref:`Publish` settings. You can download them into 
+	  - If your survey contains multiple pages, you can download responses right from the top bar without having to enable the option under the :ref:`Publish` settings. You can download them into 
 	    either Microsoft Word or Adobe Reader.
 	* - 2. Jump to page
 	  - Instead of having to click [Next] a multitude of times in order to get to your desired page, you can instantly jump there. This will save you time, and headache.
@@ -156,8 +155,6 @@ Publish
 
 The Publish button can be found within the Editor, but it is also possible to alter any publishing options for a survey from the Survey Dashboard screen. Clicking on Publish will direct you to edit any necessary publishing options, such as closing the survey, access restrictions, all the way to changing the survey completed message. 
 
-To learn more about Preview, see the :ref:`Publish` section of the manual
-
 .. note:: 
 
 	All surveys are [Live] by default. You can [Close] at any point. To learn more, see the :ref:`Publish` section of the manual
@@ -165,7 +162,7 @@ To learn more about Preview, see the :ref:`Publish` section of the manual
 Find & Replace
 ^^^^^^^^^^^^^^
 
-Find & Replace can automatically locate and replace text or phrases in question titles, choices, variables, extra description fields within a survey for your keyword, replacing them with a few clicks. A dialogue will appear allowing you to specify the text to locate, and what to replace it with. You can also specify where the changes should be made, be it in the entire survey, on one page, or for selected questions.
+Find & Replace can automatically locate and replace text or phrases in question titles, choices, variables, extra description fields within a survey for your keyword, replacing them with a few clicks. A dialog will appear allowing you to specify the text to locate, and what to replace it with. You can also specify where the changes should be made, be it in the entire survey, on one page, or for selected questions.
 
 In addition, you can use `Regular Expressions`_ when searching for a keyword
 
@@ -182,7 +179,7 @@ In addition, you can use `Regular Expressions`_ when searching for a keyword
 .. figure:: ../../resources/editor/find_and_replace_popup.png
 	:align: center
 	:class: screenshot
-	:alt: Find and Replace Popup
+	:alt: Find and Replace Pop-up
 	:scale: 70%
 
 	*Figure 5.6* Find & Replace Options
@@ -242,7 +239,7 @@ Survey Versioning can restore up to 50 previous versions of your survey. This ca
 
 	*Figure 5.7* View Survey Versions calendar
 
-A dialog will then appear listing all of the saved versions of the survey. You can first view the different versions, and if you’d like to restore your survey to one of the previously saved version, click [Revert]
+A dialog will then appear listing all of the saved versions of the survey. You can first view the different versions, and if you'd like to restore your survey to one of the previously saved version, click [Revert]
  
 .. figure:: ../../resources/editor/survey_versions_previous_versions.png
 	:align: center
@@ -292,15 +289,17 @@ A dialog will then appear listing all of the saved versions of the survey. You c
 Page Drag-and-Drop
 ^^^^^^^^^^^^^^^^^^
 
-The concept is really simple. At any point, instead of moving each question individually from 1 page to another, you can quickly and efficently move the entirety of 1 page to an entirely different location in your survey.The goal is to click, drag, and release the page in its new desired spot.
+The concept is really simple. At any point, instead of moving each question individually from 1 page to another, you can quickly and efficiently move the entirety of 1 page to an entirely different location in your survey.The goal is to click, drag, and release the page in its new desired spot.
 
 .. figure:: ../../resources/editor/drag_pages_around.png
 	:align: center
-	:class: screenshot:
+	:class: screenshot
 	:alt: Change page order
 	:scale: 70%	
 
 	*Figure 5.9* Drag and Drop a page in a new slot within your survey
+
+Additionally, if a survey has Advanced Branching Logic, dragging around pages will not remove the branching logic. However, before setting a survey live, it would be advantageous to double check the branching logic to ensure it is still accurate
 
 Page Labels
 ^^^^^^^^^^^
@@ -352,16 +351,13 @@ Right-click Menu
 	* - 6. Duplicate
 	  - Duplicate the selected question(s). If more than 1 question is selected, then those questions will be duplicated when [Duplicate] is clicked.
 	* - 7. Change Question Type
-	  - If an incorrect question type was used for a question, you can easily morph it to the appropriate one. 
-	    To learn more about the Piping Wizard, please refer to the :ref:`Advanced Features` section of the manual
+	  - If an incorrect question type was used for a question, you can easily morph it to the appropriate one.
 	* - 8. Piping Wizard
-	  - Pipe previously inputted answers by a respondent into a question. 
-	    To learn more about the Piping Wizard, please refer to the :ref:`Advanced Features` section of the manual
+	  - Pipe previously inputted answers by a respondent into a question. If an incorrect question type was used for a question, you can easily morph it to the appropriate one.
 	* - 9. Mark all as optional
 	  - The selected question(s) will be marked as optional. If more than 1 question is selected, then only those questions will be marked as optional
 	* - 10. Mark all as required
 	  - The selected question(s) will be marked as required. If more than 1 question is selected, then only those questions will be marked as required
-	
 
 Add questions (Drag-and-drop)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -392,7 +388,7 @@ If dragging-and-dropping a question into the Editor isn't your style, it is poss
 Question Morphing
 ^^^^^^^^^^^^^^^^^
 
-Question morphing allows you to quickly transform one question type into another without having to re-enter all of the question information, or re-create the question.
+Question morphing allows you to quickly transform one question type into another without having to re-enter all of the question information, or re-create the question. 
 
 .. figure:: ../../resources/editor/morph_question.png
 	:align: center
@@ -413,10 +409,14 @@ Question morphing allows you to quickly transform one question type into another
 
 	This method of question morphing can be applied to any question type. Or, another method of morphing a question is to click the question, and on the right-hand side select "Yes/No" under the dropdown "Type"
 
+.. warning::
+
+	Question Morphing does not always work. It will try its best to carry the Choices/Variables from 1 question type to another, but in some cases, the information will be lost since adding columns to a previously only row question type, will force the software to remove the choices. Therefore, before morphing, save your Choices and Variables!
+
 Bulk
 ^^^^
 
-In the case that you have a long list of choices or variables, or a list that you’ll be re-using often throughout your many surveys, it may be useful to use the bulk feature. The bulk editor automatically converts lists into choices/variables/rows, while giving you the option of saving them for use on any future question.
+In the case that you have a long list of choices or variables, or a list that you'll be re-using often throughout your many surveys, it may be useful to use the bulk feature. The bulk editor automatically converts lists into choices/variables/rows, while giving you the option of saving them for use on any future question.
 
 The Bulk option is available under all "Choices" and "Variables" on the left-hand floating editor box.
 
@@ -470,7 +470,7 @@ Additionally, you can also save custom bulk lists. To create a custom bulk list,
 	* - 2. Preset Choices
 	  - Information typed into here will be saved in the custom preset. Note that, despite the fact a preset was selected, you can still alte it after the fact.
 
-When you return to the Bulk Editor, the preset, "Blue Jazz" will be available as a selectable option.
+When you return to the Bulk Editor, the preset, "Blue Jazz" will be available as a selectable option, as seen in Figure 5.12
 
 .. warning::
 
@@ -507,9 +507,9 @@ The next time you create a survey, you’ll have the option of using the templat
 Template (Apply)
 ^^^^^^^^^^^^^^^^
 
-It’s possible to apply previosuly saved templates into existing surveys.
+It’s possible to apply previously saved templates into existing surveys.
 
-To do so, open the survey from which you’d like to apply the template, and click on the “Survey” tab in your editor. Then, select "Apply Template”. In the pop-up, input a reconizable Title, a brief description, and click [Save]. All of the questions and branching logic will be applied to the template.
+To do so, open the survey from which you’d like to apply the template, and click on the “Survey” tab in your editor. Then, select "Apply Template”. In the pop-up, input a recognizable Title, a brief description, and click [Save]. All of the questions and branching logic will be applied to the template.
 
 .. figure:: ../../resources/editor/apply_a_template.png
 	:align: center
@@ -553,12 +553,14 @@ On any page that contains skip logic, you’ll notice a little branching icon on
 
 .. tip:: 
 
-	If your survey is going to be long, you’ll benefit greatly from specifying page-labels for each of your pages. Just go to the “Page” tab and specify a label for that page. For more info, see "Page Labels" in the manul.
+	If your survey is going to be long, you'll benefit greatly from specifying page-labels for each of your pages. Just go to the “Page” tab and specify a label for that page. For more info, see "Page Labels" in the manual.
 
 Visual Editor
 ^^^^^^^^^^^^^
 
 The Rich Text Editor allows for you to easily insert images, add styling to text, YouTube videos, links, paste from Microsoft Word, etc. The Visual Editor can be used when editing the survey/question title or survey/question description. 
+
+The Rich Text Editor is only available to the Survey Title and Survey Description, and not each individual text area for Choices or Variables
 
 To access the Visual Editor, click on a text area in the floating box on the left hand side, and click [Open Visual Editor]. 
 
@@ -586,12 +588,10 @@ The visual editor appears as a typical text editor, with actions and commands lo
 
 	* - Section
 	  - Description
-	* - 1. Text Alterations
-	  - Make any changes to font specific sections, such as bold, italicize, center a block of text, etc.
+	* - 1. Text/Style Alterations
+	  - Make any changes to font specific sections, such as bold, italicize, center a block of text, etc. As well as adjust the font size, font type, styles, or edit the source directly
 	* - 2. Content Alterations
 	  - Input text directly from Microsoft Word and retain its style, insert a web link, or a video straight from YouTube
-	* - 3. Style Alterations
-	  - Adjust the font size, font type, styles, or edit the source directly
 
 .. note::
 

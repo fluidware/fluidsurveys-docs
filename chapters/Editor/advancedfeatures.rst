@@ -26,15 +26,15 @@ Jumping allows you to create named points in your survey in which the respondent
 
 .. note::
 
-	When you alter a page label, jumping will become evident. By default, this option is disabled
+	Jumping will only become available when the page labels have been altered to anything other than 1, 2, 3, etc. By default, this option is disabled
 
 .. figure:: ../../resources/editor/jumping_in_survey.png
 	:align: center
 	:scale: 70%
-	:alt: Breadcrump on survey
+	:alt: Breadcrumb on survey
 	:class: screenshot
 
-	*Figure 9.1* Breadcrump on survey
+	*Figure 9.1* Breadcrumb on survey
 
 When a respondent takes your survey, as opposed to unknowingly progressing through the pages of your survey, they will be able to see each-and-every upcoming page. Enabling this option allows for the respondent to jump between pages. This option is perfect for when FluidSurveys is being used for something other than a survey, ie., account information, gathering financial information, etc. By default, the option for jumping is disabled. 
 
@@ -51,7 +51,7 @@ However, you can hide which pages you do not want to appear in the jumping menu.
 Looping
 ^^^^^^^
 
-Looping allows for the ability to create a block of questions that contain questions about the quality of previously asked questions, ie., why the selected hotel was chosen over the others. Looping will save time, as it replaces the necessity to create 1 block for each potential question, by adhereing to a loop that appears to be dynamically created specifically for each and every respondent.
+Looping allows for the ability to create a block of questions that contain questions about the quality of previously asked questions, ie., why the selected hotel was chosen over the others. Looping will save time, as it replaces the necessity to create 1 block for each potential question, by adhering to a loop that appears to be dynamically created specifically for each and every respondent.
 
 Looping is available through the Right-Click menu
 
@@ -111,7 +111,7 @@ The Advanced Quota window is available under [Page] > [Edit Advanced Quotas] wit
 .. figure:: ../../resources/editor/advanced_quotas_logic.png
 	:align: center
 	:scale: 70%
-	:alt: Advaned Logic
+	:alt: Advanced Logic
 	:class: screenshot
 
 	*Figure 9.1* Only 50 responses for "Amour"/"Reality" AND those that stayed at "Hotel Nelligan" allowed
@@ -125,7 +125,7 @@ The Advanced Quota window is available under [Page] > [Edit Advanced Quotas] wit
 	* - 1. Response Total
 	  - The value entered will determine that amount of desired responses for a block of logic. In the example above, only 50 complete responses for the logic (seen in #2) is allowed. By default, this number is 10. 
 	* - 2. Logic Rule
-	  - The deciding factor when determing the end point of the respondents journey. In the example above, if 50 respondents completed the survey with the response of "Amour" AND stayed at the Hotel Nelligan, then the 51st respondent will be redirected to the "Quota Filled" screen.
+	  - The deciding factor when determining the end point of the respondents journey. In the example above, if 50 respondents completed the survey with the response of "Amour" AND stayed at the Hotel Nelligan, then the 51st respondent will be redirected to the "Quota Filled" screen.
 	* - 3. Survey Path
 	  - Depending on what you determine in the "then" clause, the respondent will the defined path. In this case, the user will be brought to the "Quota filled" page at the end of the survey. The available branching paths are:
 			* Exit the survey with a quota filled message
@@ -162,7 +162,7 @@ The Piping Wizard, found by right-clicking on a question and selecting "Piping W
 
 	*Figure 9.1* Piping Wizard popup
 
-Dragging over {{ film }} (a question identifer on Page 1) into the Question Title for the Text Response on Page 2 will pipe in what the respondent selected on Page 1. In this example, the respondent selected, "Love/Amour", which appears into the title on the following page.
+Dragging over {{ film }} (a question identifier on Page 1) into the Question Title for the Text Response on Page 2 will pipe in what the respondent selected on Page 1. In this example, the respondent selected, "Love/Amour", which appears into the title on the following page.
 
 .. note::
 
@@ -178,12 +178,12 @@ Dragging over {{ film }} (a question identifer on Page 1) into the Question Titl
 
 .. tip::
 
-	One of the unsung hero features is that you can pipe in custom fields that you have already uploaded into your address book. Let’s say that you have uploaded the contact info for 100 people into your address book and that one of these fields is “City”. You could then pipe this value into a question like: “How long have you lived in ,, invite.city The correct value would then be inserted for each contact who responds. We won’t go into too much detail about this here, but you can check the Email section of the manual, which talks about Custom Variables, to learn more.
+	One of the unsung hero features is that you can pipe in custom fields that you have already uploaded into your address book. Let’s say that you have uploaded the contact info for 100 people into your address book and that one of these fields is “City”. You could then pipe this value into a question like: “How long have you lived in {{ invite.city }}. The correct value would then be inserted for each contact who responds. We won't go into too much detail about this here, but you can check the Email section of the manual, which talks about Custom Variables, to learn more.
 
 Branching
 ^^^^^^^^^
 
-Branching is similar to simple skipping in that it allows you to send respondents to different sections of your survey based on their responses. There are however, several differences. With advanced branching, you can skip based on multiple conditions (multiple questions), as well as based on questions on previous pages. You can also implement dynamic on-page skipzping (hide, show, disable questions), and trigger a variety of actions (email messages, terminate the survey, etc). Plus, you can implement branching on additional question types, such as text response fields, grid questions and checkbox (multi-answer) questions. All in all, advanced branching can do everything that simple skipping can + more.
+Branching is similar to simple skipping in that it allows you to send respondents to different sections of your survey based on their responses. There are however, several differences. With advanced branching, you can skip based on multiple conditions (multiple questions), as well as based on questions on previous pages. You can also implement dynamic on-page skipping (hide, show, disable questions), and trigger a variety of actions (email messages, terminate the survey, etc). Plus, you can implement branching on additional question types, such as text response fields, grid questions and checkbox (multi-answer) questions. All in all, advanced branching can do everything that simple skipping can + more.
 
 .. figure:: ../../resources/editor/survey_logic_wizard.png
 	:align: center
@@ -202,7 +202,7 @@ Branching is similar to simple skipping in that it allows you to send respondent
 	* - 1. Add Branching Logic
 	  - Click "Add Branching Logic" to add a rule. Please note that in order to associate branching with a question in your survey, the question must first have a question identifier. To learn how to add an identifier, refer to the Identifier section in the manual.
 
-Every branching logic condition has a quality that will execute when a block has been satisifed. There are 11 choices available to help better farther assist you in customizing your survey to your specific needs.
+Every branching logic condition has a quality that will execute when a block has been satisfied. There are 11 choices available to help better farther assist you in customizing your survey to your specific needs.
 
 .. figure:: ../../resources/editor/choices_logic.png
 	:align: center
@@ -219,11 +219,11 @@ Every branching logic condition has a quality that will execute when a block has
 	* - Option
 	  - Description
 	* - 1. Page #
-	  - Jump to a specific page. You cannotg select a previous page
+	  - Jump to a specific page. You cannot select a previous page
 	* - 2. Finish the survey
 	  - Jump to the "Thank you" page. This will mark any response as "Complete". This branching logic is perfect.
 	* - 3. Terminate the survey
-	  - Jump to the "". This will mark any response as "Incomplete". This branching logic is perfect when you want to keep track of a demographic you may not specifically be tailoring to, ie., a survey only for females, those that watch more than 10 movies a year, etc.
+	  - Jump to the end. This will mark any response as "Incomplete". This branching logic is perfect when you want to keep track of a demographic you may not specifically be tailoring to, ie., a survey only for females, those that watch more than 10 movies a year, etc.
 	* - 4. Redirect to a URL
 	  - Redirect the respondent to a web site.
 	* - 5. Skip to a random page
@@ -235,9 +235,9 @@ Every branching logic condition has a quality that will execute when a block has
 	* - 8. Show a question
 	  - Based on a response, show a question to the respondents view
 	* - 9. Disable a question
-	  - Disabling a question will make it so that its choices and variables cannot be selected, ie., greyed out
+	  - Disabling a question will make it so that its choices and variables cannot be selected, ie., grayed out
 	* - 10. E-mail...
-	  - Email an individual(s) with the satisified branching logic with a customizable Subject, Message, and adjustable Advanced Options
+	  - Email an individual(s) with the satisfied branching logic with a customizable Subject, Message, and adjustable Advanced Options
 	* - 11. Mark this response as complete
 	  - Responses are either Incomplete, or Complete. Based on a condition, some Administrators would want a survey to be marked "Complete" right away based on a response, as opposed to waiting until the [Submit] button is clicked at the end of the survey.
 
@@ -245,7 +245,7 @@ Every branching logic condition has a quality that will execute when a block has
 
 	Randomly traverse specified range has the ability to branch backwards into a survey, but the issue of an infinite recursive looping issue has the possibility of arises. For instance, based on a response, you could go back to Page 2, but if the respondent follows the same path and choices to have the logic loop them back to Page 2, the respondent may grow frustrated, leave your survey, and mark their response group as "Incomplete". It is advised against branching back into a survey.
 
-Branching Logic can include more than 1 condition. It is best to look at logic as a series of logical statements. While it may be confusing to understanding at first glance, breaking down the conditions is as simple as deciding, "if the user selects A&E Root Beer, and if the user selects Barq's Root Beer, then I do not want them to answer the rest of the survey. I want them to leave". A block contains 1 logic condition, as seen in FIGURE <<CHANGE LATER>>
+Branching Logic can include more than 1 condition. It is best to look at logic as a series of logical statements. While it may be confusing to understanding at first glance, breaking down the conditions is as simple as deciding, "if the user selects A&E Root Beer, and if the user selects Barq's Root Beer, then I do not want them to answer the rest of the survey. I want them to leave". A block contains 1 logic condition, as seen in Figure 9.1
 
 .. figure:: ../../resources/editor/survey_logic_conditions.png
 	:align: center
@@ -274,14 +274,14 @@ Branching Logic can include more than 1 condition. It is best to look at logic a
 
 .. warning::
 
-	It’s not recommended to use advanced branching and simple skipping together. If one is used, the other shouldn’t. Using both could lead to clashing conditions and unexpected results.
+	It’s not recommended to use advanced branching and simple skipping together. If one is used, the other shouldn't. Using both could lead to clashing conditions and unexpected results.
 
 Extraction
 ^^^^^^^^^^
 
 Data extraction is the act or process of retrieving data out of a previous data source for further data processing (in the case with surveys, part of another question). Essentially, data extraction allows the selected choices from one question to appear in a following question. 
 
-Extraction, like all Advanced Logic within FluidSurveys, requires mulitple pages. When extracting choices selected by a respondent, they must reside on a page before the fact.
+Extraction, like all Advanced Logic within FluidSurveys, requires multiple pages. When extracting choices selected by a respondent, they must reside on a page before the fact.
 
 .. note::
 
@@ -323,7 +323,7 @@ Extraction, like all Advanced Logic within FluidSurveys, requires mulitple pages
 	  - Select the question with the correct variable name. 
 		**Note** You must give the question you're extracting from a variable name
 	* -  3. Extracted Choices
-	  - Notice how the choices are now all the choices from the previous question. Do not be alarmed by this. Only the choices that the user selects will be shown here. Additionally, you can alter the Extraction choicse to only pull [Inverted Choices], ie, choices other than what they chose, and [Extract Choices], ie., extract only the choices instead of the variables
+	  - Notice how the choices are now all the choices from the previous question. Do not be alarmed by this. Only the choices that the user selects will be shown here. Additionally, you can alter the Extraction choices to only pull [Inverted Choices], ie, choices other than what they chose, and [Extract Choices], ie., extract only the choices instead of the variables
 
 .. warning::
 
@@ -375,9 +375,9 @@ When the language button has been selected, a new window will appear that allows
 	* - 3. Default Language
 	  - Select the default language. By default, English is the base language
 	* - 4. Style
-	  - Change the style between Radio Buttons, or a Dropdown menu. By default, the langauge selector is a dropdown menu.
+	  - Change the style between Radio Buttons, or a Dropdown menu. By default, the language selector is a dropdown menu.
 
-Multiple languages on a survey will become prevalent when using the [Bulk] feature. In order to a smooth transition between mulitple languages, it is advised to be aware of those
+Multiple languages on a survey will become prevalent when using the [Bulk] feature. In order to a smooth transition between multiple languages, it is advised to be aware of those
 
 .. figure:: ../../resources/editor/multi_language_bulk.png
 	:align: center
@@ -390,67 +390,4 @@ Multiple languages on a survey will become prevalent when using the [Bulk] featu
 .. warning::
 
 	Only specific sections will be translated, such as [Back], [Next], [Submit], and the "Yes/No" question type. The entirety of the question title/description, its variables and choices will need to be translated by the survey creator. If the scope and size of a survey reaches 50+ questions, spread across 20+ pages, it may be advantageous to use "Mass Translations" to quickly, and efficiently translate the entirety of the content. To learn more, refer to the "Mass Translations" section of the manual
-
-Mass Translations
-^^^^^^^^^^^^^^^^^
-
-Being able to deliver online surveys around the world can bring a host of new challenges. One of these challenges is language barriers – someone who doesn’t speak the survey language wouldn’t be able to respond. FluidSurveys already allows for the translation of all aspects of your survey – the questions, buttons, errors and warnings. However, you have to translate your questions in the editor, and the buttons on the settings page, and you have to switch between languages each time you need to translate something. We’ve devised a solution to this slow workflow: Mass Survey Translation.
-
-Mass Translations can be found under [Publish]. 
-
-.. figure:: ../../resources/editor/mass_translate_section.png
-	:align: center
-	:scale: 70%
-	:alt: Mass Translate Section
-	:class: screenshot
-
-	*Figure 9.1* Mass Translate French for a survey
-
-.. list-table:: 
-	:widths: 35 65
-	:header-rows: 1
-
-	* - Option
-	  - Description
-	* - 1. Translate For
-	  - Select from the dropdown the language you'd like to translate
-	* - 2. Download French Template
-	  - If the French languag was selected from the dropdown, then the French language template is available for download. Whichever language was selected, that will become the deciding factor for this section
-	* - 3. Download All Languages
-	  - If there are multiple languages within a survey, it may be more advantageous to download all languages in bulk, as opposed to translating each separately, ie., all languages will download into a .zip file
-	* - 4. Upload Data
-	  - Once the translations have been completed, re-upload the templates so they can be reflected online
-
-.. figure:: ../../resources/editor/mass_translation_infile.png
-	:align: center
-	:scale: 70%
-	:alt: Mass Translation French File in Editor
-	:class: screenshot
-
-	*Figure 9.1* Mass Translation French file in Editor
-
-.. list-table::
-	:widths: 35 65
-	:header-rows: 1
-
-	* - Option
-	  - Description
-	* - 1. Survey Language
-	  - Each language will have a specific code that allows for you to quickly identifiy which file you are presently translating. Example of such languages
-		    * fr = French
-		    * en = English
-		    * de = German
-		    * es = Spanish
-		    * ar = Arabic
-	* - 2. Question Titles/Variables
-	  - A row represents a chunk of your question. The first 2 rows, "msgid" and "msgstr", which both contain "Question 1", are the question titles.
-
-.. warning::
-
-	It is not advised to change the first row, "msgid" within the translation file. The "msgid" row refers to the default language text. If the default survey language is English, yet you are altering the French language file, then "Question 1" is what ties any changes made back to the:
-
-		1. That question, ie., Question 1
-		2. The foundation language text
-
-	If the first row is changed, then you will receive a new translation file the next time you download the text file, or the [Upload] process may not work. Therefore, changing the first instance of "msgid" is advised against.
 

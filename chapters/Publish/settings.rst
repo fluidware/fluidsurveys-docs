@@ -349,3 +349,65 @@ Notifications pertain to errors that occur on a survey, such as invalid data inp
 **Button Translations**
 
 Every button found on a survey is translatable, from the "Back" button all the way to, "Download Responses"
+
+**Mass Translations**
+
+Being able to deliver online surveys around the world can bring a host of new challenges. One of these challenges is language barriers – someone who doesn't speak the survey language wouldn't be able to respond. FluidSurveys already allows for the translation of all aspects of your survey – the questions, buttons, errors and warnings. However, you have to translate your questions in the editor, and the buttons on the settings page, and you have to switch between languages each time you need to translate something. We’ve devised a solution to this slow workflow: Mass Survey Translation.
+
+Mass Translations can be found under [Publish]. 
+
+.. figure:: ../../resources/editor/mass_translate_section.png
+	:align: center
+	:scale: 70%
+	:alt: Mass Translate Section
+	:class: screenshot
+
+	*Figure 9.1* Mass Translate French for a survey
+
+.. list-table:: 
+	:widths: 35 65
+	:header-rows: 1
+
+	* - Option
+	  - Description
+	* - 1. Translate For
+	  - Select from the dropdown the language you'd like to translate
+	* - 2. Download French Template
+	  - If the French language was selected from the dropdown, then the French language template is available for download. Whichever language was selected, that will become the deciding factor for this section
+	* - 3. Download All Languages
+	  - If there are multiple languages within a survey, it may be more advantageous to download all languages in bulk, as opposed to translating each separately, ie., all languages will download into a .zip file
+	* - 4. Upload Data
+	  - Once the translations have been completed, re-upload the templates so they can be reflected online
+
+.. figure:: ../../resources/editor/mass_translation_infile.png
+	:align: center
+	:scale: 70%
+	:alt: Mass Translation French File in Editor
+	:class: screenshot
+
+	*Figure 9.1* Mass Translation French file in Editor
+
+.. list-table::
+	:widths: 35 65
+	:header-rows: 1
+
+	* - Option
+	  - Description
+	* - 1. Survey Language
+	  - Each language will have a specific code that allows for you to quickly identifiy which file you are presently translating. Example of such languages
+		    * fr = French
+		    * en = English
+		    * de = German
+		    * es = Spanish
+		    * ar = Arabic
+	* - 2. Question Titles/Variables
+	  - A row represents a chunk of your question. The first 2 rows, "msgid" and "msgstr", which both contain "Question 1", are the question titles.
+
+.. warning::
+
+	It is not advised to change the first row, "msgid" within the translation file. The "msgid" row refers to the default language text. If the default survey language is English, yet you are altering the French language file, then "Question 1" is what ties any changes made back to the:
+
+		1. That question, ie., Question 1
+		2. The foundation language text
+
+	If the first row is changed, then you will receive a new translation file the next time you download the text file, or the [Upload] process may not work. Therefore, changing the first instance of "msgid" is advised against.

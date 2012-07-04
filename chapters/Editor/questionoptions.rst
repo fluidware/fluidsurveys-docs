@@ -37,7 +37,7 @@ By default, questions on a survey page are held in the same place on each and ev
 	* - 1. Randomize questions
 	  - Check this option if you would like the questions on this page to be shown in a random order every time this survey is taken.
 
-Conincidentally enough, loading the survey for the first time presented the questions in their appropriate outline.
+Coincidentally enough, loading the survey for the first time presented the questions in their appropriate outline.
 
 .. figure:: ../../resources/editor/pre_random.png
 	:align: center
@@ -47,7 +47,7 @@ Conincidentally enough, loading the survey for the first time presented the ques
 
 	*Figure 9.1* Questions not yet randomized
 
-However, after loading the survey a second time, the questions "What are your favourite styles of Jazz? (select all that apply)" and "Who's your favourite Jazz artist?" are flipped
+However, after loading the survey a second time, the questions "What are your favorite styles of Jazz? (select all that apply)" and "Who's your favorite Jazz artist?" are flipped
 
 .. figure:: ../../resources/editor/post_random.png
 	:align: center
@@ -93,7 +93,7 @@ By default, choices/variables appear in the order they were entered. Therefore, 
 	11. Radio Buttons within a 3D Matrix
 	12. Semantic Differential
 
-The option is available under "Options" found in the flaoting editor box on the left-hand side.
+The option is available under "Options" found in the floating editor box on the left-hand side.
 
 .. figure:: ../../resources/editor/notalpha_toalpha.png
 	:align: center
@@ -110,7 +110,7 @@ The option is available under "Options" found in the flaoting editor box on the 
 Side-By-Side
 ^^^^^^^^^^^^
 
-Side-by-side allows you to place 2 questions beside each other in separate columns. Only 2 questions can be added side-by-side, even if the survey width was altered through CSS to be 100%.
+Side-by-side allows you to place 2 questions beside each other in separate columns. Only 2 questions can be added side-by-side, even if the survey width was altered through CSS to be 100%. There can instances when the display side-by-side will not work, such as the case when the question being condensed has a fixed width, eg., 70, which would break the outline
 
 .. figure:: ../../resources/editor/side-by-side_option.png
 	:align: center
@@ -134,7 +134,7 @@ Side-by-side allows you to place 2 questions beside each other in separate colum
 
 .. tip::
 	
-	A common use of using "Side-by-Side" is to ask the respondent their level of satisifaction to a specific brand or product.
+	A common use of using "Side-by-Side" is to ask the respondent their level of satisfaction to a specific brand or product.
 
 Append to Previous
 ^^^^^^^^^^^^^^^^^^
@@ -189,7 +189,7 @@ There are 2 areas where the width plays a role in determining the overall aesthe
 	* - 1. Column Width
 	  - You can control the amount of space reserve for the text area (column). The size is determined by the "Columns" number within the Editor for a question. The default value is 20 columns
 	* - 2. Width
-	  - If you want to cover less or more space on the webpage, then edit the Percent width. This will either spread or condense the space it covers. Width percentage of the survey width that this	  question will take up. If you've ever wanted to cover less, or more space on your survey, then editing the Percent width of a question will either spread, or condense the space it covers. 
+	  - If you want to cover less or more space on the web page, then edit the Percent width. This will either spread or condense the space it covers. Width percentage of the survey width that this	  question will take up. If you've ever wanted to cover less, or more space on your survey, then editing the Percent width of a question will either spread, or condense the space it covers. 
 	    The default value is 100%
 
 **Column Width**
@@ -228,7 +228,7 @@ Choices and Variables are the answers themselves to close and open-ended questio
 .. figure:: ../../resources/editor/choices_and_variables.png
 	:align: center
 	:scale: 70%
-	:alt: Chocies and Variables
+	:alt: Choices and Variables
 	:class: screenshot
 
 	*Figure 9.1* Choices and Variables for a Mulitple Choice Grid
@@ -242,7 +242,7 @@ Choices and Variables are the answers themselves to close and open-ended questio
 	* - 1. Choices
 	  - Adding additional choices will increase the X-axis. Choice 1 and Choice 2, shown here, will appear on the X-axis (along the top of the question). Choices are commonly used as a means of better determining a respondents affinity toward a product, ie., "Like", "Hate", "N/A", etc.
 	* - 2. Variables
-	  - Adding additional variables will increase the X-axis. Varaible 1 and Variable 2, shown here, will appear on the Y-axis (along the side of hte question). Variables are commonly used as a means conveying a certain product, ie., Apple, McDonalds, Telus, etc.
+	  - Adding additional variables will increase the X-axis. Variable 1 and Variable 2, shown here, will appear on the Y-axis (along the side of the question). Variables are commonly used as a means conveying a certain product, ie., Apple, McDonalds, Telus, etc.
 
 Certain question types have specific options within the choices/variables that allow for a deeper integration of your desired goal and effect.
 
@@ -278,7 +278,7 @@ Certain question types have specific options within the choices/variables that a
 .. figure:: ../../resources/editor/cv_multiplechoice.png
 	:align: center
 	:scale: 70%
-	:alt: Chocies for Multiple Choice
+	:alt: Choices for Multiple Choice
 	:class: screenshot
 
 	*Figure 9.1* Choices for a Mulitple Choice 
@@ -324,7 +324,7 @@ Certain question types have specific options within the choices/variables that a
 .. figure:: ../../resources/editor/cv_textresponsegrid.png
 	:align: center
 	:scale: 70%
-	:alt: Chocies and Variables
+	:alt: Choices and Variables
 	:class: screenshot
 
 	*Figure 9.1* Variables for a Text Response Grid
@@ -336,9 +336,9 @@ Certain question types have specific options within the choices/variables that a
 	* - Option
 	  - Description
 	* - 1. Optional
-	  - Detemrins whether the question is required in order to proceed through the survey, or not. By default, this option is enabled.
+	  - Determines whether the question is required in order to proceed through the survey, or not. By default, this option is enabled.
 	* - 2. Multiline
-	  - Commonly referred to as the "width" of a text area. If a large amount of text is required, then altering this value may be adventageous.. By default, the value is set to 20 columns.
+	  - Commonly referred to as the "width" of a text area. If a large amount of text is required, then altering this value may be advantageous.. By default, the value is set to 20 columns.
 	* - 3. Validation
 	  - Determins the type of text that can be entered, eg., Currency will only allow "$19.99". To learn more about "Validation", refer to the "Validation" section of the manual.
 	* - 4. Initial Value
@@ -363,14 +363,14 @@ Certain question types have specific options within the choices/variables that a
 	* - 1. Score
 	  - A score is what determines the weight for a Choice/Variable that can later be used during the Analytics phase. By default, this value is the value of the choices position, eg., Choice 1 is in the first slot, therefore the Score will be "1". To learn more about "Scores", refer to the "Scores" section of the manual.
 	* - 2. Optional
-	  - Detemrins whether the question is required in order to proceed through the survey, or not. By default, this option is enabled.
+	  - Determines whether the question is required in order to proceed through the survey, or not. By default, this option is enabled.
 
 **Checkbox Grid Question Type Choices and Variables**
 
 .. figure:: ../../resources/editor/cv_checkboxgrid.png
 	:align: center
 	:scale: 70%
-	:alt: Chocies and Variables
+	:alt: Choices and Variables
 	:class: screenshot
 
 	*Figure 9.1* Choices and Variables for a Checkbox Grid
@@ -391,7 +391,7 @@ Certain question types have specific options within the choices/variables that a
 .. figure:: ../../resources/editor/cv_natrix.png
 	:align: center
 	:scale: 70%
-	:alt: Chocies and Variables
+	:alt: Choices and Variables
 	:class: screenshot
 
 	*Figure 9.1* Choices and Variables for a N-atrix
@@ -441,7 +441,7 @@ Certain question types have specific options within the choices/variables that a
 .. figure:: ../../resources/editor/cv_drilldown.png
 	:align: center
 	:scale: 70%
-	:alt: Chocies and Variables
+	:alt: Choices and Variables
 	:class: screenshot
 
 	*Figure 9.1* Choices and Variables for a Drilldown Grid
@@ -462,7 +462,7 @@ Certain question types have specific options within the choices/variables that a
 .. figure:: ../../resources/editor/cv_semantic.png
 	:align: center
 	:scale: 70%
-	:alt: Chocies and Variables
+	:alt: Choices and Variables
 	:class: screenshot
 
 	*Figure 9.1* Choices and Variables for a Semantic
@@ -474,7 +474,7 @@ Certain question types have specific options within the choices/variables that a
 	* - Option
 	  - Description
 	* - Optional
-	  - Detemrins whether the question is required in order to proceed through the survey, or not. By default, this option is enabled.
+	  - Determines whether the question is required in order to proceed through the survey, or not. By default, this option is enabled.
 
 .. warning::
 
@@ -529,7 +529,7 @@ If you are setting up your survey as a quiz, you can show the respondent their s
 
 	*Figure 9.1* The correct answer has a numeric score of "1"
 
-Adding score values to an indvidual choice or variable allows for them to be tallied up to give the respondent a numerical score. This feature can be used to make a survey into a quiz, and allow for you to promote complex logical functions. You can attach a numerical score to all open-ended and closed question types, except for the "Yes/No" question type which by default is a static numerical score of either 1 (Yes) or 2 (No)
+Adding score values to an individual choice or variable allows for them to be tallied up to give the respondent a numerical score. This feature can be used to make a survey into a quiz, and allow for you to promote complex logical functions. You can attach a numerical score to all closed question types, except for the "Yes/No" question type which by default is a static numerical score of either 1 (Yes) or 2 (No)
 
 Choices and Variables that contain a custom "Score" are predominately used in a quiz build specifically within FluidSurveys. Doing so would allow for you to quickly adminster scored tests to respondents. Assign individual point values to different answer choices, and then display those very same scores back to the respondent while they are still in the process of taking the survey.
 
@@ -539,17 +539,16 @@ Choices and Variables that contain a custom "Score" are predominately used in a 
 	:alt: Current Score
 	:class: screenshot
 
-	*Figure 9.1* The [Current Score] questino type with a respondent score of 10
+	*Figure 9.1* The [Current Score] question type with a respondent score of 10
 
 .. note::
 
-	By default, choices within a question will have scores assigned to them. The first choice in a question would have a score of 1, the second a score of 2, and so on. These scores are customizable, however.
-
+	By default, choices within a question will have scores assigned to them. The first choice in a question would have a score of 1, the second a score of 2, and so on. These scores are customizable, however. Additionally, while Scores will say "None" by default, the value does not represent a 0, but rather that a custom value has not been provided, and therefore it will adhere to the default order, eg., 1, 2, 3, 4, etc.
 
 Simple Branching
 ^^^^^^^^^^^^^^^^
 
-Simple branching directs respondents through different paths in a survey based on a previous responses to a question. In essence, skipping allows you to branch respondents from one page to another based on their answers to a single question. For example, if a respondent answered “Yes” to a question, they could be sent to Page 3, if they answered No, they could be skipped straight to Page 4. Basic skipping works based on the respondent’s answers to single-answer questions such as the dropdown, multiple-choice and yes/no question types. 
+Simple branching directs respondents through different paths in a survey based on a previous responses to a question. In essence, skipping allows you to branch respondents from one page to another based on their answers to a single question. For example, if a respondent answered “Yes” to a question, they could be sent to Page 3, if they answered No, they could be skipped straight to Page 4. Basic skipping works based on the respondents answers to single-answer questions such as the dropdown, multiple-choice and yes/no question types. 
 
 .. figure:: ../../resources/editor/branch_to.png
 	:align: center
@@ -612,7 +611,7 @@ The question title in the Editor is not a final depiction of how it will appear 
 Question Description	
 ^^^^^^^^^^^^^^^^^^^^
 
-If you wish to provide more information about a spelcific section, then you can do so within the Extra Description text area.
+If you wish to provide more information about a specific section, then you can do so within the Extra Description text area.
 
 .. figure:: ../../resources/editor/editor_extra_description.png
 	:align: center
@@ -620,7 +619,7 @@ If you wish to provide more information about a spelcific section, then you can 
 	:alt: Question Description in the Editor
 	:class: screenshot
 
-	*Figure 9.1* Question Desciprtion in the Editor
+	*Figure 9.1* Question Description in the Editor
 
 The question description in the Editor is not a final depiction of how it will appear to the respondent. 
 
@@ -641,7 +640,7 @@ Appearance
 
 Certain question types allow for the choices/variables to be morphed and appear as though they are an entirely different question type. 
 
-Alterting the appearance can be achieved by clicking on the Multiple Choice question type, and selecting the desired layout under "Appearance" found beneath "Display"
+Altering the appearance can be achieved by clicking on the Multiple Choice question type, and selecting the desired layout under "Appearance" found beneath "Display"
 
 .. figure:: ../../resources/editor/appearance.png
 	:align: center
@@ -649,14 +648,14 @@ Alterting the appearance can be achieved by clicking on the Multiple Choice ques
 	:alt: Appearance Choices
 	:class: screenshot
 
-	*Figure 9.1* Available appearnace choices
+	*Figure 9.1* Available appearance choices
 
 The available morph styles are
 
 .. figure:: ../../resources/editor/default_appearance.png
 	:align: center
 	:scale: 70%
-	:alt: Default Apperance
+	:alt: Default Appearance
 	:class: screenshot
 
 	*Figure 9.1* Default Appearance of a Multiple Choice 
@@ -700,7 +699,7 @@ Columns can refer to a lot of things within FluidSurveys, but generally it is as
 
 	*Figure 9.1* Columns for a Text Response Grid in the Editor
 
-By default, a text area has 20 columns. The value can be altered at any time. Changing the column value will increase the text areas width. Whenever making alterations to the text area, even putting a value of 75 may bleed off the Editor page, always be saving and [Preview] the survey in order to assure maximum 
+By default, a text area has 20 columns. The value can be altered at any time. Changing the column value will increase the text areas width. Whenever making alterations to the text area, even putting a value of 75 may bleed off the Editor page, always be saving and [Preview] the survey in order to assure a maximum success rate
 
 However, columns can also be associated with the Choices of a Grid, eg., Multiple Choice Grid, Checkbox Grid, 3D Matrix question type. 
 
@@ -893,7 +892,7 @@ Any time you want to do anything advanced with a question, make sure to give it 
 
 	By default, the Identifier is "None", ie., blank
 
-When a question has been given an Identifer, it will appear in the Advanced Branching Logic window.
+When a question has been given an Identifier, it will appear in the Advanced Branching Logic window.
 
 .. figure:: ../../resources/editor/advanced_branching_logic_identifiers.png
 	:align: center
@@ -949,7 +948,7 @@ When using a rating scale question type, enabling "Force Unique" requires that a
 Background Color
 ^^^^^^^^^^^^^^^^
 
-If a close-ended question grows in size, then it may become cumbersome and confusing to some respondents when viewing mulitple columns of information. Enabling [Alternate Background Color] option will paint each odd column a different colour. 
+If a close-ended question grows in size, then it may become cumbersome and confusing to some respondents when viewing multiple columns of information. Enabling [Alternate Background Color] option will paint each odd column a different color. 
 
 .. figure:: ../../resources/editor/alternating_background_color_option.png
 	:align: center
@@ -1048,7 +1047,7 @@ Allows you to change the size of the first column which contains the variable la
 
 .. note::
 
-	Setting the Column Size will not accurately reflect itself in the Editoir. To see the best results, always save your survey and Preview it.
+	Setting the Column Size will not accurately reflect itself in the Editor. To see the best results, always save your survey and Preview it.
 
 
 1st Column Static
@@ -1153,7 +1152,7 @@ A constant sum question will require the answers given for a set of variables to
 
 	By default, the "Sum" is 0, ie., blank
 
-This will ensure that the entered values add up to 100. To alter the value, click on "Options" in the left hand-side editor, and beside where it states, "Sum", enter the desired value. A respondent’s answers for this question will now have to add up to the entered value. If the total is more or less, they’ll be presented with an error message.
+This will ensure that the entered values add up to 100. To alter the value, click on "Options" in the left hand-side editor, and beside where it states, "Sum", enter the desired value. A respondent's answers for this question will now have to add up to the entered value. If the total is more or less, they’ll be presented with an error message.
 
 .. figure:: ../../resources/editor/constant_sum_error.png
 	:align: center

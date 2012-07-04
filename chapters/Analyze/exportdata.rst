@@ -41,9 +41,9 @@ You can specify advanced options for the PDF export (show branching conditions, 
      - Description
    * - 1. Show page numbers
      - Display the survey page number on the bottom right. By default, this option is enabled
-   * - 2. Show looping information on pages that are loopped
+   * - 2. Show looping information on pages that are looped
      - A survey online can contain looping and branching logic, which can be translated onto paper. While it may make little to no sense, this option can be disabled. By default, this option is enabled
-   * - 3. Show branching informaiton on apges that have branching logic
+   * - 3. Show branching information on apges that have branching logic
      - This has the same affect has as item 2. By default, this option is enabled
 
 .. list-table:: 
@@ -148,7 +148,7 @@ You’ll now be able to run your script.sps file by double-clicking on it. When 
 Export Survey Invites
 ^^^^^^^^^^^^^^^^^^^^^
 
-As an survey matures, and the Invite tool is utilized, disecting who received an invite or not may be golden opportunity to figure out who's left.
+As an survey matures, and the Invite tool is utilized, dissecting who received an invite or not may be golden opportunity to figure out who's left.
 
 .. figure:: ../../resources/analyze/export_invites.png
   :scale: 70%
@@ -160,7 +160,7 @@ As an survey matures, and the Invite tool is utilized, disecting who received an
 
 .. note::
 
-  Exporting Survey Invites will export all individiuials within the Address Book, including those that may not have been sent a survey invite. It is simple to distingiush between those that have, or have not received an invite, by verifying that the Invite URL contains /?code=None, but also their Status is blank.
+  Exporting Survey Invites will export all individuals within the Address Book, including those that may not have been sent a survey invite. It is simple to distingiush between those that have, or have not received an invite, by verifying that the Invite URL contains /?code=None, but also their Status is blank.
 
 Collector
 =========
