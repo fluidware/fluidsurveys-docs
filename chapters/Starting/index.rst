@@ -17,7 +17,7 @@ All browsers work with FluidSurveys, and we will not restrict you from logging i
 
 .. admonition:: Compatible Browsers
 
-	* IE 6 *
+	* IE 6
 	* IE 7
 	* IE 8
 	* IE 9
@@ -46,20 +46,3 @@ You will need to provide the email address you used to create an account, along 
 		:class: screenshot
 
 		*Figure 2.1* Account login screen
-
-Your Account
-------------
-
-These are some frequently asked questions. The questions range from sharing an account, to changing the name on file for auto-renewals. 
-
-"Can I share an account?"
-^^^^^^^^^^^^^^^^^^^^^^^^^
-
-"Is it possible to change the name on a credit card on file?"
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-"How do I cancel my account?"
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-"How do I transfer a survey from 1 account to another?"
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

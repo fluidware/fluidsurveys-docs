@@ -231,14 +231,21 @@ Users Tab
 
 Enterprise customers receive the ability to manage Groups, that contain Users who have survey specific permissions (Edit, Test, Publish, Deploy, Analyze). 
 
-.. figure:: ../../resources/dashboard/settings_dashboard_users.png
+.. figure:: ../../resources/dashboard/group.png
 	:align: center
-	:alt: Users Dashboard
+	:alt: Group
 	:class: screenshot
 	:scale: 70%
 
-	*Figure 3.6* A group with 1 member with no privileges
+	*Figure 3.6* A group with 1 member 
 
+.. figure:: ../../resources/dashboard/user.png
+	:align: center
+	:alt: Users 
+	:class: screenshot
+	:scale: 70%
+
+	*Figure 3.6* A group with 1 member with 0 rights
 
 .. list-table:: Users Dashboard
    :widths: 20 80
@@ -257,6 +264,7 @@ To learn more on how to add, or manage a Group and add a User, please refer to t
 
 Referral Tab
 ^^^^^^^^^^^^
+
 Spread your love of FluidSurveys with our **Refer a Friend** program. Your friends and colleagues will get a discount when they sign-up, and we'll cut you a cheque for each referral.
 
 Taking advantage of the Refer a Friend program does not require you to have a paid plan. You can sign-up for a free account, distribute the sign-up link and everytime someone signs up using one of your referral links, they'll receive a discount, and we'll deposite *cash* into your PayPal account. 
