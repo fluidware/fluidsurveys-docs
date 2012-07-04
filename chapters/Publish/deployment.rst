@@ -380,6 +380,12 @@ Designed to run in locations where offline data collection is required (limited 
 
 Sales personnel can now gather feedback as they meet with new clients, researchers can collect data in the field where wireless connections are unavailable, and organizations can set up survey stations at trade shows, kiosks, malls, etc without relying on an internet connection.
 
+.. note::
+
+	When a survey is in Kiosk Mode on a tablet, there is no "Shift" key to exit the fullscreen mode. Therefore, the following code will need to be entered anywhere on the survey, which will force the survey out of Kiosk Mode. 
+
+	HTML Code: <a rel="nofollow" href="#" onclick="application.surveyView.unlock()">EXIT KIOSK MODE</a>
+
 Share With Networks
 ^^^^^^^^^^^^^^^^^^^
 
