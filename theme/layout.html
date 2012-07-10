@@ -3,6 +3,15 @@
 {%- block extrahead %}
 	{{ super() }}
 	<script type="text/javascript" src="http://use.typekit.com/hfr5qlq.js"></script>
+	<script type="text/javascript" src="/_static/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+	<script type="text/javascript" src="/_static/fancybox/source/jquery.fancybox.pack.js?v=2.0.6"></script>
+	<link rel="stylesheet" href="/_static/fancybox/source/jquery.fancybox.css?v=2.0.6" type="text/css" media="screen" />
+	<link rel="stylesheet" href="/_static/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.2" type="text/css" media="screen" />
+	<script type="text/javascript" src="/_static/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.2"></script>
+	<script type="text/javascript" src="/_static/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.0"></script>
+
+	<link rel="stylesheet" href="/_static/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=2.0.6" type="text/css" media="screen" />
+	<script type="text/javascript" src="/_static/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=2.0.6"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 {% endblock %}
  
@@ -12,4 +21,9 @@
 			<span class="logo"><a href="/">FluidSurveys Documentation</a></span>
 		</div>
 	</div>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".screenshot.reference.internal.image-reference").fancybox();
+		});
+	</script>
 {% endblock %}
