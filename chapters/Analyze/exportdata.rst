@@ -1,7 +1,7 @@
 Export Data
 -----------
 
-For all the data buffs out there, the final piece in the mosaic is the exporting of data which allows for further manipulation external to FluidSurveys.
+For all the data buffs out there, the final piece in the mosaic is the exporting of data which allows for further manipulation external to FluidSurveys. By default, all information is downloaded via http://. When 
 
 Export Survey Questions
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -43,7 +43,7 @@ You can specify advanced options for the PDF export (show branching conditions, 
      - Display the survey page number on the bottom right. By default, this option is enabled
    * - 2. Show looping information on pages that are looped
      - A survey online can contain looping and branching logic, which can be translated onto paper. While it may make little to no sense, this option can be disabled. By default, this option is enabled
-   * - 3. Show branching information on apges that have branching logic
+   * - 3. Show branching information on pages that have branching logic
      - This has the same affect has as item 2. By default, this option is enabled
 
 .. list-table:: 

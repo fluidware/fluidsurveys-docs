@@ -1,7 +1,7 @@
 Reports
 -------
 
-Pro, Ultra, and Enterprise account holders have the ability to create custom reports in the Analyze section, which can aid in whipping your data into shape. The benefits of customized reports are for earier data management, and data analysis, all the while ensuring a pretty journey is maintained. Some of things you can accomplish are:
+Pro, Ultra, and Enterprise account holders have the ability to create custom reports in the Analyze section, which can aid in whipping your data into shape. The benefits of customized reports are for easier data management, and data analysis, all the while ensuring a pretty journey is maintained. Some of things you can accomplish are:
 
 	1. Create Reports similar to a Microsoft Word document
 	2. Export or Share Reports with your colleagues
@@ -41,7 +41,7 @@ Survey Statistics provide quick and effective information about a particular sur
 
 	*Figure 9.1* Survey Statistics
 
-Under Survey Statistics, you’ll see the survey length, the number of individuals who’ve completed the survey, the completion rate (number of completions/number of starts), the average completion time, the estimated completion time and the average number of responses per day.
+Under Survey Statistics, you’ll see the survey length, the number of individuals who've completed the survey, the completion rate (number of completions/number of starts), the average completion time, the estimated completion time and the average number of responses per day.
 
 .. figure:: ../../resources/analyze/responses_per_day.png
 	:scale: 70%

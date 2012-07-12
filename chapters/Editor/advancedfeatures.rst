@@ -199,8 +199,8 @@ Branching is similar to simple skipping in that it allows you to send respondent
 
 	* - Option
 	  - Description
-	* - 1. Add Branching Logic
-	  - Click "Add Branching Logic" to add a rule. Please note that in order to associate branching with a question in your survey, the question must first have a question identifier. To learn how to add an identifier, refer to the Identifier section in the manual.
+	* - 1. Add Branching Rules
+	  - Click "Add Branching Rule" to add a rule. Please note that in order to associate branching with a question in your survey, the question must first have a question identifier. To learn how to add an identifier, refer to the Identifier section in the manual.
 
 Every branching logic condition has a quality that will execute when a block has been satisfied. There are 11 choices available to help better farther assist you in customizing your survey to your specific needs.
 
@@ -218,28 +218,28 @@ Every branching logic condition has a quality that will execute when a block has
 
 	* - Option
 	  - Description
-	* - 1. Page #
+	* - 1. Skip to page
 	  - Jump to a specific page. You cannot select a previous page
-	* - 2. Finish the survey
+	* - 2. Complete the survey
 	  - Jump to the "Thank you" page. This will mark any response as "Complete". This branching logic is perfect.
 	* - 3. Terminate the survey
 	  - Jump to the end. This will mark any response as "Incomplete". This branching logic is perfect when you want to keep track of a demographic you may not specifically be tailoring to, ie., a survey only for females, those that watch more than 10 movies a year, etc.
-	* - 4. Redirect to a URL
-	  - Redirect the respondent to a web site.
-	* - 5. Skip to a random page
+	* - 4. Skip to a random page
 	  - Randomly jump to a random page. You cannot select a previous page.
-	* - 6. Randomly traverse specified range
-	  - Jump between specified pages, ie., 4, 10, 11
-	* - 7. Hide a question
-	  - Based on a response, hide a question from the respondents view outright
-	* - 8. Show a question
+	* - 5. Hide a question
+	  - Based on a response, hide a question from the respondents view outright 
+	* - 6. Show a question
 	  - Based on a response, show a question to the respondents view
-	* - 9. Disable a question
+	* - 7.  Disable a question
 	  - Disabling a question will make it so that its choices and variables cannot be selected, ie., grayed out
-	* - 10. E-mail...
+	* - 8. Send an email
 	  - Email an individual(s) with the satisfied branching logic with a customizable Subject, Message, and adjustable Advanced Options
-	* - 11. Mark this response as complete
-	  - Responses are either Incomplete, or Complete. Based on a condition, some Administrators would want a survey to be marked "Complete" right away based on a response, as opposed to waiting until the [Submit] button is clicked at the end of the survey.
+	* - 9. Redirect to a URL
+	  - Redirect the respondent to a web site.
+	* - 10. Mark the response as completed
+	  -  Responses are either Incomplete, or Complete. Based on a condition, some Administrators would want a survey to be marked "Complete" right away based on a response, as opposed to waiting until the [Submit] button is clicked at the end of the survey.
+	* - 11. Randomly traverse a page range
+	  - Jump between specified pages, ie., 4, 10, 11
 
 .. warning::
 
@@ -262,15 +262,25 @@ Branching Logic can include more than 1 condition. It is best to look at logic a
 	* - Option
 	  - Description
 	* - 1. Condition 1
-	  - If "drinks" contains "A&E" Root Beer AND "drinks" contains Barq's Root Beer, then "Finish the survey"
-	* - 2. Condition 2
-	  - If "Language" equals English, NOT, then go to page 4
-	* - 3. Add Branching Logic
-	  - Click "Add Branching Logic" to add a rule. Please note that in order to associate branching with a question in your survey, the question must first have a question identifier. To learn how to add an identifier, refer to the Identifier section in the manual
-	* - 4. Otherwise
-	  - If any of the above conditions in the survey logic wizard pop-up, 
-	* - 5. Control
-	  - Save, Cancel, or Reset your advanced branching logic in your survey. 
+	  - Branching Conditions can be broken down into a basic sentence structure that adheres to, "If Have you read FluidSurveys Version 3.0 Documentation is Yes, AND Ease of Use AND Format are both exactly Disliked".
+	* - 2. Add Rule
+	  - Click "Add Rule" to add a branching condition. Please note that in order to associate branching with a question in your survey, the question must first have a question identifier. To learn how to add an identifier, refer to the Identifier section in the manual
+	* - 3. Rule Actions
+	  - Every condition has a rule. Therefore, based on the above Condition, the individual will see the "What can be done to improve the document?" question
+	* - 4. Control
+	  - Save Rule, or Cancel, or the added advanced branching logic
+
+Clicking "Save Rule" will return you to the main branching logic screen, wherein additional rules can be added. 
+
+.. figure:: ../../resources/editor/screen_with_logic.png
+	:align: center
+	:scale: 70%
+	:alt: Screen with logic
+	:class: screenshot
+
+	*Figure 9.1* Main screen with logic
+
+Clicking the "X" (Top-right) or pressing [Esc] on the keyboard, will present an error dialog that will inform you to Save any unsaved changes. Always be saving!
 
 .. warning::
 

@@ -25,9 +25,9 @@ Display options are everything that is front-facing, ie., what affects a respond
 	* - Section
 	  - Description
 	* - 1. Remove the back button from the survey
-	  - Prevent respondents from going backwards and editing their rersponses. As soon as the respondent presses “Next”, the responses they've submitted are saved and can not be altered
+	  - Prevent respondents from going backwards and editing their responses. As soon as the respondent presses “Next”, the responses they've submitted are saved and can not be altered
 	* - 2. Remove the progress bar from the survey
-	  - The progress bar appears, by default, at the top of every survey page. It lets the respondent know how much of the survey they’ve completed and how much they have left. Enabling this will disable the progress bar
+	  - The progress bar appears, by default, at the top of every survey page. It lets the respondent know how much of the survey they've completed and how much they have left. Enabling this will disable the progress bar
 	* - 3. Allow user to save their survey and continue it at a later time
 	  - Surveys can often be very long and detailed and therefore it’s not always feasible for respondents to complete them in one sitting. A nifty feature allows respondents to save their progress and come back to it at a later date.
 	* - 4. Show "Clear Page" button at the bottom of survey pages.
@@ -35,7 +35,7 @@ Display options are everything that is front-facing, ie., what affects a respond
 	* - 5. Show "Save Page" button at the bottom of survey pages.
 	  - Saves all of the answers on the page. This is not the same as, "Save and Continue Later", the user must remain on the page.
 	* - 6. Show "Exit Survey" button at the bottom of survey pages.
-	  - Add an 'Exit Survey' button to the bottom of your survey that will allow a respondant to exit the survey, deleting any responses they have provided.
+	  - Add an 'Exit Survey' button to the bottom of your survey that will allow a respondent to exit the survey, deleting any responses they have provided.
 	* - 7. Allow users to download/print responses upon completion of the survey.
 	  - Allows respondents to download a hardcopy of their responses.
 	* - 8. Display a button that will allow users to download a PDF to review their responses before completing the survey.
@@ -95,7 +95,7 @@ Not necessarily restrict access to the survey, but disabling specific options, s
 Quotas and Deadlines
 ^^^^^^^^^^^^^^^^^^^^
 
-Quotas allows for the number of respones to be tracked that match a specific numerical value. When the limit is met, eg., 100 Completed Responses, the survey can be automatically closed. Deadlines on the other hand, allows for the survey to be closed (or opened) on a specific date, regardless of the number of garnered responses.
+Quotas allows for the number of responses to be tracked that match a specific numerical value. When the limit is met, eg., 100 Completed Responses, the survey can be automatically closed. Deadlines on the other hand, allows for the survey to be closed (or opened) on a specific date, regardless of the number of garnered responses.
 
 .. figure:: ../../resources/publish/quotas_and_deadlines_page.png
 	:scale: 70%
@@ -119,7 +119,7 @@ Quotas allows for the number of respones to be tracked that match a specific num
 Access Restrictions
 ^^^^^^^^^^^^^^^^^^^
 
-Specificy the amount of times a user can complete a survey, or the access alloted to a user, such as entering a password before viewing even a single question, or completing a Turning Test after the survey has been completed to ensure that valid data was provided by a Human
+Specificy the amount of times a user can complete a survey, or the access alloted to a user, such as entering a password before viewing even a single question, or completing a Turing Test after the survey has been completed to ensure that valid data was provided by a Human
 
 .. figure:: ../../resources/publish/access_restrictions_page.png
 	:scale: 70%
@@ -136,13 +136,13 @@ Specificy the amount of times a user can complete a survey, or the access allote
 	* - Section
 	  - Description
 	* - 1. Password Protect this survey
-	  - Provide a password, which is not restricted to any format. All characters are allowed. Additionally, as opposed to using a text password, the ability to enable CAPTCHA whcih is a Completed Automated Public Turning test that allows for the software to tell Computers and Humans apart. This will require respondents to transcribe two random words. This will nto show for logged in users, and thus will not be visible by pressing the preview button above. You must log out to view this feature in action.
+	  - Provide a password, which is not restricted to any format. All characters are allowed. Additionally, as opposed to using a text password, the ability to enable CAPTCHA which is a Completed Automated Public Turing test that allows for the software to tell Computers and Humans apart. This will require respondents to transcribe two random words. This will not show for logged in users, and thus will not be visible by pressing the preview button above. You must log out to view this feature in action.
 	* - 2. Many times per computer (no restrictions)
 	  - Allows individuals to respond to the survey as many times as they’d like, from any computer. There would be no restrictions placed on respondents, and every response 	  would be recorded as a new entry in analytics. This is the default survey mode.
 	* - 3. Once per computer (uses cookies/sessions to identify users)
-	  - Once an individual completes the survey, a cookie is created and no one using that same computer would be able to access the survey again. Note, Internet browsers allow for the deletion of internet cookies, and if an individual does this, they would be able to re-take the survey (or another user would be able to take the survey) from the same computer.
+	  - Once an individual completes the survey, a cookie is created and no one using that same computer would be able to access the survey again. Note, Internet browsers allow for the deletion of Internet cookies, and if an individual does this, they would be able to re-take the survey (or another user would be able to take the survey) from the same computer.
 	* - 4. Once per location (once per IP Address - not recommended for surveys to be completed by more than one individual per organization. In most organizations everyone shares one IP Address)
-	  - The most restrictive option, this setting limits survey responses to one per IP address. Typically, users in a household or organization all have the same IP address. Therefore, if you’d like one response per household, this would be a good feature to use, however, if you’re surveying many people in one organization, it would not be the best choice
+	  - The most restrictive option, this setting limits survey responses to one per IP address. Typically, users in a household or organization all have the same IP address. Therefore, if you'd like one response per household, this would be a good feature to use, however, if you're surveying many people in one organization, it would not be the best choice
 	* - 5. Embedded survey (only enabled on one page surveys)
 	  - If you have a one page survey, you can embed it into a 3rd party website, and all of the results will be recorded to fluidsurveys.com. Selecting this option will provide you with the HTML code required to embed the questionnaire.
 	* - 6. Invite only (only allow users with a valid unused invite to take the survey)
@@ -260,10 +260,16 @@ Other options are mainly options that do not strictly belong in a category on th
 	* - 5. Metatag Name
 	  - A Metatag is a data (information) about data. When customizing for a tablet, it is required that the viewport is added as a metatag, in order for a specific CSS rule to be fired when a tablet with a small screen triggers it. 
 
-Changes Pages/Messages
-^^^^^^^^^^^^^^^^^^^^^^
+Change Pages/Messages
+^^^^^^^^^^^^^^^^^^^^^
 
 Any error message, page, or message that appears in your survey is customizable and translatable.
+
+.. tip::
+
+	A termination, and complete page are unique to a collector. Therefore, a termination page may be entirely different for one group, than for another, which allows for a deeper level of customization
+
+Every text area within the "Change Pages/"
 
 **Generic Messages Page**
 
@@ -280,7 +286,7 @@ The basic pages found at the end of a survey
 	* - 2. Survey Closed Page
 	  - This is displayed when a survey is not live or has been closed.
 	* - 3. Save & Continue Page
-	  - This text is displayed when a respondant has saved their survey for continuation later.
+	  - This text is displayed when a respondent has saved their survey for continuation later.
 
 **Error & Warnings Page**
 
@@ -394,7 +400,7 @@ Mass Translations can be found under [Publish].
 	* - Option
 	  - Description
 	* - 1. Survey Language
-	  - Each language will have a specific code that allows for you to quickly identifiy which file you are presently translating. Example of such languages
+	  - Each language will have a specific code that allows for you to quickly identify which file you are presently translating. Example of such languages
 		    * fr = French
 		    * en = English
 		    * de = German

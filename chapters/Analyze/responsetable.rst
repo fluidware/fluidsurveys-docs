@@ -154,7 +154,7 @@ Below are a series of Columns available for every surveys response data
    * - 3. Date started
      - 
    * - 4. id
-     - Every response group contains a unique ID that allows for the Admistrator to use it as an archiving tool. The formula is as secret as Colonel Sanders deep fried chicken.
+     - Every response group contains a unique ID that allows for the Administrator to use it as an archiving tool. The formula is as secret as Colonel Sanders deep fried chicken.
    * - 5. Language
      - The language the survey was created in, in this case, en represents "English"
    * - 6. IP Address
