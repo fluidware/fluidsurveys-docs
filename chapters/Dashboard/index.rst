@@ -59,50 +59,24 @@ Over time, the more surveys you create, you will start to see your Surveys Dashb
 	* - 1. Surveys
 	  - A list of all surveys either [Live] or [Closed]. Clicking a survey will present the available options found on the right-column.
 	* - 2. Quick Links
-	  - Save a few clicks with these task icons:
-
-.. image:: ../../resources/dashboard/survey_buttons.png
-	:align: center
-	:class: screenshot
-	:alt: Task Icons
-	:scale: 70%
-
-.. list-table::
-	:widths: 20 80
-	:header-rows: 0
-
-	* - 
-	  -
-		1. **[Edit]** questions, branching logic
-		2. **[Style]** the look and feel
-		3. **[Preview]** how the survey appears to a respondent
-		4. **[Publish]** your survey, set restrictions, redirections, and other conditions
-		5. **[Invite]** people to become respondents of your survey
-		6. **[Analyze]** the data in pretty charts, or export the data for futher manipulation
+	  - Save a few clicks with these task icons: (From Left to Right)
+	  	* **[Edit]** questions, branching logic
+	  	* **[Style]** the look and feel
+	  	* **[Preview]** how the survey appears to a respondent
+	  	* **[Publish]** your survey, set restrictions, redirections, and other conditions
+	  	* **[Invite]** people to become respondents of your survey
+	  	* **[Analyze]** the data in pretty charts, or export the data for futher manipulation
 	* - 3. Statistics
 	  - A high-level overview of response data held within the survey
 	* - 4. Overview
 	  - Quickly see the amount of questions, responses, pages and the deployment status
 	* - 5. Actions
-	  - Action icons are options only found on the Surveys dashboard:
-
-.. image:: ../../resources/dashboard/more_actions_buttons.png
-	:align: center
-	:class: screenshot
-	:alt: Task Icons
-	:scale: 70%
-
-.. list-table::
-	:widths: 20 80
-	:header-rows: 0
-
-	* - 
-	  - 
-	  	1. **[Duplicate]** and create a cloned survey
-	  	2. **[Rename]** your survey to something else
-		3. **[Delete]** your survey from your account
-		4. **[Create Collector]** to have layered responses for 1 survey
-		5. **[Archive]** your survey from view
+	  - Action icons are options only found on the Surveys dashboard: (Fromt Left to Right)
+	  	* **[Duplicate]** and create a cloned survey
+	  	* **[Rename]** your survey to something else
+		* **[Delete]** your survey from your account
+		* **[Create Collector]** to have layered responses for 1 survey
+		* **[Archive]** your survey from view
 	* - 6. Page
 	  - Navigate forward and back between multiple pages wherein each page contains 10 of your surveys
 
@@ -151,48 +125,22 @@ Over time, the more polls you create, you will start to see your Polls Dashboard
 	* - 1. Polls
 	  - A list of all Polls either [Live] or [Closed]. Clicking a Poll will present the available options found on the right-column. 
 	* - 2. Quick Links
-	  - Save a few clicks with these task icons:
-
-.. image:: ../../resources/dashboard/poll_buttons.png
-	:scale: 70%
-	:align: center
-	:class: screenshot
-	:alt: Poll Task Icons Quick Links
-
-.. list-table::
-	:widths: 20 80
-	:header-rows: 0
-
-	* - 
-	  -
-		1. **[Edit]** questions, variables and restrictions
-		2. **[Style]** the look and feel
-		3. **[Preview]** how the Poll appears to a respondent
-		4. **[Publish]** your Poll, set restrictions, redirections, and other conditions
-		5. **[Share]** your Poll through a social networking web site, or your own site
-		6. **[Analyze]** all the response data
+	  - Save a few clicks with these task icons: (From Left to Right)
+		* **Edit]** questions, variables and restrictions
+		* **[Style]** the look and feel
+		* **[Preview]** how the Poll appears to a respondent
+		* **[Publish]** your Poll, set restrictions, redirections, and other conditions
+		* **[Share]** your Poll through a social networking web site, or your own site
+		* **[Analyze]** all the response data
 	* - 3. Overview
 	  - Quickly see the amount of responses, and the deployment status
 	* - 4. Actions
 	  - Quickly see the amount of questions, responses, pages and the deployment status
 	* - 5. Actions
-	  - Action icons are options only found on the Polls dashboard:
-
-.. image:: ../../resources/dashboard/more_actions_buttons_polls.png
-	:align: center
-	:class: screenshot
-	:alt: Task Icons
-	:scale: 70%
-
-.. list-table::
-	:widths: 20 80
-	:header-rows: 0
-
-	* - 
-	  - 
-	  	1. **[Duplicate]** and create a cloned survey
-	  	2. **[Rename]** your survey to something else
-		3. **[Delete]** your survey from your account
+	  - Action icons are options only found on the Polls dashboard: (From Left to Right)
+	  	* **[Duplicate]** and create a cloned survey
+	  	* **[Rename]** your survey to something else
+		* **[Delete]** your survey from your account
 	* - 6. Page
 	  - Navigate forward and back between multiple pages wherein each page contains 10 of your surveys
 
