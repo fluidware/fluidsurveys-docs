@@ -1,3 +1,8 @@
+User's Guide
+------------
+
+Thank you to all our clients who made getting to this point (the neccesity to write documentation) a possibility
+
 .. toctree::
 	:maxdepth: 2
 	
@@ -11,4 +16,4 @@
 	chapters/Publish/index
 	chapters/Invite/index
 	chapters/Analyze/index
-	chapters/Tutorials/index
+	chapters/Blog/index

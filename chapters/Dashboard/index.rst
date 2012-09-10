@@ -13,8 +13,10 @@ The Surveys Dashboard is the pivot point for accessing the features of FluidSurv
 
 When you have successfully logged into your FluidSurveys account, you will be ready to create your own surveys. There are several options for creating a survey, and we will help you become familiar with them in this chapter. This is the first step you will need to taks as you start teh survey building process
 
+.. surveys_dashboard:
+
 Surveys Dashboard
------------------
+`````````````````
 
 The first screen you'll see when logging into FluidSurveys will be the Surveys Dashboard. In the beginning, there will be no surveys in your account.
 
@@ -59,29 +61,20 @@ Over time, the more surveys you create, you will start to see your Surveys Dashb
 	* - 1. Surveys
 	  - A list of all surveys either [Live] or [Closed]. Clicking a survey will present the available options found on the right-column.
 	* - 2. Quick Links
-	  - Save a few clicks with these task icons: (From Left to Right)
-	  	* **[Edit]** questions, branching logic
-	  	* **[Style]** the look and feel
-	  	* **[Preview]** how the survey appears to a respondent
-	  	* **[Publish]** your survey, set restrictions, redirections, and other conditions
-	  	* **[Invite]** people to become respondents of your survey
-	  	* **[Analyze]** the data in pretty charts, or export the data for futher manipulation
+	  - The dashboard comes equipped with a series of quick links, that allow for you to save a few clicks on your mouse. Going from Left to Right, **[Edit]** transports you into the survey itself where you can alter questions, branching logic, etc; **[Style]** the look and feel; **[Preview]** how the survey appears to a respondent; **[Publish]** your survey, set restrictions, redirections, and other conditions; **[Invite]** people to become respondents of your survey and [Analyze] the data in pretty charts, or export the data for futher manipulation
 	* - 3. Statistics
 	  - A high-level overview of response data held within the survey
 	* - 4. Overview
 	  - Quickly see the amount of questions, responses, pages and the deployment status
 	* - 5. Actions
-	  - Action icons are options only found on the Surveys dashboard: (Fromt Left to Right)
-	  	* **[Duplicate]** and create a cloned survey
-	  	* **[Rename]** your survey to something else
-		* **[Delete]** your survey from your account
-		* **[Create Collector]** to have layered responses for 1 survey
-		* **[Archive]** your survey from view
+	  - Action icons are options only found on Dashboard, but only when a survey has been clicked on the left hand side. The available actions are, **[Duplicate]** and create a cloned survey; **[Rename]** your survey to something else; **[Delete]** your survey from your account; **[Create Collector]** to have layered responses for 1 survey; **[Archive]** your survey from view
 	* - 6. Page
 	  - Navigate forward and back between multiple pages wherein each page contains 10 of your surveys
 
+.. polls_dashboard:
+
 Polls Dashboard
----------------
+```````````````
 
 The first screen you'll see when viewing the Polls Dashboard for the first time will be a familiar sight.
 
@@ -125,27 +118,18 @@ Over time, the more polls you create, you will start to see your Polls Dashboard
 	* - 1. Polls
 	  - A list of all Polls either [Live] or [Closed]. Clicking a Poll will present the available options found on the right-column. 
 	* - 2. Quick Links
-	  - Save a few clicks with these task icons: (From Left to Right)
-		* **Edit]** questions, variables and restrictions
-		* **[Style]** the look and feel
-		* **[Preview]** how the Poll appears to a respondent
-		* **[Publish]** your Poll, set restrictions, redirections, and other conditions
-		* **[Share]** your Poll through a social networking web site, or your own site
-		* **[Analyze]** all the response data
+	  - The dashboard comes equipped with a series of quick links, that allow for you to save a few clicks on your mouse. Going from Left to Right, **Edit]** questions, variables and restrictions, etc., **[Style]** the look and feel, **[Preview]** how the Poll appears to a respondent, **[Publish]** your Poll, set restrictions, redirections, and other conditions, **[Share]** your Poll through a social networking web site, or your own site, **[Analyze]** all the response data
 	* - 3. Overview
 	  - Quickly see the amount of responses, and the deployment status
 	* - 4. Actions
 	  - Quickly see the amount of questions, responses, pages and the deployment status
 	* - 5. Actions
-	  - Action icons are options only found on the Polls dashboard: (From Left to Right)
-	  	* **[Duplicate]** and create a cloned survey
-	  	* **[Rename]** your survey to something else
-		* **[Delete]** your survey from your account
+	  - Action icons are options only found on Dashboard, but only when a survey has been clicked on the left hand side, **[Duplicate]** and create a cloned survey, **[Rename]** your survey to something else, **[Delete]** your survey from your account
 	* - 6. Page
 	  - Navigate forward and back between multiple pages wherein each page contains 10 of your surveys
 
 Settings Dashboard
-------------------
+``````````````````
 
 The Settings Dashboard is a tool to quickly access account specific administration options
 
@@ -175,7 +159,7 @@ The Settings Dashboard is a tool to quickly access account specific administrati
 	  - Your FluidSurvey account is one of several plan types: Free, Pro, Ultra, Enterprise. Each plan type has different features, invite emails per month, support options, etc. The [Manage] button allows for switching between plans at any time. 
 
 Users Tab
-^^^^^^^^^
+`````````
 
 Enterprise customers receive the ability to manage Groups, that contain Users who have survey specific permissions (Edit, Test, Publish, Deploy, Analyze). 
 
@@ -208,10 +192,8 @@ Enterprise customers receive the ability to manage Groups, that contain Users wh
      - Once a users has been added to a Group, a new set of options will appear that allow for the permission (Role) to be 
        altered
 
-To learn more on how to add, or manage a Group and add a User, please refer to the :ref:`Tutorials` section of the documentation 
-
 Referral Tab
-^^^^^^^^^^^^
+````````````
 
 Spread your love of FluidSurveys with our **Refer a Friend** program. Your friends and colleagues will get a discount when they sign-up, and we'll cut you a cheque for each referral.
 
@@ -229,10 +211,8 @@ See the `Refer a Friend program`_ description on FluidSurveys.com
 
 .. _Refer a Friend program: http://www.fluidsurveys.com/referrals
 
-To learn more on how to refer a friend, please refer to the :ref:`Tutorials` section of the documentation.
-
 Footer
-------
+``````
 
 Hot off the press Twitter tweets, blog posts, some of the most abounding tutorials are listed at the absolute bottom for quick access on both the Editor and Dashboards
 

@@ -8,7 +8,7 @@ This manual takes you from start to finish, and guides you through all areas of 
 The manual is broken up into multiple sections. Each chapter covers 1 of 6 key FluidSurveys elements from what the Editor offers, to the power of Invites. After each ingredient, we offer a comphrehensive Tutorial section. Simply click on the hyperlinks throughout the manual (indicated in blue underlines) to go directly to any Help Centre topic for additional information.
 
 Plans & Pricing
----------------
+```````````````
 
 FluidSurveys offers several paid plans. Plans can either be billed annually, or monthly. 
 

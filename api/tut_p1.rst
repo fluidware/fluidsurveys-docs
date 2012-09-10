@@ -1,6 +1,6 @@
 .. _tutorial-one:
 
-Tutorial Part I: 'GET' the Basics
+Tutorial Part I: GET the Basics
 -------------------------------
 
 In this part of the tutorial we will show you how to set up a proxy between the FluidSurveys API and your website and how to GET surveys and responses.

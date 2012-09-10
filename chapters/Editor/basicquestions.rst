@@ -12,7 +12,6 @@ Section Heading
 
 Section Heading allow survey creators to include text within their survey without actually asking a question. It can be used to include an introduction or some explanatory text in your survey, pictures, endnotes, etc. If ever you simply need to convey a message without explicitly asking a question, then a Section Heading can satisfy such a role.
 
-
 .. figure:: ../../resources/editor/section_heading.png
 	:scale: 70%
 	:align: center

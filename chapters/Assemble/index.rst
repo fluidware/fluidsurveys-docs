@@ -88,8 +88,6 @@ Importing surveys and responses is straightforward and can be done in seconds. C
 
 		*Figure 4.3* Create a new survey screen by importing a survey from Survey Monkey
 
-To read a more indepth step-by-step process on how to import surveys and their assocaites responses from Survey Monkey to FluidSurveys, refer to the :ref:`Tutorials` section
-
 Create a Poll
 -------------
 

@@ -362,3 +362,52 @@ Timer questions are perfect for tablets, or even for online quizzes, that allow 
 	:class: screenshot
 
 	*Figure 5.1* Timer Question Type
+
+JavaScript
+^^^^^^^^^^
+
+While FluidSurveys provides the ability to include your own JavaScript code, the process in which to encapsulate them was an unfortunate event. Before, Javascript could be added to any section, eg., Survey Title, Extra Description, Question Variables/Choices, etc. As a survey grows in size, this could cause raise for concern due to having to pinpoint a speciifc piece of code. 
+
+However, the JavaScript question type now allows for all code to reside under 1 location. The JavaScript question type is perfect for those who are deeply engrained with JavaScript knowledge. 
+
+The JavaScript question type provides the following:
+
+  * You can now collect your JavaScript code into a single place for each page of your survey, making it easier to locate and work with,
+  * We’ve included a built-in JavaScript editor complete with syntax highlighting,
+  * You can use our JavaScript builder to easily modify the core components of the question types on your current survey page, and,
+  * Administrators can show/hide the JavaScript code in preview mode!
+
+.. warning::
+
+  This question type has the potential to cause serious error to your survey if the individual does not fully understand JavaScript. Please be careful when making any changes to your survey when adjusting the JavaScript. 
+
+.. figure:: ../../resources/editor/javascript.png
+  :align: center
+  :scale: 70%
+  :alt: Javascript Question Type
+  :class: screenshot
+
+  *Figure 5.1* JavaScript Question Type
+
+  .. list-table:: Display Options (Respectively to figure above)
+   :widths: 35 65
+   :header-rows: 1
+
+   * - Options
+     - Description
+   * - 1. Piper
+     - While the act of locating a question types ID can be cumbersome or confusing to some, the piper will alleviate the need to play search party. You can pipe data from your survey into your JavaScript code to play with.
+   * - 2. Script
+     - All JavaScript code goes here
+   * - 3. Expand Code Area
+     - Clicking this button will increase the coding area size
+   * - 4. Toggle Builder Window
+     - Show & Hide the JavaScript builder, which provides the ability to build quick blocks of code
+   * - 5. Undo
+     - Undo the last action. This action can be clicked ad-infinitum until the entire coding area is cleared. 
+   * - 6. Redo
+     - Redo the last action. This action can be clicked ad-infinitum until the entire coding area is restored.
+   * - 7. Clear
+     - Clear all code within this question type
+
+

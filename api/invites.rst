@@ -268,7 +268,8 @@ Example
     Let's write a quick python script to create a contact and add them to an email:
 
 Set up
-`````
+``````
+
 	We will be using the **requests** module to easily handle the details of HTTP requests. You can find out more about it at http://docs.python-requests.org. ::
 	
 		import requests, json

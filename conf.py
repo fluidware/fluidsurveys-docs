@@ -16,6 +16,7 @@ import sys, os
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #sys.path.insert(0, os.path.abspath('.'))
+sys.path.append(os.path.abspath('.'))
 
 # -- General configuration -----------------------------------------------------
 
@@ -172,14 +173,9 @@ htmlhelp_basename = 'FluidSurveysdoc'
 # -- Options for LaTeX output --------------------------------------------------
 
 latex_elements = {
-# The paper size ('letterpaper' or 'a4paper').
-#'papersize': 'letterpaper',
-
-# The font size ('10pt', '11pt' or '12pt').
-#'pointsize': '10pt',
-
-# Additional stuff for the LaTeX preamble.
-#'preamble': '',
+  'papersize':    'a4paper',
+  'pointsize':    '12pt',
+  'preamble':     r'\usepackage{FluidSurveys}'
 }
 
 # Grouping the document tree into LaTeX files. List of tuples
@@ -195,7 +191,7 @@ latex_documents = [
 
 # For "manual" documents, if this is true, then toplevel headings are parts,
 # not chapters.
-#latex_use_parts = False
+latex_use_parts = True
 
 # If true, show page references after internal links.
 #latex_show_pagerefs = False
@@ -208,6 +204,8 @@ latex_documents = [
 
 # If false, no module index is generated.
 #latex_domain_indices = True
+
+latex_additional_files = ['FluidSurveys.sty']
 
 
 # -- Options for manual page output --------------------------------------------
@@ -228,6 +226,7 @@ man_pages = [
 # Grouping the document tree into Texinfo files. List of tuples
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
+
 texinfo_documents = [
   ('index', 'FluidSurveys', u'FluidSurveys Documentation',
    u'FluidSurveys', 'FluidSurveys', 'One line description of project.',

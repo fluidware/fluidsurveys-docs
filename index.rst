@@ -4,8 +4,7 @@
 Version 4.0
 ===========
 
-This manual will assist you in understanding all areas of FluidSurveys, which will take you from the Alpha to the Omega of creating an account, designing a survey, gathering responses,
-generating beautiful charts and reports, sending out invites, all the way to relieving stress.
+This manual will assist you in understanding all areas of FluidSurveys, which will take you from the Alpha to the Omega of creating an account, designing a survey, gathering responses, generating beautiful charts and reports, sending out invites, all the way to relieving stress.
 
 FluidSurveys provides users with a simple do it yourself platform to create online surveys & polls, gather responses and analyze data. With no software to download, an easy to use drag & drop interface and an extremely rich feature base, FluidSurveys is the ideal tool for online research. 
 
@@ -19,9 +18,6 @@ To learn more, please visit `myReviewRoom`_ for more information
 
 .. _myReviewRoom: http://www.myreviewroom.com
 .. _ReviewRoom: http://www.myreviewroom.com
-
-Chapters
---------
 
 .. include:: /chapters/fschaptercontents.rst.inc
 
