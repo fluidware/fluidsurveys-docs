@@ -135,7 +135,15 @@ Clicking on the subject of your email, will present a new popup titled, "E-mail 
 
 Additionally, It can often be useful to send out reminders after your survey invitations have been sent. Perhaps individuals may have forgotten about the first email, or it got lost in an overcrowded inbox, etc. Reminders can give potential respondents the little nudge they need to provide you with some valuable feedback.
 
-The process of sending reminders using FluidSurveys is fast and simple. First, from the left hand side toolbar, select the “Reminders/History” button. On this screen, you’ll see a history of all of the survey invitations and reminders that you've sent out.
+The process of sending reminders using FluidSurveys is fast and simple. First, from the left hand side toolbar, select the “Reminders/History” button. On this screen, you’ll see a history of all of the survey invitations and reminders sent or scheduled to be sent. Furthermore, each surveys associated reminders can be accessed by clicking the blue plus sign to the left of the invite which will make it visible directly underneath, providing an easy way to see which reminders have been sent or scheduled for which surveys. In the case that no reminders have been sent out, no additional option will appear.
+
+.. figure:: ../../resources/invites/collapsed_reminders.png
+	:scale: 70%
+	:align: center
+	:class: screenshot
+	:alt: Collapsed Reminders
+
+	*Figure 9.1* Collapsed Reminders
 
 Clicking "Send Reminder" will reveal a slightly different "Compose" screen. From here, you are able to enter your reminder message and specify to who the reminder should be sent.
 

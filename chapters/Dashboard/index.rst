@@ -71,6 +71,49 @@ Over time, the more surveys you create, you will start to see your Surveys Dashb
 	* - 6. Page
 	  - Navigate forward and back between multiple pages wherein each page contains 10 of your surveys
 
+Labels
+``````
+
+The use of labels within FluidSurveys offers an easy way to categorize your surveys much like how you might organize your vacation photos in folders on your computer. Each survey can be assigned multiple custom labels, directly from the main survey dashboard, which can be used to filter which surveys are visible.
+
+By default each newly created survey has can be assigned a label by selecting it from the list on the left hand side and selecting the ‘Click to add a label’ text, adding the label name and pressing Enter to confirm.
+
+ .. figure:: ../../resources/dashboard/labels_4.png
+	:align: center
+	:class: screenshot
+	:alt: No labels
+	:scale: 70%
+
+	*Figure 3.2* Newly created survey with no labels
+
+ .. figure:: ../../resources/dashboard/labels_1.png
+	:align: center
+	:class: screenshot
+	:alt: Label Added
+	:scale: 70%
+
+	*Figure 3.2* Added a Label
+
+Surveys with the same labels can be viewed by selecting the small tag icon in the top right hand corner, and checking the appropriate labels from the drop down list. This will show the user on the left hand side all the surveys with the selected labels. Reverting this filter and viewing all surveys is as easy as clicking the Clear Filter button to the left of the search bar.
+
+ .. figure:: ../../resources/dashboard/labels_3.png
+	:align: center
+	:class: screenshot
+	:alt: Search for label
+	:scale: 70%
+
+	*Figure 3.2* All labels
+
+Removing labels from the survey is as easy as selecting it from the left hand side, and clicking the white ‘x’ on the label itself. Removing the label filter can be accomplished by simply selecting the ‘Clear Filter’ button which will make all surveys visible regardless of their associated label.
+
+ .. figure:: ../../resources/dashboard/labels_2.png
+	:align: center
+	:class: screenshot
+	:alt: Remove labels
+	:scale: 70%
+
+	*Figure 3.2* Remove a label
+
 .. polls_dashboard:
 
 Polls Dashboard
