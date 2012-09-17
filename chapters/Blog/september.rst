@@ -119,3 +119,55 @@ So now if we save our survey and preview it, we see the following:
 	:class: screenshot
 
 Ta da! The US dollar sign now appears next to our text input field as we wanted it to. You should also notice the “Show Script” toggle, which will show or hide the JavaScript code for the administrator. This should prove to be incredibly useful for debugging purposes!
+
+(Another!) New Question Type: the Ranking Question
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+These are exciting times at FluidSurveys! The developers are working so hard to make our online survey software the best it can be that we can see steam escaping from underneath their door!
+
+We have another goody to unveil for you today: the Ranking Question type. This question type is a cool new way to get your respondents to rank items in order of importance or significance. They simply need to click and drag a variable from the left to the proper choice on the right.
+
+Before we dive into the HOW-TO, here’s a sneak peek at the finished product:
+
+.. image:: ../../resources/blog/September/01-rankingQuestion.jpg
+	:scale: 70%
+	:alt: Ranking Question In Action
+	:align: center
+	:class: screenshot
+
+How Do I Add This To My Survey?
+```````````````````````````````
+
+Take a seat, and grab a pen and notepad… this is rather complicated.
+
+.. image:: ../../resources/blog/September/02-rankingQuestion.jpg
+	:scale: 70%
+	:alt: Add Ranking Question
+	:align: center
+	:class: screenshot
+
+You have to click, and then drag the ‘Ranking Question’ onto your form builder. Boy, I’m exhausted after that explanation!
+
+All Kidding Aside: FluidSurveys is a leader in the development of survey software, hence everything we create and release is designed to be easy to use!
+
+And Now For A Quick Example
+```````````````````````````
+
+**Configuration**
+
+.. image:: ../../resources/blog/September/03-rankingQuestion.jpg
+	:scale: 70%
+	:alt: Ranking Question Choice/Variables and Options
+	:align: left
+	:class: screenshot
+
+Once you drag the Ranking Question onto your form builder, you will be able to configure it as you see fit.
+
+To our left is a screenshot of the settings we used to create an example Ranking Question for this blog post.
+
+Whatever you type into the ‘Choices’ section will become the “containers” that your respondents drag the ‘Variables’ onto.
+
+So in our example, you can see that the respondents will have 5 Variables that need to be dragged onto 3 Choices.
+
+Please note, however, that it is perfectly acceptable to have the same number of Choices as there are Variables.
+
