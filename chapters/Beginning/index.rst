@@ -5,7 +5,7 @@ Getting Started
 
 This manual takes you from start to finish, and guides you through all areas of FluidSurveys such as creating and designing a survey or a poll, collecting and analyzing responses, inviting respondents, and managing user accounts. 
 
-The manual is broken up into multiple sections. Each chapter covers 1 of 6 key FluidSurveys elements from what the Editor offers, to the power of Invites. After each ingredient, we offer a comphrehensive Tutorial section. Simply click on the hyperlinks throughout the manual (indicated in blue underlines) to go directly to any Help Centre topic for additional information.
+The manual is broken up into multiple sections. Each chapter covers 1 of 6 key FluidSurveys elements from what the Editor offers, to the power of Invites. After each ingredient, we offer a comprehensive Tutorial section. Simply click on the hyperlinks throughout the manual (indicated in blue underlines) to go directly to any Help Centre topic for additional information.
 
 Plans & Pricing
 ```````````````
@@ -138,7 +138,7 @@ To upgrade your account to one of our paid plans, within the `"Settings Dashboar
 
 .. _"Settings Dashboard": http://app.fluidsurveys.com/account/settings/
 
-Once you've created your account, and verified your email address, log in, whereby you can start the process of creating *beautifully bewitching*, and *eleganty enticing* surveys.
+Once you've created your account, and verified your email address, log in, whereby you can start the process of creating *beautifully bewitching*, and *elegantly enticing* surveys.
 
 The entire process, from start to finish, will take less time than saying, "supercalifragilisticexpialidocious".
 

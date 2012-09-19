@@ -3,7 +3,7 @@
 Style
 =====
 
-If the Editor is the meat and potatoes, then the Themer is the desert capable of delivering a polished product. By default, every new survey adheres to a basic template, which holds the signature colours of FluidSurveys (Grey, Light Grey, Black, Blue). This style may not fit the needs of every individual, and therefore we provided the option to fully allow for everything to be changed. 
+If the Editor is the meat and potatoes, then the Themer is the dessert capable of delivering a polished product. By default, every new survey adheres to a basic template, which holds the signature colours of FluidSurveys (Grey, Light Grey, Black, Blue). This style may not fit the needs of every individual, and therefore we provided the option to fully allow for everything to be changed. 
 
 In this chapter, you will be introduced to the ability of changing not only basic elements, but complex aspects of your survey. Regardless of your CSS prowess, you can add your companies logo, alter the survey background colour, question fonts, all the way to how buttons look-and-feel. However, when venturing into the CSS Editor, it would not hurt to brush up on some basic CSS knowledge, or use it as a database of knowledge, then `w3schools`_ is the perfect starting point.
 

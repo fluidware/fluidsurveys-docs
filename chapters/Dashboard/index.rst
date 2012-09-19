@@ -11,7 +11,7 @@ The Surveys Dashboard is the pivot point for accessing the features of FluidSurv
 * Your Polls
 * Your Account Page
 
-When you have successfully logged into your FluidSurveys account, you will be ready to create your own surveys. There are several options for creating a survey, and we will help you become familiar with them in this chapter. This is the first step you will need to taks as you start teh survey building process
+When you have successfully logged into your FluidSurveys account, you will be ready to create your own surveys. There are several options for creating a survey, and we will help you become familiar with them in this chapter. This is the first step you will need to task as you start the survey building process
 
 .. surveys_dashboard:
 
@@ -39,7 +39,7 @@ The first screen you'll see when logging into FluidSurveys will be the Surveys D
    * - 2. Quick Links
      - Manage users, billing, passwords, change email address, etc.     
    * - 3. Get Help
-     - Whenever aquestion arises that requires the attention, or assistance of a FluidSurveys support member, which includes the 
+     - Whenever a question arises that requires the attention, or assistance of a FluidSurveys support member, which includes the 
        ability to track any previous support history requests, click "Get Help" Our response times range from 30 minutes to 1 hour
 
 Over time, the more surveys you create, you will start to see your Surveys Dashboard slowly fill up. A populated Surveys Dashboard presents a few new options:  
@@ -61,7 +61,7 @@ Over time, the more surveys you create, you will start to see your Surveys Dashb
 	* - 1. Surveys
 	  - A list of all surveys either [Live] or [Closed]. Clicking a survey will present the available options found on the right-column.
 	* - 2. Quick Links
-	  - The dashboard comes equipped with a series of quick links, that allow for you to save a few clicks on your mouse. Going from Left to Right, **[Edit]** transports you into the survey itself where you can alter questions, branching logic, etc; **[Style]** the look and feel; **[Preview]** how the survey appears to a respondent; **[Publish]** your survey, set restrictions, redirections, and other conditions; **[Invite]** people to become respondents of your survey and [Analyze] the data in pretty charts, or export the data for futher manipulation
+	  - The dashboard comes equipped with a series of quick links, that allow for you to save a few clicks on your mouse. Going from Left to Right, **[Edit]** transports you into the survey itself where you can alter questions, branching logic, etc; **[Style]** the look and feel; **[Preview]** how the survey appears to a respondent; **[Publish]** your survey, set restrictions, redirections, and other conditions; **[Invite]** people to become respondents of your survey and [Analyze] the data in pretty charts, or export the data for further manipulation
 	* - 3. Statistics
 	  - A high-level overview of response data held within the survey
 	* - 4. Overview
@@ -240,7 +240,7 @@ Referral Tab
 
 Spread your love of FluidSurveys with our **Refer a Friend** program. Your friends and colleagues will get a discount when they sign-up, and we'll cut you a cheque for each referral.
 
-Taking advantage of the Refer a Friend program does not require you to have a paid plan. You can sign-up for a free account, distribute the sign-up link and everytime someone signs up using one of your referral links, they'll receive a discount, and we'll deposite *cash* into your PayPal account. 
+Taking advantage of the Refer a Friend program does not require you to have a paid plan. You can sign-up for a free account, distribute the sign-up link and every time someone signs up using one of your referral links, they'll receive a discount, and we'll deposit *cash* into your PayPal account. 
 
 See the `Refer a Friend program`_ description on FluidSurveys.com
 

@@ -497,3 +497,18 @@ Dropdown Grid is similar to its sibling, the dropdown question, in that it is st
      - Force a choice in a column to remain unique. No two options in a column can be identical. By default, this option is disabled.
    * - 4. Blank choice
      - The initial value displayed, indicating that a selection has not been made. Note, this will not count towards a response if selected
+
+Ranking Question
+^^^^^^^^^^^^^^^^
+
+A Ranking Question allows for the respondent to complete a question by adhering to an order of importance, or significance. The biggest difference between a Ranking question, and the 17 other questions (open/close-ended, date/timer) is that the choices can be dragged from left-to-right, as shown below.
+
+.. figure:: ../../resources/editor/ranking_question.png
+  :scale: 70%
+  :align: center
+  :class: screenshot
+  :alt: Ranking Question in a survey
+
+  *Figure 6.1* Ranking Question in a survey
+
+The moment a choice from the left side touches anything on the right
