@@ -171,3 +171,47 @@ So in our example, you can see that the respondents will have 5 Variables that n
 
 Please note, however, that it is perfectly acceptable to have the same number of Choices as there are Variables.
 
+Check Out Our New Mobile Survey Format!
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+FluidSurveys has improved the formatting for mobile surveys! This means your surveys will have a more modern appearance and behavior when displayed on mobile devices.
+
+Some Notes Worth Reading...
+
+Before we show off the new formatting, please read these notes to ensure a more enjoyable mobile survey experience.
+
+**Enabling / Disabling the New Format**
+
+Surveys created before September 20th 2012 will have the new formatting disabled by default, and surveys created after this date will have the new formatting enabled by default.
+
+To toggle the formatting on or off, simply click Publish, Settings, Display Options and look for the check box entitled “Disable mobile-friendly survey formatting on mobile devices.” Check out the screenshot below to see exactly where to click:
+
+.. image:: ../../resources/blog/September/01-Enable-or-Disable.jpg
+	:scale: 70%
+	:alt: Enable or Disable Mobile Theme
+	:align: center
+	:class: screenshot
+
+**Existing Mobile Formatting / Custom CSS**
+
+Any existing formatting you have applied to your survey will be temporarily replaced while the new formatting is enabled. In the future we will make it easy for you to customize this new look & feel — we promise!
+
+**Push to Abort!**
+
+If your survey is super-duper lengthy, the new formatting might take a while to load on a mobile device. If loading takes longer than 4 seconds, the person taking the survey will be presented with an option to view the ‘normal’ desktop version instead. **Side note:** we also provide the option to switch to the desktop version at the bottom of each page in a mobile survey.
+
+**Desktop Previews**
+
+.. role:: strikethrough
+
+Our :strikethrough:`brainiac` thoughtful developers even programmed a way to preview your mobile survey from your desktop  Simply append &mobile to the end of your survey URL. If there are other arguments in your URL, however, you will need to replace the & with a ?. This will set a cookie in your browser to enable the new formatting until you either close your browser window, or set ?mobile=false instead.
+
+Confused? Watch the video at the end of this blog post and it will make more sense.
+
+Here’s a side-by-side of the new format and the old format for mobile surveys.
+
+.. image:: ../../resources/blog/September/02-Combined.jpg
+	:scale: 70%
+	:alt: New vs Old
+	:align: center
+	:class: screenshot
