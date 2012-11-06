@@ -159,12 +159,15 @@ Submitting a new response
     You can also send a standard *application/x-www-form-urlencoded* POST request.  e.g. ::
 
 	5yEXFv1Bob=hello%20world&zIthHJ9tvZ=0&DiBzfaXB6b=1
-	
-	Uploading a CSV: ::
+
+Uploading a CSV
+```````````````
 
 	You may also wish to import responses to a survey using a CSV file.  However you should first be familiar with the export/import tool in FluidSurveys.  *Use the Include identifiers in headers (for response import)* option to export your responses.  Alternatively, you will need the response importer template.  Which can be found be going responses section and choosing *Import Responses* from the action menu.  Download the CSV template. (an api call for this will be coming soon!).
 
-	Once the CSV file is filled out you can send it as a POST request to .. http:post:: /api/v2/surveys/:id/responses/
+	Once the CSV file is filled out you can send it as a POST request to:
+.. http:post:: /api/v2/surveys/:id/responses/
+
 	You **must** also set the Content-Type to `text/csv`
 
 
