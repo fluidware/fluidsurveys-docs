@@ -358,6 +358,15 @@ Send Email
 			u'subject': u'Hello'
 		}
 
+Scheduling Invites
+``````````````````
+
+    In order to schedule invites some time in the future, you may append a `scheduled` variable to the end of the `send_uri`.
+
+    i.e., ``send_uri + '?scheduled=7'`` will schedule your invite 7 days from now.  You can specify the number of weeks, days, hours, and minutes by suffixing a number with the letters ``w, d, h,`` and ``m`` respectively:
+    
+    For example, appending ``'?scheduled=1w3d4h2m'`` to the `send_uri` will schedule your invite to send 1 week, 3 days, 4 hours, and 2 minutes from the time you submit your request.
+
 Source
 ``````
 	Download the source file:
