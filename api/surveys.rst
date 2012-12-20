@@ -47,6 +47,8 @@ Survey Status
 	
 .. http:post:: /api/v2/surveys/:id/status/?switch=closed
 
+.. _survey-details:
+
 Getting survey details
 ``````````````````````
 
