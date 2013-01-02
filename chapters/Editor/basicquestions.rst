@@ -186,7 +186,7 @@ The checkbox question type is a multi-answer question, as in you can select more
    * - 4. Restrict number of selected choices
      - Restrict the number of choices a user can select before the question is disabled. By default, this option is disabled
 
-A checkbox has the following Question Choices avaialble
+A checkbox has the following Question Choices available
 
   * Exclusive Choice
   * Select All
@@ -238,7 +238,7 @@ The Multiple choice question type, commonly referred to as the single choice que
    * - 4. Initial Value
      - Allows you to specificy pre-populated answers to questions in your survey. By default, this option is blank "---"
 
-A multiple choice question type as the following Question Choices Available
+A multiple choice question type has the following Question Choices Available
 
   * Add text response
   * Static Choice
