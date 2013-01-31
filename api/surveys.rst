@@ -85,18 +85,20 @@ You may also send a GET parameter called `structure` to receive the entire surve
 Getting survey responses
 ````````````````````````
 
-.. http:get:: /api/v2/surveys/:id/responses/
+.. http:get:: /api/v2/surveys/:id/responses/[:response_id/]
 
     Returns a list of responses to the specified survey that are accessible to the
     currently authenticated user. Pagination is supported through the `offset` and
     `limit` query parameters. This method returns data in :mimetype:`application/json`
-    format.
+    format. The `response_id` parameter is optional, and, if provided, will limit the 
+    output to the singular response indicated.
 
     :query offset: response pagination offset (defaults to 0).
     :query limit: maximum number of results to return (defaults to 50 max is 200).
     :query filter: name of the filter you wish to filter responses by
+    :query expand_GET: whether to format the GET variables as JSON instead of querystring.
 
-    Example:
+    Examples:
 
 .. http:get:: /api/v2/surveys/:id/responses/?filter=myfilter
 
@@ -106,15 +108,40 @@ Getting survey responses
     Sample response: ::
 
 	{
+	  "count": 2,
+	  "total": 2,
+	  "responses": [{
+	    "_id": XXXX,
+	    "_completed": 0,
+	    "_ip_address": "0.0.0.0",
+	    "_get_variables": "var1=1&var2=2&var3"
+	  }, {
+	    "_id": XXXY,
+	    "_completed": 1,
+	    "_ip_address": "0.0.0.0"
+	  }],
+	}
+
+.. http:get:: /api/v2/surveys/:id/responses/XXXX/?expand_GET
+
+    The `_get_variables` field which specifies the query-string that users entered the survey with are expanded out as a JSON dictionary.
+
+    Sample response: ::
+
+	{
+	  "count": 1,
 	  "total": 2,
 	  "responses": [{
 	    "_completed": 0,
-	    "_ip_address": "0.0.0.0"
-	  }, {
-	    "_completed": 1,
-	    "_ip_address": "0.0.0.0"
+	    "_ip_address": "0.0.0.0",
+	    "_get_variables": {
+	      "var1": "1",
+	      "var2": "2",
+	      "var3": ""
+	    }
 	  }]
 	}
+
 
 Creating a new response
 ```````````````````````
