@@ -221,21 +221,32 @@ Generating a list of invite codes
 
 .. http:get:: /api/v2/surveys/:survey_id/invite-codes/
 
-    Get a list of generated invite codes for the survey/collector specified.
-    
+    Returns a list of generated invite codes for the survey/collector specified. 
+    Pagination is supported through the `offset` and `limit` query parameters. 
+    The `response_id` parameter is optional, and, if provided, will limit the 
+    output to the singular response indicated.
+
+    :query offset: response pagination offset (defaults to 0).
+    :query limit: maximum number of results to return (defaults to 50 max is 200).
     :query collector: (optional) ID of the collector for which to generate invites.
 
     Sample response::
 
 	{
 	  "count": 2,
+	  "start": 0,
+	  "total": 2,
 	  "invites": [
 	    {
+	      "status": "Viewed",
 	      "code": "XXXXXXXX",
 	      "invite_url": "http://fluidsurveys.com/s/somesurvey/?code=XXXXXXXX"
 	    },
 	    {
+	      "status": "Completed",
 	      "code": "YYYYYYYY",
+	      "response_id": "XXXXX",
+	      "response_uri": "http://fluidsurveys.com/api/v2/surveys/:survey_id/responses/XXXXX/",
 	      "invite_url": "http://fluidsurveys.com/s/somesurvey/?code=YYYYYYYY"
 	    }
 	  ]

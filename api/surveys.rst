@@ -102,7 +102,9 @@ Getting survey responses
 
 .. http:get:: /api/v2/surveys/:id/responses/?filter=myfilter
 
-    Filters are created from the web interface and are on a **per-survey basis**.  You may also use one of the pre-defined filters: *completed*, *invite_emails*, or *invite_codes*.
+    Filters are created from the web interface and are on a **per-survey basis**.  
+    You may also use one of the pre-defined filters: *completed*, *invite_emails*, 
+    or *invite_codes*.
 
 
     Sample response: ::
@@ -124,7 +126,8 @@ Getting survey responses
 
 .. http:get:: /api/v2/surveys/:id/responses/XXXX/?expand_GET
 
-    The `_get_variables` field which specifies the query-string that users entered the survey with are expanded out as a JSON dictionary.
+    The `_get_variables` field which specifies the query-string that users entered 
+    the survey with are expanded out as a JSON dictionary.
 
     Sample response: ::
 
@@ -139,6 +142,25 @@ Getting survey responses
 	      "var2": "2",
 	      "var3": ""
 	    }
+	  }]
+	}
+
+
+.. http:get:: /api/v2/surveys/:id/responses/XXXX/?_invite_code=XXXXX
+
+    You can also filter by any one of the response variables directly. In this example 
+    we filter by a specific invite code through the meta-variable `_invite_code`.
+
+    Sample response: ::
+
+	{
+	  "count": 1,
+	  "total": 2,
+	  "responses": [{
+	    "_completed": 1,
+	    "_invite_code": "XXXXX"
+	    "_ip_address": "0.0.0.0",
+	    "_get_variables": "code=XXXXX"
 	  }]
 	}
 
