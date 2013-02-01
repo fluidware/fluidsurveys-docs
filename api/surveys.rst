@@ -18,8 +18,8 @@ Getting a list of surveys
 	  "total": 1,
 	  "surveys": [{
 	    "id": 17461,
-	    "uri": "https://app.fluidsurveys.com/api/v2/surveys/17461/",
-	    "deploy_uri": "http://app.fluidsurveys.com/s/test-survey/",
+	    "uri": "https://fluidsurveys.com/api/v2/surveys/17461/",
+	    "deploy_uri": "http://fluidsurveys.com/s/test-survey/",
 	    "responses": 10,
 	    "creator": "username",
 	    "name": "survey name"
@@ -61,8 +61,8 @@ Getting survey details
 
 	{
 	  "id": 17461,
-	  "uri": "https://app.fluidsurveys.com/api/v2/surveys/17461/",
-	  "deploy_uri": "http://app.fluidsurveys.com/s/test-survey/",
+	  "uri": "https://fluidsurveys.com/api/v2/surveys/17461/",
+	  "deploy_uri": "http://fluidsurveys.com/s/test-survey/",
 	  "responses": 10,
 	  "creator": "username",
 	  "name": "survey name",
@@ -166,7 +166,7 @@ Submitting a new response
     Example: ::
 
 	import requests, json
-	uri = 'https://app.fluidsurveys.com/api/v2/survey/55023/responses/'
+	uri = 'https://fluidsurveys.com/api/v2/survey/55023/responses/'
 	API_KEY = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 	PASSWORD = 'password'
 	headers = {'Content-Type': 'application/json'}

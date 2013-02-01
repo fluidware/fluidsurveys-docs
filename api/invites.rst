@@ -35,14 +35,14 @@ Getting a list of contacts
         "custom": ["field1"],
         "contacts": [{
 	  "id": 1,
-	  "uri": "http://app.fluidsurveys.com/api/v2/contacts/1/",
+	  "uri": "http://fluidsurveys.com/api/v2/contacts/1/",
 	  "name": "Peter Griffin",
 	  "email": "peter.griffin@example.com",
 	  "unsubscribed": false,
 	  "custom_field1": "field1"
 	}, {
 	  "id": 2,
-	  "uri": "http://app.fluidsurveys.com/api/v2/contacts/2/",
+	  "uri": "http://fluidsurveys.com/api/v2/contacts/2/",
 	  "name": "Joe Swanson",
 	  "email": "joe.swanson@example.com",
 	  "unsubscribed": false
@@ -65,7 +65,7 @@ Creating a contact
       {
         "contact": {
           "id": 15136498,
-	  "uri": "http://app.fluidsurveys.com/api/v2/contacts/15136498/",
+	  "uri": "http://fluidsurveys.com/api/v2/contacts/15136498/",
           "name": "Dave Jones",
           "email": "dave.jones@example.com",
           "unsubscribed": false
@@ -84,7 +84,7 @@ Getting contact details
       {
         "contact": {
           "id": 15136498,
-	  "uri": "http://app.fluidsurveys.com/api/v2/contacts/15136498/",
+	  "uri": "http://fluidsurveys.com/api/v2/contacts/15136498/",
           "name": "Dave Jones",
           "email": "dave.jones@example.com",
           "unsubscribed": false
@@ -119,8 +119,8 @@ Getting contact lists
       {
         "lists": [{
           "id": 1,
-	  "uri": "http://app.fluidsurveys.com/api/v2/contact-lists/1/",
-	  "contacts_uri": "http://app.fluidsurveys.com/api/v2/contact-lists/1/contacts/",
+	  "uri": "http://fluidsurveys.com/api/v2/contact-lists/1/",
+	  "contacts_uri": "http://fluidsurveys.com/api/v2/contact-lists/1/contacts/",
           "name": "People with Silly Walks",
           "contacts": 10
         }],
@@ -147,8 +147,8 @@ Getting contact list details
       {
         "list": {
           "id": 1,
-	  "uri": "http://app.fluidsurveys.com/api/v2/contact-lists/1/",
-	  "contacts_uri": "http://app.fluidsurveys.com/api/v2/contact-lists/1/contacts/",
+	  "uri": "http://fluidsurveys.com/api/v2/contact-lists/1/",
+	  "contacts_uri": "http://fluidsurveys.com/api/v2/contact-lists/1/contacts/",
           "name": "People with Silly Walks",
           "contacts": 10
         }
@@ -184,6 +184,62 @@ Removing contacts
 .. http:delete:: /api/v2/contact-lists/:id/contacts/
 
     Removes contacts from the specified contact list.
+
+
+Invite Codes
+------------
+
+In order to deploy your surveys in a trackable manner, you can use invite codes. While the 
+recommended method to deploy your surveys using invite codes is by creating contacts in your
+FluidSurveys address book (see above) and send an email to them (see below) which will auto-
+populate codes, we also allow you to generate invite codes for use with other systems.
+
+For the methods below, an optional parameter `collector` may be used, which must be the 
+id of a survey collector. If not provided, the default collector is assumed.
+
+Generating a list of invite codes
+`````````````````````````````````
+
+.. http:post:: /api/v2/surveys/:survey_id/invite-codes/
+
+    Generates invite codes for use with the survey/collector specified.
+    
+    :query collector: (optional) ID of the collector for which to generate invites.
+    :query count: The number (between 1 and 1000) of invite codes to generate
+
+    Sample response::
+
+	{
+	  "count": 1,
+	  "invites": [
+	    {
+	      "code": "XXXXXXXX",
+	      "invite_url": "http://fluidsurveys.com/s/somesurvey/?code=XXXXXXXX"
+	    }
+	  ]
+	}
+
+.. http:get:: /api/v2/surveys/:survey_id/invite-codes/
+
+    Get a list of generated invite codes for the survey/collector specified.
+    
+    :query collector: (optional) ID of the collector for which to generate invites.
+
+    Sample response::
+
+	{
+	  "count": 2,
+	  "invites": [
+	    {
+	      "code": "XXXXXXXX",
+	      "invite_url": "http://fluidsurveys.com/s/somesurvey/?code=XXXXXXXX"
+	    },
+	    {
+	      "code": "YYYYYYYY",
+	      "invite_url": "http://fluidsurveys.com/s/somesurvey/?code=YYYYYYYY"
+	    }
+	  ]
+	}
 
 Emails
 ------
@@ -226,9 +282,9 @@ Getting email details
 	"sender": "",
 	"subject": "Email subject",
 	"message": "Dear [Full Name],\n\nMessage body: [Invite Link]",
-	"uri": "http://app.fluidsurveys.com/api/v2/emails/1/",
-	"send_uri": "http://app.fluidsurveys.com/api/v2/emails/1/send/",
-	"recipients_uri": "http://app.fluidsurveys.com/api/v2/emails/1/recipients/",
+	"uri": "http://fluidsurveys.com/api/v2/emails/1/",
+	"send_uri": "http://fluidsurveys.com/api/v2/emails/1/send/",
+	"recipients_uri": "http://fluidsurveys.com/api/v2/emails/1/recipients/",
 	"num_recipients": 5
       }
 
@@ -282,7 +338,7 @@ Set up
 	We'll also save the base URI and Headers in some variables: ::
 
 		headers = {"Content-Type": "application/json"}
-		URI = 'https://app.fluidsurveys.com/api/v2/'
+		URI = 'https://fluidsurveys.com/api/v2/'
 		
 Create a Contact
 ````````````````
