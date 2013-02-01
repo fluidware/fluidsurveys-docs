@@ -219,12 +219,13 @@ Generating a list of invite codes
 	  ]
 	}
 
+Retrieving generated invite codes
+`````````````````````````````````
+
 .. http:get:: /api/v2/surveys/:survey_id/invite-codes/
 
     Returns a list of generated invite codes for the survey/collector specified. 
     Pagination is supported through the `offset` and `limit` query parameters. 
-    The `response_id` parameter is optional, and, if provided, will limit the 
-    output to the singular response indicated.
 
     :query offset: response pagination offset (defaults to 0).
     :query limit: maximum number of results to return (defaults to 50 max is 200).
