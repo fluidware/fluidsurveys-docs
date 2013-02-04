@@ -113,7 +113,7 @@ Custom Survey Panel is available on all plans, including Free, and the cost asso
 
 The new dialog that appears after "Create an order" was clicked is Step 1 of 3. Basics is where you begin outlining your high-level target audience, ie., Country, Region, the number of questions you will be asking, along with the age group. Using the aforementioned example, Females ages 24-34, who live in Alaska, United Stated, an order would look as follows.
 
-.. figure:: ../../resources/publish/cint_step1_basics.png
+.. figure:: ../../resources/publish/cint_basic_Settings.jpg
 	:scale: 70%
 	:align: center
 	:class: screenshot
@@ -148,17 +148,32 @@ The new dialog that appears after "Create an order" was clicked is Step 1 of 3. 
 
 	If your target audience is unavailable, a warning will appear at the bottom stating the base minimum available for your desired group.
 
-	.. image:: ../../resources/publish/cint_basics_error.png
+	.. image:: ../../resources/publish/cint_delivery_error.jpg
 		:scale: 70%
 		:align: center
 		:class: screenshot
 		:alt: Step 1 Basics
 
+The ability to dig deeper into your target demographic -- specifically the region -- you can select from either a map, or a table of all available locations.
+
+
+.. image:: ../../resources/publish/cint_region.jpg
+	:scale: 70%
+	:align: center
+	:class: screenshot
+	:alt: Region Map
+
+.. image:: ../../resources/publish/cint_region_2.jpg
+	:scale: 70%
+	:align: center
+	:class: screenshot
+	:alt: Region Table
+
 Once the Basics have been outlined, clicking [Continue] will allow for a deeper customization of finding that desired target group. 
 
-** Step 2: Profiling**
+**Step 2: Profiling**
 
-.. figure:: ../../resources/publish/cint_step2_profiling.png
+.. figure:: ../../resources/publish/cint_profile.jpg
 	:scale: 70%
 	:align: center
 	:class: screenshot
@@ -187,7 +202,7 @@ Once the Basics have been outlined, clicking [Continue] will allow for a deeper 
 
 Once your target demographic has been fully finalized, clicking [Continue] brings you to the Overview screen which allows for you to double-check that your survey is indeed tailored for the desired target group.
 
-.. figure:: ../../resources/publish/cint_step3_overview.png
+.. figure:: ../../resources/publish/cint_overview.jpg
 	:scale: 70%
 	:align: center
 	:class: screenshot
