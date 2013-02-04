@@ -30,6 +30,7 @@ Many of the features provided by FluidSurveys are also accessible through a web-
 	:maxdepth: 2
 
 	api/authentication
+	api/accounts
 	api/surveys
 	api/invites
 	api/tutorial

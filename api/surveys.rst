@@ -146,7 +146,7 @@ Getting survey responses
 	}
 
 
-.. http:get:: /api/v2/surveys/:id/responses/XXXX/?_invite_code=XXXXX
+.. http:get:: /api/v2/surveys/:id/responses/?_invite_code=XXXXX
 
     You can also filter by any one of the response variables directly. In this example 
     we filter by a specific invite code through the meta-variable `_invite_code`.
