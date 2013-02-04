@@ -34,9 +34,10 @@ Generating a one-time login URL for a user
 	  "login-url": "http://fluidsurveys.com/accounts/login/?key=XXXXXXXXXXXXXXXXXXXXX"
 	}
 
-	Sample error response: ::
+    Sample error response: ::
+
 	{
-	  "success": false
+	  "success": false,
 	  "code": "not_authorized",
 	  "description": "Must specify a valid 'password' parameter for the specified user.",
 	}
