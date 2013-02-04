@@ -251,14 +251,17 @@ Other options are mainly options that do not strictly belong in a category on th
 	  - Description
 	* - 1. Keep users' responses even if they are invalidated by the respondent navigating down a different branching tree
 	  - If a respondent selects a series of responses only to realize that they are incorrect, if they go back and take an alternate route, their old responses will be saved.
-	* - 2. Enable Olark real-time chat plugin
+	* - 2. Set up a `webhook <http://en.wikipedia.org/wiki/Webhook>`_
+	  - Each time a survey is submitted, the response will be submited to the specified webhook.  The response will be a *x-www-form-urlencoded* POST, see :ref:`webhook-example`.
+	* - 3. Enable Olark real-time chat plugin
 	  - Enabling this option will allow you to engage in real-time chat with your respondents through your Olark account.
-	* - 3. Receive notifications
+	* - 4. Receive notifications
 	  - Receive a daily email notification to your registered email when your survey has received responses.
-	* - 4. Save Responses to Dropbox
+	* - 5. Save Responses to Dropbox
 	  - Enabling this option will cause a PDF version of each completed response to be saved your Dropbox account.
-	* - 5. Metatag Name
+	* - 6. Metatag Name
 	  - A Metatag is a data (information) about data. When customizing for a tablet, it is required that the viewport is added as a metatag, in order for a specific CSS rule to be fired when a tablet with a small screen triggers it. 
+
 
 Change Pages/Messages
 ^^^^^^^^^^^^^^^^^^^^^
@@ -417,3 +420,35 @@ Mass Translations can be found under [Publish].
 		2. The foundation language text
 
 	If the first row is changed, then you will receive a new translation file the next time you download the text file, or the [Upload] process may not work. Therefore, changing the first instance of "msgid" is advised against.
+
+
+
+Appendix
+^^^^^^^^
+
+.. _webhook-example:
+
+Example Webhook
+"""""""""""""""
+
+The webhook is an HTML POST to the specified URI.  It sends the response *x-www-form-urlencoded*.  Example::
+
+	POST /mr0gifmr HTTP/1.1
+	User-Agent: python-requests/0.14.2 CPython/2.7.2 Darwin/12.2.0
+	Host: requestb.in
+	Content-Type: application/x-www-form-urlencoded
+	Content-Length: 480
+	Connection: keep-alive
+	Accept-Encoding: gzip, deflate, compress
+	Accept: */*
+
+	_invite_email=N%2FA&_username=steve&_updated_at=2012-12-20+15%3A12%3A59.
+	187803&DVgCzH6FTZ=0&_weighted_score=4.0&_completion_time=00%3A00%3A04&_ex
+	tra_info=referer&_extra_info=weighted_score&Dth1mvziG4=Text+response+answ
+	er.&dbgn15lsoU=0&_key=ad7e55689f08501d12bb5850c05bbe018cfe063f&_get_varia
+	bles=TEST_DATA%3D&_ip_address=127.0.0.1&_created_at=2012-12-20+15%3A12
+	%3A55	&_referrer=http%3A%2F%2Ffluidsurveys.dev%3A8000%2Faccount%2F
+	surveys%2F4%2Fedit%2F&_completed=1&_language=en&_id=53
+
+See :ref:`survey-details` for more information about using our API to access
+details of the survey structure.

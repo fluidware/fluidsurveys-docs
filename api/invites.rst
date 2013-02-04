@@ -35,14 +35,14 @@ Getting a list of contacts
         "custom": ["field1"],
         "contacts": [{
 	  "id": 1,
-	  "uri": "http://app.fluidsurveys.com/api/v2/contacts/1/",
+	  "uri": "http://fluidsurveys.com/api/v2/contacts/1/",
 	  "name": "Peter Griffin",
 	  "email": "peter.griffin@example.com",
 	  "unsubscribed": false,
 	  "custom_field1": "field1"
 	}, {
 	  "id": 2,
-	  "uri": "http://app.fluidsurveys.com/api/v2/contacts/2/",
+	  "uri": "http://fluidsurveys.com/api/v2/contacts/2/",
 	  "name": "Joe Swanson",
 	  "email": "joe.swanson@example.com",
 	  "unsubscribed": false
@@ -65,7 +65,7 @@ Creating a contact
       {
         "contact": {
           "id": 15136498,
-	  "uri": "http://app.fluidsurveys.com/api/v2/contacts/15136498/",
+	  "uri": "http://fluidsurveys.com/api/v2/contacts/15136498/",
           "name": "Dave Jones",
           "email": "dave.jones@example.com",
           "unsubscribed": false
@@ -84,7 +84,7 @@ Getting contact details
       {
         "contact": {
           "id": 15136498,
-	  "uri": "http://app.fluidsurveys.com/api/v2/contacts/15136498/",
+	  "uri": "http://fluidsurveys.com/api/v2/contacts/15136498/",
           "name": "Dave Jones",
           "email": "dave.jones@example.com",
           "unsubscribed": false
@@ -119,8 +119,8 @@ Getting contact lists
       {
         "lists": [{
           "id": 1,
-	  "uri": "http://app.fluidsurveys.com/api/v2/contact-lists/1/",
-	  "contacts_uri": "http://app.fluidsurveys.com/api/v2/contact-lists/1/contacts/",
+	  "uri": "http://fluidsurveys.com/api/v2/contact-lists/1/",
+	  "contacts_uri": "http://fluidsurveys.com/api/v2/contact-lists/1/contacts/",
           "name": "People with Silly Walks",
           "contacts": 10
         }],
@@ -147,8 +147,8 @@ Getting contact list details
       {
         "list": {
           "id": 1,
-	  "uri": "http://app.fluidsurveys.com/api/v2/contact-lists/1/",
-	  "contacts_uri": "http://app.fluidsurveys.com/api/v2/contact-lists/1/contacts/",
+	  "uri": "http://fluidsurveys.com/api/v2/contact-lists/1/",
+	  "contacts_uri": "http://fluidsurveys.com/api/v2/contact-lists/1/contacts/",
           "name": "People with Silly Walks",
           "contacts": 10
         }
@@ -184,6 +184,74 @@ Removing contacts
 .. http:delete:: /api/v2/contact-lists/:id/contacts/
 
     Removes contacts from the specified contact list.
+
+
+Invite Codes
+------------
+
+In order to deploy your surveys in a trackable manner, you can use invite codes. While the 
+recommended method to deploy your surveys using invite codes is by creating contacts in your
+FluidSurveys address book (see above) and send an email to them (see below) which will auto-
+populate codes, we also allow you to generate invite codes for use with other systems.
+
+For the methods below, an optional parameter `collector` may be used, which must be the 
+id of a survey collector. If not provided, the default collector is assumed.
+
+Generating a list of invite codes
+`````````````````````````````````
+
+.. http:post:: /api/v2/surveys/:survey_id/invite-codes/
+
+    Generates invite codes for use with the survey/collector specified.
+    
+    :query collector: (optional) ID of the collector for which to generate invites.
+    :query count: The number (between 1 and 1000) of invite codes to generate
+
+    Sample response::
+
+	{
+	  "count": 1,
+	  "invites": [
+	    {
+	      "code": "XXXXXXXX",
+	      "invite_url": "http://fluidsurveys.com/s/somesurvey/?code=XXXXXXXX"
+	    }
+	  ]
+	}
+
+Retrieving generated invite codes
+`````````````````````````````````
+
+.. http:get:: /api/v2/surveys/:survey_id/invite-codes/
+
+    Returns a list of generated invite codes for the survey/collector specified. 
+    Pagination is supported through the `offset` and `limit` query parameters. 
+
+    :query offset: response pagination offset (defaults to 0).
+    :query limit: maximum number of results to return (defaults to 50 max is 200).
+    :query collector: (optional) ID of the collector for which to generate invites.
+
+    Sample response::
+
+	{
+	  "count": 2,
+	  "start": 0,
+	  "total": 2,
+	  "invites": [
+	    {
+	      "status": "Viewed",
+	      "code": "XXXXXXXX",
+	      "invite_url": "http://fluidsurveys.com/s/somesurvey/?code=XXXXXXXX"
+	    },
+	    {
+	      "status": "Completed",
+	      "code": "YYYYYYYY",
+	      "response_id": "XXXXX",
+	      "response_uri": "http://fluidsurveys.com/api/v2/surveys/:survey_id/responses/XXXXX/",
+	      "invite_url": "http://fluidsurveys.com/s/somesurvey/?code=YYYYYYYY"
+	    }
+	  ]
+	}
 
 Emails
 ------
@@ -226,9 +294,9 @@ Getting email details
 	"sender": "",
 	"subject": "Email subject",
 	"message": "Dear [Full Name],\n\nMessage body: [Invite Link]",
-	"uri": "http://app.fluidsurveys.com/api/v2/emails/1/",
-	"send_uri": "http://app.fluidsurveys.com/api/v2/emails/1/send/",
-	"recipients_uri": "http://app.fluidsurveys.com/api/v2/emails/1/recipients/",
+	"uri": "http://fluidsurveys.com/api/v2/emails/1/",
+	"send_uri": "http://fluidsurveys.com/api/v2/emails/1/send/",
+	"recipients_uri": "http://fluidsurveys.com/api/v2/emails/1/recipients/",
 	"num_recipients": 5
       }
 
@@ -282,7 +350,7 @@ Set up
 	We'll also save the base URI and Headers in some variables: ::
 
 		headers = {"Content-Type": "application/json"}
-		URI = 'https://app.fluidsurveys.com/api/v2/'
+		URI = 'https://fluidsurveys.com/api/v2/'
 		
 Create a Contact
 ````````````````
@@ -357,6 +425,15 @@ Send Email
 			u'id': 25206,
 			u'subject': u'Hello'
 		}
+
+Scheduling Invites
+``````````````````
+
+    In order to schedule invites some time in the future, you may append a `scheduled` variable to the end of the `send_uri`.
+
+    i.e., ``send_uri + '?scheduled=7'`` will schedule your invite 7 days from now.  You can specify the number of weeks, days, hours, and minutes by suffixing a number with the letters ``w, d, h,`` and ``m`` respectively:
+    
+    For example, appending ``'?scheduled=1w3d4h2m'`` to the `send_uri` will schedule your invite to send 1 week, 3 days, 4 hours, and 2 minutes from the time you submit your request.
 
 Source
 ``````
