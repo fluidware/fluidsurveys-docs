@@ -49,6 +49,47 @@ Survey Status
 
 .. _survey-details:
 
+
+Creating an empty Survey
+````````````````````````
+
+.. http:post:: /api/v2/surveys/?name=:name&password=:password
+
+	Creates an empty survey with `GET` parameter `name`.
+	Optionally allows you to set a password for report sharing.
+	
+    Sample response: ::
+
+	{
+		"report_url": "http://fluidsurveys.com/account/surveys/106/reports/",
+		"survey_uri": "http://fluidsurveys.com/surveys/bob/new-survey-1/",
+		"id": 106
+	}
+
+
+Duplicating an Existing Survey
+``````````````````````````````
+
+.. http:post:: /api/v2/surveys/:id/duplicate/
+
+	Duplicating a survey will create a new survey with the same set of questions, styles, and reports.
+
+    Sample response: ::
+
+	{
+		"id": 107,
+		"survey_url": "http://fluidsurveys.com/surveys/bob/mysurvey/"
+	}
+
+
+Deleting a Survey
+`````````````````
+
+.. http:delete:: /api/v2/surveys/:id/
+
+	Be careful!  This will delete your survey.
+
+
 Getting survey details
 ``````````````````````
 
@@ -81,6 +122,26 @@ You may also send a GET parameter called `structure` to receive the entire surve
 .. http:get:: /api/v2/surveys/:id/?structure
 
     This may be useful if you require advanced information such as if a question is required or not. 
+
+
+Survey Collectors
+`````````````````
+
+	You can view, add, and delete survey collectors at the following end points:
+
+.. http:get:: /api/v2/surveys/:id/collectors/
+
+	Returns a list of collectors on the survey.
+
+.. http:post:: /api/v2/surveys/:id/collectors/?name=New Collector
+
+	Creates a new collector for the survey with `name`.
+
+.. http:delete:: /api/v2/surveys/:id/collectors/?id=:collector_id
+
+	Deletes the collector with `id` *:collector_id* from the survey.
+
+
 
 Getting survey responses
 ````````````````````````
@@ -171,6 +232,17 @@ Creating a new response
 .. http:post:: /api/v2/surveys/:id/responses/
 
     Creates a new response to the survey specified by ``id``.
+
+
+Changing Response Status and Collector
+``````````````````````````````````````
+
+	If you have existing responses that you want to assign to a new collector and change from complete to incomplete you may do with the following end point.
+
+.. http:post:: /api/v2/surveys/:id/responses/:response_id/?completed=:status&collector=:collector_id
+
+	Where :status is either `1` or `true` for complete or `0` or `false` for incomplete.
+
 
 Submitting a new response
 `````````````````````````
