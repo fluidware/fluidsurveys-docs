@@ -53,17 +53,22 @@ Survey Status
 Creating an empty Survey
 ````````````````````````
 
-.. http:post:: /api/v2/surveys/?name=:name&password=:password
+.. http:post:: /api/v2/surveys/
+
+    :form name: The name for the new survey to create
 
 	Creates an empty survey with `GET` parameter `name`.
-	Optionally allows you to set a password for report sharing.
 	
     Sample response: ::
 
 	{
-		"report_url": "http://fluidsurveys.com/account/surveys/106/reports/",
-		"survey_uri": "http://fluidsurveys.com/surveys/bob/new-survey-1/",
-		"id": 106
+	  "id": XXXXX,
+	  "name": "New Survey",
+	  "uri": "http://fluidsurveys.com/api/v2/surveys/XXXXX/",
+	  "deploy_uri": "http://fluidsurveys.com/surveys/username/new-survey/",
+	  "report_url": "http://fluidsurveys.com/account/surveys/XXXXX/reports/",
+	  "responses_url": "http://fluidsurveys.com/account/surveys/XXXXX/responses/",
+	  "edit_url": "http://fluidsurveys.com/account/surveys/XXXXX/edit/"
 	}
 
 
@@ -72,13 +77,20 @@ Duplicating an Existing Survey
 
 .. http:post:: /api/v2/surveys/:id/duplicate/
 
+	:form name: The name to set on the duplicate survey
+
 	Duplicating a survey will create a new survey with the same set of questions, styles, and reports.
 
     Sample response: ::
 
 	{
-		"id": 107,
-		"survey_url": "http://fluidsurveys.com/surveys/bob/mysurvey/"
+	  "id": XXXXX,
+	  "name": "Duplicate Survey",
+	  "uri": "http://fluidsurveys.com/api/v2/surveys/XXXXX/",
+	  "deploy_uri": "http://fluidsurveys.com/surveys/username/duplicate-survey/",
+	  "report_url": "http://fluidsurveys.com/account/surveys/XXXXX/reports/",
+	  "responses_url": "http://fluidsurveys.com/account/surveys/XXXXX/responses/",
+	  "edit_url": "http://fluidsurveys.com/account/surveys/XXXXX/edit/"
 	}
 
 
@@ -141,6 +153,36 @@ Survey Collectors
 
 	Deletes the collector with `id` *:collector_id* from the survey.
 
+
+Survey Reports
+``````````````
+	
+	You can view, and modify information pertaining to reports at the following end points:
+
+.. http:get:: /api/v2/surveys/:id/reports/
+
+   Sample response: ::
+
+	{
+	  "count": 1,
+	  "reports_url": "http://fluidsurveys.com/account/surveys/325/reports/",
+	  "sharing_password": null,
+	  "reports": [
+	    {
+	      "report_url": "http://fluidsurveys.com/account/surveys/325/reports/162/",
+	      "id": 162,
+	      "title": "Summary Report"
+	    }
+	  ]
+	}
+.. http:post:: /api/v2/surveys/:id/reports/
+	
+	:form sharing_password: A password to set for report sharing.
+
+	This method allows you to modify parameters for reports in general. Currently, the
+	only supported action is to set a sharing password for the report-list page. Passing in
+	a value for	the `sharing_password` parameter will enable sharing on the reports page. 
+	Passing in this parameter with an empty value will disable sharing from the reports page.
 
 
 Getting survey responses
