@@ -47,17 +47,15 @@ Survey Status
 	
 .. http:post:: /api/v2/surveys/:id/status/?switch=closed
 
-.. _survey-details:
-
 
 Creating an empty Survey
 ````````````````````````
 
 .. http:post:: /api/v2/surveys/
 
-    :form name: The name for the new survey to create
+    :form name: The name for the new survey to create.
 
-	Creates an empty survey with `GET` parameter `name`.
+    Creates an empty survey with `GET` parameter `name`.
 	
     Sample response: ::
 
@@ -77,9 +75,9 @@ Duplicating an Existing Survey
 
 .. http:post:: /api/v2/surveys/:id/duplicate/
 
-	:form name: The name to set on the duplicate survey
+    :form name: The name to set on the duplicate survey
 
-	Duplicating a survey will create a new survey with the same set of questions, styles, and reports.
+    Duplicating a survey will create a new survey with the same set of questions, styles, and reports.
 
     Sample response: ::
 
@@ -175,6 +173,7 @@ Survey Reports
 	    }
 	  ]
 	}
+
 .. http:post:: /api/v2/surveys/:id/reports/
 	
 	:form sharing_password: A password to set for report sharing.
