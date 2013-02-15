@@ -237,3 +237,26 @@ Getting responses as a CSV
 .. http:get:: /api/v2/surveys/:id/csv/
 
     Returns details about the specified survey.
+
+Sending a new invitation
+````````````````````````
+
+.. http:post:: /api/v2/surveys/:id/send-survey/
+
+    Creates a new contact or finds an existing contact matching the name and email provided, and sends an survey invitation to them. Data must be sent as an :mimetype:`application/json`-encoded
+    dictionary, which must included the fields ``name``, ``email``, ``subject``, ``sender``, and ``message``.
+
+    ``Sender`` must be in the form ``"Name <email@example.com>"`` and ``message`` must include the string "``[Invite Link]``" in it.  This token is replaced with the URL at which the recipient may take the survey.
+
+    Sample request::
+
+      {
+    "name": "Jane Doe",
+	"email": "jane@google.com",
+	"subject": "Email subject",
+	"sender_name": "John Doe",
+	"sender_email": "john@google.com"
+	"message": "Dear [Full Name],\n\nMessage body: [Invite Link]"
+      }
+
+    Returns details about the send invitation.
