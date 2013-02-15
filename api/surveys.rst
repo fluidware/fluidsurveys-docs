@@ -47,7 +47,58 @@ Survey Status
 	
 .. http:post:: /api/v2/surveys/:id/status/?switch=closed
 
-.. _survey-details:
+
+Creating an empty Survey
+````````````````````````
+
+.. http:post:: /api/v2/surveys/
+
+    :form name: The name for the new survey to create.
+
+    Creates an empty survey with `GET` parameter `name`.
+	
+    Sample response: ::
+
+	{
+	  "id": XXXXX,
+	  "name": "New Survey",
+	  "uri": "http://fluidsurveys.com/api/v2/surveys/XXXXX/",
+	  "deploy_uri": "http://fluidsurveys.com/surveys/username/new-survey/",
+	  "report_url": "http://fluidsurveys.com/account/surveys/XXXXX/reports/",
+	  "responses_url": "http://fluidsurveys.com/account/surveys/XXXXX/responses/",
+	  "edit_url": "http://fluidsurveys.com/account/surveys/XXXXX/edit/"
+	}
+
+
+Duplicating an Existing Survey
+``````````````````````````````
+
+.. http:post:: /api/v2/surveys/:id/duplicate/
+
+    :form name: The name to set on the duplicate survey
+
+    Duplicating a survey will create a new survey with the same set of questions, styles, and reports.
+
+    Sample response: ::
+
+	{
+	  "id": XXXXX,
+	  "name": "Duplicate Survey",
+	  "uri": "http://fluidsurveys.com/api/v2/surveys/XXXXX/",
+	  "deploy_uri": "http://fluidsurveys.com/surveys/username/duplicate-survey/",
+	  "report_url": "http://fluidsurveys.com/account/surveys/XXXXX/reports/",
+	  "responses_url": "http://fluidsurveys.com/account/surveys/XXXXX/responses/",
+	  "edit_url": "http://fluidsurveys.com/account/surveys/XXXXX/edit/"
+	}
+
+
+Deleting a Survey
+`````````````````
+
+.. http:delete:: /api/v2/surveys/:id/
+
+	Be careful!  This will delete your survey.
+
 
 Getting survey details
 ``````````````````````
@@ -81,6 +132,57 @@ You may also send a GET parameter called `structure` to receive the entire surve
 .. http:get:: /api/v2/surveys/:id/?structure
 
     This may be useful if you require advanced information such as if a question is required or not. 
+
+
+Survey Collectors
+`````````````````
+
+	You can view, add, and delete survey collectors at the following end points:
+
+.. http:get:: /api/v2/surveys/:id/collectors/
+
+	Returns a list of collectors on the survey.
+
+.. http:post:: /api/v2/surveys/:id/collectors/?name=New Collector
+
+	Creates a new collector for the survey with `name`.
+
+.. http:delete:: /api/v2/surveys/:id/collectors/?id=:collector_id
+
+	Deletes the collector with `id` *:collector_id* from the survey.
+
+
+Survey Reports
+``````````````
+	
+	You can view, and modify information pertaining to reports at the following end points:
+
+.. http:get:: /api/v2/surveys/:id/reports/
+
+   Sample response: ::
+
+	{
+	  "count": 1,
+	  "reports_url": "http://fluidsurveys.com/account/surveys/325/reports/",
+	  "sharing_password": null,
+	  "reports": [
+	    {
+	      "report_url": "http://fluidsurveys.com/account/surveys/325/reports/162/",
+	      "id": 162,
+	      "title": "Summary Report"
+	    }
+	  ]
+	}
+
+.. http:post:: /api/v2/surveys/:id/reports/
+	
+	:form sharing_password: A password to set for report sharing.
+
+	This method allows you to modify parameters for reports in general. Currently, the
+	only supported action is to set a sharing password for the report-list page. Passing in
+	a value for	the `sharing_password` parameter will enable sharing on the reports page. 
+	Passing in this parameter with an empty value will disable sharing from the reports page.
+
 
 Getting survey responses
 ````````````````````````
@@ -171,6 +273,17 @@ Creating a new response
 .. http:post:: /api/v2/surveys/:id/responses/
 
     Creates a new response to the survey specified by ``id``.
+
+
+Changing Response Status and Collector
+``````````````````````````````````````
+
+	If you have existing responses that you want to assign to a new collector and change from complete to incomplete you may do with the following end point.
+
+.. http:post:: /api/v2/surveys/:id/responses/:response_id/?completed=:status&collector=:collector_id
+
+	Where :status is either `1` or `true` for complete or `0` or `false` for incomplete.
+
 
 Submitting a new response
 `````````````````````````
