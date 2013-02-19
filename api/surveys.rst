@@ -199,6 +199,7 @@ Getting survey responses
     :query limit: maximum number of results to return (defaults to 50 max is 200).
     :query filter: name of the filter you wish to filter responses by
     :query expand_GET: whether to format the GET variables as JSON instead of querystring.
+    :query include_url: whether to include a direct url to the response (for editing).
 
     Examples:
 
