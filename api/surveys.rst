@@ -91,6 +91,26 @@ Duplicating an Existing Survey
 	  "edit_url": "http://fluidsurveys.com/account/surveys/XXXXX/edit/"
 	}
 
+Renaming an Existing Survey
+```````````````````````````
+
+.. http:post:: /api/v2/surveys/:id/rename/
+
+    :form name: The new name to set on the survey
+
+    Renaming a survey will only affect the survey name for display purposes.
+
+    Sample response: ::
+
+	{
+	  "id": XXXXX,
+	  "name": "Renammed Survey",
+	  "uri": "http://fluidsurveys.com/api/v2/surveys/XXXXX/",
+	  "deploy_uri": "http://fluidsurveys.com/surveys/username/duplicate-survey/",
+	  "report_url": "http://fluidsurveys.com/account/surveys/XXXXX/reports/",
+	  "responses_url": "http://fluidsurveys.com/account/surveys/XXXXX/responses/",
+	  "edit_url": "http://fluidsurveys.com/account/surveys/XXXXX/edit/"
+	}
 
 Deleting a Survey
 `````````````````
