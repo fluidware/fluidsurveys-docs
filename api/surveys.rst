@@ -68,7 +68,14 @@ Creating an empty Survey
 	  "responses_url": "http://fluidsurveys.com/account/surveys/XXXXX/responses/",
 	  "edit_url": "http://fluidsurveys.com/account/surveys/XXXXX/edit/"
 	}
+	
+Creating a Survey with your own JSON
+````````````````````````````````````
 
+You can define your own survey by writing the JSON your self.  This is an advanced topic and your should be comfortable working with
+JSON before you attempt to create your own surveys.
+
+If you're ready, check out out the details: :ref:`survey-json`
 
 Duplicating an Existing Survey
 ``````````````````````````````
