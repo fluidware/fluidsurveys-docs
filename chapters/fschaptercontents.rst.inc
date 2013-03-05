@@ -16,4 +16,5 @@ Thank you to all our clients who made getting to this point (the neccesity to wr
 	chapters/Publish/index
 	chapters/Invite/index
 	chapters/Analyze/index
+	chapters/White Label/index
 	chapters/Blog/index
