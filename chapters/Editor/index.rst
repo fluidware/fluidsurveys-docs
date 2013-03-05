@@ -24,6 +24,7 @@ Therefore, this chapter will teach you how to:
 .. toctree::
 	:maxdepth: 2
 
+	livesurvey
 	editorfeatures
 	basicquestions
 	advancedquestions
