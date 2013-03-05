@@ -264,7 +264,7 @@ multiple responses to the same survey, you must use different collectors.
 Creating a new email
 ````````````````````
 
-.. http:post:: /api/v2/emails/
+.. http:post:: /api/v2/emails/?survey=survey_id
 
     Creates a new email. Data must be sent as an :mimetype:`application/json`-encoded
     dictionary.  Which must included the fields ``subject``, ``sender``, and ``message``.
