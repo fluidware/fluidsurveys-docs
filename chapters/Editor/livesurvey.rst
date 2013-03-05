@@ -1,15 +1,15 @@
 .. _Live Survey:
 
 Alterations to a Live Survey
-===========================
+============================
 
 More often than not, you may realize you made a mistake on a survey that has already been distributed, collected tons of responses from your target audience, and you wonder, "If I make a change, will it alter my data?". Fear not, you do have some editing capabilities available.
 
 What can I alter?
 -----------------
 
-Any changes applied to your survey will not:
-
+Any changes applied to your survey will not
+:
 1. Alter the existing Survey link
 2. Produce a new Survey Link
 
@@ -29,8 +29,6 @@ But, there are a few of editing possibilities available:
 Editing a Survey
 ----------------
 
-<<need picture>>
-
 If your survey has valid response data, ie., not marked with **(TEST DATA)**, you must click "I agree" to the warning which states that you understand what may happen based on your changes. Once agreed, you can edit the survey in the same manner you've already grown accustomed to, eg., clicking the [Edit] icon, located to the right of your survey title
 
 .. note::
@@ -38,7 +36,7 @@ If your survey has valid response data, ie., not marked with **(TEST DATA)**, yo
 	You do not need to close your survey when making the necessary changes.
 
 Adding New Questions in a Live Survey
----------------------------------
+-------------------------------------
 
 Be mindful when adding questions to your survey when analyzing your responses.
 
@@ -84,5 +82,3 @@ Editing the Survey Theme and/or Question(s)
 -------------------------------------------
 
 Adjusting your surveys Theme, eg., Background colour, Font Size, Question Width, etc., will not affect your response data.
-
-
