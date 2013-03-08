@@ -1,6 +1,3 @@
-..	image:: /resources/fluidsurveys_banner.png
-	:alt: FluidSurveys: Empowering Feedback
-
 Version 4.0
 ===========
 
