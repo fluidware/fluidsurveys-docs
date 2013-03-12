@@ -35,7 +35,7 @@ Creating a webhook
 
       {
         "subscription_url": "http://fluidsurveys.com/api/v2/callback/",
-        "event": "response.completed",
+        "event": "response_complete",
         "survey": 1,
         "collector": 1
       }
@@ -57,7 +57,7 @@ Available Events
 Survey Created
 ``````````````
 
-survey.created
+survey_create
 
     Triggered when a new survey is created on your account.
 
@@ -80,7 +80,7 @@ survey.created
 Survey Response Completed
 `````````````````````````
 
-response.completed
+response_complete
 
     Triggered when a new response is completed. This is account wide, unless a survey 
     is provided when creating the webhook. A collector may also be provided during 
@@ -107,7 +107,7 @@ response.completed
 Report Created
 ``````````````
 
-report.created
+report_create
 
     Triggered when a new report is created. This is account wide, unless a survey 
     is provided when creating the webhook.
@@ -132,7 +132,7 @@ report.created
 Contact Created
 ```````````````
 
-contact.created
+contact_create
 
    Triggered when a new contact is created. This is account wide.
 
