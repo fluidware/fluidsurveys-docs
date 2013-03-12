@@ -337,3 +337,10 @@ dl pre, blockquote pre, li pre {
     margin-left: -60px;
     padding-left: 60px;
 }
+
+cite {
+	font-family: Consolas, 'Liberation Mono', Courier, monospace;
+	background-color: rgb(234, 234, 234);
+	font-style: normal;
+	padding: 1px;
+}

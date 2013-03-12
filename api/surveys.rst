@@ -68,7 +68,14 @@ Creating an empty Survey
 	  "responses_url": "http://fluidsurveys.com/account/surveys/XXXXX/responses/",
 	  "edit_url": "http://fluidsurveys.com/account/surveys/XXXXX/edit/"
 	}
+	
+Creating a Survey with your own JSON
+````````````````````````````````````
 
+You can define your own survey by writing the JSON your self.  This is an advanced topic and your should be comfortable working with
+JSON before you attempt to create your own surveys.
+
+If you're ready, check out out the details: :ref:`survey-json`
 
 Duplicating an Existing Survey
 ``````````````````````````````
@@ -91,6 +98,26 @@ Duplicating an Existing Survey
 	  "edit_url": "http://fluidsurveys.com/account/surveys/XXXXX/edit/"
 	}
 
+Renaming an Existing Survey
+```````````````````````````
+
+.. http:post:: /api/v2/surveys/:id/rename/
+
+    :form name: The new name to set on the survey
+
+    Renaming a survey will only affect the survey name for display purposes.
+
+    Sample response: ::
+
+	{
+	  "id": XXXXX,
+	  "name": "Renammed Survey",
+	  "uri": "http://fluidsurveys.com/api/v2/surveys/XXXXX/",
+	  "deploy_uri": "http://fluidsurveys.com/surveys/username/duplicate-survey/",
+	  "report_url": "http://fluidsurveys.com/account/surveys/XXXXX/reports/",
+	  "responses_url": "http://fluidsurveys.com/account/surveys/XXXXX/responses/",
+	  "edit_url": "http://fluidsurveys.com/account/surveys/XXXXX/edit/"
+	}
 
 Deleting a Survey
 `````````````````
@@ -199,6 +226,7 @@ Getting survey responses
     :query limit: maximum number of results to return (defaults to 50 max is 200).
     :query filter: name of the filter you wish to filter responses by
     :query expand_GET: whether to format the GET variables as JSON instead of querystring.
+    :query include_url: whether to include a direct url to the response (for editing).
 
     Examples:
 
