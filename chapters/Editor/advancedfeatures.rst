@@ -7,6 +7,7 @@ This chapter will teach you how to:
 
 * Randomize questions on a page
 * How to randomize questions
+* Advanced Expression Piping
 * Advanced Branching
 * Looping
 * Fully complete your knowledge banks of FluidSurveys Editor features
@@ -179,6 +180,224 @@ Dragging over {{ film }} (a question identifier on Page 1) into the Question Tit
 .. tip::
 
 	One of the unsung hero features is that you can pipe in custom fields that you have already uploaded into your address book. Let’s say that you have uploaded the contact info for 100 people into your address book and that one of these fields is “City”. You could then pipe this value into a question like: “How long have you lived in {{ invite.city }}. The correct value would then be inserted for each contact who responds. We won't go into too much detail about this here, but you can check the Email section of the manual, which talks about Custom Variables, to learn more.
+
+Advanced Expression Piping
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+While piping provides the ability to take answers from one question in your survey, and use them with questions either on a later page (or on the same page), Advanced Expression Piping (AEP) allows for you to take that same basic principle, but power it with the same style of functionality that Microsoft Excel offers. But, before jumping into AEP, refer to the `"Piping"`_ section in the Documentation to learn the basic principles.
+
+.. _"Piping": http://docs.fluidsurveys.com/chapters/Editor/advancedfeatures.html#piping
+
+In essence, AEP allows for the use of code to perform simple (or complex) math operations in your survey, wherein you can then display the output to the respondent and record it in your response data. Furthermore, AEP can reduce the use/need for Custom JavaScript in your survey when desiring simple mathematical operations, such as addition, subtraction, or even when only wishing to display certain elements of a word, such as "Fluid" from "FluidSurveys". With AEP, you can perform math calculations and operations in real-time while the respondent is taking the survey, which can assist in calculating the cost, total, max, min, etc.
+
+AEP works on a very basic principle::
+
+	expression = identifier 
+
+.. warning::
+
+	An identifier must start with a letter and can only contain either letters, digits, underscore, eg., ``anIdentifier_``
+
+An equation must start with {{ contain the function, or identifier, and end with }}. 
+
+**Possible Constants**
+
+Within Advanced Expression Piping, your expressions can only consist of either an 1) string, 2) float, 3) integer, 4) list. Expressions are short for identifiers. Therefore, your identifiers must adhere to the aforementioned standard, wherein the values contained in the identifiers can only be:
+
+.. list-table:: 
+	:widths: 35 70
+	:header-rows: 1
+
+	* - Constant
+	  - Description
+	* - string
+	  - An expression that start and end with single quotes. Examples: 'abcd', '123'
+	* - float
+	  - An expression that consist of decimal numbers, eg., 3.0, 10.33, 99.5
+	* - integer
+	  - An expression that consist of whole numbers, eg., 0 100 2013
+	* - list
+	  - An expression that starts and ends with square bracket. eg., [1,2,3], ['a', 'b', 'c']
+
+**Possible Attributes**
+
+Attributes are used as simple anchors that return specific information about a certain expression, eg., q1, or about a invite email, eg., user.email. As a result, attributes are used for .score, .label.
+
+.. tip::
+
+	The identifier.attribute is perfect for building your own quizzes, where you can add up section totals as opposed to only getting the entire surveys score back via the Scoring Question Type. For instance, Section 1, {{ q1.score + q2.score }}, Section 2 {{ q3.score + q4.score }} allow to create section based quizzes.
+
+.. list-table:: 
+	:widths: 35 65
+	:header-rows: 1
+
+	* - Attribute
+	  - Description
+	* - identifier.attribute
+	  - Return the score of a question, or all the values entered in a question, or the exact survey URL + its GET Variables or Invite Codes. eg (respective order)., q1.score, q1.label, collector.url. Other possible attributes are user.email, invite.first_name
+	* - index.identifier
+	  - Return only specific index values, eg., q1[0].label returns everything entered for Row 1, and q2[2].score returns only the score for choice 2
+	* - array.identifier
+	  - Return for only a range of values, eg., q1[0:2].label returns everything for rows and columns 1 and 2, while q2[:1].score will return only column 1 scores
+
+.. note::
+
+	Here is a sample survey to give hands-on practice with Array AEP: http://fluidsurveys.com/s/attribute-aep/
+
+**Possible Arrays**
+
+Arrays allow for you to create a series of 'arrays' that contain certain words, as opposed to the entirety of the word. For instance, you can create an array for "FluidSurveys", and manipulate it to return only certain letters.
+
+.. tip::
+
+	If you wish to calculate the row, or column of a question, then arrays make the most sense when your survey contains a 3D Matrix Question Type. This will allow for you to calculate only 1 (or mulitple) row, or 1 (or mulitple) column without having to resort to Custom JavaScript Development
+
+.. list-table:: 
+	:widths: 35 65
+	:header-rows: 1
+
+	* - Array
+	  - Description
+	* - identifier[expression:expression]
+	  - Create an array based on 2 expressions, eg.,: q1[0:2] will produce "slot 1, slot 2". **Note** if your question contains 3 rows, and you wish to calculate all values provided by the respondent, then put 0:3
+	* - identifier[expression:]
+	  - Will only take the values from the rows in a question, eg., q1[3:] will return values for 3 rows. **Note**: Only works in 3D Matrix Question
+	* - identifier[:expression] 
+	  - Will only take the values from the columns in a question, eg., q1[:2] will return values for 2 columns. **Note**: Only works in 3D Matrix Question
+	* - identifier[:] 
+	  - Returns **all** numbers in your question, eg., q1[:], returns, "1, 2, 3, 4"
+
+.. note::
+
+	Here is a sample survey to give hands-on practice with Array AEP: http://fluidsurveys.com/s/arrays-aep/
+
+Arrays can be used when dealing with Functions (seen below), in that you can have {{ SUM(q1[0:2]) }} and it will calculate all values for 2 rows.
+
+**Possible Index**
+
+Once your array is understood, and you wish to go inside the array itself, you can provide an index, where you can return only certain letters. For instance, if you only care to return the letter at index 0 (First letter) in the "FluidSurveys", it would return the "F"
+
+.. list-table:: 
+	:widths: 35 65
+	:header-rows: 1
+
+	* - Index
+	  - Description
+	* - identifier[expression]
+	  - Return only 1 Examples: q1[0]
+	* - array[expression] 
+	  - Examples: q1[1:][0]
+	* - identifier.integer  
+	  - Examples: q1.0
+
+.. note::
+
+	Here is a sample survey to give hands-on practice with Array AEP: http://fluidsurveys.com/s/index-aep/
+
+**Possible Expressions:**
+
+Expressions allow for basic math operations, such as addition, subtraction to be performed on variables, thus providing the same level of interaction as you would receive in Microsoft Excel when manipulating cells.
+
+.. list-table:: 
+	:widths: 35 65
+	:header-rows: 1
+
+	* - Expression
+	  - Description
+	* - expression1 + expression2
+	  - Will perform addition on 2 identifiers, eg., 1 + 1 is 2
+	* - expression1 - expression2
+	  - Will perform subtraction on 2 identifiers, eg., 1 - 1 is 0
+	* - expression1 * expression2
+	  - Will perform multiplication on 2 identifiers, eg., 1 * 1 is 1
+	* - expression1 / expression2
+	  - Will perform division on 2 identifiers, eg., 1 / 1 is 1
+	* - not expression
+	  - Compares 2 expressions to ensure that they are equal, or not, eg., not (1 = 1) is true
+	* - expression1 and expression2
+	  - Will append expression2 to the overall value, where expression1 is a math operation, eg., 1 + 2 = 2 + 1 and 2 > 1 is true
+	* - expression1 or expression2
+	  - Will append subtraction on 2 identifiers, where expression1 is a math operation, eg., 1 + 2 = 2 + 1 or 2 > 1 is true
+	* - expression1 = expression2
+	  - Will append 1 expression, eg., 1 + 1, with another expression eg., 2 + 2 to allow for deeper mathematical operations. For instance, 2 = 1 + 1 is true because 1 + 1 = 2
+	* - expression1 > expression2
+	  - Will return if expression1 is greater than expression2, eg., 1 > 1 produces **false**
+	* - expression1 < expression2
+	  - Will return if expression1 is less than expression2, eg., 1 < 2 produces **true**
+	* - expression1 >= expression2 
+	  - Will return if expression1 is less than expression2, eg., 1 >= 1 produces **true**
+	* - expression1 <= expression2 
+	  - Will return if expression1 is less than expression2, eg., 1 <= 2 produces **true**
+	* - expression1 != expression2
+	  - Compares 2 expressions to ensure that they are equal, or not, eg., 1 != 1 is **false**, whereas 1 != 2 is **true**
+
+.. warning::
+
+	The and, or, not expressions can only be used to compare mulitple variables together, eg., {{ q1.0 + q1.1 = q1.2 + q1.3 and q1.4 > q1.5 }} will compare the following math operation, (1 + 2 = 2 + 1 and if 4 > 5). Since the first to operations (1 + 2 = 2 + 1) both return 3 = 3, the flag will remain "false" as long as 4 > 5, which is false. Therefore, the operation will return false.
+
+.. note::
+
+	Here is a sample survey to give hands-on practice with Expression AEP: http://fluidsurveys.com/s/expressions-aep/
+
+**Possible Functions:**
+
+Functions provide the same level of interaction per variable, eg., {{ q1.0 }} as you would receive in Microsoft Excel when interacting with multiple cells. 
+
+.. list-table:: 
+	:widths: 25 65
+	:header-rows: 1
+
+	* - Function
+	  - Description
+	* - SUM(expression,...)
+	  - In a list of 3 numbers, eg., "1, 2, 3", it will return the sum of all parameters: **6**
+	* - MAX(expression,...) 
+	  - In a list of 3 numbers, eg., "4, 5, 6", it will return the maximum over all parameters: **6**
+	* - MIN(expression,...) 
+	  - In a list of 3 numbers, eg., "7, 8, 9", it will return the minimum over all parameters: **7**
+	* - AVG(expression,...)  
+	  - In a list of 3 numbers, eg., "10, 11, 12", it will return the average over all parameters: **11**
+	* - CONCAT(expression,...) 
+	  - Will return the joined string over all params, eg., "a b" yields **ab**
+	* - COALESCE(expression,...)  
+	  - In a list of 3 items, eg., "1, , 3", it will return the first non-empty parameter in all parameters: **1**
+	* - INT(expression)  
+	  - In a list of 3 decimal values eg., "1.1, 2.2, 3.3", it will transform the parameter into an integer (whole number): **7**
+	* - STR(expression)
+	  - Transforms the parameter into a string, eg., 1 becomes "1"
+	* - REAL(expression)
+	  - Transforms the parameter into a real number, eg., 7 becomes 7.0
+	* - SUBSTR(expression,expression[,expression])z
+	  - Returns the substring of the first parameter starting from the second parameter (and ending at the third parameter if it exists). 
+	* - INDEXOF(expression,expression)  
+	  - Returns the index of the second parameter in the first parameter. *Only for string parameters*
+	* - CONTAINS(expression,expression) **[Coming Soon]**
+	  - In a list of 2 strings, eg., "FluidSurveys, "Fluid", it will check if the first parameter includes the second parameter: **False**
+	* - CONTAINSONEOF(expression,expression) **[Coming Soon]**
+	  - In a list of 2 strings, eg., "FluidSurveys, "Fluid", it will check if the first parameter includes one of the second parameter: **True**
+	* - INTERSECT(expression,expression) **[Coming Soon]**  
+	  - In a list of 6 numbers, eg., "1, 2, 3" and "2, 3, 4", it will return the intersection of the two parameters: **2, 3**
+	* - ISNULL(expression) **[Coming Soon]**
+	  - Checks if the parameter is empty or not, eg., if q1 = no response, then it will return **True**
+	* - LENGTH(expression) **[Coming Soon]**
+	  - In a list of 1 string, eg., "FluidSurveys", it will return the length or size of the parameter: **12**
+
+.. warning::
+
+	There cannot be a space between expressions and commas, eg., {{ SUM(q1,q2) }} **Note**: the lack of space between expressions within the parenthesis
+
+.. note::
+
+	Here is a sample survey to give hands-on practice with Function AEP: http://fluidsurveys.com/s/function-aep/
+
+From here, it is possible to combine Functions, Expressions, with Index, Attributes all using Constants. Therefore, you can provide complex arithemtic in real-time to your client, wherein you can produce a truly unique survey, as well as strongly building a deeper back-end data catalog.
+
+Stay tuned for future updates to Advanced Expression Piping such as:
+
+	* Assignment, eg., varaible = {{ q1.0 + q1.1 }} 
+	* IF/THEN expression piping
+	* Filters based on Advanced Expression Piping
+	* ... and much much more
 
 Branching
 ^^^^^^^^^
