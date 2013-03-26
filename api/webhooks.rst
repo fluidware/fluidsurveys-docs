@@ -63,12 +63,18 @@ survey.created
 
     Sample callback::
 
-      {
-        "survey_name": "New Survey",
-        "survey_url": "http://fluidsurveys.com/s/newsurvey/",
-        "survey_creator_name": "John Doe",
-        "survey_creator_email": "john@example.com"
-      }
+	POST /your-survey-callback HTTP/1.1
+	User-Agent: python-requests/0.14.2 CPython/2.7.2 Darwin/12.3.0
+	Host: requestb.in
+	Content-Type: application/x-www-form-urlencoded
+	Content-Length: 165
+	Connection: close
+	Accept-Encoding: gzip, deflate, compress
+	Accept: */*
+
+	survey_creator_name=&survey_name=MADE+A+NEW+SURVEY&survey_creat
+	or_email=bob@example.com&survey_url=http%3A%2F%2Fexample.com%2
+	Fsurveys%2Fbob%2Fmade-a-new-survey%2F
 
 
 Survey Response Completed
@@ -82,17 +88,20 @@ response.completed
 
     Sample callback::
 
-      {
-        "language": "en",
-        "referrer": "https://fluidsurveys.com/s/newsurvey/",
-        "created_at": "01/01/2013",
-        "survey_name": "New Survey",
-        "updated_at": "02/01/2013",
-        "survey_url": "https://fluidsurveys.com/s/newsurvey/",
-        "score": 0,
-        "invite_email": "john@example.com",
-        "id": 1
-      }
+	POST /your-response-callback HTTP/1.1
+	User-Agent: python-requests/0.14.2 CPython/2.7.2 Darwin/12.3.0
+	Host: requestb.in
+	Content-Type: application/x-www-form-urlencoded
+	Content-Length: 255
+	Connection: close
+	Accept-Encoding: gzip, deflate, compress
+	Accept: */*
+
+	score=0&invite_email=N%2FA&language=en&referrer=http%3A%2F%2Ffl
+	uidsurveys.com%2Faccount%2F&created_at=26%2F03%2F2013+02
+	%3A26PM&survey_name=m3&updated_at=26%2F03%2F2013+02%3A26PM&surv
+	ey_url=http%3A%2F%2Fexample.com%2Fsurveys%2Fbob%2Fm3-1%2F&id=
+	276
 
 
 Report Created
@@ -105,12 +114,19 @@ report.created
 
     Sample callback::
 
-      {
-        "report_url": "https://fluidsurveys.com/account/surveys/1/reports/1/",
-        "report_creator_name": "John Doe",
-        "report_creator_email": "john@example.com",
-        "survey_url": "http://fluidsurveys.com/s/newsurvey/"
-      }
+	POST /your-report-callback HTTP/1.1
+	User-Agent: python-requests/0.14.2 CPython/2.7.2 Darwin/12.3.0
+	Host: requestb.in
+	Content-Type: application/x-www-form-urlencoded
+	Content-Length: 190
+	Connection: close
+	Accept-Encoding: gzip, deflate, compress
+	Accept: */*
+
+	report_url=%2Faccount%2Fsurveys%2F230%2Freports%2F7%2F&report_
+	creator_name=&report_creator_email=bob@example.com&survey_url
+	=http%3A%2F%2Fexample.com%2Fsurveys%2Fbob%2Fmade-a-new-surve
+	y%2F
 
 
 Contact Created
@@ -122,7 +138,14 @@ contact.created
 
    Sample callback::
 
-      {
-        "name": "John Doe",
-        "email": "john@example.com"
-      }
+	POST /your-contact-callback HTTP/1.1
+	User-Agent: python-requests/0.14.2 CPython/2.7.2 Darwin/12.3.0
+	Host: requestb.in
+	Content-Type: application/x-www-form-urlencoded
+	Content-Length: 30
+	Connection: close
+	Accept-Encoding: gzip, deflate, compress
+	Accept: */*
+
+	name=Joe&email=joe%40example.com
+	

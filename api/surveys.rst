@@ -318,8 +318,6 @@ Submitting a new response
 
 .. http:post:: /api/v2/surveys/:id/responses/
 
-    *Note:* Submitting responses currently only works on single page surveys.
-
     Submits a new response.  Send a post request as *application/json* with a dictionary of question ids and response values.
 
     You will get a ``{success:true, id:response_id}`` response if your request was successful.
@@ -348,9 +346,6 @@ Submitting a new response
 	                 ]
 	}
 
-    You can also send a standard *application/x-www-form-urlencoded* POST request.  e.g. ::
-
-	5yEXFv1Bob=hello%20world&zIthHJ9tvZ=0&DiBzfaXB6b=1
 
 Uploading a CSV
 ```````````````
