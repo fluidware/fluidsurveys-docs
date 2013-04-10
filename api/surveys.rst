@@ -320,31 +320,7 @@ Submitting a new response
 
     Submits a new response.  Send a post request as *application/json* with a dictionary of question ids and response values.
 
-    You will get a ``{success:true, id:response_id}`` response if your request was successful.
-
-    If there is an error, the sever will return a **status code 500** with JSON:
-
-    Example: ::
-
-	import requests, json
-	uri = 'https://fluidsurveys.com/api/v2/survey/55023/responses/'
-	API_KEY = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-	PASSWORD = 'password'
-	headers = {'Content-Type': 'application/json'}
-	payload = {'DiBzfaXB6b': '3'}	#must post strings
-	r = requests.post(uri,data=json.dumps(payload), 
-		headers=headers, auth=(API_KEY,PASSWORD))
-	response = r.content	
-
-    Sample response: ::
-
-	{
-	  "code": "survey_error",
-	  "description": [
-	                  ["DiBzfaXB6b", "'3' is not a valid choice for this field"],
-	                  ["5yEXFv1Bob", "An answer to this question is required."]
-	                 ]
-	}
+    You will get a `{success:true, id:response_id}` response if your request was successful.
 
 
 Uploading a CSV
