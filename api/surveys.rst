@@ -308,7 +308,7 @@ Changing Response Status and Collector
 
 	If you have existing responses that you want to assign to a new collector and change from complete to incomplete you may do with the following end point.
 
-.. http:post:: /api/v2/surveys/:id/responses/:response_id/?completed=:status&collector=:collector_id
+.. http:put:: /api/v2/surveys/:id/responses/:response_id/?completed=:status&collector=:collector_id
 
 	Where :status is either `1` or `true` for complete or `0` or `false` for incomplete.
 
