@@ -236,6 +236,16 @@ Getting survey responses
     You may also use one of the pre-defined filters: *completed*, *invite_emails*, 
     or *invite_codes*.
 
+    You may also create filters on the fly by specifying query parameters.  For example:
+
+.. http:get:: /api/v2/surveys/:id/responses/?_completed=1
+
+    to get all completed responses.  You can use named question identifiers or raw question ids
+    as the query parameter and also use greater than or less than operators.
+
+.. http:get:: /api/v2/surveys/:id/responses/?_created_at>2013-04-29
+
+
 
     Sample response: ::
 
