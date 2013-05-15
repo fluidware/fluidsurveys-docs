@@ -41,6 +41,29 @@ Generating a one-time login URL for a user
 	  "code": "not_authorized",
 	  "description": "Must specify a valid 'password' parameter for the specified user.",
 	}
+	
+Create a User
+`````````````
+
+You can create a new user account and set their username, email, and password with the following
+
+.. http:post:: /api/v2/accounts/users/
+
+    :form email: email address of the user to create
+    :form password: if omitted the default password will be set to `abc123`
+    :form username: an optional username for the user
+
+     Sample response: ::
+
+	{
+	  "username": "bob",
+	  "plan": "http://myaccount.fluidsurveys.com/api/v2/plan/enterprise/",
+	  "id": 6,
+	  "plan_name": "enterprise",
+	  "uri": "http://myaccount.fluidsurveys.com/api/v2/user/6/",
+	  "resources": {},
+	  "email": "bob@example.com"
+	}
 
 
 Groups
