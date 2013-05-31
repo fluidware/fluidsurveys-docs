@@ -47,7 +47,7 @@ Create a User
 
 You can create a new user account and set their username, email, and password with the following
 
-.. http:post:: /api/v2/accounts/users/
+.. http:post:: /api/v2/users/
 
     :form email: email address of the user to create
     :form password: if omitted the default password will be set to `abc123`
