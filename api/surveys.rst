@@ -372,13 +372,14 @@ Sending a new invitation
 
     Sample request::
 
-      {
-    "name": "Jane Doe",
-	"email": "jane@google.com",
-	"subject": "Email subject",
-	"sender_name": "John Doe",
-	"sender_email": "john@google.com"
-	"message": "Dear [Full Name],\n\nMessage body: [Invite Link]"
-      }
+	{
+	    "name": "Jane Doe",
+	    "email": "jane@google.com",
+	    "subject": "Email subject",
+	    "sender_name": "John Doe",
+	    "sender_email": "john@google.com",
+	    "message": "Dear [Full Name],\n\nMessage body: [Invite Link]"
+	}
 
     Returns details about the send invitation.
+
