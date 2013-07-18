@@ -435,6 +435,16 @@ Scheduling Invites
     
     For example, appending ``'?scheduled=1w3d4h2m'`` to the `send_uri` will schedule your invite to send 1 week, 3 days, 4 hours, and 2 minutes from the time you submit your request.
 
+
+Sending Reminders
+`````````````````
+
+	To send a reminder for you invite use the following endpoint:
+
+	.. http:post:: /api/v2/emails/:id/reminder/
+	
+	You may optionally send the same form data as when creating an invite: `subject` and `message` but if not default text will be sent.
+
 Source
 ``````
 	Download the source file:
