@@ -328,9 +328,29 @@ Submitting a new response
 
 .. http:post:: /api/v2/surveys/:id/responses/
 
+	:form <quesitonid>: as many questionid/value pairs that you wish to update
+
+
     Submits a new response.  Send a post request as *application/json* with a dictionary of question ids and response values.
 
-    You will get a `{success:true, id:response_id}` response if your request was successful.
+    You will get a `{success:true, id:response_id, key:response_key}` response if your request was successful.
+
+
+Updating an existing response
+`````````````````````````````
+
+.. http:post:: /api/v2/surveys/:id/responses/
+
+    :form _key: The `_key` meta variable for the response.
+    :form quesiton_id: questionid/value pairs, as many as you want to update
+
+
+    Updates an existing response.  Send a post request as *application/json* with a dictionary of question ids and response values.  You **must** include the `_key` meta variable.
+
+    You will get a `{success:true, id:response_id, key:response_key}` response if your request was successful.
+
+See https://gist.github.com/speg/f03a0f02dae94b55de23 for an example of creating and updating responses.
+
 
 
 Uploading a CSV
