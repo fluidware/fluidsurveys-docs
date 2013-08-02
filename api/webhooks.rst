@@ -10,6 +10,26 @@ Webhooks provide a way for the user to be informed of the occurence of a FluidSu
 Users will be informed via a ``POST`` request to the callback url they have provided during webhook creation. The ``POST`` request 
 contains information specific to the event that has occured.
     
+Getting a list of webhooks
+``````````````````````````
+
+.. http:get:: /api/v2/webhooks/
+
+    Returns a list of active webhooks.
+
+    Sample response::
+
+      {
+        "webhooks": [{
+	  "id": 1,
+	  "event_type": "response_complete",
+	  "survey": "1",
+	  "collector": "1",
+	  "subscription_url": "http://fluidsurveys.com/callback/"
+	}],
+	"total": 1
+      }
+
 
 Creation and Deletion
 ---------------------
