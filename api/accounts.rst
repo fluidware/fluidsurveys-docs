@@ -75,14 +75,14 @@ with specific roles, and adding surveys to groups.
 Create a Group
 ``````````````
 
-.. http:post:: /api/v2/accounts/groups/
+.. http:post:: /api/v2/groups/
 
 	The only required parameter to create a group is `name` - alphanumeric characters only please! 
 
 List all Groups
 ```````````````
 
-.. http:get:: /api/v2/accounts/groups/
+.. http:get:: /api/v2/groups/
 
 
 
@@ -106,7 +106,7 @@ Group Details
 
 	Follow the group_uri to get more detailed information on the group or modify it:
 	
-.. http:get:: /api/v2/accounts/groups/:id/
+.. http:get:: /api/v2/groups/:id/
 
     Sample response: ::
 
