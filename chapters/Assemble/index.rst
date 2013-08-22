@@ -8,16 +8,18 @@ When you log into your FluidSurveys account, you will arrive at the [Survey Dash
 This chapter will teach you how to:
 
 * Create your first Survey
-* Use a Survey Template
+* Use a `Survey Template`_
 * Import your surveys and their respective responses from Survey Monkey
 * Create your first Poll
 
 In addition to teaching you about survey creation, this chapter will go over the tools available to you in the [Surveys Dashboard] screen.
 
+.. _`Survey Template`: http://fluidsurveys.com/survey-templates/
+
 Create a Survey
 ---------------
 
-When you are ready to create a survey, click on the [+New Survey] button located on the page
+When you are ready to `create a survey`_, click on the [+New Survey] button located on the page
 
 Choose if you want to create:
 
@@ -52,10 +54,12 @@ Choose if you want to create:
 	
 Once [Create Survey] has been clicked, the Editor will immediately open. To learn more about the delicate intricacies of FluidSurveys, please refer to :ref:`Editor`
 
+.. _`create a survey`: http://fluidsurveys.com
+
 Use Survey Template
 -------------------
 
-If you don't have time to create your own survey from scratch, then you can choose from a wide array of professionally designed templates. You can either select one and instantly deploy it, or modify it to include additional questions, a theme tailored to your brand, or completely alter it.
+If you don't have time to create your own survey from scratch, then you can choose from a wide array of professionally designed `survey templates`_. You can either select one and instantly deploy it, or modify it to include additional questions, a theme tailored to your brand, or completely alter it.
 
 To get started, click on the [+New Survey] button and in the "Select template... (optional)" drop down, select the main categeory of the survey you wish to create, and click [Create Survey]
 
@@ -71,12 +75,14 @@ To get started, click on the [+New Survey] button and in the "Select template...
 	
 	Your plan dictates the type of available templates that will appear; *Enterprise* has access to all templates, whereas *Pro* and *Ultra* are limited
 
+.. _`survey templates`: http://fluidsurveys.com/survey-templates/
+
 Import from Survey Monkey
 -------------------------
 
 Many users make the switch to FluidSurveys after having used other survey software. They’re typically looking for something easier to use with more advanced features, and FluidSurveys is a fit. However, they’ve often already begun building surveys and/or collecting responses with the other software, so switching can be tricky. Today, we’ve added a new feature that’ll make it easy.
 
-You can now import all of your surveys and survey responses from Survey Monkey directly into FluidSurveys. This means that even if you’ve begun your data collection, you can still make the switch without losing any of your work.
+You can now import all of your surveys and survey responses from `Survey Monkey`_ directly into FluidSurveys. This means that even if you’ve begun your data collection, you can still make the switch without losing any of your work.
 
 Importing surveys and responses is straightforward and can be done in seconds. Click on [+New Survey]
 
@@ -87,6 +93,8 @@ Importing surveys and responses is straightforward and can be done in seconds. C
 		:class: screenshot
 
 		*Figure 4.3* Create a new survey screen by importing a survey from Survey Monkey
+
+.. _`Survey Monkey`: http://fluidsurveys.com/alternative/survey-monkey
 
 Create a Poll
 -------------
