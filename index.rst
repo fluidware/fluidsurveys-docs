@@ -35,3 +35,5 @@ Many of the features provided by FluidSurveys are also accessible through a web-
 	api/invites
 	api/webhooks
 	api/tutorial
+
+Check out the `preview of the new v3 API <https://fluidsurveys.com/api/v3/>`_!
