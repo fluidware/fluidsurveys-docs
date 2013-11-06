@@ -24,6 +24,13 @@ To learn more, please visit `myReviewRoom`_ for more information
 API Documentation
 -----------------
 
+Deprecated
+^^^^^^^^^^
+
+Version 2 of the survey is being deprecated and is no longer under active development.
+We will continue to support and fix any reported issues.  See :ref:`version-three` for the latest
+developments of our new API.
+
 Many of the features provided by FluidSurveys are also accessible through a web-based API.
 
 .. toctree::
@@ -34,6 +41,16 @@ Many of the features provided by FluidSurveys are also accessible through a web-
 	api/surveys
 	api/invites
 	api/webhooks
-	api/tutorial
 
 Check out the `preview of the new v3 API <https://fluidsurveys.com/api/v3/>`_!
+
+.. _version-three:
+
+API v3 Documentation
+--------------------
+
+.. toctree::
+    :maxdepth: 2
+
+    apiv3/index
+    apiv3/surveys
