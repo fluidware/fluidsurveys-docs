@@ -56,6 +56,11 @@ a different format, simply append a `format` query paramter to your URI.  Accept
 When sending `POST` or `PUT` requests pleasure ensure the `Content-Type` header matches
 the content in the body of your request.  We accept both `application/json` and `application/x-www-form-urlencoded` as valid `Content-Type` headers.
 
+Pagination
+----------
+
+For queries the return list of items, you can paginate the results by specifying the `PAGE_SIZE` and `PAGE` query parameters.  The `next` and `previous` uris will be included in the root of the responses.
+
 Surveys Guide
 ^^^^^^^^^^^^^
 

@@ -54,3 +54,4 @@ API v3 Documentation
 
     apiv3/index
     apiv3/surveys
+    apiv3/responses
