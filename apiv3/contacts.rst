@@ -59,7 +59,8 @@ Finding Contacts
 
   :query search: optional keyword to search for
 
-Return a list of all contacts, optionally filtered by the `search` query parameter.
+Return a list of all contacts,
+   optionally filtered by the `search` query parameter.
 
 ::
 
@@ -94,4 +95,54 @@ Delete a Contact
 .. code-block:: json
 
   "OK"
+
+Creating Lists
+--------------
+
+.. http:post:: /api/v3/contact-lists/
+
+  :form name: name of contact list
+  :form color: hexadecimal color code
+
+::
+
+  curl -u bob@example.com:PASSWORD -d "name=Employees" \
+  https://fluidsurveys.com/api/v3/contact-lists/
+
+.. code-block:: json
+
+  {"color": "#9eb7c8",
+   "contacts_uri": "https://fluidsurveys.com/api/v3/contact-lists/96920/contacts/",
+   "id": 96920,
+   "name": "Employees",
+   "contacts": 0
+  }
+
+Adding a Contact to a List
+--------------------------
+
+Use an existing contact's `id` to add it to a contact list, or create a new contact while adding it to a list by specifying the `name` and `email`. 
+
+.. http:post:: /api/v3/contact-lists/:id/contacts/
+  
+  :form id: a comma seperated list of contact ids
+  :form name: name of new contact
+  :form email: email of new contact
+  
+::
+
+  curl -u bob@example.com:PASSWORD -d "name=Brand New&email=brandnew@example.com" \
+  https://fluidsurveys.com/api/v3/contact-lists/96920/contacts/
+  
+.. code-block:: json
+
+  {"count": 1,
+   "next": null,
+   "previous": null,
+   "results": [{"id": 1,
+   "name": "Bob",
+   "email": "bob@example.com"}]
+  }
+
+     
 

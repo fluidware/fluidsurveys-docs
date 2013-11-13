@@ -10,6 +10,9 @@ List of Responses
 
 .. http:get:: /api/v3/surveys/:id/responses/
 
+  :query filter: name of predefined filter
+  :query include_labels: return text of choice labels as opposed to indicies
+  
 ::
 
   curl -u bob@example.com:PASSWORD \
@@ -62,7 +65,7 @@ If successful, the response you recieve will include three values.  `url` which 
 .. http:post:: /api/v3/surveys/:id/responses/
 
   :form \:question_id: value of response to :question_id
-
+  
 ::
 
   curl -u bob@example.com:PASSWORD -d "0nptXmOatp=my response" \
