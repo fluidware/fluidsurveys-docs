@@ -3,9 +3,7 @@
 Managing Contacts
 =================
 
-In this section of our API guidebook we take a look at managing contacts.  You can create,
-   edit,
-   and delete individual contacts as well as contact lists that group a set of contacts.
+In this section of our API guidebook we take a look at managing contacts.  You can create, edit, and delete individual contacts as well as contact lists that group a set of contacts.
 
 Create a Contact
 ----------------
@@ -16,6 +14,7 @@ Create a Contact
 
   :form name*: the name of the contact
   :form email*: email address of the contact
+  :form <custom_field>: value of custom field, where `<custom_field>` is the name of an existing or new custom field
 
 ::
 
@@ -37,6 +36,7 @@ Edit a Contact
 
   :form name: updated name
   :form email: updated email
+  :form <custom_field>: value of custom field, where `<custom_field>` is the name of an existing or new custom field
 
 ::
 
