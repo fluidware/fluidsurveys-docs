@@ -49,11 +49,16 @@ Check out the `preview of the new v3 API <https://fluidsurveys.com/api/v3/>`_!
 API v3 Documentation
 --------------------
 
+New! Preview of our newest version of the API.  (*Work in progress*)
+
+
 .. toctree::
     :maxdepth: 2
 
     apiv3/index
+    apiv3/oauth
     apiv3/surveys
     apiv3/responses
     apiv3/contacts
+
 
