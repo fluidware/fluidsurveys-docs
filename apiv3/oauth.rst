@@ -8,7 +8,7 @@ OAuth2 allows external apps access to FluidSurveys users data without requiring 
 Registering
 -----------
 
-If you would like to request authorization from FluidSurveys users you must first reigster your application. `Contact support <mailto:support@fluidsurveys.com>`_ and provide them with your:
+If you would like to request authorization from FluidSurveys users you must first reigster your application on the `developer page <https://fluidsurveys.com/accounts/developer/>`_ and provide your:
 
 *   application name
 *   homepage url
