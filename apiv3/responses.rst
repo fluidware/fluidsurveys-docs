@@ -157,5 +157,30 @@ The response shows two results (there was already one response with `u53cTNZRPK=
      "_id": 33021642}]
     }
 
+Date Filters
+^^^^^^^^^^^^
+
+To filter by date use either the `_created_at` or `_updated_at` meta variable with one of the following predicates: `=`, `<`, or `>` and the date in the format: `YYYY-MM-DD`
+
+::
+
+  curl -u bob@example.com:PASSWORD \
+  'https://fluidsurveys.com/api/v3/surveys/346176/responses/?_created_at>2013-11-04'
+
+Will return all responses created after November 4th.
+
 You can also create more advanced filters via the web interface of FluidSurveys. If you save a custom filter in the application you can use it via the API by specificying the `filter` query parameter and providing the name of the filter you created.  *These filters are on a per-survey basis*.
+
+CSV Filters
+^^^^^^^^^^^
+
+You can use the same filtering methods above when generating a CSV file.
+
+::
+    
+  curl -u bob@example.com:PASSWORD \
+  'https://fluidsurveys.com/api/v3/surveys/346176/csv/?_created_at>2013-11-04'
+
+
+
 
