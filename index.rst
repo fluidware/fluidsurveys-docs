@@ -1,7 +1,10 @@
-API Documentation
+Developer Documentation
 -----------------
 
-Deprecated
+Getting Started
+---------------
+
+API v2 Documentation
 ^^^^^^^^^^
 
 Version 2 of the survey is being deprecated and is no longer under active development.
