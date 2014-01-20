@@ -1,5 +1,6 @@
 Developer Documentation
 -----------------
+To access product documentation, please visit  `Fluidsurvey Help <http://help.fluidsurveys.com/hc/en-us>`_.
 
 Getting Started
 ---------------
