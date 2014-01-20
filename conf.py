@@ -12,7 +12,6 @@
 # serve to show the default.
 
 import sys, os
-import sphinx_bootstrap_theme
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
@@ -186,7 +185,7 @@ html_title = 'FluidSurveys APIs Docs'
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-html_logo = 'resources/img/logo.png'
+html_logo = 'fluidsurveys/resources/img/logo.png'
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
