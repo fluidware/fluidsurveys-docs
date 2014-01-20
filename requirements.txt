@@ -4,4 +4,3 @@ pip==1.5
 Sphinx==1.2
 sphinxcontrib-httpdomain==1.2.0
 rst2pdf==0.93
-sphinx-bootstrap-theme==0.3.6
