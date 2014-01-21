@@ -1,9 +1,13 @@
-Developer Documentation
------------------
-To access product documentation, please visit  `Fluidsurvey Help <http://help.fluidsurveys.com/hc/en-us>`_.
+Welcome to FluidSurvey Dev!
+==========================
+.. note::
+	To access product documentation, please visit  `Fluidsurvey Help <http://help.fluidsurveys.com/hc/en-us>`_.
 
 Getting Started
 ---------------
+If you're new to Fluidsurveys API, you may want to start with these documents to get
+you up and running:
+
 
 API v2 Documentation
 ^^^^^^^^^^
