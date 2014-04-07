@@ -31,12 +31,12 @@ Create a link on your site to ask the user to authorize your application.
 
   :query response_type: this should be `code`
   :query client_id: your `client_id`
-  :query redirect_url: your `redirect_url`
+  :query redirect_uri: your `redirect_uri`
 
 2. FluidSurveys redirects back your application
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Once the user has authorized your application, they will be redirected back to your `redirect_url`.  Included in the request will be a `code` query parameter.  You may then trade this `code` for an access token in the next step.
+Once the user has authorized your application, they will be redirected back to your `redirect_uri`.  Included in the request will be a `code` query parameter.  You may then trade this `code` for an access token in the next step.
 
 3. Obtain Bearer Token
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -46,7 +46,7 @@ Once the user has authorized your application, they will be redirected back to y
    :form code: the `code` you recieved from the redirect
    :form client_id: your `client_id`
    :form client_secret: your `client_secret`
-   :form redirect_uri: your `redirect_url`
+   :form redirect_uri: your `redirect_uri`
    :form grant_type: should be `authorization_code`
 
 ::
