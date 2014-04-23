@@ -44,5 +44,6 @@ New! Preview of our newest version of the API.  (*Work in progress*)
     fluidsurveys/apiv3/oauth
     fluidsurveys/apiv3/surveys
     fluidsurveys/apiv3/responses
+    fluidsurveys/apiv3/invites
     fluidsurveys/apiv3/contacts
 

@@ -20,7 +20,7 @@ survey (resp. collector) owned by the user. Including the parameter will add an 
 Getting a list of contacts
 ``````````````````````````
 
-.. http:get:: /api/v2/contacts/
+.. http:get:: /api/v3/contacts/
 
     Returns a list of contacts in the user's address book. The response contains a
     key called `custom` which has a list of all custom fields in the user's address book.
@@ -35,14 +35,14 @@ Getting a list of contacts
         "custom": ["field1"],
         "contacts": [{
 	  "id": 1,
-	  "uri": "http://fluidsurveys.com/api/v2/contacts/1/",
+	  "uri": "http://fluidsurveys.com/api/v3/contacts/1/",
 	  "name": "Peter Griffin",
 	  "email": "peter.griffin@example.com",
 	  "unsubscribed": false,
 	  "custom_field1": "field1"
 	}, {
 	  "id": 2,
-	  "uri": "http://fluidsurveys.com/api/v2/contacts/2/",
+	  "uri": "http://fluidsurveys.com/api/v3/contacts/2/",
 	  "name": "Joe Swanson",
 	  "email": "joe.swanson@example.com",
 	  "unsubscribed": false
@@ -54,7 +54,7 @@ Getting a list of contacts
 Creating a contact
 ``````````````````
 
-.. http:post:: /api/v2/contacts/
+.. http:post:: /api/v3/contacts/
 
     Creates a new contact. Contact must be sent as an :mimetype:`application/json`-encoded
     dictionary with the required fields ``name`` and ``email``. Custom fields may be specified
@@ -65,7 +65,7 @@ Creating a contact
       {
         "contact": {
           "id": 15136498,
-	  "uri": "http://fluidsurveys.com/api/v2/contacts/15136498/",
+	  "uri": "http://fluidsurveys.com/api/v3/contacts/15136498/",
           "name": "Dave Jones",
           "email": "dave.jones@example.com",
           "unsubscribed": false
@@ -75,7 +75,7 @@ Creating a contact
 Getting contact details
 ```````````````````````
 
-.. http:get:: /api/v2/contacts/:id/
+.. http:get:: /api/v3/contacts/:id/
 
     Returns details for a contact.
 
@@ -84,7 +84,7 @@ Getting contact details
       {
         "contact": {
           "id": 15136498,
-	  "uri": "http://fluidsurveys.com/api/v2/contacts/15136498/",
+	  "uri": "http://fluidsurveys.com/api/v3/contacts/15136498/",
           "name": "Dave Jones",
           "email": "dave.jones@example.com",
           "unsubscribed": false
@@ -94,7 +94,7 @@ Getting contact details
 Deleting a contact
 ``````````````````
 
-.. http:delete:: /api/v2/contacts/:id/
+.. http:delete:: /api/v3/contacts/:id/
 
     Deletes the specified contact.
 
@@ -107,7 +107,7 @@ Managing the contacts within a list is done using the list's contact view.
 Getting contact lists
 `````````````````````
 
-.. http:get:: /api/v2/contact-lists/
+.. http:get:: /api/v3/contact-lists/
 
     Returns a list of the user's contact lists.
 
@@ -119,8 +119,8 @@ Getting contact lists
       {
         "lists": [{
           "id": 1,
-	  "uri": "http://fluidsurveys.com/api/v2/contact-lists/1/",
-	  "contacts_uri": "http://fluidsurveys.com/api/v2/contact-lists/1/contacts/",
+	  "uri": "http://fluidsurveys.com/api/v3/contact-lists/1/",
+	  "contacts_uri": "http://fluidsurveys.com/api/v3/contact-lists/1/contacts/",
           "name": "People with Silly Walks",
           "contacts": 10
         }],
@@ -130,7 +130,7 @@ Getting contact lists
 Creating a contact list
 ```````````````````````
 
-.. http:post:: /api/v2/contact-lists/
+.. http:post:: /api/v3/contact-lists/
 
     Creates a new contact list. Data must be sent as an :mimetype:`application/json`-encoded
     dictionary with the required field ``name``.
@@ -138,7 +138,7 @@ Creating a contact list
 Getting contact list details
 ````````````````````````````
 
-.. http:get:: /api/v2/contact-lists/:id/
+.. http:get:: /api/v3/contact-lists/:id/
 
     Returns details for a contact list.
 
@@ -147,8 +147,8 @@ Getting contact list details
       {
         "list": {
           "id": 1,
-	  "uri": "http://fluidsurveys.com/api/v2/contact-lists/1/",
-	  "contacts_uri": "http://fluidsurveys.com/api/v2/contact-lists/1/contacts/",
+	  "uri": "http://fluidsurveys.com/api/v3/contact-lists/1/",
+	  "contacts_uri": "http://fluidsurveys.com/api/v3/contact-lists/1/contacts/",
           "name": "People with Silly Walks",
           "contacts": 10
         }
@@ -157,15 +157,15 @@ Getting contact list details
 Getting contacts
 ````````````````
 
-.. http:get:: /api/v2/contact-lists/:id/contacts/
+.. http:get:: /api/v3/contact-lists/:id/contacts/
 
     Returns the contacts that are part of the given contact list. This method takes the
-    same arguments as :http:get:`/api/v2/contacts/ </api/v2/contacts/>`.
+    same arguments as :http:get:`/api/v3/contacts/ </api/v3/contacts/>`.
 
 Adding contacts
 ```````````````
 
-.. http:post:: /api/v2/contact-lists/:id/contacts/
+.. http:post:: /api/v3/contact-lists/:id/contacts/
 
     Adds contacts to a contact list. There are three ways to add contacts:
 
@@ -175,13 +175,13 @@ Adding contacts
     2. :mimetype:`multipart/form-data`-encoded data containing the key ``contacts`` with
        a list of identifiers of contacts to add.
 
-    3. Use the same parameters as for :http:post:`/api/v2/contacts/ <creating contacts>`,
+    3. Use the same parameters as for :http:post:`/api/v3/contacts/ <creating contacts>`,
        which will create the contact and add it directly to the list.
 
 Removing contacts
 `````````````````
 
-.. http:delete:: /api/v2/contact-lists/:id/contacts/
+.. http:delete:: /api/v3/contact-lists/:id/contacts/
 
     Removes contacts from the specified contact list.
 
@@ -200,7 +200,7 @@ id of a survey collector. If not provided, the default collector is assumed.
 Generating a list of invite codes
 `````````````````````````````````
 
-.. http:post:: /api/v2/surveys/:survey_id/invite-codes/
+.. http:post:: /api/v3/surveys/:survey_id/invite-codes/
 
     Generates invite codes for use with the survey/collector specified.
     
@@ -222,7 +222,7 @@ Generating a list of invite codes
 Retrieving generated invite codes
 `````````````````````````````````
 
-.. http:get:: /api/v2/surveys/:survey_id/invite-codes/
+.. http:get:: /api/v3/surveys/:survey_id/invite-codes/
 
     Returns a list of generated invite codes for the survey/collector specified. 
     Pagination is supported through the `offset` and `limit` query parameters. 
@@ -247,7 +247,7 @@ Retrieving generated invite codes
 	      "status": "Completed",
 	      "code": "YYYYYYYY",
 	      "response_id": "XXXXX",
-	      "response_uri": "http://fluidsurveys.com/api/v2/surveys/:survey_id/responses/XXXXX/",
+	      "response_uri": "http://fluidsurveys.com/api/v3/surveys/:survey_id/responses/XXXXX/",
 	      "invite_url": "http://fluidsurveys.com/s/somesurvey/?code=YYYYYYYY"
 	    }
 	  ]
@@ -264,7 +264,7 @@ multiple responses to the same survey, you must use different collectors.
 Creating a new email
 ````````````````````
 
-.. http:post:: /api/v2/emails/?survey=survey_id
+.. http:post:: /api/v3/emails/?survey=survey_id
 
     Creates a new email. Data must be sent as an :mimetype:`application/json`-encoded
     dictionary.  Which must included the fields ``subject``, ``sender``, and ``message``.
@@ -282,7 +282,7 @@ Creating a new email
 Getting email details
 `````````````````````
 
-.. http:get:: /api/v2/emails/:id/
+.. http:get:: /api/v3/emails/:id/
 
     Gets details for an email.
 
@@ -294,39 +294,39 @@ Getting email details
 	"sender": "",
 	"subject": "Email subject",
 	"message": "Dear [Full Name],\n\nMessage body: [Invite Link]",
-	"uri": "http://fluidsurveys.com/api/v2/emails/1/",
-	"send_uri": "http://fluidsurveys.com/api/v2/emails/1/send/",
-	"recipients_uri": "http://fluidsurveys.com/api/v2/emails/1/recipients/",
+	"uri": "http://fluidsurveys.com/api/v3/emails/1/",
+	"send_uri": "http://fluidsurveys.com/api/v3/emails/1/send/",
+	"recipients_uri": "http://fluidsurveys.com/api/v3/emails/1/recipients/",
 	"num_recipients": 5
       }
 
 Deleting an email
 `````````````````
 
-.. http:delete:: /api/v2/emails/:id/
+.. http:delete:: /api/v3/emails/:id/
 
     Deletes a scheduled email.
 
 Getting recipients
 ``````````````````
 
-.. http:get:: /api/v2/emails/:id/recipients/
+.. http:get:: /api/v3/emails/:id/recipients/
 
     Returns the contacts that are recipients for the specified email. This method takes
-    the same arguments as :http:get:`/api/v2/contacts/ </api/v2/contacts/>`.
+    the same arguments as :http:get:`/api/v3/contacts/ </api/v3/contacts/>`.
 
 Adding recipients
 `````````````````
 
-.. http:post:: /api/v2/emails/:id/recipients/
+.. http:post:: /api/v3/emails/:id/recipients/
 
     Adds recipients to an email. This method takes the same arguments as
-    :http:post:`/api/v2/contact-lists/:id/contacts/ </api/v2/contact-lists/:id/contacts/>`.
+    :http:post:`/api/v3/contact-lists/:id/contacts/ </api/v3/contact-lists/:id/contacts/>`.
 
 Removing recipients
 ```````````````````
 
-.. http:delete:: /api/v2/emails/:id/recipients/
+.. http:delete:: /api/v3/emails/:id/recipients/
 
     Deletes recipients from an email.
 
@@ -350,7 +350,7 @@ Set up
 	We'll also save the base URI and Headers in some variables: ::
 
 		headers = {"Content-Type": "application/json"}
-		URI = 'https://fluidsurveys.com/api/v2/'
+		URI = 'https://fluidsurveys.com/api/v3/'
 		
 Create a Contact
 ````````````````
@@ -441,7 +441,13 @@ Sending Reminders
 
 	To send a reminder for you invite use the following endpoint:
 
-	.. http:post:: /api/v2/emails/:id/reminder/
+	.. http:post:: /api/v3/emails/:id/reminder/
+
+	The payload of the reminder is the same as email, and reminder has two extra optionns:
+	
+	1. receipients [sent, viewed, all]: defines who will receive this reminder. "sent" means only people who have been sent the survey link. "viewed" only deals with people who have received the link and viewed the survey. All means everyone. 
+	
+	2. all [true]: this option sends the reminder to everyone regardless of status.
 	
 	You may optionally send the same form data as when creating an invite: `subject` and `message` but if not default text will be sent.
 
