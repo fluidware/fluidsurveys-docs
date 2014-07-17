@@ -1,5 +1,5 @@
 # Basic tools
-virtualenv==1.11
+virtualenv==1.11.2
 pip==1.5
 Sphinx==1.2
 sphinxcontrib-httpdomain==1.2.0

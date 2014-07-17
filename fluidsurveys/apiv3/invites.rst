@@ -98,6 +98,47 @@ Deleting a contact
 
     Deletes the specified contact.
 
+Contact's Invites
+-----------------
+
+Managing a Contact's invites across multiple surveys can be problematic, so we provide an easy way to retrieve & view the status of the invites.
+
+Finding a Contact
+`````````````````
+
+.. http:get:: /api/v3/contacts/?search=:email&invites
+
+  :query search: Email address of the Contact
+  :query invites: This will trigger a redirect, including the "invites" filter
+
+If you do not know the Contact's ID, you can search by email address and specify "invites" in the query string, which will redirect you to the Contact's details
+
+Contact's Invites
+`````````````````
+
+.. http:get:: /api/v3/contacts/:id/?invites
+
+  :query invites: Includes an array of survey invites
+
+By adding "?invites" to the Contact's details URI, you'll receive an extra "invites" Array with the status of the invites
+
+.. code-block:: json
+
+  {
+    "name": "New Guy", 
+    "email": "newguy@example.com", 
+    "id": 8003316, 
+    "contact_uri": "https://fluidsurveys.com/api/v3/contacts/8003316/", 
+    "unsubscribed": [], 
+    "invites": [
+        {
+            "status": "Viewed", 
+            "survey_uri": "https://fluidsurveys.com/api/v3/surveys/325235/", 
+            "invite_uri": "https://fluidsurveys.com/surveys/myaccount/mysurvey/?hash=cqxnq9v8zw"
+        }
+    ]
+  }
+
 Contact Lists
 -------------
 
