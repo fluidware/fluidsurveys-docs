@@ -294,83 +294,6 @@ Retrieving generated invite codes
 	  ]
 	}
 
-Emails
-------
-
-FluidSurveys allows sending scheduled emails to contacts through the API. Once an email
-is created, its recipients can be changed using the recipients API endpoint. Each contact
-will only receive a single unique invite code per survey. To allow contacts to give
-multiple responses to the same survey, you must use different collectors.
-
-Creating a new email
-````````````````````
-
-.. http:post:: /api/v3/emails/?survey=survey_id
-
-    Creates a new email. Data must be sent as an :mimetype:`application/json`-encoded
-    dictionary.  Which must included the fields ``subject``, ``sender``, and ``message``.
-
-    ``Sender`` must be in the form ``"Name <email@example.com>"`` and ``message`` must include the string "``[Invite Link]``" in it.  This token is replaced with the URL at which the recipient may take the survey.
-
-    Sample request::
-
-      {
-	"subject": "Email subject",
-	"sender": "John Doe <john@google.com>",
-	"message": "Dear [Full Name],\n\nMessage body: [Invite Link]"
-      }
-
-Getting email details
-`````````````````````
-
-.. http:get:: /api/v3/emails/:id/
-
-    Gets details for an email.
-
-    Sample response::
-
-      {
-        "id": 1,
-	"status": "sent",
-	"sender": "",
-	"subject": "Email subject",
-	"message": "Dear [Full Name],\n\nMessage body: [Invite Link]",
-	"uri": "http://fluidsurveys.com/api/v3/emails/1/",
-	"send_uri": "http://fluidsurveys.com/api/v3/emails/1/send/",
-	"recipients_uri": "http://fluidsurveys.com/api/v3/emails/1/recipients/",
-	"num_recipients": 5
-      }
-
-Deleting an email
-`````````````````
-
-.. http:delete:: /api/v3/emails/:id/
-
-    Deletes a scheduled email.
-
-Getting recipients
-``````````````````
-
-.. http:get:: /api/v3/emails/:id/recipients/
-
-    Returns the contacts that are recipients for the specified email. This method takes
-    the same arguments as :http:get:`/api/v3/contacts/ </api/v3/contacts/>`.
-
-Adding recipients
-`````````````````
-
-.. http:post:: /api/v3/emails/:id/recipients/
-
-    Adds recipients to an email. This method takes the same arguments as
-    :http:post:`/api/v3/contact-lists/:id/contacts/ </api/v3/contact-lists/:id/contacts/>`.
-
-Removing recipients
-```````````````````
-
-.. http:delete:: /api/v3/emails/:id/recipients/
-
-    Deletes recipients from an email.
-
 Example
 -------
 
@@ -425,7 +348,7 @@ Create an Email
 			"message":"Hi, [Full Name], check out our survey: [Invite Link]!",
 			"sender":"Me <me@example.com>"
 			}
-		r = requests.post(URL+'emails/?survey=%d' % (survey_id,), 
+		r = requests.post(URI+'emails/?survey=%d' % (survey_id,), 
 			data=json.dumps(payload), 
 			headers=headers, auth=(api_key,password))
 		result = json.loads(r.content)
@@ -475,25 +398,3 @@ Scheduling Invites
     i.e., ``send_uri + '?scheduled=7'`` will schedule your invite 7 days from now.  You can specify the number of weeks, days, hours, and minutes by suffixing a number with the letters ``w, d, h,`` and ``m`` respectively:
     
     For example, appending ``'?scheduled=1w3d4h2m'`` to the `send_uri` will schedule your invite to send 1 week, 3 days, 4 hours, and 2 minutes from the time you submit your request.
-
-
-Sending Reminders
-`````````````````
-
-	To send a reminder for you invite use the following endpoint:
-
-	.. http:post:: /api/v3/emails/:id/reminder/
-
-	The payload of the reminder is the same as email, and reminder has two extra optionns:
-	
-	1. receipients [sent, viewed, all]: defines who will receive this reminder. "sent" means only people who have been sent the survey link. "viewed" only deals with people who have received the link and viewed the survey. All means everyone. 
-	
-	2. all [true]: this option sends the reminder to everyone regardless of status.
-	
-	You may optionally send the same form data as when creating an invite: `subject` and `message` but if not default text will be sent.
-
-Source
-``````
-	Download the source file:
-	
-	`Python <https://raw.github.com/chideit/fluidsurveys-docs/master/samples/email_contact/email_contact.py>`_  `PHP <https://raw.github.com/chideit/fluidsurveys-docs/master/samples/email_contact/email_contact.php>`_
