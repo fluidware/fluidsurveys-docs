@@ -241,7 +241,8 @@ Getting survey responses
 .. http:get:: /api/v2/surveys/:id/responses/?_completed=1
 
     to get all completed responses.  You can use named question identifiers or raw question ids
-    as the query parameter and also use greater than or less than operators.
+    as the query parameter and also use greater than or less than operators, which must be URI
+    encoded (e.g. > becomes %3E).
 
 .. http:get:: /api/v2/surveys/:id/responses/?_created_at>2013-04-29
 
