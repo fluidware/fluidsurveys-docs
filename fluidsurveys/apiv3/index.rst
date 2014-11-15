@@ -53,7 +53,7 @@ a different format, simply append a `format` query paramter to your URI.  Accept
     <contact-lists>https://fluidsurveys.com/api/v3/contact-lists/</contact-lists>
     <webhooks>https://fluidsurveys.com/api/v3/webhooks/</webhooks></root>
 
-When sending `POST` or `PUT` requests pleasure ensure the `Content-Type` header matches
+When sending `POST` or `PUT` requests please ensure the `Content-Type` header matches
 the content in the body of your request.  We accept both `application/json` and `application/x-www-form-urlencoded` as valid `Content-Type` headers.
 
 Pagination
