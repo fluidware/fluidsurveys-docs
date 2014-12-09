@@ -32,14 +32,19 @@ Retrieve a List of Surveys
      "created_at": "2013-11-05T20:37:07Z",
      "updated_at": "2013-11-05T20:37:21Z",
      "deploy_url": "http://fluidsurveys.com/surveys/api_bob/demo-survey/",
+     "duplicate_uri": "https://fluidsurveys.com/api/v3/surveys/346176/duplicate/",
      "send_invite_uri": "https://fluidsurveys.com/api/v3/surveys/346176/invites/",
      "responses_uri": "https://fluidsurveys.com/api/v3/surveys/346176/responses/",
+     "survey_settings_uri": "https://fluidsurveys.com/api/v3/surveys/346176/settings/",
      "survey_structure_uri": "https://fluidsurveys.com/api/v3/surveys/346176/structure/",
      "collectors_uri": "https://fluidsurveys.com/api/v3/surveys/346176/collectors/",
      "invite_codes_uri": "https://fluidsurveys.com/api/v3/surveys/346176/invite_codes/",
      "groups_uri": "https://fluidsurveys.com/api/v3/surveys/346176/groups/",
      "reports_uri": "https://fluidsurveys.com/api/v3/surveys/346176/reports/",
-     "csv_uri": "https://fluidsurveys.com/api/v3/surveys/346176/csv/"}
+     "csv_uri": "https://fluidsurveys.com/api/v3/surveys/346176/csv/",
+     "tags_uri": "https://fluidsurveys.com/api/v3/surveys/346176/tags/",
+     "versions_uri": "https://fluidsurveys.com/api/v3/surveys/346176/versions/",
+     "questions_uri": "https://fluidsurveys.com/api/v3/surveys/346176/questions/"}
     ]
    }
 
@@ -71,14 +76,19 @@ Create a New Survey
   "created_at": "2013-11-05T21:34:33.227Z",
   "updated_at": "2013-11-05T21:34:33.227Z",
   "deploy_url": "http://fluidsurveys.com/surveys/api_bob/my-new-survey/",
+  "duplicate_uri": "https://fluidsurveys.com/api/v3/surveys/346290/duplicate/",
   "send_invite_uri": "https://fluidsurveys.com/api/v3/surveys/346290/invites/",
   "responses_uri": "https://fluidsurveys.com/api/v3/surveys/346290/responses/",
+  "survey_settings_uri": "https://fluidsurveys.com/api/v3/surveys/346290/settings/",
   "survey_structure_uri": "https://fluidsurveys.com/api/v3/surveys/346290/structure/",
   "collectors_uri": "https://fluidsurveys.com/api/v3/surveys/346290/collectors/",
   "invite_codes_uri": "https://fluidsurveys.com/api/v3/surveys/346290/invite_codes/",
   "groups_uri": "https://fluidsurveys.com/api/v3/surveys/346290/groups/",
   "reports_uri": "https://fluidsurveys.com/api/v3/surveys/346290/reports/",
-  "csv_uri": "https://fluidsurveys.com/api/v3/surveys/346290/csv/"}
+  "csv_uri": "https://fluidsurveys.com/api/v3/surveys/346290/csv/",
+  "tags_uri": "https://fluidsurveys.com/api/v3/surveys/346290/tags/",
+  "versions_uri": "https://fluidsurveys.com/api/v3/surveys/346290/versions/",
+  "questions_uri": "https://fluidsurveys.com/api/v3/surveys/346290/questions/"}
 
 Edit a Survey
 -------------
@@ -105,13 +115,18 @@ Edit a Survey
    "created_at": "2013-11-05T21:34:33Z",
    "updated_at": "2013-11-06T20:25:18.039Z",
    "deploy_url": "http://fluidsurveys.com/surveys/api_bob/my-new-survey/",
+   "duplicate_uri": "https://fluidsurveys.com/api/v3/surveys/346290/duplicate/",
    "send_invite_uri": "https://fluidsurveys.com/api/v3/surveys/346290/invites/",
    "responses_uri": "https://fluidsurveys.com/api/v3/surveys/346290/responses/",
+   "survey_settings_uri": "https://fluidsurveys.com/api/v3/surveys/346290/settings/",
    "survey_structure_uri": "https://fluidsurveys.com/api/v3/surveys/346290/structure/",
    "collectors_uri": "https://fluidsurveys.com/api/v3/surveys/346290/collectors/",
    "invite_codes_uri": "https://fluidsurveys.com/api/v3/surveys/346290/invite_codes/",
    "groups_uri": "https://fluidsurveys.com/api/v3/surveys/346290/groups/",
    "reports_uri": "https://fluidsurveys.com/api/v3/surveys/346290/reports/",
-   "csv_uri": "https://fluidsurveys.com/api/v3/surveys/346290/csv/"}
+   "csv_uri": "https://fluidsurveys.com/api/v3/surveys/346290/csv/",
+   "tags_uri": "https://fluidsurveys.com/api/v3/surveys/346290/tags/",
+   "versions_uri": "https://fluidsurveys.com/api/v3/surveys/346290/versions/",
+   "questions_uri": "https://fluidsurveys.com/api/v3/surveys/346290/questions/"}
 
 Next up, check out out our guide to :ref:`response-guide`.
