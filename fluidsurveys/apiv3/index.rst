@@ -38,7 +38,9 @@ Data Transfer
 -------------
 
 The FluidSurveys API will return a JSON response by default.  If you wish to recieve
-a different format, simply append a `format` query paramter to your URI.  Accepted formats are `api`, `csv`, `json`, `xml`, `soap`, & `yaml`.  The `api` format will return the HTML browsable interface.
+a different format, simply append a `format` query paramter to your URI.  Accepted formats are `api`, `csv`, `json`, `jsonp`, `xml`, `soap`, & `yaml`.  The `api` format will return the HTML browsable interface.
+
+When using `jsonp`, the callback function will default to "callback" if it is not specified. It is not recommended to utilize this format on public web pages because it will expose your credentials; web applications that require authentication are more likely to be secure, but we are not responsible for any issues that may arise from using `jsonp`.
 
 ::
 
