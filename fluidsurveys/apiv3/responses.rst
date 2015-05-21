@@ -10,8 +10,24 @@ List of Responses
 
 .. http:get:: /api/v3/surveys/:id/responses/
 
+  :query page: page of responses to return (zero-based)
+  :query page_size: number of responses to return per page
+  :query ids: list of responses to return based on unique identifiers
+  :query expand_GET: whether to format the GET variables as JSON instead of querystring
+  :query include_url: whether to include a direct url to the response (for editing)
+  :query include: list of unique question identifiers to include
   :query filter: name of predefined filter
   :query include_labels: return text of choice labels as opposed to indicies
+  :query include_id: include user-defined question identifiers
+  :query include_key: include unique identifier for each response
+  :query show_titles: include question titles
+  :query score_based: export scores instead of labels
+  :query escape_newline: replace newline characters with \n
+  :query tab_separated: Excel compatible (UTF-16, tab-separated)
+  :query comma_separated: export as a CSV file
+  :query strip_html: remove all HTML tags from exported answers
+  :query inverted: export questions on separate rows (for database import)
+  :query include_response_link: include edit links for each response
   
 ::
 
