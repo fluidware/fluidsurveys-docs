@@ -344,6 +344,8 @@ Submitting a new response
 
 	:form <quesitonid>: as many questionid/value pairs that you wish to update
 
+	:form <quesitonid>\\\\other: to store other text field (include <quesitonid>:choice_value as well)
+
 
     Submits a new response.  Send a post request as *application/json* with a dictionary of question ids and response values.
 

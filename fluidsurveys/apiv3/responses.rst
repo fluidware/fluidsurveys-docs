@@ -80,7 +80,8 @@ If successful, the response you recieve will include three values.  `url` which 
 
 .. http:post:: /api/v3/surveys/:id/responses/
 
-  :form \:question_id: value of response to :question_id
+  :form \:question_id: value of response to `:question_id`
+  :form \:quesiton_id\\\\other: to store an other choice text field (include `quesiton_id`:other_choice_value as well)
   
 ::
 
@@ -101,6 +102,7 @@ Editing a Response
 .. http:put:: /api/v3/surveys/:id/responses/:response_id/
 
   :form \:question_id: value of response to `:question_id`
+  :form \:quesiton_id\\\\other: to store an other choice text field (include `quesiton_id`:other_choice_value as well)
 
 To edit a response, send a `PUT` request to the response detail endpoint.  For example, too add a value for another question on the response above:
 
