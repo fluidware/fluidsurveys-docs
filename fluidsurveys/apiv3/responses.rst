@@ -3,7 +3,7 @@
 Dealing with Responses
 ======================
 
-Once your survey has collected some responses, you may want to retrieve the responses over the API.  For other options on how to retrieve responses, see `webhooks <http://docs.fluidsurveys.com/chapters/Publish/settings.html#webhook-example>`_.
+Once your survey has collected some responses, you may want to retrieve the responses over the API.  For other options on how to retrieve responses, see `webhooks <http://docs.fluidsurveys.com/fluidsurveys/api/webhooks.html>`_.
 
 List of Responses
 -----------------
