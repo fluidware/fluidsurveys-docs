@@ -224,22 +224,10 @@ Getting survey responses
 
     :query offset: response pagination offset (defaults to 0)
     :query limit: maximum number of results to return (defaults to 50, max is 200)
-    :query filter: name of the filter you wish to filter responses by
-    :query expand_GET: whether to format the GET variables as JSON instead of querystring (true, 1, yes, on)
-    :query include_url: whether to include a direct url to the response for editing (true, 1, yes, on)
-    :query include: list of unique question identifiers to include
-    :query filter: name of predefined filter
     :query include_labels: return text of choice labels as opposed to indicies (true, 1, yes, on)
-    :query include_id: include user-defined question identifiers (true, 1, yes, on)
-    :query include_key: include unique identifier for each response (true, 1, yes, on)
-    :query show_titles: include question titles (true, 1, yes, on)
-    :query score_based: export scores instead of labels (true, 1, yes, on)
-    :query escape_newline: replace newline characters with \n (true, 1, yes, on)
-    :query tab_separated: Excel compatible (true, 1, yes, on)
-    :query comma_separated: export as a CSV file (true, 1, yes, on)
-    :query strip_html: remove all HTML tags from exported answers (true, 1, yes, on)
-    :query inverted: export questions on separate rows for database import (true, 1, yes, on)
-    :query include_response_link: include edit links for each response (true, 1, yes, on)
+    :query expand_GET: whether to format the GET variables as JSON instead of querystring (true, 1, yes, on)
+    :query \:question_id: value of response to `:question_id`
+  	:query filter: name of predefined filter
 
     Examples:
 
@@ -395,6 +383,21 @@ Getting responses as a CSV
 .. http:get:: /api/v2/surveys/:id/csv/
 
     Returns details about the specified survey.
+
+    :query include_url: whether to include a direct url to the response for editing (true, 1, yes, on)
+    :query include: list of unique question identifiers to include
+    :query filter: name of predefined filter
+    :query include_labels: return text of choice labels as opposed to indicies (true, 1, yes, on)
+    :query include_id: include user-defined question identifiers (true, 1, yes, on)
+    :query include_key: include unique identifier for each response (true, 1, yes, on)
+    :query show_titles: include question titles (true, 1, yes, on)
+    :query score_based: export scores instead of labels (true, 1, yes, on)
+    :query escape_newline: replace newline characters with \n (true, 1, yes, on)
+    :query tab_separated: Excel compatible (true, 1, yes, on)
+    :query comma_separated: export as a CSV file (true, 1, yes, on)
+    :query strip_html: remove all HTML tags from exported answers (true, 1, yes, on)
+    :query inverted: export questions on separate rows for database import (true, 1, yes, on)
+    :query include_response_link: include edit links for each response (true, 1, yes, on)
 
 Sending a new invitation
 ````````````````````````

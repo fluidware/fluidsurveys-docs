@@ -3,7 +3,7 @@
 Dealing with Responses
 ======================
 
-Once your survey has collected some responses, you may want to retrieve the responses over the API.  For other options on how to retrieve responses, see `webhooks <http://docs.fluidsurveys.com/fluidsurveys/api/webhooks.html>`_.
+Once your survey has collected some responses, you may want to retrieve the responses over the API.  For other options on how to retrieve responses, see `webhooks <http://docs.fluidsurveys.com/chapters/Publish/settings.html#webhook-example>`_.
 
 List of Responses
 -----------------
@@ -12,22 +12,7 @@ List of Responses
 
   :query page: page of responses to return (defaults to 0)
   :query page_size: number of responses to return per page (defaults to 50, max is 200)
-  :query ids: list of responses to return based on unique identifiers
   :query expand_GET: whether to format the GET variables as JSON instead of querystring (true, 1, yes, on)
-  :query include_url: whether to include a direct url to the response for editing (true, 1, yes, on)
-  :query include: list of unique question identifiers to include
-  :query filter: name of predefined filter
-  :query include_labels: return text of choice labels as opposed to indicies (true, 1, yes, on)
-  :query include_id: include user-defined question identifiers (true, 1, yes, on)
-  :query include_key: include unique identifier for each response (true, 1, yes, on)
-  :query show_titles: include question titles (true, 1, yes, on)
-  :query score_based: export scores instead of labels (true, 1, yes, on)
-  :query escape_newline: replace newline characters with \n (true, 1, yes, on)
-  :query tab_separated: Excel compatible (true, 1, yes, on)
-  :query comma_separated: export as a CSV file (true, 1, yes, on)
-  :query strip_html: remove all HTML tags from exported answers (true, 1, yes, on)
-  :query inverted: export questions on separate rows for database import (true, 1, yes, on)
-  :query include_response_link: include edit links for each response (true, 1, yes, on)
   
 ::
 
@@ -192,9 +177,29 @@ You can also create more advanced filters via the web interface of FluidSurveys.
 CSV Filters
 ^^^^^^^^^^^
 
-You can use the same filtering methods above when generating a CSV file.
+.. http:get:: /api/v3/surveys/:id/csv/
 
+  :query \:question_id: value of response to `:question_id`
+  :query filter: name of predefined filter
+  :query ids: list of responses to return based on unique identifiers
+  :query include_url: whether to include a direct url to the response for editing (true, 1, yes, on)
+  :query include: list of unique question identifiers to include
+  :query filter: name of predefined filter
+  :query include_labels: return text of choice labels as opposed to indicies (true, 1, yes, on)
+  :query include_id: include user-defined question identifiers (true, 1, yes, on)
+  :query include_key: include unique identifier for each response (true, 1, yes, on)
+  :query show_titles: include question titles (true, 1, yes, on)
+  :query score_based: export scores instead of labels (true, 1, yes, on)
+  :query escape_newline: replace newline characters with \n (true, 1, yes, on)
+  :query tab_separated: Excel compatible (true, 1, yes, on)
+  :query comma_separated: export as a CSV file (true, 1, yes, on)
+  :query strip_html: remove all HTML tags from exported answers (true, 1, yes, on)
+  :query inverted: export questions on separate rows for database import (true, 1, yes, on)
+  :query include_response_link: include edit links for each response (true, 1, yes, on)
+  
 ::
+
+You can also use the date filters listed above.
     
   curl -u bob@example.com:PASSWORD \
   'https://fluidsurveys.com/api/v3/surveys/346176/csv/?_created_at>2013-11-04'
