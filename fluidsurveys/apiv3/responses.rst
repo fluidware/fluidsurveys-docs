@@ -12,7 +12,6 @@ List of Responses
 
   :query page: page of responses to return (defaults to 0)
   :query page_size: number of responses to return per page (defaults to 50, max is 200)
-  :query expand_GET: whether to format the GET variables as JSON instead of querystring (true, 1, yes, on)
   
 ::
 
@@ -109,6 +108,8 @@ Filtering Responses
 
   :query \:question_id: value of response to `:question_id`
   :query filter: name of predefined filter
+  :query include_labels: return text of choice labels as opposed to indicies (true, 1, yes, on)
+  :query expand_GET: whether to format the GET variables as JSON instead of querystring (true, 1, yes, on)
 
 
 To see that our response has been updated with the new value lets query for it.  In this case the question id was `u53cTNZRPK`.
