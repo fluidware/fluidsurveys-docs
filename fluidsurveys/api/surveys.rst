@@ -382,7 +382,7 @@ Getting responses as a CSV
 
 .. http:get:: /api/v2/surveys/:id/csv/
 
-    Returns details about the specified survey.
+    Returns details about the specified survey. Defaults to default language of survey.
 
     :query include_url: whether to include a direct url to the response for editing (true, 1, yes, on)
     :query include: list of unique question identifiers to include
@@ -398,6 +398,7 @@ Getting responses as a CSV
     :query strip_html: remove all HTML tags from exported answers (true, 1, yes, on)
     :query inverted: export questions on separate rows for database import (true, 1, yes, on)
     :query include_response_link: include edit links for each response (true, 1, yes, on)
+    :query lang: return specified language of survey (two letter ISO 639-1 code)
 
 Sending a new invitation
 ````````````````````````
