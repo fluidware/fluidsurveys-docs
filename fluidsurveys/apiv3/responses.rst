@@ -197,7 +197,7 @@ CSV Filters
   :query strip_html: remove all HTML tags from exported answers (true, 1, yes, on)
   :query inverted: export questions on separate rows for database import (true, 1, yes, on)
   :query include_response_link: include edit links for each response (true, 1, yes, on)
-  :query lang: return specified language of survey (two letter ISO 639-1 code)
+  :query language: return specified language of survey (two letter ISO 639-1 code)
   
 ::
 
