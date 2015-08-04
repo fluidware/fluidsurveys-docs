@@ -8,6 +8,23 @@ Getting Started
 If you're new to Fluidsurveys API, you may want to start with these documents to get
 you up and running:
 
+Request Limits
+^^^^^^^^^^
+
+ * Free - 100 requests / day
+ * Pro & Ultra - 1000 requests / day
+ * Enterprise - 10000 requests / day
+ 
+The maximum burst rate is 60 requests / minute across all plan types.
+ 
+If you run into any of the above limits, FluidSurveys will return the following error:
+
+::
+
+    HTTP 429
+
+with a message informing you of the amount of time it will take for the next request to go through.
+
 
 API v2 Documentation
 ^^^^^^^^^^
