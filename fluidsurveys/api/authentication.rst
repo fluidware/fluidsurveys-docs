@@ -64,3 +64,27 @@ the use of custom authentication.
 
 .. _Flask: http://flask.pocoo.org/
 .. _sample application: https://github.com/chideit/fluidsurveys-api-docs/tree/master/examples/custom-auth
+
+Query for Current User
+^^^^^^^^^^^
+
+.. http:GET:: /api/v2/me
+
+    Returns the logged in user.
+
+    Sample Response: ::
+
+	{
+	"user": {
+	  "username": "janedoe",
+	  "plan": "http://fluidsurveys.com/api/v2/plan/enterprise/",
+	  "id": [userid],
+	  "plan_name": "enterprise",
+	  "uri": "http://fluidsurveys.com/api/v2/user/{userid}/",
+	  "resources":
+	  { "superuser": false },
+	  "email": "janedoe@fluidsurveys.com"
+	}
+	}
+
+
