@@ -387,6 +387,7 @@ Getting responses as a CSV
     :query include_url: whether to include a direct url to the response for editing (true, 1, yes, on)
     :query include: list of unique question identifiers to include
     :query filter: name of predefined filter
+    :query ids: list of responses to return based on unique identifiers
     :query include_labels: return text of choice labels as opposed to indicies (true, 1, yes, on)
     :query include_id: include user-defined question identifiers (true, 1, yes, on)
     :query include_key: include unique identifier for each response (true, 1, yes, on)
