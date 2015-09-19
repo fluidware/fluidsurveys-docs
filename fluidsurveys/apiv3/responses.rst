@@ -12,7 +12,11 @@ List of Responses
 
   :query page: page of responses to return (defaults to 0)
   :query page_size: number of responses to return per page (defaults to 50, max is 200)
-  
+  :query _completed: 0 returns incomplete, 1 returns complete or quota reached, 2 returns terminated
+  :query _invite_code: returns survey response that matches specified invite code 
+  :query _updated_at: returns responses where last saved action matches specified date YYYY-MM-DD
+  :query _created_at: returns responses where initial saved action matches specified date YYYY-MM-DD
+
 ::
 
   curl -u bob@example.com:PASSWORD \
