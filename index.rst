@@ -1,7 +1,7 @@
 Welcome to FluidSurvey Dev!
 ==========================
 .. note::
-	To access product documentation, please visit  `Fluidsurvey Help <http://help.fluidsurveys.com/hc/en-us>`_.
+	To access product documentation, please visit  `Fluidsurvey Help <http://help.fluidsurveys.com/hc/en-us>`_. To access the Terms of Use governing your use of our API, please visit `Terms of Use <https://developer.surveymonkey.com/tou/>`_.
 
 Getting Started
 ---------------
@@ -64,3 +64,8 @@ New! Preview of our newest version of the API.  (*Work in progress*)
     fluidsurveys/apiv3/invites
     fluidsurveys/apiv3/contacts
 
+.. toctree::
+    :hidden:
+
+    Terms of Use <https://developer.surveymonkey.com/tou/>
+    Privacy Statement <http://fluidsurveys.com/about/privacy>
