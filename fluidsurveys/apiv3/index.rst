@@ -2,8 +2,8 @@ Introduction
 ============
 
 The FluidSurveys API is a HTTP REST API which is accessed with Basic Authentication.
-You can browse and interact with the API in your browser by visting `this
-<https://www.fluidsurveys.com/api/v3/>`_ page, and singing in. By signing in, you agree to the `Terms of Use <https://developer.surveymonkey.com/tou/>`_ and `Privacy Statement <http://fluidsurveys.com/about/privacy>`_.  The following guides will help walk you through the various areas of the API.
+You can browse and interact with the API in your browser by visiting `this
+<https://www.fluidsurveys.com/api/v3/>`_ page, and signing in. By signing in, you agree to the `Terms of Use <https://developer.surveymonkey.com/tou/>`_ and `Privacy Statement <http://fluidsurveys.com/about/privacy>`_.  The following guides will help walk you through the various areas of the API.
 
 Browseable
 ----------
